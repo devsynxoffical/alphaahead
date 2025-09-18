@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "products": "Produits",
+    "clients": "Clients",
+    "team": "Notre Équipe",
+    "agencies": "Agences",
+    "careers": "Carrières",
+    "contact": "Contactez-nous"
+  },
+  "contactInfo": {
+    "emailLabel": "Envoyez-nous un e-mail",
+    "phoneLabel": "Appelez-nous",
+    "email": "info@alphaaheadllc.com",
+    "phone": "424-542-7170",
+    "languageLabel": "Langue"
+  },
+  "hero": {
+  "tagline": "Une agence américaine de stratégie commerciale et de solutions numériques",
+  "headline": "Favoriser la croissance <br />grâce à des stratégies commerciales <br />innovantes, à la transformation digitale,<br /> et aux solutions marketing.",
+  "subtext": "Expertise mondiale – De grandes entreprises nous font confiance à travers les secteurs.",
+  "buttonWork": "Voir notre travail",
+  "buttonTalk": "Discuter de votre projet avec nous"
+},
+"services": {
+  "list": [
+    {
+      "title": "Développement Web",
+      "desc": "Solutions web personnalisées qui stimulent la croissance commerciale et l'engagement des utilisateurs.",
+      "image": "/webdesign.jpeg"
+    },
+    {
+      "title": "Marketing Digital",
+      "desc": "Campagnes de marketing digital stratégiques qui augmentent la visibilité de la marque et les conversions.",
+      "image": "/digitalmarkting.png"
+    },
+    {
+      "title": "Génération de Prospects",
+      "desc": "Stratégies de génération de prospects ciblées pour développer votre base client.",
+      "image": "/leadgeneration.png"
+    },
+    {
+      "title": "Assistant Virtuel",
+      "desc": "Services d'assistant virtuel professionnel pour optimiser vos opérations.",
+      "image": "/virtualassestant.png"
+    },
+    {
+      "title": "Solutions CRM",
+      "desc": "Systèmes CRM complets pour gérer efficacement les relations clients.",
+      "image": "/crm.png"
+    },
+    {
+      "title": "Appels à Froid",
+      "desc": "Services d'appels à froid experts pour étendre la portée de votre entreprise.",
+      "image": "/Coldcalling.png"
+    }
+  ]
+},
+"about": {
+  "sectionLabel": "À propos de Alpha Ahead LLC",
+  "headline": "Là où l'innovation rencontre les résultats",
+  "para1": "Alpha Ahead LLC est une agence américaine de conseil et de solutions commerciales qui aide les entreprises à croître et à se développer à l'échelle mondiale, y compris aux Émirats arabes unis.",
+  "para2": "Nous croyons en des solutions honnêtes, pratiques et directes, en adaptant des stratégies pour répondre aux besoins uniques de chaque client. Nous ne nous contentons pas de fournir des services ; nous construisons des partenariats qui favorisent le succès à long terme. Que vous soyez une start-up à la recherche de votre première percée ou une entreprise établie visant à se développer, Alpha Ahead possède l'expertise nécessaire pour vous assurer de rester en tête de la concurrence.",
+  "cta": "Voir nos travaux"
+},
+"projects": {
+  "label": "Nos projets",
+  "headline": "Notre Projet",
+  "subtitle": "Favoriser l'innovation dans toutes les industries avec des solutions personnalisées",
+  "list": [
+    { "title": "Zingo Assist", "tagline": "Votre Partenaire Commercial Virtuel", "desc": "Assistants virtuels qui économisent du temps et stimulent la croissance commerciale.", "image": "/Project/Project2.png" },
+    { "title": "Alpha Medi Assist", "tagline": "Opérations de Santé Simplifiées", "desc": "Facturation et opérations optimisées pour les prestataires de santé.", "image": "/Project/project4.jpg" },
+    { "title": "Learn with Alpha", "tagline": "Compétences qui Accélèrent les Carrières", "desc": "Apprentissage en ligne pratique pour améliorer les compétences et les carrières.", "image": "/Project/Project3.png" },
+    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "Solutions Immobilières Numériques", "desc": "Solutions numériques pour simplifier et développer l'immobilier.", "image": "/Project/Project9.jpg" },
+    { "title": "Alpha Ahead", "tagline": "Votre Partenaire Commercial de Confiance", "desc": "Conseil commercial et innovation pour une croissance durable.", "image": "/Project/Project1.png" }
+  ],
+  "readMore": "En savoir plus sur",
+  "viewAll": "Voir Tous les Projets",
+  "learnMore": "En Savoir Plus →"
+},
+  "industries": {
+    "label": "Des solutions adaptées à toutes les industries",
+    "headline": "Nous travaillons dans divers secteurs d'activité",
+    "list": [
+      { "title": "Santé", "desc": "Du marketing numérique aux applications personnalisées.", "image": "/healthcare (2).jpeg" },
+      { "title": "Vente au détail & E-commerce", "desc": "Créer des expériences numériques fluides.", "image": "/e-comerce.jpeg" },
+      { "title": "Tourisme & Hôtellerie", "desc": "Élaborer des stratégies numériques qui favorisent l'engagement et la fidélité des clients.", "image": "/tourisimandhospitality.jpeg" },
+      { "title": "Immobilier", "desc": "Solutions marketing pour la gestion immobilière et les ventes.", "image": "/realstate.jpeg" }
+    ],
+    "more": "En savoir plus sur nos services →"
+  },
+  "seeOurWork": {
+    "headline": "Voir Notre Travail",
+    "subtitle": "Découvrez la gamme diversifiée de projets que nous avons livrés pour nos clients précieux dans diverses industries.",
+    "viewAll": "Voir Tout Notre Travail",
+    "viewDetails": "Voir les Détails →",
+    "clients": [
+      {
+        "name": "Zingo Assist",
+        "category": "Assistant Virtuel",
+        "image": "/Clients/Zingo.png"
+      },
+      {
+        "name": "Learn with Alpha",
+        "category": "Éducation",
+        "image": "/Clients/learn%20with%20alpha.png"
+      },
+      {
+        "name": "Alpha Ahead Real Estate Brokerage LLC",
+        "category": "Immobilier",
+        "image": "/Clients/Alpha%20estate.png"
+      },
+      {
+        "name": "Port Libert",
+        "category": "Logistique",
+        "image": "/Clients/Portlibert.png"
+      },
+      {
+        "name": "Du Partner",
+        "category": "Développement Commercial",
+        "image": "/Clients/du%20partner.png"
+      },
+      {
+        "name": "Alpha Medi Assist",
+        "category": "Santé",
+        "image": "/Clients/Alpha%20medi%20assist.png"
+      },
+      {
+        "name": "Heritage Capital",
+        "category": "Services Financiers",
+        "image": "/Clients/Heritagecapital.png"
+      }
+    ]
+  },
+"footer": {
+  "cardHeadline": "Évaluez le potentiel de votre entreprise et découvrez des opportunités\npour réussir davantage",
+  "button": "Discutons",
+  "bottom": "Des solutions numériques créatives à la planification stratégique, nous offrons l'excellence à chaque étape du parcours de votre entreprise.",
+  "copyright": "Copyright © 2025 par Alpha Ahead | Tous droits réservés",
+  "company": "Entreprise",
+  "solutions": "Solutions",
+  "contact": "Contact",
+  "webDevelopment": "Développement Web",
+  "digitalMarketing": "Marketing Digital",
+  "leadGeneration": "Génération de Prospects"
+},
+"product": {
+  "bannerTitle": "Projets par ALPHA AHEAD",
+  "bannerText": "Chez Alpha Ahead LLC, nous sommes fiers de la réussite de nos projets innovants dans divers secteurs. Voici quelques exemples de notre travail, démontrant notre engagement à transformer les entreprises et à favoriser la croissance :",
+  "projects": [
+    {
+      "slug": "zingo",
+      "title": "Zingo Assist",
+      "para1": "Zingo Assist fournit des services d'assistants virtuels pour aider les entreprises à se développer en déléguant les tâches administratives.",
+      "para2": "Notre solution donne accès à des équipes à distance hautement qualifiées pour soutenir les opérations clés, permettant ainsi aux entreprises de se concentrer sur la croissance et la stratégie. Zingo Assist offre efficacité et rentabilité dans les secteurs de l'immobilier, de la finance et du support client.",
+      "button": "Visitez notre site",
+      "btnColor": "#872779",
+      "url": "https://www.zingoassist.us",
+      "image": "/Zingo assist .jpg"
+    },
+    {
+      "slug": "medi",
+      "title": "Alpha Medi Assist",
+      "para1": "Alpha Medi Assist est une plateforme complète de solutions de santé qui aide les organisations à rationaliser leurs opérations, à améliorer les soins aux patients et à moderniser les services de santé.",
+      "para2": "Nous collaborons avec les structures de santé pour améliorer l'efficacité, l'expérience patient et la gestion des données à travers des solutions sur mesure adaptées aux besoins spécifiques du secteur.",
+      "button": "Visitez notre site",
+      "btnColor": "#2487c9",
+      "url": "https://alphamediassist.com/",
+      "image": "/Alpha Medi Assist (1).jpg"
+    },
+    {
+      "slug": "learn",
+      "title": "Learn with Alpha",
+      "para1": "Learn with Alpha est une plateforme d'e-learning conçue pour révolutionner l'éducation grâce à des expériences numériques interactives et dynamiques.",
+      "para2": "Elle s’adresse à divers secteurs, permettant aux étudiants et aux professionnels d’acquérir de nouvelles compétences et de progresser dans leur carrière.",
+      "para3": "La plateforme intègre des méthodologies modernes avec des parcours d’apprentissage personnalisés, garantissant une expérience flexible et engageante.",
+      "button": "Visitez notre site",
+      "btnColor": "#2a4332",
+      "url": "https://learnwithalpha.com/",
+      "image": "/Learn with Alpha.jpg"
+    },
+    {
+      "slug": "holiday",
+      "title": "Alpha Holiday Homes",
+      "para1": "Alpha Holiday Homes propose des locations de courte durée haut de gamme dans des destinations clés. Notre plateforme met l’accent sur l’hébergement de luxe et un service client exceptionnel.",
+      "para2": "Que ce soit pour des séjours de vacances ou des voyages d’affaires, nous sélectionnons des propriétés répondant aux normes les plus élevées en matière de confort, de style et de fonctionnalité.",
+      "para3": "Nous proposons également des services de nettoyage, de maintenance et de conciergerie pour garantir un séjour exceptionnel.",
+      "button": "Visitez notre site",
+      "btnColor": "#DC520E",
+      "url": "https://alphaholidayhomes.com",
+      "image": "/virtuialassestant9001.png"
+    }
+  ],
+  "ctaTop": {
+    "label": "Multilingue et tous secteurs confondus",
+    "headline": "Vous avez une idée de produit ou d'entreprise ?\nÉcrivez-nous : contact@alphaaheadllc.com",
+    "text": "Si vous avez une vision pour votre entreprise ou un projet, nous serions ravis d’en discuter. Transformons vos idées en réalité grâce à des solutions innovantes axées sur la croissance et l'efficacité."
+  },
+  "ctaBottom": {
+    "headline": "Évaluez le potentiel de votre entreprise et trouvez des opportunités\npour une plus grande réussite",
+    "button": "Discutons-en",
+    "bottom": "Nous privilégions l’honnêteté, la praticité et la clarté. Le résultat prime avant tout, pas la technologie, le budget ou les conventions.",
+    "copyright": "Copyright © 2025 par Alpha Ahead | Tous droits réservés"
+  }
+},
+"contact": {
+  "bannerTitle": "Contactez-nous",
+  "bannerText": "Contactez-nous pour discuter de vos problématiques, idées et projets technologiques ou commerciaux. Nous ferons tout notre possible pour vous aider ou au moins vous orienter.",
+  "globalTitle": "Notre Présence Mondiale",
+  "globalText": "Vous pouvez nous joindre par téléphone au 424-542-7170 ou par e-mail à info@alphaaheadllc.com.\nPlus d’informations ci-dessous.",
+  "cards": [
+    {
+      "office": "Alpha Ahead (États-Unis)",
+      "addressLabel": "Adresse :",
+      "address": "7901 4th ST N Ste 23684\nSt. Petersburg, Floride 33702",
+      "telLabel": "Tél. :",
+      "tel": "+ 424-542-7170",
+      "emailLabel": "E-mail :",
+      "email": "info@alphaaheadllc.com"
+    },
+    {
+      "office": "Alpha Ahead (EAU)",
+      "addressLabel": "Adresse :",
+      "address": "Dubai Marina, Émirats arabes unis",
+      "telLabel": "Tél. :",
+      "tel": "+ 971-52-739",
+      "waLabel": "Whatsapp :",
+      "wa": "+971 50 560 6877"
+    },
+     {
+        "office": "Alpha Ahead (Pakistan)",
+        "addressLabel": "Adresse :",
+        "address": "206, Service Road East, Sector I-10/3, Islamabad, Pakistan",
+        "telLabel": "Tel :",
+        "tel": "+ 92-3450195401",
+        "waLabel": "Whatsapp :",
+      "wa": "+ 92-3450195401"
+      }
+  ]
+},
+"servicesPg": {
+  "banner": {
+    "title": "Nos Services",
+    "text": "Nous proposons des solutions numériques sur mesure, du conseil technologique et des services marketing pour faire prospérer votre entreprise."
+  },
+  "web": {
+    "label": "Multilingue et Tous Secteurs",
+    "heading": "Développement Web",
+    "p1": "Chez Alpha Ahead LLC, nous proposons des services personnalisés de développement web : sites vitrines, intégrations systèmes ou applications personnalisées.",
+    "p2": "Nos développeurs utilisent les meilleures technologies pour créer des solutions robustes,",
+    "p3": "scalables et alignées avec vos objectifs.",
+    "cta": "Voir notre portfolio"
+
+  },
+  "digital": {
+    "label": "Multilingue et Tous Secteurs",
+    "heading": "Marketing Digital",
+    "p1": "Nos services de marketing digital sont adaptés à vos besoins : SEO, SEA, réseaux sociaux, vidéo, email marketing.",
+    "p2": "Nous intervenons dans les secteurs réglementés (santé, finance) comme traditionnels (retail, tourisme).",
+    "p3": "Nous élaborons une stratégie basée sur :",
+    "bullets": [
+      "Comportements clients, demande, tendances",
+      "Analyse de la concurrence",
+      "Technologies et systèmes en place"
+    ],
+    "p4": "Une fois en place, nous surveillons et ajustons les indicateurs clés pour améliorer les résultats.",
+    "cta": "Voir notre portfolio"
+
+  },
+  "lead": {
+    "label": "Multilingue et Tous Secteurs",
+    "heading": "Génération de Leads",
+    "p1": "Chez Alpha Ahead, nous savons que la génération de leads est cruciale. Nos stratégies sont conçues pour votre cible et votre marché.",
+    "p2": "Nous utilisons les données et la technologie pour capter, nourrir et convertir les leads dans tous les secteurs : immobilier, tech, éducation, e-commerce.",
+    "p3": "Nos solutions sont évolutives et performantes.",
+    "p4": "Nous ajustons en continu pour garantir un ROI optimal.",
+    "cta": "Voir notre portfolio"
+
+  },
+  "tailor": {
+    "label": "Multilingue et Tous Secteurs",
+    "heading": "Solutions <1>Web sur mesure</1><br />et <3>Marketing Digital</3>",
+    "text": "Alpha Ahead LLC aide les entreprises à se développer via la technologie et le marketing. Nos solutions attirent les clients et améliorent votre efficacité.\nNous combinons honnêteté, expertise, stratégie et résultats. Besoin d’aide ? Contactez-nous pour du web, du marketing ou du conseil."
+  },
+  "industries": {
+    "label": "Solutions adaptées à chaque secteur, pensées pour vous",
+    "heading": "Nous travaillons avec des secteurs variés <br />",
+    "cards": [
+      { "title": "Santé", "desc": "Stratégies digitales et applications personnalisées.", "image": "/healthcare (2).jpeg" },
+      { "title": "Services Financiers", "desc": "Développement web, analyse concurrentielle et marketing.", "image": "/finicialservice.jpeg" },
+      { "title": "Commerce & E-commerce", "desc": "Expériences digitales fluides et efficaces.", "image": "/e-comerce.jpeg" },
+      { "title": "Tourisme & Hôtellerie", "desc": "Stratégies de fidélisation par le digital.", "image": "/tourisimandhospitality.jpeg" },
+      { "title": "Immobilier", "desc": "Marketing et gestion de biens immobiliers.", "image": "/realstate.jpeg" }
+    ],
+    "more": "En savoir plus sur nos services →"
+  },
+  "cta": {
+    "headline": "Évaluez le potentiel de votre entreprise et découvrez\ndes opportunités de croissance",
+    "button": "Discutons-en",
+    "bottom": "Des solutions digitales aux plans stratégiques, nous apportons l’excellence à chaque étape de votre croissance."
+  }
+}
+
+
+
+
+
+}

@@ -1,0 +1,82 @@
+:root {
+  --primary-orange: #ff7a00;
+  --black: #000000;
+  --white: #ffffff;
+  --gray-bg: #f5f5f5;
+
+   --base-font-size: 14px;
+  --heading-font: 'Lato', sans-serif;
+  --body-font: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--base-font-size);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 480px) {
+  :root {
+    --base-font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  :root {
+    --base-font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --base-font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    --base-font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --base-font-size: 18px;
+  }
+}
+
+/* Touch-friendly improvements for mobile */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus indicators for accessibility */
+*:focus {
+  outline: 2px solid #DC520E;
+  outline-offset: 2px;
+}
+
+/* Improved text rendering */
+* {
+  text-rendering: optimizeLegibility;
+}

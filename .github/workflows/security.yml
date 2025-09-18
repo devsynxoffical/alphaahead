@@ -1,0 +1,119 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run security scan weekly
+    - cron: '0 0 * * 1'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for gitleaks
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci --omit=dev
+    
+    - name: Run npm audit
+      run: npm audit --production --audit-level=moderate
+      continue-on-error: true
+    
+    - name: Run gitleaks
+      uses: gitleaks/gitleaks-action@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Check for secrets in code
+      run: |
+        # Check for common secret patterns
+        if grep -r -i "password\|secret\|key\|token" src/ --exclude-dir=node_modules; then
+          echo "Potential secrets found in source code"
+          exit 1
+        fi
+    
+    - name: Security headers check
+      run: |
+        # Check if security headers are present in index.html
+        if ! grep -q "X-Frame-Options" public/index.html; then
+          echo "X-Frame-Options header missing"
+          exit 1
+        fi
+        if ! grep -q "Content-Security-Policy" public/index.html; then
+          echo "Content-Security-Policy header missing"
+          exit 1
+        fi
+    
+    - name: Check for dangerous patterns
+      run: |
+        # Check for dangerouslySetInnerHTML usage
+        if grep -r "dangerouslySetInnerHTML" src/; then
+          echo "dangerouslySetInnerHTML found - review for XSS risks"
+          exit 1
+        fi
+        
+        # Check for eval usage
+        if grep -r "eval(" src/; then
+          echo "eval() usage found - security risk"
+          exit 1
+        fi
+    
+    - name: Build application
+      run: npm run build
+    
+    - name: Check build output
+      run: |
+        # Verify build was successful
+        if [ ! -d "build" ]; then
+          echo "Build failed - no build directory found"
+          exit 1
+        fi
+        
+        # Check for source maps in production
+        if find build -name "*.map" | grep -q .; then
+          echo "Source maps found in production build - consider removing"
+        fi
+
+  dependency-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Check for outdated packages
+      run: npm outdated || true
+    
+    - name: Run npm audit with detailed output
+      run: |
+        npm audit --audit-level=low --json > audit-results.json || true
+        cat audit-results.json | jq '.vulnerabilities | keys[]' || true
+    
+    - name: Upload audit results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: audit-results
+        path: audit-results.json
