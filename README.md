@@ -1,46 +1,161 @@
-# Getting Started with Create React App
+# Alpha Ahead LLC - Business Strategy & Digital Solutions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alpha Ahead Logo](public/alphawebsitemainlogo.png)
 
-## Available Scripts
+A modern, responsive React website for Alpha Ahead LLC - A US-Based Business Strategy and Digital Solutions Agency providing innovative business strategies, digital transformation, and marketing solutions.
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- **Multi-language Support** - English, Spanish, French, Urdu, and Arabic
+- **Responsive Design** - Optimized for all devices
+- **Modern UI/UX** - Clean and professional design
+- **Security Hardened** - Enterprise-grade security measures
+- **Performance Optimized** - Fast loading and efficient
+- **SEO Ready** - Optimized for search engines
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Live Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Visit our website: [Alpha Ahead LLC](https://alphaaheadllc.com)
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React 19.1.0, TypeScript
+- **Routing:** React Router DOM
+- **Internationalization:** i18next
+- **Icons:** React Icons, FontAwesome
+- **Build Tool:** Create React App
+- **Deployment:** Static hosting ready
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+alpha-ahead/
+├── public/                 # Static assets
+├── src/
+│   ├── components/        # Reusable components
+│   ├── pages/            # Page components
+│   ├── locales/          # Translation files
+│   └── assets/           # Images and media
+├── build/                # Production build
+├── .github/              # GitHub workflows
+└── docs/                 # Documentation
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Quick Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (v16 or higher)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/syehassanali/alphaahead.git
+   cd alphaahead
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Start development server**
+   ```bash
+   npm start
+   ```
 
-## Learn More
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📜 Available Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Development
+```bash
+npm start          # Start development server
+npm test           # Run tests
+npm run build      # Build for production
+```
+
+### Security
+```bash
+npm run security:audit        # Check dependencies
+npm run security:scan         # Comprehensive security scan
+npm run security:check-headers # Validate security headers
+npm run security:check-secrets # Scan for hardcoded secrets
+```
+
+### Deployment
+```bash
+npm run build      # Create production build
+.\deploy-to-ihosting.bat  # Windows deployment script
+```
+
+## 🔒 Security Features
+
+- **XSS Protection** - Safe HTML rendering
+- **Security Headers** - CSP, HSTS, X-Frame-Options
+- **Dependency Scanning** - Automated vulnerability checks
+- **Secrets Protection** - No hardcoded credentials
+- **HTTPS Ready** - SSL/TLS configuration
+
+## 🌐 Deployment
+
+### ihosting Deployment
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Upload to ihosting**
+   - Upload all contents of `build/` folder to `public_html`
+   - Include the `.htaccess` file for proper routing
+
+3. **Configure SSL**
+   - Enable SSL certificate in ihosting control panel
+   - Force HTTPS redirect
+
+For detailed deployment instructions, see [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)
+
+## 📚 Documentation
+
+- [Security Report](SECURITY-REPORT.md) - Comprehensive security audit
+- [Security Runbook](SECURITY.md) - Security maintenance procedures
+- [Deployment Guide](DEPLOYMENT-GUIDE.md) - Step-by-step deployment
+- [Security Implementation](SECURITY-IMPLEMENTATION-SUMMARY.md) - Security fixes summary
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary software owned by Alpha Ahead LLC.
+
+## 📞 Contact
+
+- **Website:** [alphaaheadllc.com](https://alphaaheadllc.com)
+- **Email:** info@alphaaheadllc.com
+- **Phone:** 424-542-7170
+
+## 🏢 About Alpha Ahead LLC
+
+Alpha Ahead LLC is a US-Based Business Strategy and Digital Solutions Agency providing:
+
+- **Business Strategy** - Strategic planning and consulting
+- **Digital Transformation** - Modern technology solutions
+- **Web Development** - Custom web applications
+- **Digital Marketing** - Online marketing strategies
+- **Lead Generation** - Customer acquisition services
+- **Virtual Assistant** - Professional support services
+- **CRM Solutions** - Customer relationship management
+
+---
+
+**Built with ❤️ by Alpha Ahead LLC**
