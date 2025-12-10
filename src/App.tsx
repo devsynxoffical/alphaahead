@@ -11,6 +11,19 @@ import ScrollToTop from './components/ScrollToTop';
 import ExternalStaff from './pages/ExternalStaff'; 
 import OurTeam from './pages/OurTeam';
 import Careers from './pages/Careers';
+import VirtualAssistantDetails from './pages/VirtualAssistantDetails';
+import ColdCallingDetails from './pages/ColdCallingDetails';
+import PersonalAssistantDetails from './pages/PersonalAssistantDetails';
+import VirtualBusinessAssistantDetails from './pages/VirtualBusinessAssistantDetails';
+import VirtualPropertyManagementDetails from './pages/VirtualPropertyManagementDetails';
+import LeadGenerationDetails from './pages/LeadGenerationDetails';
+import RealEstateTransactionCoordinatorDetails from './pages/RealEstateTransactionCoordinatorDetails';
+import SEODetails from './pages/SEODetails';
+import WebDevelopmentDetails from './pages/WebDevelopmentDetails';
+import DigitalMarketingDetails from './pages/DigitalMarketingDetails';
+import GraphicDesignDetails from './pages/GraphicDesignDetails';
+import VideoEditingDetails from './pages/VideoEditingDetails';
+import ITSupportDetails from './pages/ITSupportDetails';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,14 +32,31 @@ function App() {
       <Header />
       <ScrollToTop />
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<HeroSection />} />
+        <Route path="/home" element={<HeroSection />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/projects" element={<ProjectPage />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/team" element={<OurTeam />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/contactUs" element={<ContactUs />} />
-        <Route path="/externalStaff" element={<ExternalStaff />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/staff" element={<ExternalStaff />} />
+        
+        {/* Service Detail Pages */}
+        <Route path="/virtual-assistant" element={<VirtualAssistantDetails />} />
+        <Route path="/cold-calling" element={<ColdCallingDetails />} />
+        <Route path="/personal-assistant" element={<PersonalAssistantDetails />} />
+        <Route path="/business-assistant" element={<VirtualBusinessAssistantDetails />} />
+        <Route path="/property-management" element={<VirtualPropertyManagementDetails />} />
+        <Route path="/lead-generation" element={<LeadGenerationDetails />} />
+        <Route path="/transaction-coordinator" element={<RealEstateTransactionCoordinatorDetails />} />
+        <Route path="/seo" element={<SEODetails />} />
+        <Route path="/web-development" element={<WebDevelopmentDetails />} />
+        <Route path="/digital-marketing" element={<DigitalMarketingDetails />} />
+        <Route path="/graphic-design" element={<GraphicDesignDetails />} />
+        <Route path="/video-editing" element={<VideoEditingDetails />} />
+        <Route path="/it-support" element={<ITSupportDetails />} />
 
       </Routes>
       <Footer />

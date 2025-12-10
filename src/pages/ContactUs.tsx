@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 const ContactUs: React.FC = () => {
- const { t } = useTranslation();
  const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   const [formStep, setFormStep] = useState(1);
-  const [showChat, setShowChat] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   
    const isMobile = screenWidth < 768;
@@ -35,11 +32,11 @@ const ContactUs: React.FC = () => {
     {
       id: 2,
       name: "Alpha Ahead (UAE)",
-      address: "Dubai Marina, UAE",
-      phone: "+ 971-52-739",
+      address: "Office 59, 2nd floor, first gulf business center, madina mall Muhaisnah, Dubai",
+      phone: "+971 4 432 3080",
       email: "info@alphaaheadllc.com",
       whatsapp: "+971 50 560 6877",
-      mapUrl: "https://maps.google.com/?q=Dubai+Marina,+UAE",
+      mapUrl: "https://maps.google.com/?q=Office+59,+2nd+floor,+first+gulf+business+center,+madina+mall+Muhaisnah,+Dubai",
       coordinates: { lat: 25.0920, lng: 55.1381 }
     },
     {
@@ -54,30 +51,6 @@ const ContactUs: React.FC = () => {
     }
   ];
 
-  // Testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      quote: "Alpha Ahead took our business to new heights with innovative strategies.",
-      author: "Sarah Johnson",
-      company: "TechStart Inc.",
-      rating: 5
-    },
-    {
-      id: 2,
-      quote: "Their digital marketing expertise has been a game-changer for our online presence.",
-      author: "Michael Chen",
-      company: "Global Solutions",
-      rating: 5
-    },
-    {
-      id: 3,
-      quote: "Professional team that delivers exceptional results every time.",
-      author: "Emily Rodriguez",
-      company: "InnovateCorp",
-      rating: 5
-    }
-  ];
 
   const inquiryTypes = [
     "General Inquiry",
@@ -127,7 +100,7 @@ const ContactUs: React.FC = () => {
     <div style={{
       background: '#fff',
       borderRadius: '12px',
-      padding: '2rem',
+      padding: '1.5rem',
       boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
       transition: 'all 0.3s ease',
       border: '1px solid #f0f0f0',
@@ -149,7 +122,7 @@ const ContactUs: React.FC = () => {
           fontSize: '1.3rem',
           fontWeight: 700,
           color: '#DC520E',
-          marginBottom: '1rem',
+          marginBottom: '0.75rem',
           textAlign: 'center'
         }}>{location.name}</h3>
         
@@ -157,15 +130,42 @@ const ContactUs: React.FC = () => {
           fontSize: '0.95rem',
           color: '#666',
           lineHeight: 1.5,
-          marginBottom: '1.5rem',
+          marginBottom: '1rem',
           textAlign: 'center'
         }}>{location.address}</p>
 
+        <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+          <a 
+            href={location.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              background: '#DC520E',
+              color: '#fff',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              display: 'inline-block',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 4px 15px rgba(220, 82, 14, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}>
+            Get Directions
+          </a>
+        </div>
+
         <div style={{ 
-          marginBottom: '1.5rem',
           display: 'flex',
           flexDirection: 'column',
-          gap: '0.75rem'
+          gap: '0.5rem'
         }}>
           <div style={{
             display: 'flex',
@@ -173,7 +173,6 @@ const ContactUs: React.FC = () => {
             gap: '0.5rem',
             justifyContent: 'center'
           }}>
-            <span style={{ fontSize: '1rem' }}>📞</span>
             <div>
               <p style={{
                 fontSize: '0.9rem',
@@ -193,7 +192,6 @@ const ContactUs: React.FC = () => {
               gap: '0.5rem',
               justifyContent: 'center'
             }}>
-              <span style={{ fontSize: '1rem' }}>💬</span>
               <div>
                 <p style={{
                   fontSize: '0.9rem',
@@ -213,7 +211,6 @@ const ContactUs: React.FC = () => {
             gap: '0.5rem',
             justifyContent: 'center'
           }}>
-            <span style={{ fontSize: '1rem' }}>📧</span>
             <div>
               <p style={{
                 fontSize: '0.9rem',
@@ -227,87 +224,9 @@ const ContactUs: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <div style={{ textAlign: 'center' }}>
-        <a 
-          href={location.mapUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            background: '#DC520E',
-            color: '#fff',
-            padding: '0.75rem 1.5rem',
-            borderRadius: '6px',
-            textDecoration: 'none',
-            fontSize: '0.9rem',
-            fontWeight: 600,
-            display: 'inline-block',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.boxShadow = '0 4px 15px rgba(220, 82, 14, 0.3)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = 'none';
-          }}>
-          Get Directions
-        </a>
-      </div>
     </div>
   );
 
-  const TestimonialCard: React.FC<{ testimonial: any }> = ({ testimonial }) => (
-    <div style={{
-      background: '#fff',
-      borderRadius: '12px',
-      padding: '2rem',
-      boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-      transition: 'all 0.3s ease',
-      border: '1px solid #f0f0f0',
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column'
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = 'translateY(-4px)';
-      e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.15)';
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-    }}>
-      <div style={{ marginBottom: '1rem' }}>
-        {[...Array(testimonial.rating)].map((_, i) => (
-          <span key={i} style={{ color: '#FFD700', fontSize: '1.2rem' }}>★</span>
-        ))}
-      </div>
-      
-      <p style={{
-        fontSize: '1rem',
-        color: '#666',
-        lineHeight: 1.6,
-        fontStyle: 'italic',
-        marginBottom: '1.5rem',
-        flex: 1
-      }}>"{testimonial.quote}"</p>
-
-      <div>
-        <p style={{
-          fontSize: '0.95rem',
-          fontWeight: 600,
-          color: '#333',
-          marginBottom: '0.25rem'
-        }}>{testimonial.author}</p>
-        <p style={{
-          fontSize: '0.85rem',
-          color: '#DC520E',
-          fontWeight: 500
-        }}>{testimonial.company}</p>
-      </div>
-    </div>
-  );
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -377,7 +296,7 @@ const ContactUs: React.FC = () => {
                 width: '60px',
                 height: '60px',
                 margin: '0 auto 1rem',
-                background: 'url("/alphawebsitemainlogo.png") center/contain no-repeat',
+                background: 'url("/email_1626348.png") center/contain no-repeat',
                 backgroundSize: 'contain'
               }} />
               <h3 style={{
@@ -433,9 +352,12 @@ const ContactUs: React.FC = () => {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.1)';
             }}>
               <div style={{
-                fontSize: '3rem',
-                marginBottom: '1rem'
-              }}>💬</div>
+                width: '60px',
+                height: '60px',
+                margin: '0 auto 1rem',
+                background: 'url("/whatsapp_12635043.png") center/contain no-repeat',
+                backgroundSize: 'contain'
+              }} />
               <h3 style={{
                 fontSize: '1.3rem',
                 fontWeight: 600,
@@ -452,7 +374,7 @@ const ContactUs: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  background: '#25D366',
+                  background: '#DC520E',
                   color: '#fff',
                   padding: '0.75rem 1.5rem',
                   borderRadius: '8px',
@@ -464,7 +386,7 @@ const ContactUs: React.FC = () => {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 4px 15px rgba(37, 211, 102, 0.3)';
+                  e.currentTarget.style.boxShadow = '0 4px 15px rgba(220, 82, 14, 0.3)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
@@ -491,9 +413,12 @@ const ContactUs: React.FC = () => {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.1)';
             }}>
               <div style={{
-                fontSize: '3rem',
-                marginBottom: '1rem'
-              }}>📞</div>
+                width: '60px',
+                height: '60px',
+                margin: '0 auto 1rem',
+                background: 'url("/outgoing-call_8816785.png") center/contain no-repeat',
+                backgroundSize: 'contain'
+              }} />
               <h3 style={{
                 fontSize: '1.3rem',
                 fontWeight: 600,

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 const OurTeam: React.FC = () => {
-  const { t } = useTranslation();
+  const navigate = useNavigate();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   
   const isMobile = screenWidth < 768;
@@ -21,7 +21,7 @@ const OurTeam: React.FC = () => {
   const executiveMembers = [
     {
       name: "Shehreyar Khan",
-      role: "CEO",
+      role: "Director and Founder",
       image: "/Our%20Team/Shehriyar%20Khan.jpg",
       isMale: true
     },
@@ -32,209 +32,43 @@ const OurTeam: React.FC = () => {
       isMale: true
     },
     {
+      name: "Nimra Said Khan",
+      role: "Operations Manager",
+      image: "/Nimra.jpeg",
+      isMale: false
+    },
+    {
       name: "Dr. Sanna Urooj",
-      role: "Chief Information Officer (CIO)",
+      role: "Information Officer",
       image: "/Our%20Team/WhatsApp%20Image%202025-09-08%20at%2022.37.26_44dc02eb.jpg",
       isMale: false
+    },
+    {
+      name: "Saleha Safdar",
+      role: "Business Portfolio Manager DXB",
+      image: "/Our%20Team/Saleha%20Safdar.jpg",
+      isMale: false
+    },
+    {
+      name: "David Bowman",
+      role: "Sales Manager",
+      image: "/David.jpeg",
+      isMale: true
+    },
+    {
+      name: "Joshua Walton",
+      role: "Client Relationship Manager",
+      image: "/joseph.jpeg",
+      isMale: true
     },
     {
       name: "Habib Faqeri",
       role: "Growth/Client Acquisition Manager",
       image: "/Our%20Team/Habib%20faqeri.jpg",
       isMale: true
-    },
-    {
-      name: "Huraira Khan",
-      role: "HR Manager",
-      image: "/Our%20Team/Huraira%20Khan.JPG",
-      isMale: false
-    },
-    {
-      name: "Saleha Safdar",
-      role: "Business Portfolio Manager/Managing Director DXB",
-      image: "/Our%20Team/Saleha%20Safdar.jpg",
-      isMale: false
-    },
-    {
-      name: "Shehriyar Nawaz",
-      role: "Legal Advisor",
-      image: "/Our%20Team/shehriyar%20legal%20advisor.png",
-      isMale: true
     }
   ];
 
-  const teamLeads = [
-    {
-      name: "Rubab Kashif",
-      role: "Team Lead (Morning)",
-      image: "/Our%20Team/Rubab%20Kashif.JPG",
-      isMale: false
-    },
-    {
-      name: "Shahabudin Said",
-      role: "Team Lead (Evening)",
-      image: "/Our%20Team/Shahabudin.JPG",
-      isMale: true
-    },
-    {
-      name: "Habib Sultan",
-      role: "Account Executive",
-      image: "/Our%20Team/Habib%20Sultan.JPG",
-      isMale: true
-    },
-    {
-      name: "Irfan Saidmeeri",
-      role: "HR Assistant",
-      image: "/Our%20Team/Irfam%20Said%20Meery.JPG",
-      isMale: true
-    },
-    {
-      name: "Muhammad Hamza Ghafoor",
-      role: "Account Executive",
-      image: "/Our%20Team/Hamza%20Ghafoor.JPG",
-      isMale: true
-    },
-    {
-      name: "Muhammad Umer",
-      role: "Account Executive",
-      image: "/Our%20Team/Muhamad%20Umer.JPG",
-      isMale: true
-    },
-    {
-      name: "Usama Ahmed",
-      role: "Accountant",
-      image: "/Our%20Team/Usama%20Ahmed.png",
-      isMale: true
-    }
-  ];
-
-  const marketingTeam = [
-    {
-      name: "Syed Hassan Askari",
-      role: "Social Media Manager",
-      image: "/Our%20Team/Syed%20Hassan%20Askari.jpg",
-      isMale: true
-    },
-    {
-      name: "Muhammad Daniyal",
-      role: "Web Developer",
-      image: "/Our%20Team/Muhammad%20Daniyal.JPG",
-      isMale: true
-    },
-    {
-      name: "Muhammad Jamil",
-      role: "Graphic Designer",
-      image: "/Our%20Team/Jamil.png",
-      isMale: true
-    },
-    {
-      name: "Rafay Alvi",
-      role: "Upwork Bidder",
-      image: "/Our%20Team/Rafay%20alvi.JPG",
-      isMale: true
-    },
-    {
-      name: "Syed Hassan Ali Shah",
-      role: "Full Stack Developer",
-      image: "/Our%20Team/Syed%20Hassan%20Ali.JPG",
-      isMale: true
-    },
-    {
-      name: "Ahmed Raza",
-      role: "SEO Expert",
-      image: "/Our%20Team/Ahmed.png",
-      isMale: true
-    },
-    {
-      name: "Sana Fatima",
-      role: "Frontend Developer",
-      image: "/Our%20Team/Sana%20Fatima.png",
-      isMale: false
-    },
-    {
-      name: "Afrasiab",
-      role: "Content Writer",
-      image: "/Our%20Team/Afrasiab.png",
-      isMale: true
-    }
-  ];
-
-  const virtualAssistants = [
-    { name: "Benish Tufail", image: "/Our%20Team/Beinish.JPG", isMale: false },
-    { name: "Haider Abbas Kayani", image: "/Our%20Team/Haider%20Abbas%20Kiyani.JPG", isMale: true },
-    { name: "Muhammad Zubair Yameen", image: "/Our%20Team/Zubair.JPG", isMale: true },
-    { name: "Arooba Shehzad", image: "/Our%20Team/Arooba%20Shehzad.JPG", isMale: false },
-    { name: "Ayub Sultan", image: "/Our%20Team/Ayub%20Sultan.JPG", isMale: true },
-    { name: "Hazrat Bilal", image: "/Our%20Team/Hazrat%20bilal.png", isMale: true },
-    { name: "Saifullah Khan", image: "/Our%20Team/Saif.jpg", isMale: true },
-    { name: "Anas Javed", image: "/Our%20Team/Anas%20Javed.jpg", isMale: true },
-    { name: "Fareha Raja", image: "/Our%20Team/Fareha%20Raja.png", isMale: false },
-    { name: "Fazila Akram", image: "/Our%20Team/Fazila%20Akram.jpg", isMale: false },
-    { name: "Shaheer Alvi", image: "/Our%20Team/Shaheer.jpg", isMale: true }
-  ];
-
-  const bdeTeam = [
-    {
-      name: "Osama",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Osama.png",
-      isMale: true
-    },
-    {
-      name: "Tooba Ahmed Khan",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Tooba%20Ahmed.JPG",
-      isMale: false
-    },
-    {
-      name: "Sajida Parveen",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Miss%20sajida.JPG",
-      isMale: false
-    },
-    {
-      name: "Rubab Jahanzaib",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Rubab%20Jahanzaib.png",
-      isMale: false
-    },
-    {
-      name: "Awais Said",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Awais%20Said.JPG",
-      isMale: true
-    },
-    {
-      name: "Musahib",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Musahib.JPG",
-      isMale: true
-    },
-    {
-      name: "Ali Danesh Karimi",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Ali%20Danish.jpg",
-      isMale: true
-    },
-    {
-      name: "Muhammad Junaid Yameen",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Junaid%20.jpg",
-      isMale: true
-    },
-    {
-      name: "Abdul Mannan",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Abdul%20Manan.png",
-      isMale: true
-    },
-    {
-      name: "Yaseen Gull",
-      role: "Business Development Executive",
-      image: "/Our%20Team/Yaseeen%20Gul.jpg",
-      isMale: true
-    }
-  ];
 
     const TeamCard: React.FC<{ name: string; role: string; image?: string; isCEO?: boolean; isMale?: boolean }> = ({
     name, role, image, isCEO = false, isMale = true
@@ -378,124 +212,20 @@ const OurTeam: React.FC = () => {
              alignItems: 'stretch'
            }}>
              {executiveMembers.map((member, index) => (
-               <TeamCard key={index} {...member} isCEO={index === 0} />
-             ))}
-           </div>
-         </div>
-       </section>
-
-                  {/* Team Leads */}
-      <section style={{ background: '#f9f9f9', padding: paddingSection }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: headingFontSize,
-            fontWeight: 700,
-            color: '#333',
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}>
-            Team Leads / Account Executive
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : isTablet ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
-            gap: isMobile ? '1.5rem' : '1.5rem',
-            marginBottom: '4rem',
-            alignItems: 'stretch'
-          }}>
-            {teamLeads.map((lead, index) => (
-              <TeamCard key={index} {...lead} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Marketing Team */}
-      <section style={{ background: '#fff', padding: paddingSection }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: headingFontSize,
-            fontWeight: 700,
-            color: '#333',
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}>
-            Marketing Team
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : isTablet ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
-            gap: isMobile ? '1.5rem' : '1.5rem',
-            marginBottom: '4rem',
-            alignItems: 'stretch'
-          }}>
-            {marketingTeam.map((member, index) => (
-              <TeamCard key={index} {...member} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Virtual Assistant Team */}
-      <section style={{ background: '#fff', padding: paddingSection }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: headingFontSize,
-            fontWeight: 700,
-            color: '#333',
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}>
-            Virtual Assistant Team
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : isTablet ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
-            gap: isMobile ? '1.5rem' : '1.5rem',
-            marginBottom: '4rem',
-            alignItems: 'stretch'
-          }}>
-            {virtualAssistants.map((va, index) => (
-              <TeamCard key={index} name={va.name} role="Virtual Assistant" image={va.image} isMale={va.isMale} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BDE Team */}
-      <section style={{ background: '#f9f9f9', padding: paddingSection }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: headingFontSize,
-            fontWeight: 700,
-            color: '#333',
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}>
-            BDE Team
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : isTablet ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
-            gap: isMobile ? '1.5rem' : '1.5rem',
-            marginBottom: '4rem',
-            alignItems: 'stretch'
-          }}>
-            {bdeTeam.map((member, index) => (
-              <TeamCard key={index} {...member} />
+               <TeamCard key={index} {...member} isCEO={false} />
             ))}
           </div>
         </div>
       </section>
 
              {/* Call to Action */}
-       <section style={{ background: '#fff', padding: '4rem 2rem', textAlign: 'center' }}>
+       <section style={{ background: '#fff', padding: '2rem 2rem', textAlign: 'center' }}>
          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
            <h2 style={{
              fontSize: headingFontSize,
              fontWeight: 700,
              color: '#DC520E',
-             marginBottom: '1rem'
+             marginBottom: '0.5rem'
            }}>
              Join Our Team
            </h2>
@@ -504,18 +234,20 @@ const OurTeam: React.FC = () => {
              lineHeight: 1.6,
              color: '#DC520E',
              maxWidth: 600,
-             margin: '0 auto 2rem',
+             margin: '0 auto 1rem',
              opacity: 0.8
            }}>
              Ready to be part of our innovative team? Explore career opportunities and grow with us.
            </p>
-           <button style={{
+           <button 
+             onClick={() => navigate('/careers')}
+             style={{
              background: '#DC520E',
              color: '#fff',
              border: 'none',
-             padding: '1rem 2rem',
+               padding: '0.75rem 1.5rem',
              borderRadius: '8px',
-             fontSize: '1.1rem',
+               fontSize: '1rem',
              fontWeight: 600,
              cursor: 'pointer',
              transition: 'all 0.3s ease'

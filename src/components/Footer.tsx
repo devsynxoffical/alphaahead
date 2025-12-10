@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
               <Link to="/" style={linkStyle}>{t('nav.home')}</Link>
               <Link to="/services" style={linkStyle}>{t('nav.services')}</Link>
-                             <Link to="/project" style={linkStyle}>{t('nav.products')}</Link>
-              <Link to="/contactUs" style={linkStyle}>{t('nav.contact')}</Link>
+                             <Link to="/projects" style={linkStyle}>{t('nav.products')}</Link>
+              <Link to="/contact" style={linkStyle}>{t('nav.contact')}</Link>
             </nav>
           </div>
 
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               {t('contactInfo.phoneLabel')}: <a href={`tel:${t('contactInfo.phone')}`} style={{ color: '#ffffff', textDecoration: 'none' }}>{t('contactInfo.phone')}</a>
             </p>
             <div style={{ marginTop: '0.75rem' }}>
-              <Link to="/contactUs" style={{
+              <Link to="/contact" style={{
                 background: '#DC520E',
                 color: '#ffffff',
                 padding: '.6rem 1rem',

@@ -81,7 +81,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public (commented out - we need public folder for React app)
 
 # Storybook build outputs
 .out
@@ -117,3 +117,14 @@ secrets/
 *.bak
 *.backup
 *.old
+
+# Large build files
+*.zip
+build*.zip
+build (2).zip
+build (3).zip
+build final.zip
+build.zip
+
+# Large PDF files (optional - only if needed)
+# *.pdf

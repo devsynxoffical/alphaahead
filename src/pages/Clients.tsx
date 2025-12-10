@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const Clients: React.FC = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   
   const isMobile = screenWidth < 768;
@@ -26,7 +24,7 @@ const Clients: React.FC = () => {
       image: "/Clients/Zingo.png",
       description: "Professional virtual assistant services that help businesses scale by streamlining administrative and operational tasks. Our trained remote teams specialize in real estate, finance, and customer support.",
       services: ["Virtual Assistant", "Customer Support", "Administrative Tasks", "Business Process Outsourcing"],
-      website: "#"
+      website: "https://zingoassist.us/"
     },
     {
       name: "Learn with Alpha",
@@ -34,7 +32,7 @@ const Clients: React.FC = () => {
       image: "/Clients/learn%20with%20alpha.png",
       description: "A modern e-learning platform offering interactive and dynamic digital learning experiences. The platform supports both students and professionals with flexible, personalized learning paths.",
       services: ["E-Learning Platform", "Skill Development", "Online Courses", "Educational Technology"],
-      website: "#"
+      website: "https://learnwithalpha.com/"
     },
     {
       name: "Alpha Ahead Real Estate Brokerage LLC",
@@ -42,7 +40,7 @@ const Clients: React.FC = () => {
       image: "/Clients/Alpha%20estate.png",
       description: "Digital real estate solutions connecting buyers and sellers with seamless property solutions in Dubai and beyond. We specialize in sales, leasing, and investment opportunities.",
       services: ["Real Estate", "Property Management", "Investment Advisory", "Digital Solutions"],
-      website: "#"
+      website: "https://alphaahead.estate/"
     },
     {
       name: "Port Libert",
@@ -50,7 +48,7 @@ const Clients: React.FC = () => {
       image: "/Clients/Portlibert.png",
       description: "Comprehensive logistics and supply chain solutions designed to optimize operations and enhance efficiency in global trade and transportation.",
       services: ["Logistics", "Supply Chain Management", "Global Trade", "Transportation"],
-      website: "#"
+      website: "https://portlibertehomesforsale.com/"
     },
     {
       name: "Du Partner",
@@ -58,15 +56,15 @@ const Clients: React.FC = () => {
       image: "/Clients/du%20partner.png",
       description: "Strategic business development services helping companies expand their market presence and establish valuable partnerships in the UAE and beyond.",
       services: ["Business Development", "Market Expansion", "Partnership Building", "Strategic Consulting"],
-      website: "#"
+      website: "https://www.du.ae/partner-with-us"
     },
     {
       name: "Alpha Medi Assist",
       category: "Healthcare Solutions",
-      image: "/Clients/Alpha%20medi%20assist.png",
+      image: "/newalphamediassist.png",
       description: "A comprehensive healthcare solutions platform designed to simplify operations, enhance patient care, and improve service delivery for healthcare providers.",
       services: ["Healthcare Platform", "Patient Care", "Medical Operations", "Healthcare Technology"],
-      website: "#"
+      website: "https://alphamediassist.com/"
     },
     {
       name: "Heritage Capital",
@@ -74,7 +72,7 @@ const Clients: React.FC = () => {
       image: "/Clients/Heritagecapital.png",
       description: "Professional financial services and investment solutions helping clients build wealth and secure their financial future through strategic planning and expert guidance.",
       services: ["Financial Planning", "Investment Advisory", "Wealth Management", "Financial Services"],
-      website: "#"
+      website: "https://heritagecapitalandrealestate.com/"
     }
   ];
 
@@ -185,29 +183,56 @@ const Clients: React.FC = () => {
                       ))}
                     </div>
                   </div>
-                  <button
-                    onClick={() => window.open(client.website, '_blank')}
-                    style={{
-                      background: '#DC520E',
-                      color: '#fff',
-                      padding: '0.75rem 1.5rem',
-                      border: 'none',
-                      borderRadius: '6px',
-                      fontSize: '0.9rem',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      transition: 'background 0.3s ease',
-                      width: '100%'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.background = '#b8440b';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.background = '#DC520E';
-                    }}
-                  >
-                    Visit Website
-                  </button>
+                  <div style={{ display: 'flex', gap: '0.75rem', flexDirection: isMobile ? 'column' : 'row' }}>
+                    <button
+                      onClick={() => window.open(client.website, '_blank')}
+                      style={{
+                        background: '#DC520E',
+                        color: '#fff',
+                        padding: '0.75rem 1.5rem',
+                        border: 'none',
+                        borderRadius: '6px',
+                        fontSize: '0.9rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        transition: 'background 0.3s ease',
+                        flex: 1
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = '#b8440b';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = '#DC520E';
+                      }}
+                    >
+                      Visit Website
+                    </button>
+                    <button
+                      onClick={() => window.open(client.website, '_blank')}
+                      style={{
+                        background: 'transparent',
+                        color: '#DC520E',
+                        padding: '0.75rem 1.5rem',
+                        border: '2px solid #DC520E',
+                        borderRadius: '6px',
+                        fontSize: '0.9rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        flex: 1
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = '#DC520E';
+                        e.currentTarget.style.color = '#fff';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'transparent';
+                        e.currentTarget.style.color = '#DC520E';
+                      }}
+                    >
+                      View Details →
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -225,7 +250,7 @@ const Clients: React.FC = () => {
             Let's discuss how we can help transform your business with innovative solutions and expert guidance.
           </p>
           <button
-            onClick={() => navigate('/contactUs')}
+            onClick={() => navigate('/contact')}
             style={{
               background: '#DC520E',
               color: '#fff',

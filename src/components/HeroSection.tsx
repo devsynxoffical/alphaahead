@@ -1,36 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [scaleUp, setScaleUp] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight
   });
   const [headerHeight, setHeaderHeight] = useState<number>(0);
-  const serviceCards = t("services.list", { returnObjects: true }) as any[];
   const projectCards = t("projects.list", { returnObjects: true }) as any[];
   const industryCards = t("industries.list", { returnObjects: true }) as any[];
   const openPortfolio = () => { window.open('/Copy of portfolio.pdf', '_blank', 'noopener,noreferrer');};
 
+  // Project URL mappings
+  const projectUrls: { [key: string]: string } = {
+    "Zingo Assist": "https://www.zingoassist.us/",
+    "Alpha Medi Assist": "https://alphamediassist.com/",
+    "Learn with Alpha": "https://learnwithalpha.com/",
+    "Alpha Ahead Real Estate Brokerage": "https://alphaahead.estate/",
+    "Alpha Ahead": "/home" // or whatever URL for Alpha Ahead
+  };
+
   const isMobile = windowDimensions.width < 768;
   const isTablet = windowDimensions.width >= 768 && windowDimensions.width < 1024;
-
-  const isbuttonclosed = isMenuOpen ? 'open' : 'closed';  
-  const menuBtn: React.CSSProperties = {
-  display: 'block',
-  marginBottom: '0.5rem',
-  background: 'none',
-  border: 'none',
-  cursor: 'pointer',
-  color: '#333',
-  fontSize: '.9rem'
-};
   const responsive: R = (() => {
     const w = windowDimensions.width;
           if (w < 480)
@@ -128,10 +122,6 @@ const HeroSection: React.FC = () => {
     .replace(/\s+/g, ' ')
     .trim();
 
-  useEffect(() => {
-    const id = setInterval(() => setScaleUp((p) => !p), 3000);
-    return () => clearInterval(id);
-  }, []);
 
   useEffect(() => {
     const computeHeaderHeight = () => {
@@ -286,7 +276,7 @@ const HeroSection: React.FC = () => {
               {buttonWorkLabel}
             </button>
             <button
-              onClick={() => navigate('/contactUs')}
+              onClick={() => navigate('/contact')}
               onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#F1903F")}
               onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#DC520E")}
               style={{
@@ -831,7 +821,11 @@ const HeroSection: React.FC = () => {
             width: "100%",
             overflow: "visible"
           }}>
-            {projectCards.map((project, index) => (
+            {projectCards.map((project, index) => {
+              const projectUrl = projectUrls[project.title] || '/projects';
+              const isExternalUrl = projectUrl.startsWith('http');
+              
+              return (
               <div
                 key={index}
                 style={{
@@ -857,7 +851,6 @@ const HeroSection: React.FC = () => {
                   e.currentTarget.style.transform = 'translateY(0) scale(1)';
                   e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,.08)';
                 }}
-                onClick={() => navigate('/project')}
               >
                 <div style={{
                   width: '100%',
@@ -897,27 +890,47 @@ const HeroSection: React.FC = () => {
                     color: '#666',
                     marginBottom: '1rem'
                   }}>{project.desc}</p>
-                  <div style={{
-                    color: '#DC520E',
-                    textDecoration: 'none',
-                    fontWeight: 600,
-                    fontSize: '0.85rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    transition: 'all 0.3s ease'
-                  }}>
+                  <div 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (isExternalUrl) {
+                        window.open(projectUrl, '_blank', 'noopener,noreferrer');
+                      } else {
+                        navigate(projectUrl);
+                      }
+                    }}
+                    style={{
+                      color: '#DC520E',
+                      textDecoration: 'none',
+                      fontWeight: 600,
+                      fontSize: '0.85rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#b8440b';
+                      e.currentTarget.style.transform = 'translateX(4px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#DC520E';
+                      e.currentTarget.style.transform = 'translateX(0)';
+                    }}
+                  >
                     {t("projects.learnMore")}
                   </div>
                   </div>
                 </div>
               </div>
-            ))}
+            );
+            })}
           </div>
 
           <div style={{ textAlign: "center", marginTop: "3rem", padding: "1rem 0" }}>
             <button
-              onClick={() => navigate('/project')}
+              onClick={() => navigate('/projects')}
               style={{
                 background: '#DC520E',
                 color: '#fff',

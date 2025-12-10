@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 const Careers: React.FC = () => {
-  const { t } = useTranslation();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState<any>(null);

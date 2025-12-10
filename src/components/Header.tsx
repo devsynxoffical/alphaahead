@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const isHome = location.pathname === '/';
+  const isHome = location.pathname === '/' || location.pathname === '/home';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,13 +28,13 @@ const Header: React.FC = () => {
   const navHoverBg = isTransparent ? 'rgba(255,255,255,0.10)' : '#f8f8f8';
 
   const navItems = [
-    { label: t('nav.home'), link: '/' },
+    { label: t('nav.home'), link: '/home' },
     { label: t('nav.services'), link: '/services' },
-    { label: t('nav.products'), link: '/project' },
+    { label: t('nav.products'), link: '/projects' },
     { label: t('nav.clients'), link: '/clients' },
     { label: t('nav.team'), link: '/team' },
     { label: t('nav.careers'), link: '/careers' },
-    { label: t('nav.contact'), link: '/contactUs' }
+    { label: t('nav.contact'), link: '/contact' }
   ];
 
   return (
@@ -51,7 +51,12 @@ const Header: React.FC = () => {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '1rem 2rem', position: 'relative' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <img src="/alphawebsitemainlogo.png" alt="Alpha Ahead" style={{ height: 45 }} />
+          <img 
+            src="/alphawebsitemainlogo.png" 
+            alt="Alpha Ahead" 
+            style={{ height: 45, cursor: 'pointer' }} 
+            onClick={() => navigate('/home')}
+          />
 
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -79,7 +84,15 @@ const Header: React.FC = () => {
               <select
                 value={i18n.resolvedLanguage}
                 onChange={e => i18n.changeLanguage(e.target.value)}
-                style={{ border: `1px solid ${borderColor}`, color: baseTextColor, background: 'transparent', borderRadius: 4, fontSize: '0.9rem', padding: '2px 6px' }}
+                style={{ 
+                  border: `1px solid ${borderColor}`, 
+                  color: '#000', 
+                  background: '#fff', 
+                  borderRadius: 4, 
+                  fontSize: '0.9rem', 
+                  padding: '2px 6px',
+                  cursor: 'pointer'
+                }}
               >
                 <option value="en">EN</option>
                 <option value="es">ES</option>
@@ -188,7 +201,10 @@ const Header: React.FC = () => {
                   borderRadius: 4,
                   padding: '4px 8px',
                   fontSize: '1rem',
-                  marginTop: '.3rem'
+                  marginTop: '.3rem',
+                  background: '#fff',
+                  color: '#000',
+                  cursor: 'pointer'
                 }}
               >
                 <option value="en">EN</option>

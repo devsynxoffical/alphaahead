@@ -12,7 +12,7 @@ const ProductPage: React.FC = () => {
   const headingFontSize = isMobile ? "1.5rem" : isTablet ? "2rem" : "2.5rem";
   const layoutDirection = isMobile ? "column" : "row";
   const headingFont = isMobile ? '1.5rem' : isTablet ? '2rem' : '2.5rem';
-  const goToContact = () => navigate('/contactUs');
+  const goToContact = () => navigate('/contact');
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);

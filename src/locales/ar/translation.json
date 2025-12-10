@@ -129,7 +129,7 @@
       {
         "name": "Alpha Medi Assist",
         "category": "الرعاية الصحية",
-        "image": "/Clients/Alpha%20medi%20assist.png"
+        "image": "/newalphamediassist.png"
       },
       {
         "name": "Heritage Capital",
@@ -230,10 +230,10 @@
       {
         "office": "Alpha Ahead (الإمارات)",
         "addressLabel": "العنوان:",
-        "address": "دبي مارينا، الإمارات",
-        "telLabel": "هاتف:",
-        "tel": "+ 971-52-739",
-        "waLabel": "واتساب:",
+        "address": "Office 59, 2nd floor, first gulf business center, madina mall Muhaisnah, Dubai",
+        "telLabel": "هاتف أرضي:",
+        "tel": "+971 4 432 3080",
+        "waLabel": "جوال:",
         "wa": "+971 50 560 6877"
       },
         {

@@ -26,34 +26,69 @@
   "services": {
     "list": [
       {
-        "title": "Web Development",
-        "desc": "Custom web solutions that drive business growth and user engagement.",
-        "image": "/webdesign.jpeg"
+        "title": "Virtual Assistant Services",
+        "desc": "Professional virtual assistant services to streamline your operations.",
+        "image": "/Services/Virtual Assistant.jpg"
       },
       {
-        "title": "Digital Marketing",
-        "desc": "Strategic digital marketing campaigns that increase brand visibility and conversions.",
-        "image": "/digitalmarkting.png"
+        "title": "Cold Calling Services",
+        "desc": "Expert cold calling services to expand your business reach.",
+        "image": "/cCalling.avif"
+      },
+      {
+        "title": "Personal Assistance Services",
+        "desc": "Comprehensive personal assistance services to help you manage your daily tasks.",
+        "image": "/PAS.jpg"
+      },
+      {
+        "title": "Virtual Business Assistant",
+        "desc": "Professional virtual business assistants to streamline your operations.",
+        "image": "/Services/Lead Gen.jpg"
+      },
+      {
+        "title": "Virtual Property Management Services",
+        "desc": "Comprehensive virtual property management solutions to streamline your real estate operations.",
+        "image": "/vpm.webp"
       },
       {
         "title": "Lead Generation",
         "desc": "Targeted lead generation strategies to grow your customer base.",
-        "image": "/leadgeneration.png"
+        "image": "/leadG.jpg"
       },
       {
-        "title": "Virtual Assistant",
-        "desc": "Professional virtual assistant services to streamline your operations.",
-        "image": "/virtualassestant.png"
+        "title": "Real Estate Transaction Coordinator",
+        "desc": "Professional real estate transaction coordination services to ensure smooth property transactions.",
+        "image": "/Transaction-Coordinator.jpg"
       },
       {
-        "title": "CRM Solutions",
-        "desc": "Comprehensive CRM systems to manage customer relationships effectively.",
-        "image": "/crm.png"
+        "title": "SEO",
+        "desc": "Comprehensive SEO services to improve your website's visibility and organic search rankings.",
+        "image": "/seeo.jpg"
       },
       {
-        "title": "Cold Calling",
-        "desc": "Expert cold calling services to expand your business reach.",
-        "image": "/Coldcalling.png"
+        "title": "Web Development Service",
+        "desc": "Custom web development solutions tailored to your business needs.",
+        "image": "/wd.jpg"
+      },
+      {
+        "title": "Digital Marketing Agency",
+        "desc": "Comprehensive digital marketing solutions to elevate your brand's online presence.",
+        "image": "/dmservices.jpg"
+      },
+      {
+        "title": "Graphic Designing",
+        "desc": "Creative graphic design services to enhance your brand identity and visual communication.",
+        "image": "/feature-41.webp"
+      },
+      {
+        "title": "Video Editing Services",
+        "desc": "Professional video editing services to create compelling visual content for your business.",
+        "image": "/VE.jpg"
+      },
+      {
+        "title": "IT Support",
+        "desc": "Comprehensive IT support services to keep your business technology running smoothly.",
+        "image": "/ITSupport.webp"
       }
     ]
   },
@@ -124,7 +159,7 @@
       {
         "name": "Alpha Medi Assist",
         "category": "Healthcare",
-        "image": "/Clients/Alpha%20medi%20assist.png"
+        "image": "/newalphamediassist.png"
       },
       {
         "name": "Heritage Capital",
@@ -186,7 +221,7 @@
       "para2": "We specialize in sales, leasing, and investment opportunities, ensuring clients benefit from trusted expertise, market insights, and personalized service.",
       "button": "👉 Visit Website",
       "btnColor": "#DC520E",
-      "url": "/contactUs",
+      "url": "/contact",
       "image": "/realstate.jpeg"
       
     }
@@ -221,10 +256,10 @@
     {
       "office": "Alpha Ahead (UAE)",
       "addressLabel": "Address:",
-      "address": "Dubai Marina, UAE",
-      "telLabel": "Tel:",
-      "tel": "+ 971-52-739",
-      "waLabel": "Whatsapp:",
+      "address": "Office 59, 2nd floor, first gulf business center, madina mall Muhaisnah, Dubai",
+      "telLabel": "Landline:",
+      "tel": "+971 4 432 3080",
+      "waLabel": "Mobile:",
       "wa": "+971 50 560 6877"
     },
      {

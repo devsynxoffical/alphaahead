@@ -1,21 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
   const ServicesPage: React.FC = () => {
   const navigate = useNavigate();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
-  const { t } = useTranslation();
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
-  const isLargeScreen = screenWidth >= 1440;
-  const paddingSection = isMobile ? "2rem 1rem" : isTablet ? "3rem 2rem" : isLargeScreen ? "5rem 3rem" : "4rem 2rem";
-  const headingFontSize = isMobile ? "1.5rem" : isTablet ? "2rem" : isLargeScreen ? "3rem" : "2.5rem";
-  const layoutDirection = isMobile ? "column" : "row";
-  const headingFont = isMobile ? '1.5rem' : isTablet ? '2rem' : isLargeScreen ? '3rem' : '2.5rem';
-  const industryCards = t('industries.list', { returnObjects: true }) as { title: string; desc: string; image: string }[];
-  const openPortfolio = () => {window.open('/Copy of portfolio.pdf', '_blank', 'noopener,noreferrer');};
-  const goToContact = () => navigate('/contactUs');
+  const headingFont = isMobile ? '1.5rem' : isTablet ? '2rem' : '2.5rem';
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -90,7 +81,7 @@ import { useNavigate } from 'react-router-dom';
                 Free up your time and scale smarter with dedicated virtual assistants. Our trained remote teams specialize in lead intake, CRM management, calendar coordination, and administrative support, bringing efficiency and cost-effectiveness to your business operations.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/virtual-assistant')}
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -117,7 +108,7 @@ import { useNavigate } from 'react-router-dom';
             </div>
           </div>
 
-          {/* Healthcare Solutions */}
+          {/* Cold Calling Services */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -137,7 +128,7 @@ import { useNavigate } from 'react-router-dom';
                 color: '#333',
                 marginBottom: '1.5rem'
               }}>
-                Healthcare Solutions
+                Cold Calling Services
               </h2>
               <p style={{
                 fontSize: '1.1rem',
@@ -146,10 +137,10 @@ import { useNavigate } from 'react-router-dom';
                 marginBottom: '2rem',
                 textAlign: 'justify'
               }}>
-                Streamlined tools for healthcare providers and organizations. We empower healthcare providers with tailored solutions that boost efficiency, streamline data management, and elevate patient experiences through comprehensive medical billing and compliance support.
+                Professional cold calling services to expand your business reach and generate qualified leads. Our experienced team specializes in targeted outreach campaigns that deliver results and help you connect with potential customers effectively.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/cold-calling')}
                 style={{
                   background: '#3B82F6',
                   color: '#fff',
@@ -171,7 +162,7 @@ import { useNavigate } from 'react-router-dom';
                   e.currentTarget.style.background = '#3B82F6';
                 }}
               >
-                See Healthcare Case Studies
+                Explore Cold Calling Solutions
               </button>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
@@ -179,7 +170,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Health care solution.jpg") center/cover',
+                background: 'url("/cCalling.avif") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -192,7 +183,7 @@ import { useNavigate } from 'react-router-dom';
             </div>
           </div>
 
-          {/* Software Development */}
+          {/* Personal Assistance Services */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -210,7 +201,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Software Development.jpg") center/cover',
+                background: 'url("/PAS.jpg") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -228,7 +219,7 @@ import { useNavigate } from 'react-router-dom';
                 color: '#333',
                 marginBottom: '1.5rem'
               }}>
-                Software Development
+                Personal Assistance Services
               </h2>
               <p style={{
                 fontSize: '1.1rem',
@@ -237,10 +228,10 @@ import { useNavigate } from 'react-router-dom';
                 marginBottom: '2rem',
                 textAlign: 'justify'
               }}>
-                Custom-built software and web platforms for your growth. Our team leverages industry-leading technology stacks to build robust, scalable solutions including websites, mobile apps, system integrations, and cloud-based platforms.
+                Comprehensive personal assistance services to help you manage your daily tasks and business operations efficiently. Our dedicated assistants provide support with scheduling, research, data entry, and administrative tasks to keep you focused on what matters most.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/personal-assistant')}
                 style={{
                   background: '#10B981',
                   color: '#fff',
@@ -262,7 +253,163 @@ import { useNavigate } from 'react-router-dom';
                   e.currentTarget.style.background = '#10B981';
                 }}
               >
-                Discover Our Web Work
+                Explore Personal Assistance
+              </button>
+            </div>
+          </div>
+
+          {/* Virtual Business Assistant */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 500px', maxWidth: 600, order: isMobile ? 2 : 1 }}>
+              <div style={{
+                width: '4px',
+                height: '40px',
+                background: '#333',
+                marginBottom: '1rem'
+              }} />
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                Virtual Business Assistant
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Professional virtual business assistants to streamline your operations and boost productivity. Our skilled team handles complex business tasks, project management, client communication, and strategic support to help your business grow efficiently.
+              </p>
+              <button
+                onClick={() => navigate('/business-assistant')}
+                style={{
+                  background: '#F59E0B',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#D97706';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#F59E0B';
+                }}
+              >
+                Explore Business Assistant Solutions
+              </button>
+            </div>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/Services/Lead Gen.jpg") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
+            </div>
+          </div>
+
+          {/* Virtual Property Management Services */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/vpm.webp") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
+            </div>
+            <div style={{ flex: '1 1 500px', maxWidth: 600 }}>
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                Virtual Property Management Services
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Comprehensive virtual property management solutions to streamline your real estate operations. Our team handles tenant communication, maintenance coordination, rent collection, and property marketing to maximize your investment returns.
+              </p>
+              <button
+                onClick={() => navigate('/property-management')}
+                style={{
+                  background: '#EC4899',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#DB2777';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#EC4899';
+                }}
+              >
+                Explore Property Management Solutions
               </button>
             </div>
           </div>
@@ -305,9 +452,9 @@ import { useNavigate } from 'react-router-dom';
                 Fuel your pipeline with qualified, conversion-ready leads. We specialize in creating high-quality lead generation strategies for any industry, employing data-driven insights and advanced tools to develop campaigns that effectively capture and nurture prospects.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/lead-generation')}
                 style={{
-                  background: '#F59E0B',
+                  background: '#8B5CF6',
                   color: '#fff',
                   padding: '1rem 2rem',
                   border: 'none',
@@ -321,10 +468,10 @@ import { useNavigate } from 'react-router-dom';
                   transition: 'background 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#D97706';
+                  e.currentTarget.style.background = '#7C3AED';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#F59E0B';
+                  e.currentTarget.style.background = '#8B5CF6';
                 }}
               >
                 Grow with Lead Gen
@@ -335,7 +482,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Lead Gen.jpg") center/cover',
+                background: 'url("/leadG.jpg") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -348,7 +495,7 @@ import { useNavigate } from 'react-router-dom';
             </div>
           </div>
 
-          {/* Digital Marketing */}
+          {/* Real Estate Transaction Coordinator */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -366,7 +513,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Digital Marketing.jpg") center/cover',
+                background: 'url("/Transaction-Coordinator.jpg") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -384,7 +531,7 @@ import { useNavigate } from 'react-router-dom';
                 color: '#333',
                 marginBottom: '1.5rem'
               }}>
-                Digital Marketing
+                Real Estate Transaction Coordinator
               </h2>
               <p style={{
                 fontSize: '1.1rem',
@@ -393,12 +540,12 @@ import { useNavigate } from 'react-router-dom';
                 marginBottom: '2rem',
                 textAlign: 'justify'
               }}>
-                End-to-end digital strategies that drive visibility. We offer comprehensive digital marketing services including SEO, paid campaigns, social media growth strategies, video marketing, and ongoing optimization to build your online presence.
+                Professional real estate transaction coordination services to ensure smooth property transactions. Our experienced coordinators handle all aspects of the transaction process, from contract to closing, ensuring timely and successful deals.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/transaction-coordinator')}
                 style={{
-                  background: '#EC4899',
+                  background: '#06B6D4',
                   color: '#fff',
                   padding: '1rem 2rem',
                   border: 'none',
@@ -412,18 +559,18 @@ import { useNavigate } from 'react-router-dom';
                   transition: 'background 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#DB2777';
+                  e.currentTarget.style.background = '#0891B2';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#EC4899';
+                  e.currentTarget.style.background = '#06B6D4';
                 }}
               >
-                See Marketing Projects
+                Explore Transaction Coordination
               </button>
             </div>
           </div>
 
-          {/* Online Education */}
+          {/* SEO */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -449,7 +596,7 @@ import { useNavigate } from 'react-router-dom';
                 color: '#333',
                 marginBottom: '1.5rem'
               }}>
-                Online Education (E-Learning)
+                SEO
               </h2>
               <p style={{
                 fontSize: '1.1rem',
@@ -458,10 +605,166 @@ import { useNavigate } from 'react-router-dom';
                 marginBottom: '2rem',
                 textAlign: 'justify'
               }}>
-                Dynamic, interactive learning for professionals and students. We create engaging e-learning platforms with personalized learning paths, gamified courses, and corporate training solutions that build skills and drive career growth.
+                Comprehensive SEO services to improve your website's visibility and organic search rankings. Our SEO experts implement proven strategies to drive targeted traffic and increase your online presence across search engines.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/seo')}
+                style={{
+                  background: '#10B981',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#059669';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#10B981';
+                }}
+              >
+                Explore SEO Solutions
+              </button>
+            </div>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/seeo.jpg") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
+            </div>
+          </div>
+
+          {/* Web Development Service */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/wd.jpg") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
+            </div>
+            <div style={{ flex: '1 1 500px', maxWidth: 600 }}>
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                Web Development Service
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Custom web development solutions tailored to your business needs. Our expert developers create responsive, scalable websites and web applications using the latest technologies to ensure optimal performance and user experience.
+              </p>
+              <button
+                onClick={() => navigate('/web-development')}
+                style={{
+                  background: '#3B82F6',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#2563EB';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#3B82F6';
+                }}
+              >
+                Explore Web Development
+              </button>
+            </div>
+          </div>
+
+          {/* Digital Marketing Agency */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 500px', maxWidth: 600, order: isMobile ? 2 : 1 }}>
+              <div style={{
+                width: '4px',
+                height: '40px',
+                background: '#333',
+                marginBottom: '1rem'
+              }} />
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                Digital Marketing Agency
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Comprehensive digital marketing solutions to elevate your brand's online presence. Our agency specializes in strategic campaigns, social media management, content marketing, and performance optimization to drive growth and maximize your digital ROI.
+              </p>
+              <button
+                onClick={() => navigate('/digital-marketing')}
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -483,7 +786,7 @@ import { useNavigate } from 'react-router-dom';
                   e.currentTarget.style.background = '#8B5CF6';
                 }}
               >
-                Explore E-Learning
+                Explore Digital Marketing Solutions
               </button>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
@@ -491,7 +794,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Online Education (E-Learning).jpg") center/cover',
+                background: 'url("/dmservices.jpg") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -504,7 +807,88 @@ import { useNavigate } from 'react-router-dom';
             </div>
           </div>
 
-          {/* Real Estate Solutions */}
+          {/* Graphic Designing */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 500px', maxWidth: 600, order: isMobile ? 2 : 1 }}>
+              <div style={{
+                width: '4px',
+                height: '40px',
+                background: '#333',
+                marginBottom: '1rem'
+              }} />
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                Graphic Designing
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Creative graphic design services to enhance your brand identity and visual communication. Our talented designers create compelling logos, marketing materials, and digital assets that capture your brand essence and engage your audience.
+              </p>
+              <button
+                onClick={() => navigate('/graphic-design')}
+                style={{
+                  background: '#EC4899',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#DB2777';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#EC4899';
+                }}
+              >
+                Explore Graphic Design
+              </button>
+            </div>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/feature-41.webp") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
+            </div>
+          </div>
+
+          {/* Video Editing Services */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -522,7 +906,7 @@ import { useNavigate } from 'react-router-dom';
                 width: '100%',
                 maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
                 height: isMobile ? '250px' : isTablet ? '350px' : '400px',
-                background: 'url("/Services/Real%20estate%20solution.jpg") center/cover',
+                background: 'url("/VE.jpg") center/cover',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -540,7 +924,7 @@ import { useNavigate } from 'react-router-dom';
                 color: '#333',
                 marginBottom: '1.5rem'
               }}>
-                Real Estate Solutions
+                Video Editing Services
               </h2>
               <p style={{
                 fontSize: '1.1rem',
@@ -549,12 +933,12 @@ import { useNavigate } from 'react-router-dom';
                 marginBottom: '2rem',
                 textAlign: 'justify'
               }}>
-                Technology-driven solutions for property professionals. We provide comprehensive real estate services including digital property marketing, virtual tours, investor insights, and lead generation solutions for buyers and sellers.
+                Professional video editing services to create compelling visual content for your business. Our skilled editors transform raw footage into polished videos that engage your audience and effectively communicate your message across all platforms.
               </p>
               <button
-                onClick={openPortfolio}
+                onClick={() => navigate('/video-editing')}
                 style={{
-                  background: '#06B6D4',
+                  background: '#8B5CF6',
                   color: '#fff',
                   padding: '1rem 2rem',
                   border: 'none',
@@ -568,14 +952,95 @@ import { useNavigate } from 'react-router-dom';
                   transition: 'background 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#0891B2';
+                  e.currentTarget.style.background = '#7C3AED';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#06B6D4';
+                  e.currentTarget.style.background = '#8B5CF6';
                 }}
               >
-                See Real Estate Solutions
+                Explore Video Editing
               </button>
+            </div>
+          </div>
+
+          {/* IT Support */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '3rem',
+            marginBottom: '4rem',
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ flex: '1 1 500px', maxWidth: 600, order: isMobile ? 2 : 1 }}>
+              <div style={{
+                width: '4px',
+                height: '40px',
+                background: '#333',
+                marginBottom: '1rem'
+              }} />
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: 700,
+                color: '#333',
+                marginBottom: '1.5rem'
+              }}>
+                IT Support
+              </h2>
+              <p style={{
+                fontSize: '1.1rem',
+                lineHeight: 1.7,
+                color: '#666',
+                marginBottom: '2rem',
+                textAlign: 'justify'
+              }}>
+                Comprehensive IT support services to keep your business technology running smoothly. Our expert technicians provide remote and on-site support, system maintenance, troubleshooting, and proactive monitoring to ensure optimal performance.
+              </p>
+              <button
+                onClick={() => navigate('/it-support')}
+                style={{
+                  background: '#F59E0B',
+                  color: '#fff',
+                  padding: '1rem 2rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'background 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#D97706';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#F59E0B';
+                }}
+              >
+                Explore IT Support
+              </button>
+            </div>
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
+              <div style={{
+                width: '100%',
+                maxWidth: isMobile ? '100%' : isTablet ? '450px' : '500px',
+                height: isMobile ? '250px' : isTablet ? '350px' : '400px',
+                background: 'url("/ITSupport.webp") center/cover',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+              }}>
+              </div>
             </div>
           </div>
 

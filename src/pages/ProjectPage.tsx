@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectPage: React.FC = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
-  const isLargeScreen = screenWidth >= 1440;
-  const paddingSection = isMobile ? "2rem 1rem" : isTablet ? "3rem 2rem" : isLargeScreen ? "5rem 3rem" : "4rem 2rem";
-  const headingFontSize = isMobile ? "1.5rem" : isTablet ? "2rem" : isLargeScreen ? "3rem" : "2.5rem";
-  const layoutDirection = isMobile ? "column" : "row";
   const headingFont = isMobile ? '1.5rem' : isTablet ? '2rem' : '2.5rem';
-  const goToContact = () => navigate('/contactUs');
+  const goToContact = () => navigate('/contact');
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -96,7 +90,7 @@ const ProjectPage: React.FC = () => {
                 Our trained remote teams specialize in real estate, finance, and customer support, bringing efficiency and cost-effectiveness to the modern workforce.
               </p>
               <button
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://www.zingoassist.us/', '_blank', 'noopener,noreferrer')}
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -161,7 +155,7 @@ const ProjectPage: React.FC = () => {
                 We empower healthcare providers with tailored solutions that boost efficiency, streamline data management, and elevate patient experiences.
               </p>
               <button
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://alphamediassist.com/', '_blank', 'noopener,noreferrer')}
                 style={{
                   background: '#3B82F6',
                   color: '#fff',
@@ -258,7 +252,7 @@ const ProjectPage: React.FC = () => {
                 The platform supports both students and professionals with flexible, personalized learning paths to help them build skills and advance their careers.
               </p>
               <button
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://learnwithalpha.com/', '_blank', 'noopener,noreferrer')}
                 style={{
                   background: '#10B981',
                   color: '#fff',
@@ -328,7 +322,7 @@ const ProjectPage: React.FC = () => {
                 marginTop: '1rem'
               }}>
                 <button
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://alphaahead.estate/', '_blank', 'noopener,noreferrer')}
                   style={{
                     background: '#06B6D4',
                     color: '#fff',
