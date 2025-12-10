@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
               <Link to="/" style={linkStyle}>{t('nav.home')}</Link>
               <Link to="/services" style={linkStyle}>{t('nav.services')}</Link>
-                             <Link to="/projects" style={linkStyle}>{t('nav.products')}</Link>
+              <Link to="/projects" style={linkStyle}>{t('nav.products')}</Link>
               <Link to="/contact" style={linkStyle}>{t('nav.contact')}</Link>
             </nav>
           </div>
@@ -79,15 +79,36 @@ const Footer: React.FC = () => {
               {t('contactInfo.phoneLabel')}: <a href={`tel:${t('contactInfo.phone')}`} style={{ color: '#ffffff', textDecoration: 'none' }}>{t('contactInfo.phone')}</a>
             </p>
             <div style={{ marginTop: '0.75rem' }}>
-              <Link to="/contact" style={{
-                background: '#DC520E',
-                color: '#ffffff',
-                padding: '.6rem 1rem',
-                borderRadius: 8,
-                textDecoration: 'none',
-                display: 'inline-block',
-                fontWeight: 600
-              }}>
+              <Link
+                to="/contact"
+                style={{
+                  background: '#ffffff',
+                  color: '#DC520E',
+                  padding: '0.75rem 1.75rem',
+                  borderRadius: 8,
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  fontWeight: 700,
+                  fontSize: '1rem',
+                  border: '2px solid #ffffff',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  transition: 'all 0.3s ease',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'transparent';
+                  e.currentTarget.style.color = '#ffffff';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.color = '#DC520E';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                }}
+              >
                 {t('footer.button')}
               </Link>
             </div>
