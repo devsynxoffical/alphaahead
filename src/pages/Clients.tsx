@@ -27,6 +27,14 @@ const Clients: React.FC = () => {
       website: "https://zingoassist.us/"
     },
     {
+      name: "Alpha Medi Assist",
+      category: "Healthcare Solutions",
+      image: "/newalphamediassist.png",
+      description: "A comprehensive healthcare solutions platform designed to simplify operations, enhance patient care, and improve service delivery for healthcare providers.",
+      services: ["Healthcare Platform", "Patient Care", "Medical Operations", "Healthcare Technology"],
+      website: "https://alphamediassist.com/"
+    },
+    {
       name: "Learn with Alpha",
       category: "E-Learning Platform",
       image: "/Clients/learn%20with%20alpha.png",
@@ -57,14 +65,6 @@ const Clients: React.FC = () => {
       description: "Strategic business development services helping companies expand their market presence and establish valuable partnerships in the UAE and beyond.",
       services: ["Business Development", "Market Expansion", "Partnership Building", "Strategic Consulting"],
       website: "https://www.du.ae/partner-with-us"
-    },
-    {
-      name: "Alpha Medi Assist",
-      category: "Healthcare Solutions",
-      image: "/newalphamediassist.png",
-      description: "A comprehensive healthcare solutions platform designed to simplify operations, enhance patient care, and improve service delivery for healthcare providers.",
-      services: ["Healthcare Platform", "Patient Care", "Medical Operations", "Healthcare Technology"],
-      website: "https://alphamediassist.com/"
     },
     {
       name: "Heritage Capital",

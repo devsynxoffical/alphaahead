@@ -107,6 +107,11 @@
         "image": "/Clients/Zingo.png"
       },
       {
+        "name": "Alpha Medi Assist",
+        "category": "الرعاية الصحية",
+        "image": "/newalphamediassist.png"
+      },
+      {
         "name": "Learn with Alpha",
         "category": "التعليم",
         "image": "/Clients/learn%20with%20alpha.png"
@@ -125,11 +130,6 @@
         "name": "Du Partner",
         "category": "تطوير الأعمال",
         "image": "/Clients/du%20partner.png"
-      },
-      {
-        "name": "Alpha Medi Assist",
-        "category": "الرعاية الصحية",
-        "image": "/newalphamediassist.png"
       },
       {
         "name": "Heritage Capital",
