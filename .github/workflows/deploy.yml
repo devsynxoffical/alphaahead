@@ -37,6 +37,14 @@ jobs:
           CI: false
           GENERATE_SOURCEMAP: false
 
+      - name: Install Chromium for prerendering
+        run: |
+          npm i --no-save --no-audit --no-fund playwright@1.63.0
+          npx playwright install --with-deps chromium
+
+      - name: Prerender pages + generate sitemap.xml
+        run: node scripts/prerender.js
+
       - name: Upload build/ via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -61,10 +69,34 @@ jobs:
             if echo "$LIVE" | grep -q "$JS"; then
               echo "Live site is serving the new build."
               echo "$LIVE" | grep -q 'google-site-verification' && echo "Google verification tag: FOUND"
-              exit 0
+              break
             fi
+            if [ "$i" = 12 ]; then echo "::error::Live site is NOT serving the new build"; exit 1; fi
             echo "Attempt $i: live site not updated yet, waiting 15s..."
             sleep 15
           done
-          echo "::error::Live site is NOT serving the new build"
-          exit 1
+
+      - name: Check SEO routes on the live site
+        run: |
+          FAIL=0
+          check() { # url expected_status
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$1")
+            if [ "$code" = "$2" ]; then echo "OK   $code $1"; else echo "FAIL $code (want $2) $1"; FAIL=1; fi
+          }
+          for p in / /services /seo /cold-calling /transaction-coordinator /blog /blog/transaction-coordinator-cost /case-studies /case-studies/zingo-assist /virtual-assistant-dubai /sitemap.xml /robots.txt /llms.txt; do
+            check "https://alphaaheadllc.com$p" 200
+          done
+          check "https://alphaaheadllc.com/this-page-does-not-exist-$GITHUB_RUN_ID" 404
+          check "https://alphaaheadllc.com/home" 301
+          check "https://www.alphaaheadllc.com/" 301
+          # Each prerendered page must carry its own title
+          curl -s https://alphaaheadllc.com/seo | grep -o '<title[^>]*>[^<]*' | head -1
+          exit $FAIL
+
+      - name: Notify search engines (IndexNow - Bing, Yandex, Seznam, Naver)
+        continue-on-error: true
+        run: |
+          URLS=$(grep -o '<loc>[^<]*' build/sitemap.xml | sed 's/<loc>//' | python3 -c 'import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+          curl -s -o /dev/null -w 'IndexNow HTTP %{http_code}\n' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"alphaaheadllc.com\",\"key\":\"44e1b280c3ca4c25afd946d34e57e2a4\",\"keyLocation\":\"https://alphaaheadllc.com/44e1b280c3ca4c25afd946d34e57e2a4.txt\",\"urlList\":$URLS}"

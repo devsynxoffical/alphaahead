@@ -14,6 +14,10 @@ if (!rootElement) {
   throw new Error('Root element not found. Make sure there is a div with id="root" in the HTML.');
 }
 
+// Pages are prerendered to static HTML for SEO. Remove the prerendered per-page head tags;
+// the <Seo> component re-renders them on the client, so they are not duplicated.
+document.head.querySelectorAll('[data-seo]').forEach(el => el.remove());
+
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(

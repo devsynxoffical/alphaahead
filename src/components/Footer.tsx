@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { SERVICES } from '../seo/services';
+import { OFFICES } from '../seo/site';
+import { LOCATION_PAGES } from '../content/locations';
+import { articlePath } from '../content/types';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -31,7 +35,7 @@ const Footer: React.FC = () => {
             <div style={{ display: 'inline-flex', alignItems: 'center', background: '#ffffff', borderRadius: 8, padding: '6px 8px', marginBottom: '1rem' }}>
               <img
                 src="/alphawebsitemainlogo.png"
-                alt="Alpha Ahead"
+                alt="Alpha Ahead LLC logo"
                 style={{ height: 40, display: 'block' }}
               />
             </div>
@@ -53,21 +57,42 @@ const Footer: React.FC = () => {
 
           <div style={{ flex: '1 1 160px', minWidth: 160 }}>
             <h4 style={{ color: '#ffffff', marginBottom: '0.75rem' }}>{t('footer.company')}</h4>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+            <nav aria-label="Company" style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
               <Link to="/" style={linkStyle}>{t('nav.home')}</Link>
               <Link to="/services" style={linkStyle}>{t('nav.services')}</Link>
               <Link to="/projects" style={linkStyle}>{t('nav.products')}</Link>
+              <Link to="/case-studies" style={linkStyle}>Case Studies</Link>
+              <Link to="/blog" style={linkStyle}>Blog</Link>
+              <Link to="/clients" style={linkStyle}>{t('nav.clients')}</Link>
+              <Link to="/team" style={linkStyle}>{t('nav.team')}</Link>
+              <Link to="/careers" style={linkStyle}>{t('nav.careers')}</Link>
               <Link to="/contact" style={linkStyle}>{t('nav.contact')}</Link>
             </nav>
           </div>
 
-          <div style={{ flex: '1 1 200px', minWidth: 180 }}>
+          <div style={{ flex: '1 1 220px', minWidth: 200 }}>
             <h4 style={{ color: '#ffffff', marginBottom: '0.75rem' }}>{t('footer.solutions')}</h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-              <Link to="/services" style={linkStyle}>{t('footer.webDevelopment')}</Link>
-              <Link to="/services" style={linkStyle}>{t('footer.digitalMarketing')}</Link>
-              <Link to="/services" style={linkStyle}>{t('footer.leadGeneration')}</Link>
-            </div>
+            <nav aria-label="Services" style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+              {SERVICES.map(s => (
+                <Link key={s.path} to={s.path} style={linkStyle}>{s.name}</Link>
+              ))}
+            </nav>
+          </div>
+
+          <div style={{ flex: '1 1 200px', minWidth: 180 }}>
+            <h4 style={{ color: '#ffffff', marginBottom: '0.75rem' }}>Locations</h4>
+            <nav aria-label="Locations" style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+              {LOCATION_PAGES.map(l => (
+                <Link key={l.slug} to={articlePath(l)} style={linkStyle}>{l.title.split(':')[0]}</Link>
+              ))}
+            </nav>
+            <address style={{ fontStyle: 'normal', color: '#dbe7f5', fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.75rem' }}>
+              {OFFICES.map(o => (
+                <span key={o.id} style={{ display: 'block', marginBottom: 6 }}>
+                  {o.street}, {o.city}{o.region ? `, ${o.region}` : ''} {o.postalCode || ''}, {o.countryName}
+                </span>
+              ))}
+            </address>
           </div>
 
           <div style={{ flex: '1 1 240px', minWidth: 220 }}>

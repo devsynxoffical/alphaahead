@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import HomeSeoSections from './seo/HomeSeoSections';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 
@@ -204,6 +205,8 @@ const HeroSection: React.FC = () => {
         <div style={{ 
           flex: "0 1 auto", 
           minWidth: windowDimensions.width < 768 ? "100%" : 300, 
+          boxSizing: "border-box",
+          overflowWrap: "break-word",
           ...responsive.heroText,
           ...responsive.heroContent,
           display: "flex",
@@ -213,7 +216,7 @@ const HeroSection: React.FC = () => {
           position: "relative",
           zIndex: 2
         }}>
-          <h5 style={{ 
+          <p style={{ 
             color: "#DC520E", 
             marginTop: windowDimensions.width < 768 ? "2rem" : "4rem",
             marginBottom: "1rem", 
@@ -221,8 +224,8 @@ const HeroSection: React.FC = () => {
             fontWeight: 600,
             letterSpacing: "0.5px",
             textAlign: "left"
-          }}>{t("hero.tagline")}</h5>
-                      <h2
+          }}>{t("hero.tagline")}</p>
+                      <h1
               style={{
                 ...responsive.heading,
                 fontWeight: 700,
@@ -242,7 +245,7 @@ const HeroSection: React.FC = () => {
                   {index < array.length - 1 && <br />}
                 </React.Fragment>
               ))}
-            </h2>
+            </h1>
                       <p style={{ 
               lineHeight: 1.6, 
               marginBottom: "1rem",
@@ -314,7 +317,7 @@ const HeroSection: React.FC = () => {
           padding: "0 1rem"
         }}>
           <div style={{ flex: "1 1 400px", display: "flex", justifyContent: "center" }}>
-            <img src="/about-team.png" alt="about-team" style={{ 
+            <img src="/about-team.png" alt="Alpha Ahead team members working together in the office" style={{ 
               width: "100%", 
               maxWidth: 500, 
               borderRadius: 16, 
@@ -465,6 +468,8 @@ const HeroSection: React.FC = () => {
 
 
 
+
+      <HomeSeoSections />
 
       {/* Sliding Project Logos Section */}
       <section style={{ background: "#ffffff", padding: isMobile ? "2rem 1rem" : isTablet ? "2.5rem 1.5rem" : "3rem 2rem", overflow: "hidden" }}>

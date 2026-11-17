@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import ServicesPage from './pages/ServicesPage'; 
-import ProjectPage from './pages/ProjectPage'; 
+import ServicesPage from './pages/ServicesPage';
+import ProjectPage from './pages/ProjectPage';
 import Clients from './pages/Clients';
 import ContactUs from './pages/ContactUs';
-import ScrollToTop from './components/ScrollToTop'; 
-import ExternalStaff from './pages/ExternalStaff'; 
+import ScrollToTop from './components/ScrollToTop';
+import ExternalStaff from './pages/ExternalStaff';
 import OurTeam from './pages/OurTeam';
 import Careers from './pages/Careers';
 import VirtualAssistantDetails from './pages/VirtualAssistantDetails';
@@ -26,41 +26,95 @@ import VideoEditingDetails from './pages/VideoEditingDetails';
 import ITSupportDetails from './pages/ITSupportDetails';
 import Footer from './components/Footer';
 import ChatWidgetEmbed from './components/ChatWidgetEmbed';
+import Seo from './seo/Seo';
+import ServiceExtras from './components/seo/ServiceExtras';
+import CtaBanner from './components/seo/CtaBanner';
+import ArticlePage from './pages/ArticlePage';
+import ArticleListing from './pages/ArticleListing';
+import NotFound from './pages/NotFound';
+import { BLOG_POSTS } from './content/blog';
+import { CASE_STUDIES } from './content/caseStudies';
+import { LOCATION_PAGES } from './content/locations';
+
+/** Service page + FAQs (with FAQPage schema) + related service links. */
+const withExtras = (page: React.ReactElement) => (
+  <>
+    {page}
+    <ServiceExtras />
+  </>
+);
+
+const SERVICE_ROUTES: [string, React.ReactElement][] = [
+  ['/virtual-assistant', <VirtualAssistantDetails />],
+  ['/cold-calling', <ColdCallingDetails />],
+  ['/personal-assistant', <PersonalAssistantDetails />],
+  ['/business-assistant', <VirtualBusinessAssistantDetails />],
+  ['/property-management', <VirtualPropertyManagementDetails />],
+  ['/lead-generation', <LeadGenerationDetails />],
+  ['/transaction-coordinator', <RealEstateTransactionCoordinatorDetails />],
+  ['/seo', <SEODetails />],
+  ['/web-development', <WebDevelopmentDetails />],
+  ['/digital-marketing', <DigitalMarketingDetails />],
+  ['/graphic-design', <GraphicDesignDetails />],
+  ['/video-editing', <VideoEditingDetails />],
+  ['/it-support', <ITSupportDetails />],
+];
 
 function App() {
   return (
     <Router>
+      <Seo />
       <Header />
       <ScrollToTop />
       <ChatWidgetEmbed siteId="alpha-ahead" />
-      <Routes>
-        {/* Main Pages */}
-        <Route path="/" element={<HeroSection />} />
-        <Route path="/home" element={<HeroSection />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/projects" element={<ProjectPage />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/team" element={<OurTeam />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/staff" element={<ExternalStaff />} />
-        
-        {/* Service Detail Pages */}
-        <Route path="/virtual-assistant" element={<VirtualAssistantDetails />} />
-        <Route path="/cold-calling" element={<ColdCallingDetails />} />
-        <Route path="/personal-assistant" element={<PersonalAssistantDetails />} />
-        <Route path="/business-assistant" element={<VirtualBusinessAssistantDetails />} />
-        <Route path="/property-management" element={<VirtualPropertyManagementDetails />} />
-        <Route path="/lead-generation" element={<LeadGenerationDetails />} />
-        <Route path="/transaction-coordinator" element={<RealEstateTransactionCoordinatorDetails />} />
-        <Route path="/seo" element={<SEODetails />} />
-        <Route path="/web-development" element={<WebDevelopmentDetails />} />
-        <Route path="/digital-marketing" element={<DigitalMarketingDetails />} />
-        <Route path="/graphic-design" element={<GraphicDesignDetails />} />
-        <Route path="/video-editing" element={<VideoEditingDetails />} />
-        <Route path="/it-support" element={<ITSupportDetails />} />
+      <main>
+        <Routes>
+          {/* Main Pages */}
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/team" element={<OurTeam />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/staff" element={<ExternalStaff />} />
 
-      </Routes>
+          {/* Service Detail Pages */}
+          {SERVICE_ROUTES.map(([path, el]) => (
+            <Route key={path} path={path} element={withExtras(el)} />
+          ))}
+
+          {/* Content */}
+          <Route
+            path="/blog"
+            element={
+              <ArticleListing
+                title="Outsourcing, Real Estate & Growth Guides"
+                intro="Practical, no-fluff guides on hiring virtual assistants, transaction coordinators and cold callers, and on growing with SEO and digital marketing."
+                articles={BLOG_POSTS}
+              />
+            }
+          />
+          <Route path="/blog/:slug" element={<ArticlePage />} />
+          <Route
+            path="/case-studies"
+            element={
+              <ArticleListing
+                title="Case Studies"
+                intro="How we built and run our own brands, Zingo Assist, Alpha Medi Assist and Learn with Alpha, and what your business can learn from them."
+                articles={CASE_STUDIES}
+              />
+            }
+          />
+          <Route path="/case-studies/:slug" element={<ArticlePage />} />
+          {LOCATION_PAGES.map(l => (
+            <Route key={l.slug} path={`/${l.slug}`} element={<ArticlePage />} />
+          ))}
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   );

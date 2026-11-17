@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
   const ServicesPage: React.FC = () => {
-  const navigate = useNavigate();
   const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
@@ -80,8 +79,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Free up your time and scale smarter with dedicated virtual assistants. Our trained remote teams specialize in lead intake, CRM management, calendar coordination, and administrative support, bringing efficiency and cost-effectiveness to your business operations.
               </p>
-              <button
-                onClick={() => navigate('/virtual-assistant')}
+              <Link
+                to="/virtual-assistant"
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -91,7 +90,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -104,7 +104,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore VA Solutions
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -139,8 +139,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Professional cold calling services to expand your business reach and generate qualified leads. Our experienced team specializes in targeted outreach campaigns that deliver results and help you connect with potential customers effectively.
               </p>
-              <button
-                onClick={() => navigate('/cold-calling')}
+              <Link
+                to="/cold-calling"
                 style={{
                   background: '#3B82F6',
                   color: '#fff',
@@ -150,7 +150,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -163,7 +164,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Cold Calling Solutions
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -230,8 +231,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Comprehensive personal assistance services to help you manage your daily tasks and business operations efficiently. Our dedicated assistants provide support with scheduling, research, data entry, and administrative tasks to keep you focused on what matters most.
               </p>
-              <button
-                onClick={() => navigate('/personal-assistant')}
+              <Link
+                to="/personal-assistant"
                 style={{
                   background: '#10B981',
                   color: '#fff',
@@ -241,7 +242,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -254,7 +256,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Personal Assistance
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -295,8 +297,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Professional virtual business assistants to streamline your operations and boost productivity. Our skilled team handles complex business tasks, project management, client communication, and strategic support to help your business grow efficiently.
               </p>
-              <button
-                onClick={() => navigate('/business-assistant')}
+              <Link
+                to="/business-assistant"
                 style={{
                   background: '#F59E0B',
                   color: '#fff',
@@ -306,7 +308,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -319,7 +322,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Business Assistant Solutions
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -386,8 +389,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Comprehensive virtual property management solutions to streamline your real estate operations. Our team handles tenant communication, maintenance coordination, rent collection, and property marketing to maximize your investment returns.
               </p>
-              <button
-                onClick={() => navigate('/property-management')}
+              <Link
+                to="/property-management"
                 style={{
                   background: '#EC4899',
                   color: '#fff',
@@ -397,7 +400,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -410,7 +414,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Property Management Solutions
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -451,8 +455,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Fuel your pipeline with qualified, conversion-ready leads. We specialize in creating high-quality lead generation strategies for any industry, employing data-driven insights and advanced tools to develop campaigns that effectively capture and nurture prospects.
               </p>
-              <button
-                onClick={() => navigate('/lead-generation')}
+              <Link
+                to="/lead-generation"
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -462,7 +466,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -475,7 +480,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Grow with Lead Gen
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -542,8 +547,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Professional real estate transaction coordination services to ensure smooth property transactions. Our experienced coordinators handle all aspects of the transaction process, from contract to closing, ensuring timely and successful deals.
               </p>
-              <button
-                onClick={() => navigate('/transaction-coordinator')}
+              <Link
+                to="/transaction-coordinator"
                 style={{
                   background: '#06B6D4',
                   color: '#fff',
@@ -553,7 +558,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -566,7 +572,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Transaction Coordination
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -607,8 +613,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Comprehensive SEO services to improve your website's visibility and organic search rankings. Our SEO experts implement proven strategies to drive targeted traffic and increase your online presence across search engines.
               </p>
-              <button
-                onClick={() => navigate('/seo')}
+              <Link
+                to="/seo"
                 style={{
                   background: '#10B981',
                   color: '#fff',
@@ -618,7 +624,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -631,7 +638,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore SEO Solutions
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -698,8 +705,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Custom web development solutions tailored to your business needs. Our expert developers create responsive, scalable websites and web applications using the latest technologies to ensure optimal performance and user experience.
               </p>
-              <button
-                onClick={() => navigate('/web-development')}
+              <Link
+                to="/web-development"
                 style={{
                   background: '#3B82F6',
                   color: '#fff',
@@ -709,7 +716,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -722,7 +730,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Web Development
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -763,8 +771,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Comprehensive digital marketing solutions to elevate your brand's online presence. Our agency specializes in strategic campaigns, social media management, content marketing, and performance optimization to drive growth and maximize your digital ROI.
               </p>
-              <button
-                onClick={() => navigate('/digital-marketing')}
+              <Link
+                to="/digital-marketing"
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -774,7 +782,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -787,7 +796,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Digital Marketing Solutions
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -844,8 +853,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Creative graphic design services to enhance your brand identity and visual communication. Our talented designers create compelling logos, marketing materials, and digital assets that capture your brand essence and engage your audience.
               </p>
-              <button
-                onClick={() => navigate('/graphic-design')}
+              <Link
+                to="/graphic-design"
                 style={{
                   background: '#EC4899',
                   color: '#fff',
@@ -855,7 +864,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -868,7 +878,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Graphic Design
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{
@@ -935,8 +945,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Professional video editing services to create compelling visual content for your business. Our skilled editors transform raw footage into polished videos that engage your audience and effectively communicate your message across all platforms.
               </p>
-              <button
-                onClick={() => navigate('/video-editing')}
+              <Link
+                to="/video-editing"
                 style={{
                   background: '#8B5CF6',
                   color: '#fff',
@@ -946,7 +956,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -959,7 +970,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore Video Editing
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -1000,8 +1011,8 @@ import { useNavigate } from 'react-router-dom';
               }}>
                 Comprehensive IT support services to keep your business technology running smoothly. Our expert technicians provide remote and on-site support, system maintenance, troubleshooting, and proactive monitoring to ensure optimal performance.
               </p>
-              <button
-                onClick={() => navigate('/it-support')}
+              <Link
+                to="/it-support"
                 style={{
                   background: '#F59E0B',
                   color: '#fff',
@@ -1011,7 +1022,8 @@ import { useNavigate } from 'react-router-dom';
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  display: 'flex',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
                   transition: 'background 0.3s ease'
@@ -1024,7 +1036,7 @@ import { useNavigate } from 'react-router-dom';
                 }}
               >
                 Explore IT Support
-              </button>
+              </Link>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', order: isMobile ? 1 : 2 }}>
               <div style={{

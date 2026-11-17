@@ -1,3 +1,29 @@
-# https://www.robotstxt.org/robotstxt.html
+# Alpha Ahead LLC – https://alphaaheadllc.com
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /staff
+Disallow: /*.pdf$
+
+# AI search & answer engines are welcome (GEO/AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://alphaaheadllc.com/sitemap.xml

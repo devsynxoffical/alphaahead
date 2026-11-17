@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { MdEmail, MdCall, MdLanguage } from 'react-icons/md';
 import { FaBars } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +27,7 @@ const Header: React.FC = () => {
   const navHoverBg = isTransparent ? 'rgba(255,255,255,0.10)' : '#f8f8f8';
 
   const navItems = [
-    { label: t('nav.home'), link: '/home' },
+    { label: t('nav.home'), link: '/' },
     { label: t('nav.services'), link: '/services' },
     { label: t('nav.products'), link: '/projects' },
     { label: t('nav.clients'), link: '/clients' },
@@ -51,12 +50,15 @@ const Header: React.FC = () => {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '1rem 2rem', position: 'relative' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <img 
-            src="/alphawebsitemainlogo.png" 
-            alt="Alpha Ahead" 
-            style={{ height: 45, cursor: 'pointer' }} 
-            onClick={() => navigate('/home')}
-          />
+          <Link to="/" aria-label="Alpha Ahead LLC home" style={{ display: 'inline-flex' }}>
+            <img
+              src="/alphawebsitemainlogo.png"
+              alt="Alpha Ahead LLC logo"
+              width={122}
+              height={45}
+              style={{ height: 45, width: 'auto' }}
+            />
+          </Link>
 
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -166,10 +168,13 @@ const Header: React.FC = () => {
             }}
           >
             {navItems.map(({ label, link }) => (
-              <button
+              <Link
                 key={link}
-                onClick={() => { setIsMenuOpen(false); navigate(link); }}
+                to={link}
+                onClick={() => setIsMenuOpen(false)}
                 style={{
+                  color: '#333',
+                  textDecoration: 'none',
                   display: 'block',
                   width: '100%',
                   background: 'none',
@@ -185,7 +190,7 @@ const Header: React.FC = () => {
                 }}
               >
                 {label}
-              </button>
+              </Link>
             ))}
 
             <div style={{ marginTop: '1rem', borderTop: '1px solid #ddd', paddingTop: '0.5rem' }}>
