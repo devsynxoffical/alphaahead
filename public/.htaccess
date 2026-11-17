@@ -13,3 +13,8 @@ ErrorDocument 404 /index.html
 <IfModule mod_dir.c>
   DirectoryIndex index.html
 </IfModule>
+
+# Hide FTP deploy state file
+<Files ".ftp-deploy-sync-state.json">
+    Require all denied
+</Files>
