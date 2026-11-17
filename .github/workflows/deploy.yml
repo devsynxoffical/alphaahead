@@ -37,6 +37,20 @@ jobs:
           CI: false
           GENERATE_SOURCEMAP: false
 
+      - name: Check FTP server is reachable
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        run: |
+          for h in "$FTP_SERVER" ftp.alphaaheadllc.com alphaaheadllc.com ftp.alphaahead.com; do
+            ip=$(getent hosts "$h" | awk '{print $1}' | head -1)
+            if [ -z "$ip" ]; then echo "$h: DNS name not found"; continue; fi
+            if timeout 10 bash -c "</dev/tcp/$h/21" 2>/dev/null; then
+              echo "$h ($ip): port 21 OPEN"
+            else
+              echo "$h ($ip): port 21 closed / timed out"
+            fi
+          done
+
       - name: Upload build/ via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
