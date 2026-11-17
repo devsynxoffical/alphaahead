@@ -89,12 +89,10 @@ jobs:
           check "https://alphaaheadllc.com/this-page-does-not-exist-$GITHUB_RUN_ID" 404
           check "https://alphaaheadllc.com/home" 301
           check "https://www.alphaaheadllc.com/" 301
-          # Images (diagnostic: status + content type)
-          for a in /Clients/Zingo.png "/Clients/Alpha%20estate.png" /Clients/Portlibert.png /newalphamediassist.png /Project/Project7.png; do
-            echo "ASSET $(curl -s -o /dev/null -w '%{http_code} %{content_type} %{size_download}B' --max-time 30 "https://alphaaheadllc.com$a") $a"
-          done
           # Each prerendered page must carry its own title
           curl -s https://alphaaheadllc.com/seo | grep -o '<title[^>]*>[^<]*' | head -1
+          # Every image used on key pages must load on the live server
+          python3 scripts/check-live-images.py build/index.html build/clients.html build/case-studies.html build/projects.html || FAIL=1
           exit $FAIL
 
       - name: Notify search engines (IndexNow - Bing, Yandex, Seznam, Naver)

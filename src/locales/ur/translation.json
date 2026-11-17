@@ -69,10 +69,10 @@
   "headline": "ہمارا پروجیکٹ",
   "subtitle": "مخصوص حل کے ساتھ تمام صنعتوں میں جدت کو فروغ دینا",
   "list": [
-    { "title": "Zingo Assist", "tagline": "آپ کا ورچوئل بزنس پارٹنر", "desc": "ورچوئل اسسٹنٹس جو وقت بچاتے ہیں اور کاروباری ترقی کو فروغ دیتے ہیں۔", "image": "/Clients/Zingo.png" },
+    { "title": "Zingo Assist", "tagline": "آپ کا ورچوئل بزنس پارٹنر", "desc": "ورچوئل اسسٹنٹس جو وقت بچاتے ہیں اور کاروباری ترقی کو فروغ دیتے ہیں۔", "image": "/portfolio/zingo-assist.png" },
     { "title": "Alpha Medi Assist", "tagline": "ہیلتھ کیئر آپریشنز کو آسان بنایا", "desc": "ہیلتھ کیئر فراہم کنندگان کے لیے آسان بلنگ اور آپریشنز۔", "image": "/newalphamediassist.png" },
-    { "title": "Learn with Alpha", "tagline": "مہارتیں جو کیریئر کو تیز کرتی ہیں", "desc": "مہارتوں اور کیریئر کو بہتر بنانے کے لیے عملی ای-لرننگ۔", "image": "/Clients/learn%20with%20alpha.png" },
-    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "ڈیجیٹل رئیل اسٹیٹ حل", "desc": "رئیل اسٹیٹ کو آسان اور بڑھانے کے لیے ڈیجیٹل حل۔", "image": "/Clients/Alpha%20estate.png" },
+    { "title": "Learn with Alpha", "tagline": "مہارتیں جو کیریئر کو تیز کرتی ہیں", "desc": "مہارتوں اور کیریئر کو بہتر بنانے کے لیے عملی ای-لرننگ۔", "image": "/portfolio/learn-with-alpha.png" },
+    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "ڈیجیٹل رئیل اسٹیٹ حل", "desc": "رئیل اسٹیٹ کو آسان اور بڑھانے کے لیے ڈیجیٹل حل۔", "image": "/portfolio/alpha-ahead-real-estate.png" },
     { "title": "Alpha Ahead", "tagline": "آپ کا قابل اعتماد بزنس پارٹنر", "desc": "پائیدار ترقی کے لیے کاروباری مشاورت اور جدت۔", "image": "/Project/Project1.png" }
   ],
   "readMore": "مزید پڑھیں",
@@ -99,7 +99,7 @@
       {
         "name": "Zingo Assist",
         "category": "ورچوئل اسسٹنٹ",
-        "image": "/Clients/Zingo.png"
+        "image": "/portfolio/zingo-assist.png"
       },
       {
         "name": "Alpha Medi Assist",
@@ -109,27 +109,27 @@
       {
         "name": "Learn with Alpha",
         "category": "تعلیم",
-        "image": "/Clients/learn%20with%20alpha.png"
+        "image": "/portfolio/learn-with-alpha.png"
       },
       {
         "name": "Alpha Ahead Real Estate Brokerage LLC",
         "category": "ریئل اسٹیٹ",
-        "image": "/Clients/Alpha%20estate.png"
+        "image": "/portfolio/alpha-ahead-real-estate.png"
       },
       {
         "name": "Port Libert",
         "category": "لاجسٹکس",
-        "image": "/Clients/Portlibert.png"
+        "image": "/portfolio/port-liberte.png"
       },
       {
         "name": "Du Partner",
         "category": "کاروباری ترقی",
-        "image": "/Clients/du%20partner.png"
+        "image": "/portfolio/du-partner.png"
       },
       {
         "name": "Heritage Capital",
         "category": "مالیاتی خدمات",
-        "image": "/Clients/Heritagecapital.png"
+        "image": "/portfolio/heritage-capital.png"
       }
     ]
   },
@@ -157,7 +157,7 @@
       "button": "ہماری ویب سائٹ دیکھیں",
       "btnColor": "#872779",
       "url": "https://www.zingoassist.us",
-      "image": "/Clients/Zingo.png"
+      "image": "/portfolio/zingo-assist.png"
     },
     {
       "slug": "medi",
@@ -178,7 +178,7 @@
       "button": "ہماری ویب سائٹ دیکھیں",
       "btnColor": "#2a4332",
       "url": "https://learnwithalpha.com/",
-      "image": "/Clients/learn%20with%20alpha.png"
+      "image": "/portfolio/learn-with-alpha.png"
     },
     {
       "slug": "holiday",

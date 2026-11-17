@@ -21,7 +21,7 @@ const Clients: React.FC = () => {
     {
       name: "Zingo Assist",
       category: "Virtual Assistant Services",
-      image: "/Clients/Zingo.png",
+      image: "/portfolio/zingo-assist.png",
       description: "Professional virtual assistant services that help businesses scale by streamlining administrative and operational tasks. Our trained remote teams specialize in real estate, finance, and customer support.",
       services: ["Virtual Assistant", "Customer Support", "Administrative Tasks", "Business Process Outsourcing"],
       website: "https://zingoassist.us/"
@@ -37,7 +37,7 @@ const Clients: React.FC = () => {
     {
       name: "Learn with Alpha",
       category: "E-Learning Platform",
-      image: "/Clients/learn%20with%20alpha.png",
+      image: "/portfolio/learn-with-alpha.png",
       description: "A modern e-learning platform offering interactive and dynamic digital learning experiences. The platform supports both students and professionals with flexible, personalized learning paths.",
       services: ["E-Learning Platform", "Skill Development", "Online Courses", "Educational Technology"],
       website: "https://learnwithalpha.com/"
@@ -45,7 +45,7 @@ const Clients: React.FC = () => {
     {
       name: "Alpha Ahead Real Estate Brokerage LLC",
       category: "Real Estate Solutions",
-      image: "/Clients/Alpha%20estate.png",
+      image: "/portfolio/alpha-ahead-real-estate.png",
       description: "Digital real estate solutions connecting buyers and sellers with seamless property solutions in Dubai and beyond. We specialize in sales, leasing, and investment opportunities.",
       services: ["Real Estate", "Property Management", "Investment Advisory", "Digital Solutions"],
       website: "https://alphaahead.estate/"
@@ -53,7 +53,7 @@ const Clients: React.FC = () => {
     {
       name: "Port Libert",
       category: "Logistics & Supply Chain",
-      image: "/Clients/Portlibert.png",
+      image: "/portfolio/port-liberte.png",
       description: "Comprehensive logistics and supply chain solutions designed to optimize operations and enhance efficiency in global trade and transportation.",
       services: ["Logistics", "Supply Chain Management", "Global Trade", "Transportation"],
       website: "https://portlibertehomesforsale.com/"
@@ -61,7 +61,7 @@ const Clients: React.FC = () => {
     {
       name: "Du Partner",
       category: "Business Development",
-      image: "/Clients/du%20partner.png",
+      image: "/portfolio/du-partner.png",
       description: "Strategic business development services helping companies expand their market presence and establish valuable partnerships in the UAE and beyond.",
       services: ["Business Development", "Market Expansion", "Partnership Building", "Strategic Consulting"],
       website: "https://www.du.ae/partner-with-us"
@@ -69,7 +69,7 @@ const Clients: React.FC = () => {
     {
       name: "Heritage Capital",
       category: "Financial Services",
-      image: "/Clients/Heritagecapital.png",
+      image: "/portfolio/heritage-capital.png",
       description: "Professional financial services and investment solutions helping clients build wealth and secure their financial future through strategic planning and expert guidance.",
       services: ["Financial Planning", "Investment Advisory", "Wealth Management", "Financial Services"],
       website: "https://heritagecapitalandrealestate.com/"

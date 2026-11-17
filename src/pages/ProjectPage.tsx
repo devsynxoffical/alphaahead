@@ -21,7 +21,7 @@ const ProjectPage: React.FC = () => {
     {
       name: 'Zingo Assist',
       category: 'Virtual Assistant Services',
-      image: '/Clients/Zingo.png',
+      image: '/portfolio/zingo-assist.png',
       description:
         'Professional virtual assistant services that help businesses scale by streamlining administrative and operational tasks. Our trained remote teams specialize in real estate, finance, and customer support.',
       services: ['Virtual Assistant', 'Customer Support', 'Administrative Tasks', 'Business Process Outsourcing'],
@@ -39,7 +39,7 @@ const ProjectPage: React.FC = () => {
     {
       name: 'Learn with Alpha',
       category: 'E-Learning Platform',
-      image: '/Clients/learn%20with%20alpha.png',
+      image: '/portfolio/learn-with-alpha.png',
       description:
         'A modern e-learning platform offering interactive and dynamic digital learning experiences. The platform supports both students and professionals with flexible, personalized learning paths.',
       services: ['E-Learning Platform', 'Skill Development', 'Online Courses', 'Educational Technology'],
@@ -48,7 +48,7 @@ const ProjectPage: React.FC = () => {
     {
       name: 'Alpha Ahead Real Estate Brokerage',
       category: 'Real Estate Solutions',
-      image: '/Clients/Alpha%20estate.png',
+      image: '/portfolio/alpha-ahead-real-estate.png',
       description:
         'Digital real estate solutions connecting buyers and sellers with seamless property solutions in Dubai and beyond. We specialize in sales, leasing, and investment opportunities.',
       services: ['Real Estate', 'Property Management', 'Investment Advisory', 'Digital Solutions'],

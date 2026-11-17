@@ -69,10 +69,10 @@
   "headline": "Notre Projet",
   "subtitle": "Favoriser l'innovation dans toutes les industries avec des solutions personnalisées",
   "list": [
-    { "title": "Zingo Assist", "tagline": "Votre Partenaire Commercial Virtuel", "desc": "Assistants virtuels qui économisent du temps et stimulent la croissance commerciale.", "image": "/Clients/Zingo.png" },
+    { "title": "Zingo Assist", "tagline": "Votre Partenaire Commercial Virtuel", "desc": "Assistants virtuels qui économisent du temps et stimulent la croissance commerciale.", "image": "/portfolio/zingo-assist.png" },
     { "title": "Alpha Medi Assist", "tagline": "Opérations de Santé Simplifiées", "desc": "Facturation et opérations optimisées pour les prestataires de santé.", "image": "/newalphamediassist.png" },
-    { "title": "Learn with Alpha", "tagline": "Compétences qui Accélèrent les Carrières", "desc": "Apprentissage en ligne pratique pour améliorer les compétences et les carrières.", "image": "/Clients/learn%20with%20alpha.png" },
-    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "Solutions Immobilières Numériques", "desc": "Solutions numériques pour simplifier et développer l'immobilier.", "image": "/Clients/Alpha%20estate.png" },
+    { "title": "Learn with Alpha", "tagline": "Compétences qui Accélèrent les Carrières", "desc": "Apprentissage en ligne pratique pour améliorer les compétences et les carrières.", "image": "/portfolio/learn-with-alpha.png" },
+    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "Solutions Immobilières Numériques", "desc": "Solutions numériques pour simplifier et développer l'immobilier.", "image": "/portfolio/alpha-ahead-real-estate.png" },
     { "title": "Alpha Ahead", "tagline": "Votre Partenaire Commercial de Confiance", "desc": "Conseil commercial et innovation pour une croissance durable.", "image": "/Project/Project1.png" }
   ],
   "readMore": "En savoir plus sur",
@@ -99,7 +99,7 @@
       {
         "name": "Zingo Assist",
         "category": "Assistant Virtuel",
-        "image": "/Clients/Zingo.png"
+        "image": "/portfolio/zingo-assist.png"
       },
       {
         "name": "Alpha Medi Assist",
@@ -109,27 +109,27 @@
       {
         "name": "Learn with Alpha",
         "category": "Éducation",
-        "image": "/Clients/learn%20with%20alpha.png"
+        "image": "/portfolio/learn-with-alpha.png"
       },
       {
         "name": "Alpha Ahead Real Estate Brokerage LLC",
         "category": "Immobilier",
-        "image": "/Clients/Alpha%20estate.png"
+        "image": "/portfolio/alpha-ahead-real-estate.png"
       },
       {
         "name": "Port Libert",
         "category": "Logistique",
-        "image": "/Clients/Portlibert.png"
+        "image": "/portfolio/port-liberte.png"
       },
       {
         "name": "Du Partner",
         "category": "Développement Commercial",
-        "image": "/Clients/du%20partner.png"
+        "image": "/portfolio/du-partner.png"
       },
       {
         "name": "Heritage Capital",
         "category": "Services Financiers",
-        "image": "/Clients/Heritagecapital.png"
+        "image": "/portfolio/heritage-capital.png"
       }
     ]
   },
@@ -157,7 +157,7 @@
       "button": "Visitez notre site",
       "btnColor": "#872779",
       "url": "https://www.zingoassist.us",
-      "image": "/Clients/Zingo.png"
+      "image": "/portfolio/zingo-assist.png"
     },
     {
       "slug": "medi",
@@ -178,7 +178,7 @@
       "button": "Visitez notre site",
       "btnColor": "#2a4332",
       "url": "https://learnwithalpha.com/",
-      "image": "/Clients/learn%20with%20alpha.png"
+      "image": "/portfolio/learn-with-alpha.png"
     },
     {
       "slug": "holiday",

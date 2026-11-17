@@ -104,10 +104,10 @@
   "headline": "Our Projects",
   "subtitle": "Driving innovation across industries with tailored solutions",
   "list": [
-    { "title": "Zingo Assist", "tagline": "Your Virtual Business Partner", "desc": "Virtual assistants that save time and drive business growth.", "image": "/Clients/Zingo.png" },
+    { "title": "Zingo Assist", "tagline": "Your Virtual Business Partner", "desc": "Virtual assistants that save time and drive business growth.", "image": "/portfolio/zingo-assist.png" },
     { "title": "Alpha Medi Assist", "tagline": "Healthcare Operations Simplified", "desc": "Streamlined billing and operations for healthcare providers.", "image": "/newalphamediassist.png" },
-    { "title": "Learn with Alpha", "tagline": "Skills That Accelerate Careers", "desc": "Practical e-learning to upgrade skills and careers.", "image": "/Clients/learn%20with%20alpha.png" },
-    { "title": "Alpha Ahead Real Estate Brokerage", "tagline": "Digital Real Estate Solutions", "desc": "Digital solutions to simplify and scale real estate.", "image": "/Clients/Alpha%20estate.png" },
+    { "title": "Learn with Alpha", "tagline": "Skills That Accelerate Careers", "desc": "Practical e-learning to upgrade skills and careers.", "image": "/portfolio/learn-with-alpha.png" },
+    { "title": "Alpha Ahead Real Estate Brokerage", "tagline": "Digital Real Estate Solutions", "desc": "Digital solutions to simplify and scale real estate.", "image": "/portfolio/alpha-ahead-real-estate.png" },
     { "title": "Alpha Ahead", "tagline": "Your Trusted Business Partner", "desc": "Business consulting and innovation for sustainable growth.", "image": "/Project/Project2.png" }
   ],
   "readMore": "Read More about",
@@ -134,7 +134,7 @@
       {
         "name": "Zingo Assist",
         "category": "Virtual Assistant",
-        "image": "/Clients/Zingo.png"
+        "image": "/portfolio/zingo-assist.png"
       },
       {
         "name": "Alpha Medi Assist",
@@ -144,27 +144,27 @@
       {
         "name": "Learn with Alpha",
         "category": "Education",
-        "image": "/Clients/learn%20with%20alpha.png"
+        "image": "/portfolio/learn-with-alpha.png"
       },
       {
         "name": "Alpha Ahead Real Estate Brokerage",
         "category": "Real Estate",
-        "image": "/Clients/Alpha%20estate.png"
+        "image": "/portfolio/alpha-ahead-real-estate.png"
       },
       {
         "name": "Port Libert",
         "category": "Logistics",
-        "image": "/Clients/Portlibert.png"
+        "image": "/portfolio/port-liberte.png"
       },
       {
         "name": "Du Partner",
         "category": "Business Development",
-        "image": "/Clients/du%20partner.png"
+        "image": "/portfolio/du-partner.png"
       },
       {
         "name": "Heritage Capital",
         "category": "Financial Services",
-        "image": "/Clients/Heritagecapital.png"
+        "image": "/portfolio/heritage-capital.png"
       }
     ]
   },
@@ -192,7 +192,7 @@
       "button": "👉 Visit Website",
       "btnColor": "#872779",
       "url": "https://www.zingoassist.us",
-      "image": "/Clients/Zingo.png"
+      "image": "/portfolio/zingo-assist.png"
     },
     {
       "slug": "medi",
@@ -212,7 +212,7 @@
       "button": "👉 Visit Website",
       "btnColor": "#2a4332",
       "url": "https://learnwithalpha.com/",
-      "image": "/Clients/learn%20with%20alpha.png"
+      "image": "/portfolio/learn-with-alpha.png"
     },
     {
       "slug": "estate",
@@ -222,7 +222,7 @@
       "button": "👉 Visit Website",
       "btnColor": "#DC520E",
       "url": "/contact",
-      "image": "/Clients/Alpha%20estate.png"
+      "image": "/portfolio/alpha-ahead-real-estate.png"
       
     }
   ],
