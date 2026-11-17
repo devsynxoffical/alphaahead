@@ -16,7 +16,7 @@
   background: radial-gradient(circle, rgba(220, 82, 14, 0.35), transparent 65%);
   pointer-events: none;
 }
-.home-hero__inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; }
+.home-hero__inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 820px); align-items: center; }
 .home-hero__badge {
   display: inline-block; margin: 0 0 1.25rem; padding: .45rem .9rem; border-radius: 999px;
   background: rgba(220, 82, 14, 0.18); border: 1px solid rgba(220, 82, 14, 0.5); color: #ffb48c;
@@ -33,17 +33,7 @@
 .home-hero__trust svg { color: var(--aa-orange); }
 .home-hero__trust a { color: #fff; text-decoration: none; font-weight: 700; }
 .home-hero__trust a:hover { text-decoration: underline; }
-.home-hero__panel { animation: aa-rise 1s .25s cubic-bezier(.2,.7,.2,1) both; }
-.home-hero__card {
-  background: rgba(15, 31, 58, .78); border: 1px solid rgba(255,255,255,.2); border-top: 4px solid var(--aa-orange); border-radius: 18px; padding: 1.75rem;
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 30px 60px rgba(0,0,0,.25);
-  animation: aa-float 6s ease-in-out infinite;
-}
-.home-hero__card-title { font-weight: 800; font-size: 1.1rem; margin: 0 0 1rem; }
-.home-hero__card-item { display: flex; align-items: center; gap: .65rem; margin: 0; padding: .7rem 0; border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.9); }
-.home-hero__card-item svg { color: #4ade80; flex-shrink: 0; }
 @keyframes aa-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-@keyframes aa-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 /* ---------- Results (overlaps hero) ---------- */
 .home-results { position: relative; z-index: 2; margin-top: clamp(-4.5rem, -6vw, -3rem); }
@@ -80,12 +70,11 @@
 
 @media (max-width: 900px) {
   .home-hero__inner, .home-about { grid-template-columns: 1fr; }
-  .home-hero__panel { display: none; }
   .home-about__media::before { inset: 12px -10px -12px 10px; }
 }
 @media (max-width: 480px) {
   .home-hero__ctas .aa-btn { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .home-hero__title, .home-hero__sub, .home-hero__ctas, .home-hero__panel, .home-hero__card { animation: none; }
+  .home-hero__title, .home-hero__sub, .home-hero__ctas { animation: none; }
 }

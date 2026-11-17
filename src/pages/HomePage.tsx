@@ -62,14 +62,6 @@ const HomePage: React.FC = () => {
               <li><FaPhoneAlt aria-hidden="true" /> <a href="tel:+14245427170">+1 424-542-7170</a></li>
             </ul>
           </div>
-          <div className="home-hero__panel" aria-hidden="true">
-            <div className="home-hero__card">
-              <p className="home-hero__card-title">What your remote team can take off your plate</p>
-              {['Inbox, calendar & CRM updates', 'Cold calling & appointment setting', 'Contract-to-close coordination', 'Tenant & owner communication', 'SEO, ads & social media'].map(item => (
-                <p key={item} className="home-hero__card-item"><FaCheckCircle /> {item}</p>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
