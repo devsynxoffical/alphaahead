@@ -25,12 +25,14 @@ import GraphicDesignDetails from './pages/GraphicDesignDetails';
 import VideoEditingDetails from './pages/VideoEditingDetails';
 import ITSupportDetails from './pages/ITSupportDetails';
 import Footer from './components/Footer';
+import ChatWidgetEmbed from './components/ChatWidgetEmbed';
 
 function App() {
   return (
     <Router>
       <Header />
       <ScrollToTop />
+      <ChatWidgetEmbed siteId="alpha-ahead" />
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<HeroSection />} />

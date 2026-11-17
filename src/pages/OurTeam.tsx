@@ -44,12 +44,6 @@ const OurTeam: React.FC = () => {
       isMale: false
     },
     {
-      name: "Saleha Safdar",
-      role: "Business Portfolio Manager DXB",
-      image: "/Our%20Team/Saleha%20Safdar.jpg",
-      isMale: false
-    },
-    {
       name: "David Bowman",
       role: "Sales Manager",
       image: "/David.jpeg",

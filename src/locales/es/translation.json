@@ -69,10 +69,10 @@
   "headline": "Nuestro Proyecto",
   "subtitle": "Impulsando la innovación en todas las industrias con soluciones personalizadas",
   "list": [
-    { "title": "Zingo Assist", "tagline": "Tu Socio Comercial Virtual", "desc": "Asistentes virtuales que ahorran tiempo e impulsan el crecimiento empresarial.", "image": "/Project/Project2.png" },
-    { "title": "Alpha Medi Assist", "tagline": "Operaciones Sanitarias Simplificadas", "desc": "Facturación y operaciones optimizadas para proveedores de salud.", "image": "/Project/project4.jpg" },
-    { "title": "Learn with Alpha", "tagline": "Habilidades que Aceleran Carreras", "desc": "Aprendizaje electrónico práctico para mejorar habilidades y carreras.", "image": "/Project/Project3.png" },
-    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "Soluciones Inmobiliarias Digitales", "desc": "Soluciones digitales para simplificar y escalar bienes raíces.", "image": "/Project/Project9.jpg" },
+    { "title": "Zingo Assist", "tagline": "Tu Socio Comercial Virtual", "desc": "Asistentes virtuales que ahorran tiempo e impulsan el crecimiento empresarial.", "image": "/Clients/Zingo.png" },
+    { "title": "Alpha Medi Assist", "tagline": "Operaciones Sanitarias Simplificadas", "desc": "Facturación y operaciones optimizadas para proveedores de salud.", "image": "/newalphamediassist.png" },
+    { "title": "Learn with Alpha", "tagline": "Habilidades que Aceleran Carreras", "desc": "Aprendizaje electrónico práctico para mejorar habilidades y carreras.", "image": "/Clients/learn%20with%20alpha.png" },
+    { "title": "Alpha Ahead Real Estate Brokerage LLC", "tagline": "Soluciones Inmobiliarias Digitales", "desc": "Soluciones digitales para simplificar y escalar bienes raíces.", "image": "/Clients/Alpha%20estate.png" },
     { "title": "Alpha Ahead", "tagline": "Tu Socio Comercial de Confianza", "desc": "Consultoría empresarial e innovación para crecimiento sostenible.", "image": "/Project/Project1.png" }
   ],
   "readMore": "Leer más sobre",
@@ -157,7 +157,7 @@
           "button": "Visita nuestro sitio web",
           "btnColor": "#872779",
           "url": "https://www.zingoassist.us",
-          "image": "/Zingo assist .jpg"
+          "image": "/Clients/Zingo.png"
         },
         {
           "slug": "medi",
@@ -167,7 +167,7 @@
           "button": "Visita nuestro sitio web",
           "btnColor": "#2487c9",
           "url": "https://alphamediassist.com/",
-          "image": "/Alpha Medi Assist (1).jpg"
+          "image": "/newalphamediassist.png"
         },
         {
           "slug": "learn",
@@ -178,7 +178,7 @@
           "button": "Visita nuestro sitio web",
           "btnColor": "#2a4332",
           "url": "https://learnwithalpha.com/",
-          "image": "/Learn with Alpha.jpg"
+          "image": "/Clients/learn%20with%20alpha.png"
         },
         {
           "slug": "holiday",

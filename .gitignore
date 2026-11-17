@@ -99,6 +99,8 @@ temp/
 *~
 
 # OS generated files
+._*
+.DS_Store
 Thumbs.db
 ehthumbs.db
 Desktop.ini

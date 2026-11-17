@@ -855,8 +855,9 @@ const HeroSection: React.FC = () => {
                 <div style={{
                   width: '100%',
                   height: '180px',
-                  background: `url(${project.image}) center/cover no-repeat`,
+                  background: `url(${project.image}) center/contain no-repeat`,
                   backgroundColor: '#f8f9fa',
+                  backgroundSize: 'contain',
                   borderBottom: '1px solid #f0f0f0',
                   position: 'relative'
                 }} />

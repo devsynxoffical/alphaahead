@@ -56,7 +56,9 @@ const ProductPage: React.FC = () => {
                 width: '100%',
                 maxWidth: 500,
                 height: 400,
-                background: 'url("/Project/Project7.png") center/cover',
+                background: 'url("/Clients/Zingo.png") center/contain no-repeat',
+                backgroundColor: '#f8f9fa',
+                backgroundSize: 'contain',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -199,15 +201,16 @@ const ProductPage: React.FC = () => {
                 width: '100%',
                 maxWidth: 500,
                 height: 400,
-                background: 'url("/Project/Project4.png") center/contain',
+                background: 'url("/newalphamediassist.png") center/contain no-repeat',
+                backgroundColor: '#f8f9fa',
+                backgroundSize: 'contain',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden',
-                boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
-                backgroundColor: '#f8f8f8'
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
               }}>
               </div>
             </div>
@@ -231,7 +234,9 @@ const ProductPage: React.FC = () => {
                 width: '100%',
                 maxWidth: 500,
                 height: 400,
-                background: 'url("/Project/Project1.png") center/cover',
+                background: 'url("/Clients/learn%20with%20alpha.png") center/contain no-repeat',
+                backgroundColor: '#f8f9fa',
+                backgroundSize: 'contain',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
@@ -374,15 +379,16 @@ const ProductPage: React.FC = () => {
                 width: '100%',
                 maxWidth: 500,
                 height: 400,
-                background: 'url("/Project/Project9.png") center/contain',
+                background: 'url("/Clients/Alpha%20estate.png") center/contain no-repeat',
+                backgroundColor: '#f8f9fa',
+                backgroundSize: 'contain',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden',
-                boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
-                backgroundColor: '#f8f8f8'
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
               }}>
               </div>
             </div>
