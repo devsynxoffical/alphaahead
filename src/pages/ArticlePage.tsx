@@ -28,7 +28,7 @@ const ArticlePage: React.FC = () => {
 
   return (
     <article>
-      <header style={{ background: '#DC520E', color: '#fff', padding: '3.5rem 1.25rem 3rem' }}>
+      <header style={{ background: 'linear-gradient(120deg, #0f1f3a, #18305a)', color: '#fff', padding: 'clamp(3rem, 6vw, 4.5rem) 1.25rem' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <nav aria-label="Breadcrumb" style={{ fontSize: '0.9rem', marginBottom: '1rem', opacity: 0.95 }}>
             <Link to="/" style={{ color: '#fff' }}>Home</Link>
@@ -39,7 +39,7 @@ const ArticlePage: React.FC = () => {
               </span>
             ))}
           </nav>
-          <p style={{ textTransform: 'uppercase', letterSpacing: 1, fontWeight: 700, fontSize: '0.85rem', margin: '0 0 0.5rem' }}>{label}</p>
+          <p style={{ textTransform: 'uppercase', letterSpacing: 1.5, fontWeight: 800, fontSize: '0.8rem', margin: '0 0 0.5rem', color: '#ffb48c' }}>{label}</p>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', lineHeight: 1.2, margin: '0 0 1rem' }}>{article.title}</h1>
           <p style={{ fontSize: '1.1rem', lineHeight: 1.6, opacity: 0.95, margin: 0 }}>{article.excerpt}</p>
           {article.kind !== 'location' && (

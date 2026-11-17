@@ -1,0 +1,70 @@
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.hdr { position: sticky; top: -38px; z-index: 1000; background: #fff; transition: box-shadow .25s; }
+.hdr--scrolled { box-shadow: 0 6px 24px rgba(15, 31, 58, 0.10); }
+
+.hdr-top { background: var(--aa-navy); color: rgba(255,255,255,.85); font-size: .85rem; }
+.hdr-top__inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 38px; }
+.hdr-top__note { opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hdr-top__links { display: flex; align-items: center; gap: 1.25rem; }
+.hdr-top__links a { color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: .35rem; min-height: 0; min-width: 0; }
+.hdr-top__links a:hover { color: #ffb48c; }
+.hdr-top__links svg { color: var(--aa-orange); }
+
+.hdr-lang { display: inline-flex; align-items: center; gap: .3rem; cursor: pointer; }
+.hdr-lang svg { color: var(--aa-orange); font-size: 1.1rem; }
+.hdr-lang select { border: 1px solid rgba(255,255,255,.3); background: transparent; color: inherit; border-radius: 6px; padding: 2px 4px; font-size: .85rem; cursor: pointer; }
+.hdr-lang select option { color: #000; }
+
+.hdr-main { display: flex; align-items: center; gap: 1.25rem; min-height: 72px; }
+.hdr-logo { display: inline-flex; flex-shrink: 0; }
+.hdr-logo img { height: 46px; width: auto; display: block; }
+
+.hdr-nav { display: flex; align-items: center; gap: .15rem; margin-left: auto; }
+.hdr-nav__link {
+  position: relative; padding: .6rem .7rem; color: var(--aa-ink); text-decoration: none; font-weight: 600; font-size: .97rem;
+  border-radius: 8px; transition: color .2s, background-color .2s; white-space: nowrap;
+}
+.hdr-nav__link::after {
+  content: ''; position: absolute; left: .7rem; right: .7rem; bottom: .25rem; height: 2px; border-radius: 2px;
+  background: var(--aa-orange); transform: scaleX(0); transform-origin: left; transition: transform .25s var(--aa-ease);
+}
+.hdr-nav__link:hover { color: var(--aa-orange); }
+.hdr-nav__link:hover::after, .hdr-nav__link.is-active::after { transform: scaleX(1); }
+.hdr-nav__link.is-active { color: var(--aa-orange); }
+.hdr-cta { padding: .7rem 1.15rem; font-size: .95rem; white-space: nowrap; }
+
+.hdr-burger {
+  display: none; margin-left: auto; background: var(--aa-orange-50); color: var(--aa-orange); border: 0; border-radius: 10px;
+  width: 46px; height: 46px; font-size: 1.3rem; cursor: pointer; align-items: center; justify-content: center;
+}
+
+.hdr-mobile { display: none; }
+
+@media (max-width: 1180px) {
+  .hdr-nav, .hdr-cta { display: none; }
+  .hdr-burger { display: inline-flex; }
+  .hdr-mobile.is-open {
+    display: block; position: absolute; left: 0; right: 0; top: 100%; background: #fff; padding: 1rem 1.25rem 1.5rem;
+    box-shadow: 0 18px 30px rgba(15, 31, 58, 0.15); border-top: 1px solid var(--aa-line);
+    max-height: calc(100vh - 80px); overflow-y: auto; animation: hdr-drop .25s var(--aa-ease);
+  }
+  .hdr-mobile nav { display: grid; }
+  .hdr-mobile__link { padding: .8rem .5rem; color: var(--aa-ink); text-decoration: none; font-weight: 600; font-size: 1.05rem; border-bottom: 1px solid var(--aa-line); }
+  .hdr-mobile__link.is-active { color: var(--aa-orange); }
+  .hdr-mobile__contact { display: grid; gap: .75rem; margin-top: 1.25rem; color: var(--aa-ink); }
+  .hdr-mobile__contact a { color: var(--aa-ink); text-decoration: none; display: inline-flex; gap: .5rem; align-items: center; }
+  .hdr-mobile__contact svg { color: var(--aa-orange); }
+  .hdr-mobile .hdr-lang select { border-color: var(--aa-line); color: var(--aa-ink); padding: 6px 8px; }
+}
+@media (max-width: 760px) {
+  .hdr-top__note { display: none; }
+  .hdr-top__inner { justify-content: center; }
+  .hdr-top__links .hdr-lang { display: none; }
+  .hdr-main { min-height: 64px; }
+  .hdr-logo img { height: 40px; }
+}
+@media (max-width: 420px) {
+  .hdr-top__links a:first-child { display: none; }
+}
+@keyframes hdr-drop { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }

@@ -17,6 +17,8 @@ if (!rootElement) {
 // Pages are prerendered to static HTML for SEO. Remove the prerendered per-page head tags;
 // the <Seo> component re-renders them on the client, so they are not duplicated.
 document.head.querySelectorAll('[data-seo]').forEach(el => el.remove());
+// Enables scroll-reveal animations (content stays visible if JS never runs).
+document.documentElement.classList.add('aa-js');
 
 const root = ReactDOM.createRoot(rootElement);
 

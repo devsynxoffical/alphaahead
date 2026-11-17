@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
+import HomePage from './pages/HomePage';
+import useReveal from './hooks/useReveal';
 import ServicesPage from './pages/ServicesPage';
 import ProjectPage from './pages/ProjectPage';
 import Clients from './pages/Clients';
@@ -60,17 +61,23 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
   ['/it-support', <ITSupportDetails />],
 ];
 
+const RevealManager: React.FC = () => {
+  useReveal();
+  return null;
+};
+
 function App() {
   return (
     <Router>
       <Seo />
+      <RevealManager />
       <Header />
       <ScrollToTop />
       <ChatWidgetEmbed siteId="alpha-ahead" />
       <main>
         <Routes>
           {/* Main Pages */}
-          <Route path="/" element={<HeroSection />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
           <Route path="/projects" element={<ProjectPage />} />

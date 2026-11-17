@@ -75,6 +75,9 @@ async function main() {
     await page.waitForTimeout(400);
     const data = await page.evaluate(() => {
       document.getElementById('ag-chat-widget-script')?.remove();
+      // Snapshot must not contain client-only animation state.
+      document.documentElement.classList.remove('aa-js');
+      document.querySelectorAll('.is-visible').forEach(el => el.classList.remove('is-visible'));
       const links = Array.from(document.querySelectorAll('a[href]'))
         .map(a => a.getAttribute('href'))
         .filter(h => h && h.startsWith('/') && !h.startsWith('//'));
