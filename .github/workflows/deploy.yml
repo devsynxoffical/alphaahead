@@ -50,3 +50,17 @@ jobs:
           # Set the repo variable FTP_SERVER_DIR if the FTP account does not
           # open directly in the website root (e.g. "public_html/").
           server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
+
+      - name: Verify live site serves this build
+        run: |
+          sleep 10
+          JS=$(grep -o 'static/js/main\.[a-z0-9]*\.js' build/index.html | head -1)
+          echo "Expected bundle: $JS"
+          LIVE=$(curl -sL --max-time 30 "https://alphaaheadllc.com/?nocache=$GITHUB_RUN_ID")
+          echo "$LIVE" | grep -o 'static/js/main\.[a-z0-9]*\.js' | head -1 | sed 's/^/Live bundle:     /'
+          echo "$LIVE" | grep -q 'google-site-verification' && echo "Google verification tag: FOUND" || echo "Google verification tag: MISSING"
+          for p in / /services /seo /contact /sitemap-check-404; do
+            echo "$p -> HTTP $(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "https://alphaaheadllc.com$p")"
+          done
+          echo "$LIVE" | grep -q "$JS" || { echo "::error::Live site is NOT serving the new build - check FTP_SERVER_DIR (website root folder)"; exit 1; }
+          echo "Live site is serving the new build."
