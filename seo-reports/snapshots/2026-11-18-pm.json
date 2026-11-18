@@ -1,0 +1,28 @@
+{
+  "taken": "2026-11-18T12:45Z",
+  "source": "Google Search Console via OpenSEO + URL Inspection API",
+  "last_7_days_finalized": { "range": "2026-11-09..2026-11-15", "clicks": 0, "impressions": 0 },
+  "last_28_days_finalized": { "range": "2026-10-19..2026-11-15", "clicks": 0, "impressions": 0 },
+  "fresh_2026-11-10..18_by_page": {
+    "/": { "clicks": 2, "impressions": 4, "position": 9.3 },
+    "/team": { "clicks": 1, "impressions": 5, "position": 2.6 },
+    "/contact": { "clicks": 0, "impressions": 3, "position": 1.0 },
+    "/home": { "clicks": 0, "impressions": 2, "position": 5.5, "note": "301 -> / in place" },
+    "/services": { "clicks": 0, "impressions": 2, "position": 1.0 }
+  },
+  "queries": "none reported (below Google's privacy threshold)",
+  "index_status": {
+    "/cold-calling": "Submitted and indexed (crawled 2026-11-18 11:45)",
+    "/transaction-coordinator": "Submitted and indexed (crawled 11:44)",
+    "/virtual-assistant": "Submitted and indexed (crawled 11:48)",
+    "/property-management": "Submitted and indexed (crawled 11:45)",
+    "/virtual-assistant-dubai": "Submitted and indexed (crawled 11:47)",
+    "/real-estate-virtual-assistant": "Crawled - currently not indexed (11:42)",
+    "/lead-generation": "Crawled - currently not indexed (11:45)",
+    "/about": "Discovered - currently not indexed",
+    "/blog/transaction-coordinator-cost": "Discovered - currently not indexed",
+    "/blog/is-real-estate-cold-calling-legal": "Discovered - currently not indexed"
+  },
+  "deploy": "run #18 success",
+  "submissions_today": ["sitemap.xml via Search Console API (09:27Z)", "36 URLs via Indexing API (accepted)", "IndexNow after each deploy"]
+}
