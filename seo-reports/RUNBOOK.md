@@ -5,6 +5,7 @@ Google Search Console via OpenSEO (project `56f978bb-6481-43ca-9a31-45af3ca171a4
 and the live site. Never invent metrics, rankings, indexing or AI-citation results.
 
 ## 1. Collect
+- Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).
 - GSC performance, last 7 and last 28 days: totals by `date`, top `query`, top `page`, `query`+`page` (cannibalization), `country`, `device`.
 - Striking-distance queries: position 4–20 with impressions (minImpressions 10 while data is small).
 - High-impression / low-CTR queries (CTR well below position norm).
