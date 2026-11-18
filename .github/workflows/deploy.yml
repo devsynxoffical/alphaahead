@@ -7,6 +7,9 @@ name: Deploy to iHosting (FTP)
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'seo-reports/**'
+      - '**.md'
   workflow_dispatch:
 
 concurrency:
