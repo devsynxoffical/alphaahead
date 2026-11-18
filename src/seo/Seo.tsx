@@ -31,6 +31,20 @@ const organization = () => ({
   address: postalAddress(OFFICES[0]),
   areaServed: ['United States', 'United Arab Emirates', 'Canada', 'United Kingdom'],
   sameAs: SOCIAL_PROFILES,
+  founder: { '@type': 'Person', name: 'Shehreyar Khan', jobTitle: 'Director and Founder' },
+  employee: [
+    { '@type': 'Person', name: 'Shehreyar Khan', jobTitle: 'Director and Founder' },
+    { '@type': 'Person', name: 'Ehtisham Shoukat', jobTitle: 'Enterprise Portfolio Manager / Co-Founder' },
+    { '@type': 'Person', name: 'Nimra Said Khan', jobTitle: 'Operations Manager' },
+  ],
+  contactPoint: [
+    { '@type': 'ContactPoint', contactType: 'sales', telephone: PHONE_US, email: EMAIL, areaServed: ['US', 'CA'], availableLanguage: ['English'] },
+    { '@type': 'ContactPoint', contactType: 'sales', telephone: OFFICES[1].phone, email: EMAIL, areaServed: 'AE', availableLanguage: ['English', 'Urdu'] },
+  ],
+  knowsAbout: [
+    'Virtual assistant services', 'Real estate transaction coordination', 'Real estate cold calling', 'Lead generation',
+    'Virtual property management', 'Search engine optimization', 'Web development', 'Digital marketing',
+  ],
   department: OFFICES.map(o => ({
     '@type': 'ProfessionalService',
     name: o.name,
@@ -84,6 +98,10 @@ function buildGraph(meta: ResolvedMeta): object[] {
   if (meta.type === 'home') {
     graph.push(organization(), website());
   }
+  if (meta.type === 'about') {
+    graph.push(organization());
+    graph.push({ '@type': 'AboutPage', '@id': `${url}#webpage`, url, name: meta.title, about: { '@id': ORG_ID }, mainEntity: { '@id': ORG_ID } });
+  }
   if (meta.type === 'contact') {
     graph.push(organization());
     graph.push({ '@type': 'ContactPage', '@id': `${url}#webpage`, url, name: meta.title, about: { '@id': ORG_ID } });
@@ -101,7 +119,7 @@ function buildGraph(meta: ResolvedMeta): object[] {
     });
   }
   const a = meta.article;
-  if (a && a.kind !== 'location') {
+  if (a && (a.kind === 'blog' || a.kind === 'case-study')) {
     graph.push({
       '@type': a.kind === 'blog' ? 'BlogPosting' : 'Article',
       '@id': `${url}#article`,
@@ -110,7 +128,7 @@ function buildGraph(meta: ResolvedMeta): object[] {
       image: absUrl(encodeURI(a.image)),
       datePublished: a.datePublished,
       dateModified: a.dateModified || a.datePublished,
-      author: { '@type': 'Organization', name: SITE_NAME, url: `${SITE_URL}/` },
+      author: { '@type': 'Organization', '@id': ORG_ID, name: SITE_NAME, url: `${SITE_URL}/about` },
       publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: LOGO_URL } },
       mainEntityOfPage: url,
       keywords: a.primaryKeyword,
@@ -158,7 +176,7 @@ const Seo: React.FC = () => {
   const url = absUrl(meta.path);
   const image = meta.image ? absUrl(encodeURI(meta.image)) : DEFAULT_IMAGE;
   const graph = buildGraph(meta);
-  const ogType = meta.article && meta.article.kind !== 'location' ? 'article' : 'website';
+  const ogType = meta.article && (meta.article.kind === 'blog' || meta.article.kind === 'case-study') ? 'article' : 'website';
 
   return (
     <>
@@ -172,6 +190,9 @@ const Seo: React.FC = () => {
       <meta data-seo="" property="og:description" content={meta.description} />
       <meta data-seo="" property="og:url" content={url} />
       <meta data-seo="" property="og:image" content={image} />
+      {meta.article && (
+        <meta data-seo="" property="article:modified_time" content={meta.article.dateModified || meta.article.datePublished} />
+      )}
       <meta data-seo="" name="twitter:card" content="summary_large_image" />
       <meta data-seo="" name="twitter:title" content={meta.title} />
       <meta data-seo="" name="twitter:description" content={meta.description} />

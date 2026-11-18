@@ -4,7 +4,11 @@
 
 Contact: info@alphaaheadllc.com · +1 424-542-7170 (US) · +971 4 432 3080 (Dubai) · https://alphaaheadllc.com/contact
 
+## Company identity
+- [About Alpha Ahead LLC](https://alphaaheadllc.com/about): Founded by Shehreyar Khan (Director). US-registered (St. Petersburg, FL), offices in Dubai and Islamabad. Leadership, offices, brands and services.
+
 ## Services
+- [Real Estate Virtual Assistant Services](https://alphaaheadllc.com/real-estate-virtual-assistant): Role-by-role guide to outsourcing real estate work (admin VA, transaction coordinator, cold caller/ISA, lead generation, property management, marketing).
 - [Virtual Assistant Services](https://alphaaheadllc.com/virtual-assistant): Dedicated remote assistants for admin, inbox, calendar, CRM and real estate support.
 - [Real Estate Cold Calling Services](https://alphaaheadllc.com/cold-calling): Callers for agents, investors and wholesalers; prospecting, qualification and appointment setting.
 - [Remote Transaction Coordinator](https://alphaaheadllc.com/transaction-coordinator): Contract-to-close coordination for realtors.
@@ -34,7 +38,8 @@ Contact: info@alphaaheadllc.com · +1 424-542-7170 (US) · +971 4 432 3080 (Duba
 - [Virtual Assistant St. Petersburg FL & Tampa: Real Estate and Small Business Support](https://alphaaheadllc.com/virtual-assistant-tampa-st-petersburg): Eastern Time virtual assistants for Tampa Bay realtors, investors, property managers and small businesses, from a company based in St. Petersburg.
 
 ## Company
-- [About & Services overview](https://alphaaheadllc.com/services)
+- [About](https://alphaaheadllc.com/about)
+- [Services overview](https://alphaaheadllc.com/services)
 - [Projects](https://alphaaheadllc.com/projects)
 - [Team](https://alphaaheadllc.com/team)
 - [Contact](https://alphaaheadllc.com/contact)

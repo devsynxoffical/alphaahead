@@ -1,4 +1,4 @@
-export type PageType = 'home' | 'page' | 'service' | 'article' | 'location' | 'listing' | 'contact' | 'notfound';
+export type PageType = 'home' | 'about' | 'page' | 'service' | 'article' | 'location' | 'listing' | 'contact' | 'notfound';
 
 export interface PageMeta {
   title: string; // <title>, keep <= 60 chars
@@ -18,6 +18,13 @@ export const PAGE_META: Record<string, PageMeta> = {
     description:
       'Alpha Ahead LLC provides virtual assistants, cold callers, transaction coordinators, lead generation and digital marketing for US & UAE businesses.',
     type: 'home',
+  },
+  '/about': {
+    title: 'About Alpha Ahead LLC | Founders, Offices & Approach',
+    description:
+      'Alpha Ahead LLC is a US-registered outsourcing and digital agency founded by Shehreyar Khan, with offices in St. Petersburg FL, Dubai and Islamabad.',
+    type: 'about',
+    breadcrumb: 'About Us',
   },
   '/services': {
     title: 'Outsourcing & Digital Services | Alpha Ahead LLC',

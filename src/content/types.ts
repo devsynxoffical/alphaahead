@@ -10,7 +10,7 @@ export interface ContentSection {
   bullets?: string[];
 }
 
-export type ArticleKind = 'blog' | 'case-study' | 'location';
+export type ArticleKind = 'blog' | 'case-study' | 'location' | 'landing';
 
 export interface Article {
   slug: string;
@@ -38,10 +38,12 @@ export interface Article {
   client?: string;
   industry?: string;
   website?: string;
+  /** Landing pages: optional comparison table */
+  table?: { caption: string; columns: string[]; rows: string[][] };
   /** Location pages only */
   officeId?: 'us' | 'uae' | 'pk';
   areaServed?: string;
 }
 
 export const articlePath = (a: Pick<Article, 'kind' | 'slug'>) =>
-  a.kind === 'blog' ? `/blog/${a.slug}` : a.kind === 'case-study' ? `/case-studies/${a.slug}` : `/${a.slug}`;
+  a.kind === 'blog' ? `/blog/${a.slug}` : a.kind === 'case-study' ? `/case-studies/${a.slug}` : `/${a.slug}`; // location + landing live at the root

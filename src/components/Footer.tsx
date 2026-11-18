@@ -37,7 +37,9 @@ const Footer: React.FC = () => {
         <nav aria-label="Company" className="ftr-col">
           <h2 className="ftr-title">{t('footer.company')}</h2>
           <Link to="/">{t('nav.home')}</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/services">{t('nav.services')}</Link>
+          <Link to="/real-estate-virtual-assistant">Real Estate VAs</Link>
           <Link to="/projects">{t('nav.products')}</Link>
           <Link to="/case-studies">Case Studies</Link>
           <Link to="/blog">Blog</Link>

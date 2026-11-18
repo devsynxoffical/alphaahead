@@ -2,10 +2,11 @@ import { Article, articlePath, Faq } from '../content/types';
 import { BLOG_POSTS } from '../content/blog';
 import { CASE_STUDIES } from '../content/caseStudies';
 import { LOCATION_PAGES } from '../content/locations';
+import { LANDING_PAGES } from '../content/landing';
 import { SERVICE_FAQS } from './faqs';
 import { PAGE_META, PageMeta } from './pageMeta';
 
-export const ALL_ARTICLES: Article[] = [...BLOG_POSTS, ...CASE_STUDIES, ...LOCATION_PAGES];
+export const ALL_ARTICLES: Article[] = [...BLOG_POSTS, ...CASE_STUDIES, ...LOCATION_PAGES, ...LANDING_PAGES];
 
 export const findArticle = (path: string) => ALL_ARTICLES.find(a => articlePath(a) === path);
 
@@ -33,7 +34,9 @@ export function resolveMeta(rawPath: string): ResolvedMeta {
       path,
       title: article.metaTitle,
       description: article.metaDescription,
-      type: article.kind === 'location' ? 'location' : 'article',
+      type: article.kind === 'location' ? 'location' : article.kind === 'landing' ? 'service' : 'article',
+      serviceName: article.kind === 'landing' ? article.primaryKeyword.replace(/\b\w/g, c => c.toUpperCase()) : undefined,
+      serviceType: article.kind === 'landing' ? 'Real estate virtual assistant' : undefined,
       breadcrumb: article.title,
       image: article.image,
       faqs: article.faqs,

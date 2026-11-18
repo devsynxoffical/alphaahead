@@ -99,8 +99,21 @@ export const BLOG_PART_2: Article[] = [
           "At Alpha Ahead, our callers work US business hours from our team in Islamabad, with offices in St. Petersburg, Florida and Dubai. We focus on live, manual conversations for real estate teams and build the workflow around your lists, your CRM and your compliance requirements, including DNC scrubbing, time-zone-aware calling windows and opt-out logging.",
           "Cold calling also works best as part of a broader pipeline. Pair it with [real estate lead generation](/lead-generation) so callers spend their time on better data instead of dialing stale lists. If you want to review how a compliant calling program would work for your market, [talk to our team](/contact) and bring your attorney's requirements to the conversation."
         ]
+      },
+      {
+        heading: "Sources and official guidance",
+        paragraphs: [
+          "The rules summarized above come from these official sources. Check them directly before launching a campaign, because requirements change:"
+        ],
+        bullets: [
+          "[National Do Not Call Registry: information for telemarketers](https://telemarketing.donotcall.gov/) (Federal Trade Commission)",
+          "[Complying with the Telemarketing Sales Rule](https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule) (FTC business guidance)",
+          "[Stop Unwanted Robocalls and Texts](https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts) (Federal Communications Commission, TCPA consumer guide)",
+          "[Florida Do Not Call program](https://www.fdacs.gov/Consumer-Resources/Florida-Do-Not-Call) (Florida Department of Agriculture and Consumer Services)"
+        ]
       }
     ],
+    dateModified: "2026-11-18",
     faqs: [
       {
         q: "Is it legal to cold call expired listings and FSBOs?",
