@@ -5,7 +5,7 @@ urls = set()
 for f in glob.glob(sys.argv[1] + '/**/*.html', recursive=True):
     for m in re.finditer(r'href="(https?://[^"#]+)"', open(f, encoding='utf-8').read()):
         u = m.group(1)
-        if 'alphaaheadllc.com' not in u and 'maps.google.com' not in u:
+        if not any(x in u for x in ('alphaaheadllc.com', 'maps.google.com', 'fonts.googleapis.com', 'fonts.gstatic.com')):
             urls.add(u)
 bad = 0
 for u in sorted(urls):

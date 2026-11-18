@@ -201,7 +201,7 @@ const ContactUs: React.FC = () => {
                   margin: 0,
                   fontWeight: 600
                 }}>
-                  <a href={`https://wa.me/${location.whatsapp.replace(/\s/g, '')}`} style={{ color: '#DC520E', textDecoration: 'none' }}>{location.whatsapp}</a>
+                  <a href={`https://wa.me/${location.whatsapp.replace(/\D/g, '')}`} style={{ color: '#DC520E', textDecoration: 'none' }}>{location.whatsapp}</a>
                 </p>
               </div>
             </div>
