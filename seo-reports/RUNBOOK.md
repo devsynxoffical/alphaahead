@@ -24,7 +24,7 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
 - Keep facts to what is on the site; no invented stats, prices, testimonials or claims.
 
 ## 4. Ship
-- `npm run build` + `npm run prerender` must pass; run the metadata audit (one H1, unique titles/descriptions).
+- `npm run build` + `npm run prerender` must pass; run `python3 scripts/audit-seo.py build` (one H1, unique titles/descriptions, no duplicates).
 - Commit and push to `main` as **devsynx** (see CLAUDE.md, no AI attribution lines). The deploy workflow verifies the live site; confirm it is green.
 
 ## 5. Report
