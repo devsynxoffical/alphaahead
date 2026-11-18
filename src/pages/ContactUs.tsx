@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { initialWidth } from '../utils/hydration';
 
 const ContactUs: React.FC = () => {
- const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
+ const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const [formStep, setFormStep] = useState(1);
   const [showConfirmation, setShowConfirmation] = useState(false);
   
@@ -13,6 +14,7 @@ const ContactUs: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

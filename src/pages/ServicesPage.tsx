@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { initialWidth } from '../utils/hydration';
 import { Link } from 'react-router-dom';
 
   const ServicesPage: React.FC = () => {
-  const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
   const headingFont = isMobile ? '1.5rem' : isTablet ? '2rem' : '2.5rem';
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { initialWidth } from '../utils/hydration';
 
 const Careers: React.FC = () => {
-  const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState<any>(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -14,6 +15,7 @@ const Careers: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

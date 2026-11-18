@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
+import { setHydrating } from './utils/hydration';
 
 const rootElement = document.getElementById('root');
 
@@ -20,15 +21,25 @@ document.head.querySelectorAll('[data-seo]').forEach(el => el.remove());
 // Enables scroll-reveal animations (content stays visible if JS never runs).
 document.documentElement.classList.add('aa-js');
 
-const root = ReactDOM.createRoot(rootElement);
-
-root.render(
+const app = (
   <React.StrictMode>
     <I18nextProvider i18n={i18n}>
       <App />
     </I18nextProvider>
   </React.StrictMode>
 );
+
+if (rootElement.hasChildNodes()) {
+  // Prerendered page: hydrate (reuse the existing DOM) instead of re-rendering it.
+  // Keeps the first paint as the LCP and avoids a full repaint when JS loads.
+  setHydrating(true);
+  ReactDOM.hydrateRoot(rootElement, app, {
+    // A mismatch (e.g. a non-English browser language) makes React fall back to a client render, which is fine.
+    onRecoverableError: err => console.warn('[hydration] recovered with client render:', (err as Error)?.message),
+  });
+} else {
+  ReactDOM.createRoot(rootElement).render(app);
+}
 
 // Report web vitals
 reportWebVitals();

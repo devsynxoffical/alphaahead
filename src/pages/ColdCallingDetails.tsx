@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { initialWidth } from '../utils/hydration';
+import ServiceSummary from '../components/seo/ServiceSummary';
 import { useNavigate } from 'react-router-dom';
 
 const ColdCallingDetails: React.FC = () => {
   const navigate = useNavigate();
-  const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
   const isLargeScreen = screenWidth >= 1440;
@@ -12,6 +14,7 @@ const ColdCallingDetails: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -22,7 +25,7 @@ const ColdCallingDetails: React.FC = () => {
     <>
       {/* Hero Section */}
       <section style={{ 
-        background: '#DC520E', 
+        background: 'linear-gradient(120deg, #0f1f3a 0%, #18305a 100%)', 
         padding: '6rem 2rem 4rem', 
         textAlign: 'center',
         position: 'relative',
@@ -68,7 +71,7 @@ const ColdCallingDetails: React.FC = () => {
           </button>
           
           <h1 style={{ 
-            fontSize: headingFontSize, 
+            fontSize: 'clamp(1.5rem, 1rem + 1.8vw, 3rem)', 
             fontWeight: 700, 
             color: '#fff', 
             marginBottom: '1.5rem',
@@ -77,7 +80,7 @@ const ColdCallingDetails: React.FC = () => {
             Cold Calling Services
           </h1>
           <h2 style={{ 
-            fontSize: isMobile ? '1.2rem' : isTablet ? '1.5rem' : '1.8rem', 
+            fontSize: 'clamp(1.2rem, 0.95rem + 1vw, 1.8rem)', 
             fontWeight: 600, 
             color: '#fff', 
             marginBottom: '2rem',
@@ -98,6 +101,8 @@ const ColdCallingDetails: React.FC = () => {
           </p>
         </div>
       </section>
+
+      <ServiceSummary />
 
       {/* Main Content */}
       <section style={{ background: '#f8fafc', padding: paddingSection }}>

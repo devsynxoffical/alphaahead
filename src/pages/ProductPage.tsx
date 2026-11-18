@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { initialWidth } from '../utils/hydration';
 import { useTranslation, Trans } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const ProductPage: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [screenWidth, setScreenWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const isMobile = screenWidth < 768;
   const isTablet = screenWidth >= 768 && screenWidth < 1024;
   const paddingSection = isMobile ? "2rem 1rem" : isTablet ? "3rem 2rem" : "4rem 2rem";
@@ -16,6 +17,7 @@ const ProductPage: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

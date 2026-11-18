@@ -20,6 +20,9 @@ i18n
       ar: { translation: ar }
     },
     fallbackLng: 'en',
+    // Resources are bundled, so initialise synchronously: the first render (hydration of the
+    // prerendered HTML) must already have translated text.
+    initAsync: false,
     supportedLngs: ['en', 'es', 'fr', 'ur','ar'],
     interpolation: { escapeValue: false }
   });

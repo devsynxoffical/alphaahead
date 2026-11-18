@@ -34,6 +34,9 @@ const HomePage: React.FC = () => {
 
   return (
     <>
+      {/* Hero image is the LCP element: preload it (React 19 hoists this into <head>) */}
+      <link rel="preload" as="image" href="/homebackground.jpeg" fetchPriority="high" />
+
       {/* HERO */}
       <section
         className="home-hero"

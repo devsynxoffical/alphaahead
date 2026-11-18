@@ -9,6 +9,8 @@ const CountUp: React.FC<{ to: number; duration?: number }> = ({ to, duration = 1
     const el = ref.current;
     if (!el || typeof IntersectionObserver === 'undefined') return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Never animate during prerendering: the static HTML must contain the final numbers.
+    if (navigator.webdriver) return;
     let raf = 0;
     const io = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) return;

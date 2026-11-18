@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setHydrating } from './utils/hydration';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -33,9 +34,11 @@ import CtaBanner from './components/seo/CtaBanner';
 import ArticlePage from './pages/ArticlePage';
 import ArticleListing from './pages/ArticleListing';
 import NotFound from './pages/NotFound';
+import AboutPage from './pages/AboutPage';
 import { BLOG_POSTS } from './content/blog';
 import { CASE_STUDIES } from './content/caseStudies';
 import { LOCATION_PAGES } from './content/locations';
+import { LANDING_PAGES } from './content/landing';
 
 /** Service page + FAQs (with FAQPage schema) + related service links. */
 const withExtras = (page: React.ReactElement) => (
@@ -63,6 +66,8 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
 
 const RevealManager: React.FC = () => {
   useReveal();
+  // Hydration has committed once this runs; later mounts use the real window width.
+  useEffect(() => setHydrating(false), []);
   return null;
 };
 
@@ -79,6 +84,7 @@ function App() {
           {/* Main Pages */}
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/clients" element={<Clients />} />
@@ -115,7 +121,7 @@ function App() {
             }
           />
           <Route path="/case-studies/:slug" element={<ArticlePage />} />
-          {LOCATION_PAGES.map(l => (
+          {[...LOCATION_PAGES, ...LANDING_PAGES].map(l => (
             <Route key={l.slug} path={`/${l.slug}`} element={<ArticlePage />} />
           ))}
 
