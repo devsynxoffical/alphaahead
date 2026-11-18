@@ -78,11 +78,21 @@ async function main() {
       // Snapshot must not contain client-only animation state.
       document.documentElement.classList.remove('aa-js');
       document.querySelectorAll('.is-visible').forEach(el => el.classList.remove('is-visible'));
+      // Keep adjacent React text nodes separate in the serialized HTML (like React SSR's <!-- --> markers),
+      // otherwise the browser merges them and hydration sees a text mismatch.
+      const root = document.getElementById('root');
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const splits = [];
+      for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+        if (n.nextSibling && n.nextSibling.nodeType === Node.TEXT_NODE) splits.push(n);
+      }
+      splits.forEach(n => n.parentNode.insertBefore(document.createComment(' '), n.nextSibling));
       const links = Array.from(document.querySelectorAll('a[href]'))
         .map(a => a.getAttribute('href'))
         .filter(h => h && h.startsWith('/') && !h.startsWith('//'));
       const robots = document.querySelector('meta[name="robots"]')?.getAttribute('content') || '';
-      return { html: '<!DOCTYPE html>' + document.documentElement.outerHTML, links, robots, finalPath: location.pathname };
+      const modified = document.querySelector('meta[property="article:modified_time"]')?.getAttribute('content') || '';
+      return { html: '<!DOCTYPE html>' + document.documentElement.outerHTML, links, robots, modified, finalPath: location.pathname };
     });
     await page.close();
     return data;
@@ -92,7 +102,7 @@ async function main() {
 
   while (queue.length) {
     const p = queue.shift();
-    const { html, links, robots, finalPath } = await render(p);
+    const { html, links, robots, modified, finalPath } = await render(p);
     if (finalPath !== p) {
       console.log(`  ↪ ${p} redirects to ${finalPath} (not saved)`);
       continue;
@@ -101,7 +111,7 @@ async function main() {
     fs.mkdirSync(path.dirname(file), { recursive: true });
     fs.writeFileSync(file, html);
     const noindex = /noindex/.test(robots);
-    pages.push({ path: p, noindex });
+    pages.push({ path: p, noindex, modified });
     console.log(`  ✓ ${p}${noindex ? ' (noindex)' : ''}`);
 
     for (const raw of links) {
@@ -133,13 +143,13 @@ async function main() {
   server.close();
 
   // Sitemap
-  const today = new Date().toISOString().slice(0, 10);
   const priority = p =>
     p === '/' ? '1.0' : ['/services', '/contact'].includes(p) ? '0.9' : p.startsWith('/blog/') || p.startsWith('/case-studies/') ? '0.7' : '0.8';
   const urls = pages
     .filter(p => !p.noindex)
     .sort((a, b) => a.path.localeCompare(b.path))
-    .map(p => `  <url>\n    <loc>${SITE}${p.path === '/' ? '/' : p.path}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${priority(p.path)}</priority>\n  </url>`)
+    // lastmod only where we know the real modification date (articles); never fake "today" for every URL.
+    .map(p => `  <url>\n    <loc>${SITE}${p.path === '/' ? '/' : p.path}</loc>\n${p.modified ? `    <lastmod>${p.modified}</lastmod>\n` : ''}    <priority>${priority(p.path)}</priority>\n  </url>`)
     .join('\n');
   fs.writeFileSync(
     path.join(BUILD, 'sitemap.xml'),

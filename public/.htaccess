@@ -4,10 +4,21 @@
 DirectoryIndex index.html
 DirectorySlash Off
 ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Never re-apply rules to internal redirects (error documents, rewritten .html files)
+  RewriteCond %{ENV:REDIRECT_STATUS} .
+  RewriteRule ^ - [L]
+
+  # Removed spam pages and old WordPress demo content -> 410 Gone (faster de-indexing)
+  RewriteRule ^items/ - [G,L]
+  RewriteRule ^(hello-world|sample-page)/?$ - [G,L]
+  RewriteRule ^[0-9]{6,}/?$ - [G,L]
+  RewriteRule ^(wp-admin|wp-content|wp-includes|wp-login\.php|xmlrpc\.php) - [G,L]
 
   # 1. Force HTTPS and the non-www host (single canonical origin)
   RewriteCond %{HTTPS} !=on [OR]
@@ -16,6 +27,12 @@ ErrorDocument 404 /404.html
 
   # 2. Legacy / duplicate URLs
   RewriteRule ^home/?$ / [R=301,L]
+  # Old site URLs that still had Google impressions -> current equivalents
+  RewriteRule ^contactUs/?$ /contact [NC,R=301,L]
+  RewriteRule ^(product|project)/?$ /projects [NC,R=301,L]
+  RewriteRule ^agencies/?$ /services [NC,R=301,L]
+  RewriteRule ^faq/?$ / [NC,R=301,L]
+  RewriteRule ^about-us/?$ /about [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
   RewriteRule ^ / [R=301,L]
   # /seo.html -> /seo (only for direct client requests, not internal rewrites)

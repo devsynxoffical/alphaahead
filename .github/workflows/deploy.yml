@@ -97,9 +97,23 @@ jobs:
           check "https://www.alphaaheadllc.com/" 301
           # Each prerendered page must carry its own title
           curl -s https://alphaaheadllc.com/seo | grep -o '<title[^>]*>[^<]*' | head -1
+          # Crawlers (Google + AI answer engines) must be able to load the site
+          for UA in "Googlebot/2.1 (+http://www.google.com/bot.html)" "Mozilla/5.0 (compatible; bingbot/2.0)" "GPTBot/1.1 (+https://openai.com/gptbot)" "OAI-SearchBot/1.0" "ClaudeBot/1.0 (+claudebot@anthropic.com)" "PerplexityBot/1.0"; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 -A "$UA" https://alphaaheadllc.com/real-estate-virtual-assistant)
+            if [ "$code" = "200" ]; then echo "OK   $code UA: $UA"; else echo "FAIL $code UA: $UA"; FAIL=1; fi
+          done
+          # Legacy URLs: redirects and 410 for removed spam/WordPress pages
+          check "https://alphaaheadllc.com/contactUs" 301
+          check "https://alphaaheadllc.com/items/071045066.html" 410
+          check "https://alphaaheadllc.com/hello-world/" 410
+          check "https://alphaaheadllc.com/about" 200
           # Every image used on key pages must load on the live server
           python3 scripts/check-live-images.py build/index.html build/clients.html build/case-studies.html build/projects.html || FAIL=1
           exit $FAIL
+
+      - name: Check outbound links (warning only)
+        continue-on-error: true
+        run: python3 scripts/check-external-links.py build
 
       - name: Notify search engines (IndexNow - Bing, Yandex, Seznam, Naver)
         continue-on-error: true
