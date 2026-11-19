@@ -1,0 +1,19 @@
+{
+  "taken": "2026-11-19T00:45Z",
+  "source": "Google Search Console via OpenSEO + URL Inspection",
+  "fresh_2026-11-10..19": { "clicks": 3, "impressions": 10, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 3, 6.0] } },
+  "by_page": { "/": [2, 6, 6.5], "/team": [1, 6, 3.5], "/contact": [0, 5, 2.6], "/home": [0, 2, 5.5], "/services": [0, 2, 1.0] },
+  "queries": { "alpha ahead": { "clicks": 2, "impressions": 2, "position": 1.0, "pages": ["/", "/team", "/contact", "/services", "/home"] },
+               "ahead llc": { "clicks": 0, "impressions": 1, "position": 34 } },
+  "index_status_checked_this_run": {
+    "/real-estate-virtual-assistant": "Submitted and indexed (was: Crawled - not indexed)",
+    "/lead-generation": "Submitted and indexed (was: Crawled - not indexed)",
+    "/seo": "Submitted and indexed", "/web-development": "Submitted and indexed", "/digital-marketing": "Submitted and indexed",
+    "/personal-assistant": "Submitted and indexed", "/business-assistant": "Submitted and indexed",
+    "/case-studies/zingo-assist": "Submitted and indexed", "/blog": "Submitted and indexed",
+    "/real-estate-virtual-assistant-dubai": "Submitted and indexed"
+  },
+  "indexed_known_total": 19,
+  "not_yet_confirmed": ["/about", "/blog/transaction-coordinator-cost", "/blog/is-real-estate-cold-calling-legal", "/blog/in-house-vs-outsourced-transaction-coordinator", "/blog/property-management-virtual-assistant-tasks", "/blog/real-estate-cold-calling-cost", "/blog/pakistan-vs-philippines-virtual-assistant", "/case-studies", "/case-studies/alpha-medi-assist", "/case-studies/learn-with-alpha", "/virtual-assistant-tampa-st-petersburg", "/it-support", "/graphic-design", "/video-editing", "/clients", "/projects", "/careers"],
+  "deploy": "run #18 success (no site changes since)"
+}
