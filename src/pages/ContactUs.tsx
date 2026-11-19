@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { getAttribution } from '../utils/attribution';
+import { track } from '../utils/track';
 import { initialWidth } from '../utils/hydration';
 
 const ContactUs: React.FC = () => {
@@ -230,11 +232,51 @@ const ContactUs: React.FC = () => {
   );
 
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const step1Ref = useRef<HTMLDivElement>(null);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
+
+  // Validate the visible step-1 fields before moving on (they stay mounted, so nothing is lost).
+  const goToStep2 = () => {
+    const fields = Array.from(step1Ref.current?.querySelectorAll<HTMLInputElement>('input, select, textarea') || []);
+    const invalid = fields.find(el => el.name !== 'company_website' && !el.checkValidity());
+    if (invalid) {
+      invalid.reportValidity();
+      return;
+    }
+    setFormStep(2);
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setShowConfirmation(true);
-    setTimeout(() => setShowConfirmation(false), 5000);
-    setFormStep(1);
+    if (sending) return;
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>;
+    const attribution = getAttribution();
+    setSending(true);
+    setSendError('');
+    try {
+      const res = await fetch('/api/lead.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'contact', ...data, page: window.location.pathname, ...attribution }),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok || !body.ok) throw new Error(body.error || 'Request failed');
+      track('generate_lead', { form: 'contact', inquiry_type: data.inquiryType || '', service: data.service || '', landing_page: attribution.landing });
+      form.reset();
+      setFormStep(1);
+      setShowConfirmation(true);
+      setTimeout(() => setShowConfirmation(false), 6000);
+    } catch (err) {
+      const msg = err instanceof Error && err.message !== 'Request failed' ? err.message : '';
+      setSendError(
+        msg || 'Sorry, your message could not be sent. Please email info@alphaaheadllc.com or call +1 424-542-7170.'
+      );
+      track('lead_error', { form: 'contact' });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -507,9 +549,11 @@ const ContactUs: React.FC = () => {
             maxWidth: 800,
             margin: '0 auto'
           }}>
-            <form onSubmit={handleFormSubmit}>
-              {formStep === 1 ? (
-                <div>
+            <form onSubmit={handleFormSubmit} noValidate={false}>
+              {/* Honeypot: hidden from people, bots fill it */}
+              <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
+              <>
+                <div ref={step1Ref} style={{ display: formStep === 1 ? 'block' : 'none' }}>
                   <h3 style={{
                     fontSize: '1.3rem',
                     fontWeight: 600,
@@ -522,6 +566,7 @@ const ContactUs: React.FC = () => {
                       Inquiry Type *
                     </label>
                     <select 
+                      name="inquiryType"
                       required
                       style={{
                         width: '100%',
@@ -543,6 +588,7 @@ const ContactUs: React.FC = () => {
                         Name *
                       </label>
                       <input 
+                      name="name"
                         type="text" 
                         required
                         style={{
@@ -559,6 +605,7 @@ const ContactUs: React.FC = () => {
                         Email *
                       </label>
                       <input 
+                      name="email"
                         type="email" 
                         required
                         style={{
@@ -577,6 +624,7 @@ const ContactUs: React.FC = () => {
                       Subject *
                     </label>
                     <input 
+                      name="subject"
                       type="text" 
                       required
                       style={{
@@ -594,6 +642,7 @@ const ContactUs: React.FC = () => {
                       Message *
                     </label>
                     <textarea 
+                      name="message"
                       required
                       rows={4}
                       style={{
@@ -609,7 +658,7 @@ const ContactUs: React.FC = () => {
 
                   <button 
                     type="button"
-                    onClick={() => setFormStep(2)}
+                    onClick={goToStep2}
           style={{
                       background: '#DC520E',
                       color: '#fff',
@@ -632,8 +681,7 @@ const ContactUs: React.FC = () => {
                     Next Step
                   </button>
                 </div>
-              ) : (
-                <div>
+              <div style={{ display: formStep === 2 ? 'block' : 'none' }}>
                   <h3 style={{
                     fontSize: '1.3rem',
                     fontWeight: 600,
@@ -646,6 +694,7 @@ const ContactUs: React.FC = () => {
                       Industry
                     </label>
                     <select 
+                      name="industry"
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -665,6 +714,7 @@ const ContactUs: React.FC = () => {
                       Budget Range
                     </label>
                     <select 
+                      name="budget"
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -684,6 +734,7 @@ const ContactUs: React.FC = () => {
                       Project Timeframe
                     </label>
                     <select 
+                      name="timeframe"
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -703,6 +754,7 @@ const ContactUs: React.FC = () => {
                       Services of Interest
                     </label>
                     <select 
+                      name="service"
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -717,6 +769,11 @@ const ContactUs: React.FC = () => {
                     </select>
                   </div>
 
+                  {sendError && (
+                    <p role="alert" style={{ background: '#fdecea', color: '#a12a12', padding: '0.9rem 1rem', borderRadius: 8, marginBottom: '1rem', lineHeight: 1.5 }}>
+                      {sendError}
+                    </p>
+                  )}
                   <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                     <button 
                       type="button"
@@ -736,6 +793,7 @@ const ContactUs: React.FC = () => {
                     </button>
                     <button 
                       type="submit"
+                      disabled={sending}
               style={{
                         background: '#DC520E',
                         color: '#fff',
@@ -755,11 +813,11 @@ const ContactUs: React.FC = () => {
                         e.currentTarget.style.transform = 'translateY(0)';
                         e.currentTarget.style.boxShadow = 'none';
                       }}>
-                      Send Message
+                      {sending ? 'Sending…' : 'Send Message'}
                     </button>
                   </div>
                 </div>
-              )}
+              </>
             </form>
               </div>
             </div>

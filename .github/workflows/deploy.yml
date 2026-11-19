@@ -110,6 +110,10 @@ jobs:
           check "https://alphaaheadllc.com/items/071045066.html" 410
           check "https://alphaaheadllc.com/hello-world/" 410
           check "https://alphaaheadllc.com/about" 200
+          # Lead capture must work: endpoint healthy, storage writable, stored leads private
+          H=$(curl -s --max-time 30 "https://alphaaheadllc.com/api/lead.php?health=1"); echo "lead endpoint: $H"
+          echo "$H" | grep -q '"ok":true' && echo "$H" | grep -q '"storage_writable":true' || { echo "FAIL lead endpoint"; FAIL=1; }
+          check "https://alphaaheadllc.com/leads/" 403
           # Every image used on key pages must load on the live server
           python3 scripts/check-live-images.py build/index.html build/clients.html build/case-studies.html build/projects.html || FAIL=1
           exit $FAIL

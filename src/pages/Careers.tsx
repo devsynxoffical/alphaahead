@@ -1,10 +1,48 @@
 import React, { useEffect, useState } from 'react';
+import { getAttribution } from '../utils/attribution';
+import { track } from '../utils/track';
 import { initialWidth } from '../utils/hydration';
 
 const Careers: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(initialWidth);
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState<any>(null);
+
+  const [appError, setAppError] = useState('');
+  const [appSending, setAppSending] = useState(false);
+  const submitApplication = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (appSending) return;
+    const raw = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const data: Record<string, string> = {};
+    Object.entries(raw).forEach(([k, v]) => { if (typeof v === 'string') data[k] = v; });
+    setAppSending(true);
+    setAppError('');
+    try {
+      const res = await fetch('/api/lead.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'job_application',
+          ...data,
+          position: selectedJob?.title || '',
+          message: [data.message, data.linkedin ? `LinkedIn/portfolio: ${data.linkedin}` : '', 'CV: applicant asked to email it to info@alphaaheadllc.com'].filter(Boolean).join('\n\n'),
+          page: window.location.pathname,
+          ...getAttribution(),
+        }),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok || !body.ok) throw new Error(body.error || '');
+      track('job_application', { position: selectedJob?.title || '' });
+      setShowApplicationForm(false);
+      setShowConfirmation(true);
+      setTimeout(() => setShowConfirmation(false), 8000);
+    } catch (err) {
+      setAppError((err instanceof Error && err.message) || 'Sorry, your application could not be sent. Please email it to info@alphaaheadllc.com.');
+    } finally {
+      setAppSending(false);
+    }
+  };
   const [showConfirmation, setShowConfirmation] = useState(false);
   
   const isMobile = screenWidth < 768;
@@ -505,17 +543,14 @@ const Careers: React.FC = () => {
               Apply for {selectedJob?.title}
             </h2>
 
-            <form onSubmit={(e) => {
-              e.preventDefault();
-              setShowApplicationForm(false);
-              setShowConfirmation(true);
-              setTimeout(() => setShowConfirmation(false), 5000);
-            }}>
+            <form onSubmit={submitApplication}>
+              <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
               <div style={{ marginBottom: '1.5rem' }}>
                 <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, color: '#333' }}>
                   Full Name *
                 </label>
                 <input 
+                  name="name"
                   type="text" 
                   required
                   style={{
@@ -533,6 +568,7 @@ const Careers: React.FC = () => {
                   Email *
                 </label>
                 <input 
+                  name="email"
                   type="email" 
                   required
                   style={{
@@ -550,6 +586,7 @@ const Careers: React.FC = () => {
                   Phone Number *
                 </label>
                 <input 
+                  name="phone"
                   type="tel" 
                   required
                   style={{
@@ -567,6 +604,7 @@ const Careers: React.FC = () => {
                   LinkedIn Profile
                 </label>
                 <input 
+                  name="linkedin"
                   type="url" 
                   placeholder="https://linkedin.com/in/yourprofile"
                   style={{
@@ -584,6 +622,7 @@ const Careers: React.FC = () => {
                   Years of Experience *
                 </label>
                 <select 
+                  name="experience"
                   required
                   style={{
                     width: '100%',
@@ -606,6 +645,7 @@ const Careers: React.FC = () => {
                   Cover Letter *
                 </label>
                 <textarea 
+                  name="message"
                   required
                   rows={4}
                   placeholder="Tell us why you're interested in this position and what makes you a great fit..."
@@ -620,26 +660,15 @@ const Careers: React.FC = () => {
                 />
               </div>
 
-              <div style={{ marginBottom: '2rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, color: '#333' }}>
-                  Resume/CV *
-                </label>
-                <input 
-                  type="file" 
-                  accept=".pdf,.doc,.docx"
-                  required
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem',
-                    border: '1px solid #ddd',
-                    borderRadius: '6px',
-                    fontSize: '1rem'
-                  }}
-                />
-                <p style={{ fontSize: '0.8rem', color: '#666', marginTop: '0.5rem' }}>
-                  Accepted formats: PDF, DOC, DOCX (Max 5MB)
-                </p>
+              <div style={{ marginBottom: '1.5rem', background: '#fdf1ea', borderRadius: 8, padding: '0.9rem 1rem', lineHeight: 1.6, color: '#333' }}>
+                <strong>Resume/CV:</strong> after submitting, please email your CV (PDF or Word) to{' '}
+                <a href={`mailto:info@alphaaheadllc.com?subject=${encodeURIComponent(`Application: ${selectedJob?.title || ''}`)}`} style={{ color: '#DC520E', fontWeight: 700 }}>info@alphaaheadllc.com</a>{' '}
+                with the job title in the subject line.
               </div>
+
+              {appError && (
+                <p role="alert" style={{ background: '#fdecea', color: '#a12a12', padding: '0.9rem 1rem', borderRadius: 8, marginBottom: '1rem' }}>{appError}</p>
+              )}
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <button 

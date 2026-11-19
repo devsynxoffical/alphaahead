@@ -20,6 +20,9 @@ ErrorDocument 410 /404.html
   RewriteRule ^[0-9]{6,}/?$ - [G,L]
   RewriteRule ^(wp-admin|wp-content|wp-includes|wp-login\.php|xmlrpc\.php) - [G,L]
 
+  # Stored website leads are private
+  RewriteRule ^leads(/|$) - [F,L]
+
   # 1. Force HTTPS and the non-www host (single canonical origin)
   RewriteCond %{HTTPS} !=on [OR]
   RewriteCond %{HTTP_HOST} ^www\. [NC]

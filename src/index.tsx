@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
 import { setHydrating } from './utils/hydration';
+import { captureAttribution } from './utils/attribution';
+import { initAnalytics, initClickTracking } from './utils/track';
 
 const rootElement = document.getElementById('root');
 
@@ -39,6 +41,13 @@ if (rootElement.hasChildNodes()) {
   });
 } else {
   ReactDOM.createRoot(rootElement).render(app);
+}
+
+// Lead attribution + conversion tracking (no-ops during prerendering)
+if (!navigator.webdriver) {
+  captureAttribution();
+  initClickTracking();
+  initAnalytics();
 }
 
 // Report web vitals
