@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { FaMapMarkerAlt, FaPhoneAlt, FaCheckCircle } from 'react-icons/fa';
 import { OFFICES } from '../seo/site';
 import { SERVICES } from '../seo/services';
@@ -29,7 +28,6 @@ const FACTS: [string, string][] = [
 ];
 
 const AboutPage: React.FC = () => {
-  const { t } = useTranslation();
   return (
     <>
       <section className="about-hero">
@@ -48,8 +46,18 @@ const AboutPage: React.FC = () => {
         <div className="aa-container about-grid">
           <div className="reveal">
             <h2 className="aa-h2">Who we are</h2>
-            <p className="aa-lead">{t('about.para1')}</p>
-            <p className="aa-lead" style={{ marginTop: '1rem' }}>{t('about.para2')}</p>
+            <p className="aa-lead">
+              Alpha Ahead LLC was founded by Shehreyar Khan as a US-registered company in St. Petersburg, Florida, with a second
+              office in Dubai and its delivery team in Islamabad, Pakistan. That setup lets us give US and UAE businesses
+              dedicated remote staff who work their business hours, managed by a company they can contract with locally.
+            </p>
+            <p className="aa-lead" style={{ marginTop: '1rem' }}>
+              Most of our work is for real estate: <Link to="/transaction-coordinator">transaction coordinators</Link>,{' '}
+              <Link to="/cold-calling">cold callers</Link>, <Link to="/property-management">property management assistants</Link> and{' '}
+              <Link to="/lead-generation">lead generation</Link> teams. Alongside staffing, we run SEO, web development and digital
+              marketing, and we have built our own brands, including Zingo Assist, Alpha Medi Assist and Learn with Alpha, which
+              are documented in our <Link to="/case-studies">case studies</Link>.
+            </p>
             <h3 className="about-h3">How we work</h3>
             <ul className="about-list">
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Dedicated people, not a ticket queue.</strong> Each client works with named team members who learn their tools and processes.</span></li>

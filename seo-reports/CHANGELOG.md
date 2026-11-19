@@ -15,6 +15,7 @@ Every change: why, which URL, how it is validated, the before state, and the mea
 | C8 | 2026-11-19 | New page: virtual real estate ISA | /real-estate-isa | High commercial intent; competitive (MyOutDesk, Stealth Agents, Brivity) - long-term bet | Same as C6 | 0 | Pending |
 | C9 | 2026-11-19 | /cold-calling title + description focused on agents & teams to avoid cannibalizing C6 | /cold-calling | Prevent two pages competing for "investor" queries | GSC query→page mapping: investor queries should land on C6 | "for Agents & Investors" | Pending |
 | C10 | 2026-11-19 | Deploy uses the runner's preinstalled Chrome for prerendering | CI only | Chromium install via apt took ~6 min per deploy | Deploy duration | ~8 min deploys | Pending |
+| C11 | 2026-11-19 | Unique 'Who we are' copy on About page (was the homepage paragraph word-for-word) | /about | URL Inspection: "Crawled - currently not indexed"; duplicate paragraph with homepage | URL Inspection status of /about; 8-word overlap with homepage now 6.2% | Not indexed | Pending |
 
 ## Earlier work (for context, not re-done)
 - 17-18 Nov: prerendering, metadata, schema, sitemap, redirects, 410s, hydration (mobile LCP 6.7 s → 0.55 s), new content pages.

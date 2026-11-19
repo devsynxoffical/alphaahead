@@ -1,0 +1,19 @@
+{
+  "taken": "2026-11-19T12:50Z",
+  "fresh_2026-11-10..19": { "clicks": 3, "impressions": 13, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 6, 11.3] } },
+  "queries": { "alpha ahead": "pos 1 (/, /team, /contact, /services, /home)", "ahead": "pos 6 (/home, 301)", "ahead llc": "pos 34" },
+  "index_status_checked_this_run": {
+    "/cold-calling-for-real-estate-investors": "Submitted and indexed (crawled 2026-11-19 09:45, ~2.5h after publish)",
+    "/hire-virtual-assistant-pakistan": "Submitted and indexed (crawled 09:50)",
+    "/real-estate-isa": "URL is unknown to Google",
+    "/about": "Crawled - currently not indexed (18 Nov 16:51)",
+    "/blog/transaction-coordinator-cost": "Submitted and indexed",
+    "/blog/is-real-estate-cold-calling-legal": "Submitted and indexed",
+    "/blog/pakistan-vs-philippines-virtual-assistant": "Submitted and indexed",
+    "/virtual-assistant-tampa-st-petersburg": "Submitted and indexed",
+    "/it-support": "Submitted and indexed",
+    "/case-studies": "Submitted and indexed"
+  },
+  "indexed_known_total": 28,
+  "deploy": "run #20 success"
+}
