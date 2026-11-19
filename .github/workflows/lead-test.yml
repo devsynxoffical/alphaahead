@@ -1,0 +1,25 @@
+name: Test live lead form
+
+# Manually triggered: sends ONE clearly-labelled test enquiry to the live form endpoint
+# (the same request the website's contact/booking forms send) and reports the result.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Health check
+        run: curl -s --max-time 30 "https://alphaaheadllc.com/api/lead.php?health=1"; echo
+
+      - name: Submit a test lead (like the website form does)
+        run: |
+          RES=$(curl -s -w '\nHTTP %{http_code}' --max-time 30 -X POST https://alphaaheadllc.com/api/lead.php \
+            -H 'Content-Type: application/json' \
+            -H 'User-Agent: Mozilla/5.0 (lead form test)' \
+            -d '{"type":"contact","name":"WEBSITE TEST - please ignore","email":"test@alphaaheadllc.com","inquiryType":"Website form (automated test)","subject":"Automated test of the booking form","message":"This is an automated test sent from GitHub Actions to confirm the website form delivers leads. No action needed.","service":"Virtual Assistant Services","page":"/contact","landing":"/contact","referrer":"github-actions-test"}')
+          echo "$RES"
+          echo "$RES" | grep -q '"ok":true' || { echo "::error::Lead form endpoint did not accept the test lead"; exit 1; }
+          echo "$RES" | grep -q '"stored":true' && echo "Stored on server: YES" || echo "::warning::Not stored on server"
+          echo "$RES" | grep -q '"mailed":true' && echo "Email handed to the mail server: YES (check the info@ inbox and spam folder)" || echo "::warning::Email NOT sent by the server (lead is still stored)"
