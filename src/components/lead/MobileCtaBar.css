@@ -1,0 +1,13 @@
+.mcta { display: none; }
+@media (max-width: 760px) {
+  .mcta {
+    display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: .5rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 900;
+    padding: .55rem .6rem calc(.55rem + env(safe-area-inset-bottom)); background: rgba(255,255,255,.97); box-shadow: 0 -6px 20px rgba(15,31,58,.12);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .mcta__btn { display: flex; align-items: center; justify-content: center; gap: .4rem; min-height: 46px; border-radius: 10px; font-weight: 700; font-size: .95rem; text-decoration: none; color: var(--aa-navy); background: var(--aa-bg-soft); border: 1px solid var(--aa-line); }
+  .mcta__btn svg { color: var(--aa-orange); }
+  .mcta__btn--primary { background: var(--aa-orange); color: #fff; border-color: var(--aa-orange); }
+  .mcta__btn--primary svg { color: #fff; }
+  body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+}

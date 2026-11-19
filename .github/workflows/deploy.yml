@@ -40,10 +40,13 @@ jobs:
           CI: false
           GENERATE_SOURCEMAP: false
 
-      - name: Install Chromium for prerendering
+      - name: Install Playwright (uses the runner's preinstalled Chrome)
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: |
           npm i --no-save --no-audit --no-fund playwright@1.63.0
-          npx playwright install --with-deps chromium
+          CHROME=$(command -v google-chrome || command -v google-chrome-stable || true)
+          if [ -z "$CHROME" ]; then npx playwright install --with-deps chromium; else echo "CHROME_PATH=$CHROME" >> "$GITHUB_ENV"; echo "Using $CHROME"; fi
 
       - name: Prerender pages + generate sitemap.xml
         run: node scripts/prerender.js

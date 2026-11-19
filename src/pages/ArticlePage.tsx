@@ -10,6 +10,7 @@ import FaqSection from '../components/seo/FaqSection';
 import RelatedServices from '../components/seo/RelatedServices';
 import CtaBanner from '../components/seo/CtaBanner';
 import NotFound from './NotFound';
+import LeadSection from '../components/lead/LeadSection';
 import './ArticlePage.css';
 
 const formatDate = (iso: string) =>
@@ -216,6 +217,8 @@ const ArticlePage: React.FC = () => {
           </div>
         </aside>
       </div>
+
+      <LeadSection service={services[0]?.name} placement={`${article.kind}-${article.slug}`} heading={article.kind === 'blog' ? 'Want a team to handle this for you?' : 'Talk to us about your project'} />
 
       {article.faqs && article.faqs.length > 0 && <FaqSection faqs={article.faqs} />}
 

@@ -53,7 +53,8 @@ async function main() {
   });
   await new Promise(r => server.listen(PORT, '127.0.0.1', r));
 
-  const browser = await loadChromium().launch();
+  // CI: use the runner's preinstalled Chrome (CHROME_PATH) instead of downloading Chromium.
+  const browser = await loadChromium().launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {});
   const context = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'en-US' });
   // Only load our own assets: no chat widget, analytics or fonts in the snapshot.
   await context.route('**/*', route => {

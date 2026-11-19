@@ -5,6 +5,7 @@ import { LOCATION_PAGES } from '../content/locations';
 import { LANDING_PAGES } from '../content/landing';
 import { SERVICE_FAQS } from './faqs';
 import { PAGE_META, PageMeta } from './pageMeta';
+import { RICH_LANDINGS } from '../content/richLandings';
 
 export const ALL_ARTICLES: Article[] = [...BLOG_POSTS, ...CASE_STUDIES, ...LOCATION_PAGES, ...LANDING_PAGES];
 
@@ -27,6 +28,21 @@ export function resolveMeta(rawPath: string): ResolvedMeta {
   const path = rawPath.length > 1 ? rawPath.replace(/\/+$/, '') : rawPath;
   const page = PAGE_META[path];
   if (page) return { ...page, path, faqs: SERVICE_FAQS[path] };
+
+  const rich = RICH_LANDINGS.find(r => `/${r.slug}` === path);
+  if (rich) {
+    return {
+      path,
+      title: rich.metaTitle,
+      description: rich.metaDescription,
+      type: 'service',
+      breadcrumb: rich.serviceName,
+      serviceName: rich.serviceName,
+      serviceType: rich.primaryKeyword,
+      image: rich.hero.image,
+      faqs: rich.faqs,
+    };
+  }
 
   const article = findArticle(path);
   if (article) {

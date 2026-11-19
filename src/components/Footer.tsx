@@ -7,6 +7,7 @@ import { MdEmail, MdCall } from 'react-icons/md';
 import { SERVICES } from '../seo/services';
 import { OFFICES } from '../seo/site';
 import { LOCATION_PAGES } from '../content/locations';
+import { RICH_LANDINGS } from '../content/richLandings';
 import { articlePath } from '../content/types';
 import './Footer.css';
 
@@ -53,6 +54,9 @@ const Footer: React.FC = () => {
           <h2 className="ftr-title">{t('footer.solutions')}</h2>
           {SERVICES.map(s => (
             <Link key={s.path} to={s.path}>{s.name}</Link>
+          ))}
+          {RICH_LANDINGS.map(r => (
+            <Link key={r.slug} to={`/${r.slug}`}>{r.serviceName.replace(/ \(.*\)$/, '')}</Link>
           ))}
         </nav>
 

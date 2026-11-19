@@ -101,9 +101,9 @@ export const PAGE_META: Record<string, PageMeta> = {
     serviceType: 'Virtual assistant',
   },
   '/cold-calling': {
-    title: 'Real Estate Cold Calling Services for Agents & Investors',
+    title: 'Real Estate Cold Calling Services for Agents & Teams',
     description:
-      'Trained cold callers for realtors, wholesalers and investors. Prospecting, lead qualification, appointment setting and CRM updates. Get a free quote.',
+      'Trained cold callers for real estate agents and teams: prospecting, lead qualification, appointment setting and CRM updates. Get a free quote today.',
     type: 'service',
     breadcrumb: 'Cold Calling Services',
     serviceName: 'Cold Calling Services',

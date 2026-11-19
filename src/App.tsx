@@ -35,6 +35,9 @@ import ArticlePage from './pages/ArticlePage';
 import ArticleListing from './pages/ArticleListing';
 import NotFound from './pages/NotFound';
 import AboutPage from './pages/AboutPage';
+import RichLandingPage from './pages/RichLandingPage';
+import MobileCtaBar from './components/lead/MobileCtaBar';
+import { RICH_LANDINGS } from './content/richLandings';
 import { BLOG_POSTS } from './content/blog';
 import { CASE_STUDIES } from './content/caseStudies';
 import { LOCATION_PAGES } from './content/locations';
@@ -121,6 +124,9 @@ function App() {
             }
           />
           <Route path="/case-studies/:slug" element={<ArticlePage />} />
+          {RICH_LANDINGS.map(r => (
+            <Route key={r.slug} path={`/${r.slug}`} element={<RichLandingPage />} />
+          ))}
           {[...LOCATION_PAGES, ...LANDING_PAGES].map(l => (
             <Route key={l.slug} path={`/${l.slug}`} element={<ArticlePage />} />
           ))}
@@ -129,6 +135,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <MobileCtaBar />
     </Router>
   );
 }
