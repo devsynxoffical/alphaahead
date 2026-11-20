@@ -1,0 +1,24 @@
+{
+  "taken": "2026-11-20T12:50Z",
+  "fresh_2026-11-10..20": { "clicks": 3, "impressions": 44, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7] } },
+  "pages": {
+    "/team": [1, 15, 7.9], "/": [2, 10, 8.5], "/contact": [0, 8, 2.8], "/home": [0, 6, 4.7], "/services": [0, 4, 1],
+    "/blog/is-real-estate-cold-calling-legal": [0, 8, 10.5], "/blog/in-house-vs-outsourced-transaction-coordinator": [0, 7, 66.3],
+    "/business-assistant": [0, 2, 1], "/personal-assistant": [0, 2, 1], "/blog/pakistan-vs-philippines-virtual-assistant": [0, 1, 1],
+    "/case-studies/alpha-medi-assist": [0, 1, 8], "/virtual-assistant-dubai": [0, 1, 67], "/digital-marketing": [0, 1, 99], "/seo": [0, 1, 116], "/blog": [0, 1, 128]
+  },
+  "non_brand_queries_first_seen": {
+    "comparison in-house vs virtual transaction coordinator pros & cons": [3, 46.7],
+    "advantages of virtual transaction coordinators over in-house": [2, 49.5],
+    "benefits of outsourcing transaction coordination tasks": [1, 89],
+    "is cold calling illegal": [1, 39],
+    "dubai virtual assistant": [1, 67]
+  },
+  "index_status_checked_this_run": {
+    "/real-estate-isa": "Discovered - currently not indexed",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov, before C11 fix)",
+    "/blog/in-house-vs-outsourced-transaction-coordinator": "Submitted and indexed; Breadcrumbs rich result PASS",
+    "/blog/real-estate-cold-calling-cost": "Submitted and indexed; Breadcrumbs rich result PASS"
+  },
+  "changes_this_run": ["C12", "C13"]
+}
