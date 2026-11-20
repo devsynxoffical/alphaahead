@@ -12,9 +12,9 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
   Former US real estate URLs 301 to https://zingoassist.us/ (`public/.htaccess`).
 - **Keyword map:** `seo-reports/keyword-map-2026-11-20.csv` (target page per keyword, P1 = KD ≤ 20 first).
   In each run, check GSC for these keywords and their target pages; report P1 movement explicitly.
-- **Content plan (1-2 posts/week, only as real questions/demand allow):** Virtual assistant cost 2026 (US vs Philippines vs Pakistan,
-  only with sourced figures), Hiring a virtual assistant in Dubai (visa-free remote option), Bookkeeping VA checklist.
-  Done: Appointment setter vs SDR, How to onboard a VA in 7 days.
+- **Content plan (1-2 posts/week, only as real questions/demand allow):** all 5 posts from the 20 Nov plan are published
+  (appointment setter vs SDR, onboard a VA in 7 days, VA cost 2026, hiring a VA in Dubai, bookkeeping VA checklist).
+  Next topics only from GSC queries or the keyword map, never duplicating a service page's keyword.
 - **90-day targets (from plan; track, never fake):** ranking keywords 25 / 70 / 150, clean referring domains 8 / 18 / 30,
   organic visits/month 30 / 150 / 400, leads/month 1 / 4 / 10 at day 30 / 60 / 90 (from 20 Nov 2026).
 - **Owner-only actions:** disavow junk backlinks (Semrush export → GSC disavow tool), Clutch/GoodFirms/Trustpilot/Upwork
