@@ -9,12 +9,11 @@ export interface ServiceLink {
 
 export const SERVICES: ServiceLink[] = [
   { path: '/virtual-assistant', name: 'Virtual Assistant Services', short: 'Dedicated remote assistants for admin, CRM, inbox and calendar work.', category: 'staffing' },
-  { path: '/cold-calling', name: 'Cold Calling Services', short: 'Trained callers who book appointments and qualify prospects for you.', category: 'staffing' },
-  { path: '/personal-assistant', name: 'Personal Assistant Services', short: 'Remote personal assistants for busy founders and executives.', category: 'staffing' },
-  { path: '/business-assistant', name: 'Virtual Business Assistant', short: 'Back-office, bookkeeping support and operations assistants.', category: 'staffing' },
-  { path: '/lead-generation', name: 'Lead Generation Services', short: 'B2B and real estate lead lists, outreach and qualification.', category: 'staffing' },
-  { path: '/transaction-coordinator', name: 'Real Estate Transaction Coordinator', short: 'Remote TCs who manage contract-to-close paperwork and deadlines.', category: 'real-estate' },
-  { path: '/property-management', name: 'Virtual Property Management', short: 'Remote assistants for tenant communication, leasing and maintenance.', category: 'real-estate' },
+  { path: '/cold-calling', name: 'B2B Cold Calling Services', short: 'Trained callers who prospect, qualify and book meetings for your sales team.', category: 'staffing' },
+  { path: '/personal-assistant', name: 'Personal Virtual Assistant', short: 'Remote personal assistants for busy founders and executives.', category: 'staffing' },
+  { path: '/business-assistant', name: 'Executive Virtual Assistant', short: 'Executive, back-office and operations assistants for leaders.', category: 'staffing' },
+  { path: '/lead-generation', name: 'Lead Generation Services', short: 'B2B lead lists, outreach and qualification for your sales team.', category: 'staffing' },
+  { path: '/property-management', name: 'Property Management VA', short: 'Remote assistants for tenant communication, leasing and maintenance.', category: 'real-estate' },
   { path: '/seo', name: 'SEO Services', short: 'Technical SEO, content and local SEO that grows organic traffic.', category: 'digital' },
   { path: '/web-development', name: 'Web Development', short: 'Fast, SEO-ready websites and web apps built to convert.', category: 'digital' },
   { path: '/digital-marketing', name: 'Digital Marketing', short: 'Paid ads, social media and content marketing campaigns.', category: 'digital' },

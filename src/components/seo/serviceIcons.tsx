@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaHeadset, FaPhoneAlt, FaUserTie, FaBriefcase, FaBuilding, FaBullseye, FaFileSignature,
+  FaHeadset, FaPhoneAlt, FaUserTie, FaBriefcase, FaBuilding, FaBullseye,
   FaSearch, FaCode, FaBullhorn, FaPaintBrush, FaVideo, FaServer,
 } from 'react-icons/fa';
 
@@ -11,7 +11,6 @@ export const SERVICE_ICONS: Record<string, React.ReactNode> = {
   '/business-assistant': <FaBriefcase />,
   '/property-management': <FaBuilding />,
   '/lead-generation': <FaBullseye />,
-  '/transaction-coordinator': <FaFileSignature />,
   '/seo': <FaSearch />,
   '/web-development': <FaCode />,
   '/digital-marketing': <FaBullhorn />,

@@ -19,7 +19,6 @@ import PersonalAssistantDetails from './pages/PersonalAssistantDetails';
 import VirtualBusinessAssistantDetails from './pages/VirtualBusinessAssistantDetails';
 import VirtualPropertyManagementDetails from './pages/VirtualPropertyManagementDetails';
 import LeadGenerationDetails from './pages/LeadGenerationDetails';
-import RealEstateTransactionCoordinatorDetails from './pages/RealEstateTransactionCoordinatorDetails';
 import SEODetails from './pages/SEODetails';
 import WebDevelopmentDetails from './pages/WebDevelopmentDetails';
 import DigitalMarketingDetails from './pages/DigitalMarketingDetails';
@@ -58,7 +57,6 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
   ['/business-assistant', <VirtualBusinessAssistantDetails />],
   ['/property-management', <VirtualPropertyManagementDetails />],
   ['/lead-generation', <LeadGenerationDetails />],
-  ['/transaction-coordinator', <RealEstateTransactionCoordinatorDetails />],
   ['/seo', <SEODetails />],
   ['/web-development', <WebDevelopmentDetails />],
   ['/digital-marketing', <DigitalMarketingDetails />],
@@ -106,8 +104,8 @@ function App() {
             path="/blog"
             element={
               <ArticleListing
-                title="Outsourcing, Real Estate & Growth Guides"
-                intro="Practical, no-fluff guides on hiring virtual assistants, transaction coordinators and cold callers, and on growing with SEO and digital marketing."
+                title="Outsourcing, Virtual Assistant & Growth Guides"
+                intro="Practical, no-fluff guides on hiring and onboarding virtual assistants, appointment setters and cold callers, and on growing with SEO and digital marketing."
                 articles={BLOG_POSTS}
               />
             }

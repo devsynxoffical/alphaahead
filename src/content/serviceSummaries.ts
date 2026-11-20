@@ -35,11 +35,11 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/cold-calling": {
     definition:
-      "Real estate cold calling services are outsourced phone prospecting, where trained callers contact homeowners, buyers or business prospects to find interest and book appointments. Alpha Ahead provides callers for real estate and B2B outreach who work from scripts tailored to your brand, qualify leads against your criteria and log results in your CRM.",
+      "Cold calling services are outsourced phone prospecting, where trained callers contact business prospects to find interest and book appointments. Alpha Ahead provides callers for B2B and service-business outreach who work from scripts tailored to your brand, qualify leads against your criteria and log results in your CRM.",
     bestFor: [
-      "Real estate agents and teams",
-      "Real estate investors and wholesalers",
       "B2B sales teams",
+      "Agencies and consultancies",
+      "SaaS and IT service providers",
       "Small businesses that need outbound prospecting",
     ],
     tasks: [
@@ -57,7 +57,7 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/personal-assistant": {
     definition:
-      "A remote personal assistant is a dedicated helper who manages an individual's schedule, inbox, travel and personal errands from a distance. Alpha Ahead assigns personal assistants to busy executives and professionals to keep calendars, bookings, research and day-to-day life logistics organized, with confidentiality and part-time, full-time or project-based options.",
+      "A personal virtual assistant is a dedicated remote helper who manages an individual's schedule, inbox, travel and personal errands from a distance. Alpha Ahead assigns personal assistants to busy executives and professionals to keep calendars, bookings, research and day-to-day life logistics organized, with confidentiality and part-time, full-time or project-based options.",
     bestFor: [
       "Busy executives and founders",
       "Professionals balancing work and family",
@@ -79,7 +79,7 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/business-assistant": {
     definition:
-      "A virtual business assistant is a remote back-office specialist who handles the operational tasks that keep a small business running, such as bookkeeping support, data entry, reporting and CRM upkeep. Alpha Ahead provides trained business assistants on scalable part-time or full-time plans, with your business data handled securely and confidentially.",
+      "An executive virtual assistant is a remote assistant who supports a founder or leader with inbox, calendar, meeting prep and the back-office tasks that keep a small business running, such as bookkeeping support, data entry, reporting and CRM upkeep. Alpha Ahead provides trained business assistants on scalable part-time or full-time plans, with your business data handled securely and confidentially.",
     bestFor: [
       "Small businesses",
       "Startups that want lean back-office support",
@@ -101,7 +101,7 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/property-management": {
     definition:
-      "A virtual property management assistant is a remote assistant who handles the administrative side of rental properties, including tenant communication, rent reminders, maintenance coordination and listing support. Alpha Ahead supplies property management assistants to landlords, investors and management companies on part-time, full-time or project-based terms.",
+      "A property management virtual assistant is a remote assistant who handles the administrative side of rental properties (often called virtual property management), including tenant communication, rent reminders, maintenance coordination and listing support. Alpha Ahead supplies property management assistants to landlords, investors and management companies on part-time, full-time or project-based terms.",
     bestFor: [
       "Independent landlords",
       "Real estate investors",
@@ -142,28 +142,6 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
       "Outreach runs during US (EST or PST) or UAE business hours, timed to your target market.",
     howToStart:
       "Book a free consultation call to define your ideal lead and choose a package that fits your goals.",
-  },
-  "/transaction-coordinator": {
-    definition:
-      "A remote real estate transaction coordinator is an off-site professional who manages the paperwork, deadlines and communication of a property deal from accepted contract to closing. Alpha Ahead provides transaction coordinators who review documents for completeness, track critical dates and keep clients, lenders, inspectors and title companies informed.",
-    bestFor: [
-      "Real estate agents",
-      "Real estate teams",
-      "Brokerages that want organized deal files",
-      "Real estate investors",
-    ],
-    tasks: [
-      "Open files after contract acceptance",
-      "Track contingency and closing deadlines",
-      "Review documents for completeness",
-      "Coordinate with lenders, inspectors and title",
-      "Send regular status updates to clients",
-      "Prepare files for broker compliance review",
-    ],
-    hours:
-      "Coordinators work US (EST or PST) or UAE business hours, so deal updates happen during your working day.",
-    howToStart:
-      "Book a free consultation call to walk through your transaction process and current deal volume.",
   },
   "/seo": {
     definition:

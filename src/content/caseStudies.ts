@@ -46,7 +46,7 @@ export const CASE_STUDIES: Article[] = [
         heading: "Services involved",
         paragraphs: [
           "Building Zingo Assist drew on the same capabilities we offer to clients. Brand and visual design came from our [graphic design team](/graphic-design). The website was produced through our [web development service](/web-development). The service itself is built on the operating model behind our [virtual assistant services](/virtual-assistant), including how assistants are trained, supervised and matched to work.",
-          "Because real estate is one of the three focus industries, the brand also connects naturally to specialized roles we run inside Alpha Ahead, such as [cold calling for real estate teams](/cold-calling) and [transaction coordination](/transaction-coordinator). Those roles share the same discipline: clear checklists, shared tools, and regular reporting back to the client.",
+          "Today Zingo Assist operates as Alpha Ahead's real estate division at [zingoassist.us](https://zingoassist.us/), serving US agents, teams and investors with real estate virtual assistants and transaction coordination. Alpha Ahead focuses on general business outsourcing such as [appointment setting](/appointment-setting), [cold calling](/cold-calling) and [bookkeeping support](/bookkeeping-virtual-assistant). Both share the same discipline: clear checklists, shared tools, and regular reporting back to the client.",
         ],
       },
       {
@@ -96,7 +96,7 @@ export const CASE_STUDIES: Article[] = [
         a: "We can help with the parts we offer as services, including brand design, website development and digital marketing. Get in touch to discuss what your project needs.",
       },
     ],
-    relatedServices: ["/virtual-assistant", "/cold-calling", "/transaction-coordinator"],
+    relatedServices: ["/virtual-assistant", "/cold-calling", "/appointment-setting"],
   },
   {
     slug: "alpha-medi-assist",

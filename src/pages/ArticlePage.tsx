@@ -185,7 +185,7 @@ const ArticlePage: React.FC = () => {
               <p className="art-author__name">Written by the Alpha Ahead Team</p>
               <p className="art-author__bio">
                 Alpha Ahead LLC is a US-registered outsourcing and digital agency (St. Petersburg, FL · Dubai · Islamabad) that
-                runs virtual assistant, transaction coordination, cold calling and marketing teams for real estate and service businesses.
+                runs virtual assistant, appointment setting, cold calling and marketing teams for US and UAE businesses.
                 Our guides are written from the work our team does every day. <Link to="/about">About us</Link> · <Link to="/team">Meet the team</Link>
               </p>
             </div>

@@ -4,6 +4,23 @@ Each run (every 12 hours) follows these steps. Data sources are first-party only
 Google Search Console via OpenSEO (project `56f978bb-6481-43ca-9a31-45af3ca171a4`, property `https://alphaaheadllc.com/`, no credits used)
 and the live site. Never invent metrics, rankings, indexing or AI-citation results.
 
+## 0. Strategy (DEVSYNX SEO plan, 20 Nov 2026)
+- **Lanes:** Alpha Ahead targets general business outsourcing for US + UAE (virtual assistants, appointment setting,
+  bookkeeping VA, executive/personal VA, B2B cold calling, lead generation, CRM management, digital) and Dubai real estate.
+  **US real estate keywords belong to Zingo Assist** (real estate VA, transaction coordinator, real estate ISA,
+  real estate cold calling, listing coordinator): never create or re-target Alpha Ahead pages for them.
+  Former US real estate URLs 301 to https://zingoassist.us/ (`public/.htaccess`).
+- **Keyword map:** `seo-reports/keyword-map-2026-11-20.csv` (target page per keyword, P1 = KD ≤ 20 first).
+  In each run, check GSC for these keywords and their target pages; report P1 movement explicitly.
+- **Content plan (1-2 posts/week, only as real questions/demand allow):** Virtual assistant cost 2026 (US vs Philippines vs Pakistan,
+  only with sourced figures), Hiring a virtual assistant in Dubai (visa-free remote option), Bookkeeping VA checklist.
+  Done: Appointment setter vs SDR, How to onboard a VA in 7 days.
+- **90-day targets (from plan; track, never fake):** ranking keywords 25 / 70 / 150, clean referring domains 8 / 18 / 30,
+  organic visits/month 30 / 150 / 400, leads/month 1 / 4 / 10 at day 30 / 60 / 90 (from 20 Nov 2026).
+- **Owner-only actions:** disavow junk backlinks (Semrush export → GSC disavow tool), Clutch/GoodFirms/Trustpilot/Upwork
+  profiles, UAE directories, Dubai GBP (only if staff work at the Dubai office), exact Zingo URLs for the redirects,
+  real pricing (pages are quote-only until then).
+
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).
 - GSC performance, last 7 and last 28 days: totals by `date`, top `query`, top `page`, `query`+`page` (cannibalization), `country`, `device`.

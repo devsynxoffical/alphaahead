@@ -36,6 +36,9 @@ ErrorDocument 410 /404.html
   RewriteRule ^agencies/?$ /services [NC,R=301,L]
   RewriteRule ^faq/?$ / [NC,R=301,L]
   RewriteRule ^about-us/?$ /about [NC,R=301,L]
+  # US real estate pages moved to our real estate division, Zingo Assist (Nov 2026 site split)
+  RewriteRule ^(real-estate-virtual-assistant|transaction-coordinator|real-estate-isa|cold-calling-for-real-estate-investors|virtual-assistant-tampa-st-petersburg)(\.html)?/?$ https://zingoassist.us/ [NC,R=301,L]
+  RewriteRule ^blog/(transaction-coordinator-cost|in-house-vs-outsourced-transaction-coordinator|real-estate-cold-calling-cost|is-real-estate-cold-calling-legal)(\.html)?/?$ https://zingoassist.us/ [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
   RewriteRule ^ / [R=301,L]
   # /seo.html -> /seo (only for direct client requests, not internal rewrites)

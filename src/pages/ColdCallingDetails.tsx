@@ -77,7 +77,7 @@ const ColdCallingDetails: React.FC = () => {
             marginBottom: '1.5rem',
             textShadow: '0 2px 4px rgba(0,0,0,0.3)'
           }}>
-            Cold Calling Services
+            B2B Cold Calling Services
           </h1>
           <h2 style={{ 
             fontSize: 'clamp(1.2rem, 0.95rem + 1vw, 1.8rem)', 
@@ -189,7 +189,7 @@ const ColdCallingDetails: React.FC = () => {
               marginBottom: '2rem',
               textAlign: 'justify'
             }}>
-              Our highly skilled calling team specializes in both B2B cold calling services and real estate cold calling services. Each team member undergoes rigorous training to master the art of engaging prospects effectively. With years of experience across industries, our callers are adept at navigating conversations, building rapport, and transforming a simple call into a productive business opportunity. We pride ourselves on a track record of delivering measurable results, helping businesses like yours achieve their sales goals with precision.
+              Our calling team specializes in B2B cold calling services and outbound prospecting for service businesses. Each team member undergoes rigorous training to master the art of engaging prospects effectively. With years of experience across industries, our callers are adept at navigating conversations, building rapport, and transforming a simple call into a productive business opportunity. We pride ourselves on a track record of delivering measurable results, helping businesses like yours achieve their sales goals with precision.
             </p>
           </div>
 
@@ -382,7 +382,7 @@ const ColdCallingDetails: React.FC = () => {
                   lineHeight: 1.7,
                   color: '#4a5568'
                 }}>
-                  Whether you need real estate cold calling services for a short-term push or ongoing support with B2B cold calling services, our flexible outsourcing plans cater to your specific timeline and objectives. We customize solutions that suit any business size from startups to established companies.
+                  Whether you need cold calling for a short-term push or ongoing B2B outbound support, our flexible outsourcing plans cater to your specific timeline and objectives. We customize solutions that suit any business size from startups to established companies.
                 </p>
               </div>
             </div>
@@ -574,14 +574,14 @@ const ColdCallingDetails: React.FC = () => {
                   color: '#2d3748',
                   marginBottom: '1rem'
                 }}>
-                  Real Estate Professionals
+                  Agencies and Service Businesses
                 </h4>
                 <p style={{
                   fontSize: '1rem',
                   lineHeight: 1.7,
                   color: '#4a5568'
                 }}>
-                  Our cold calling services for real estate offer targeted outreach to find motivated buyers and sellers. Whether you're an agent looking to grow your client base or an agency aiming to close more deals, our services are designed to deliver results.
+                  Marketing agencies, consultancies, IT providers and home service companies use our callers to reach decision-makers, qualify interest and book discovery calls with their sales team. Real estate agents and investors are served by our real estate division, Zingo Assist.
                 </p>
               </div>
 

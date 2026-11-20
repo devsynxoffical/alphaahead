@@ -27,7 +27,7 @@ const organization = () => ({
   email: EMAIL,
   telephone: PHONE_US,
   description:
-    'US-based outsourcing and digital solutions agency providing virtual assistants, cold calling, real estate transaction coordination, lead generation, SEO, web development and digital marketing.',
+    'US-registered outsourcing and digital agency providing virtual assistants, appointment setting, cold calling, bookkeeping assistants, lead generation, SEO, web development and digital marketing for US and UAE businesses.',
   address: postalAddress(OFFICES[0]),
   areaServed: ['United States', 'United Arab Emirates', 'Canada', 'United Kingdom'],
   sameAs: SOCIAL_PROFILES,
@@ -42,8 +42,8 @@ const organization = () => ({
     { '@type': 'ContactPoint', contactType: 'sales', telephone: OFFICES[1].phone, email: EMAIL, areaServed: 'AE', availableLanguage: ['English', 'Urdu'] },
   ],
   knowsAbout: [
-    'Virtual assistant services', 'Real estate transaction coordination', 'Real estate cold calling', 'Lead generation',
-    'Virtual property management', 'Search engine optimization', 'Web development', 'Digital marketing',
+    'Virtual assistant services', 'Appointment setting', 'Cold calling', 'Bookkeeping virtual assistants', 'Executive virtual assistants',
+    'Lead generation', 'CRM management', 'Virtual property management', 'Search engine optimization', 'Web development', 'Digital marketing',
   ],
   department: OFFICES.map(o => ({
     '@type': 'ProfessionalService',

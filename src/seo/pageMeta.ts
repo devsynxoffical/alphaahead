@@ -14,9 +14,9 @@ export interface PageMeta {
 
 export const PAGE_META: Record<string, PageMeta> = {
   '/': {
-    title: 'Alpha Ahead | Virtual Assistants & Outsourcing Agency',
+    title: 'Alpha Ahead | Virtual Assistant Agency & Outsourcing Company',
     description:
-      'Alpha Ahead LLC provides virtual assistants, cold callers, transaction coordinators, lead generation and digital marketing for US & UAE businesses.',
+      'Virtual assistant agency for US & UAE businesses: dedicated virtual assistants, appointment setters, cold callers, bookkeeping VAs and lead generation.',
     type: 'home',
   },
   '/about': {
@@ -29,7 +29,7 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/services': {
     title: 'Outsourcing & Digital Services | Alpha Ahead LLC',
     description:
-      'Explore 13 outsourced services: virtual assistants, cold calling, real estate transaction coordination, lead generation, SEO, web development and more.',
+      'Outsourced services for US & UAE businesses: virtual assistants, appointment setting, cold calling, bookkeeping VAs, lead generation, SEO and web development.',
     type: 'listing',
     breadcrumb: 'Services',
   },
@@ -50,14 +50,14 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/team': {
     title: 'Meet Our Team | Alpha Ahead LLC',
     description:
-      'Meet the Alpha Ahead team of virtual assistants, callers, transaction coordinators, marketers and developers serving clients worldwide.',
+      'Meet the Alpha Ahead team of virtual assistants, appointment setters, callers, marketers and developers serving clients in the US and UAE.',
     type: 'page',
     breadcrumb: 'Our Team',
   },
   '/careers': {
     title: 'Careers – Remote & Office Jobs | Alpha Ahead LLC',
     description:
-      'Join Alpha Ahead: open roles for virtual assistants, cold callers, transaction coordinators, marketers and developers in Islamabad and remote.',
+      'Join Alpha Ahead: open roles for virtual assistants, cold callers, appointment setters, marketers and developers in Islamabad and remote.',
     type: 'page',
     breadcrumb: 'Careers',
   },
@@ -76,9 +76,9 @@ export const PAGE_META: Record<string, PageMeta> = {
     noindex: true,
   },
   '/blog': {
-    title: 'Blog – Outsourcing, Real Estate & Marketing Guides',
+    title: 'Blog – Outsourcing, Virtual Assistant & Growth Guides',
     description:
-      'Practical guides on hiring virtual assistants, real estate transaction coordination, cold calling, lead generation and SEO from the Alpha Ahead team.',
+      'Practical guides on hiring and onboarding virtual assistants, appointment setters, cold callers and offshore teams, from the Alpha Ahead team.',
     type: 'listing',
     breadcrumb: 'Blog',
   },
@@ -94,65 +94,56 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/virtual-assistant': {
     title: 'Dedicated Virtual Assistant Services | US & UAE Hours',
     description:
-      'Hire a dedicated, managed virtual assistant who works your US or UAE hours. Admin, inbox, calendar, CRM and real estate support from Alpha Ahead.',
+      'Virtual assistant services from a managed agency: a dedicated assistant for admin, inbox, calendar and CRM management, working your US or UAE hours.',
     type: 'service',
     breadcrumb: 'Virtual Assistant Services',
     serviceName: 'Virtual Assistant Services',
     serviceType: 'Virtual assistant',
   },
   '/cold-calling': {
-    title: 'Real Estate Cold Calling Services for Agents & Teams',
+    title: 'B2B Cold Calling Services | Outsourced Callers',
     description:
-      'Trained cold callers for real estate agents and teams: prospecting, lead qualification, appointment setting and CRM updates. Get a free quote today.',
+      'Outsourced cold calling services for B2B and service businesses: trained callers who prospect, qualify leads, book meetings and log every call in your CRM.',
     type: 'service',
     breadcrumb: 'Cold Calling Services',
     serviceName: 'Cold Calling Services',
     serviceType: 'Telemarketing and appointment setting',
   },
   '/personal-assistant': {
-    title: 'Remote Personal Assistant Services for Busy Executives',
+    title: 'Personal Virtual Assistant Services | Alpha Ahead',
     description:
-      'A remote personal assistant to handle your calendar, travel, inbox, research and follow-ups, so you get hours back every week. Vetted, managed assistants.',
+      'A personal virtual assistant for your calendar, travel, inbox, research and life admin, so you get hours back every week. Vetted, managed and confidential.',
     type: 'service',
     breadcrumb: 'Personal Assistant Services',
     serviceName: 'Personal Assistant Services',
     serviceType: 'Personal assistant',
   },
   '/business-assistant': {
-    title: 'Virtual Business Assistant for Small Businesses',
+    title: 'Executive Virtual Assistant & Business Assistant Services',
     description:
-      'Outsource admin, bookkeeping support, data entry, reporting and customer emails to a trained virtual business assistant. Part-time or full-time plans.',
+      'Executive virtual assistants for founders and leaders: inbox, calendar, meeting prep, reporting and back-office support, part-time or full-time plans.',
     type: 'service',
-    breadcrumb: 'Virtual Business Assistant',
-    serviceName: 'Virtual Business Assistant Services',
+    breadcrumb: 'Executive Virtual Assistant',
+    serviceName: 'Executive Virtual Assistant Services',
     serviceType: 'Back-office support',
   },
   '/property-management': {
-    title: 'Virtual Property Management Assistant Services',
+    title: 'Property Management Virtual Assistant Services',
     description:
-      'Remote assistants for property managers: tenant communication, rent reminders, maintenance coordination, lease renewals, listings and reporting.',
+      'Virtual property management support: a property management virtual assistant for tenant calls, rent reminders, maintenance, renewals and listings.',
     type: 'service',
-    breadcrumb: 'Virtual Property Management',
-    serviceName: 'Virtual Property Management Services',
+    breadcrumb: 'Property Management Virtual Assistant',
+    serviceName: 'Property Management Virtual Assistant Services',
     serviceType: 'Property management support',
   },
   '/lead-generation': {
-    title: 'Outsourced Real Estate & B2B Lead Generation Services',
+    title: 'Lead Generation Services | B2B Outsourced Lead Gen',
     description:
-      'Motivated seller, buyer and B2B leads from targeted list building, cold calling and follow-up, qualified and delivered straight to your CRM.',
+      'B2B lead generation services: targeted list building, cold calling, email outreach and follow-up, with qualified leads delivered straight to your CRM.',
     type: 'service',
     breadcrumb: 'Lead Generation Services',
     serviceName: 'Lead Generation Services',
     serviceType: 'Lead generation',
-  },
-  '/transaction-coordinator': {
-    title: 'Remote Transaction Coordinator for Realtors',
-    description:
-      'Contract to close managed by a remote transaction coordinator: deadlines, disclosures, documents, compliance and client updates. Close more deals.',
-    type: 'service',
-    breadcrumb: 'Real Estate Transaction Coordinator',
-    serviceName: 'Real Estate Transaction Coordination',
-    serviceType: 'Real estate transaction coordination',
   },
   '/seo': {
     title: 'SEO Services for Real Estate & Local Businesses',

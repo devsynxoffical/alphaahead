@@ -102,10 +102,11 @@ export const LOCATION_PAGES: Article[] = [
     kind: "location",
     title: "Virtual Assistant Services Dubai: Remote Staffing for UAE SMEs and Startups",
     metaTitle: "Virtual Assistant Services Dubai & UAE | Alpha Ahead",
-    metaDescription: "Virtual assistant services in Dubai for UAE SMEs and startups: admin, customer support, bookkeeping support and marketing, with an office in Muhaisnah.",
+    metaDescription: "Virtual assistant services in Dubai for UAE SMEs: admin, appointment setting, bookkeeping support and customer service on UAE hours, with a Dubai office.",
     excerpt: "Remote staffing for UAE free zone and mainland companies: admin, customer support, bookkeeping support, social media and IT help, with a Dubai office.",
     primaryKeyword: "virtual assistant services Dubai",
     datePublished: "2026-11-17",
+    dateModified: "2026-11-20",
     image: "/Services/Virtual Assistant.jpg",
     imageAlt: "Remote virtual assistant supporting a Dubai small business",
     readMinutes: 6,
@@ -147,6 +148,20 @@ export const LOCATION_PAGES: Article[] = [
         ],
       },
       {
+        heading: "Sales support: appointment setting and outbound calling in the UAE",
+        paragraphs: [
+          "Many UAE companies need more conversations with prospects, not more admin. Our [appointment setting service](/appointment-setting) gives you a dedicated setter who follows up leads by phone, email and WhatsApp, qualifies them against your criteria and books meetings into your calendar during UAE business hours.",
+          "For outbound prospecting to other businesses, [B2B cold calling](/cold-calling) and [lead generation](/lead-generation) build and work targeted lists. Outbound calling and messaging in the UAE must follow the telemarketing rules that apply to your sector, including calling-time limits, so we agree the approach with you before any campaign starts. This is general guidance, not legal advice.",
+        ],
+      },
+      {
+        heading: "Bookkeeping support for UAE businesses",
+        paragraphs: [
+          "A [bookkeeping virtual assistant](/bookkeeping-virtual-assistant) can keep daily transactions, invoices, bills and receipts up to date in QuickBooks Online or Xero, so your accountant spends their time on review, VAT and corporate tax rather than data entry.",
+          "The split of responsibilities matters in the UAE: your VA prepares and organizes records; VAT returns, corporate tax registration and filings stay with your accountant or registered tax agent.",
+        ],
+      },
+      {
         heading: "Free zone and mainland companies",
         paragraphs: [
           "The work an assistant does looks much the same whether your trade license comes from a free zone authority or a mainland department. What differs is the admin around it: license renewals, document deadlines, and which authority portals your team logs into.",
@@ -167,6 +182,17 @@ export const LOCATION_PAGES: Article[] = [
         ],
       },
     ],
+    table: {
+      caption: "Ways to get admin and sales support in Dubai",
+      columns: ["", "Local hire in the UAE", "Freelancer", "Remote VA through Alpha Ahead"],
+      rows: [
+        ["Visa sponsorship", "Required for the employee", "Not required", "Not required"],
+        ["Recruitment and training", "On you", "On you", "Handled by us"],
+        ["Cover when someone is out", "Depends on team size", "Rarely", "Wider team support"],
+        ["Local point of contact", "In your office", "Usually none", "Dubai office in Muhaisnah"],
+        ["Working hours", "Your office hours", "Varies", "UAE business hours"],
+      ],
+    },
     faqs: [
       {
         q: "Do I need to sponsor a visa for a remote virtual assistant?",
@@ -185,103 +211,14 @@ export const LOCATION_PAGES: Article[] = [
         a: "Yes. Our UAE office in Muhaisnah is available for meetings to plan scope and onboarding. Contact us to arrange a time.",
       },
       {
+        q: "Can a Dubai virtual assistant set appointments for my sales team?",
+        a: "Yes. Our appointment setters follow up leads and book meetings during UAE business hours. See our [appointment setting services](/appointment-setting) for details.",
+      },
+      {
         q: "Is this suitable for a free zone company?",
         a: "Yes. The same admin, support and marketing tasks apply to free zone and mainland companies alike. Regulatory submissions remain with your company and its advisors.",
       },
     ],
     relatedServices: ["/virtual-assistant", "/business-assistant", "/digital-marketing", "/it-support"],
-  },
-  {
-    slug: "virtual-assistant-tampa-st-petersburg",
-    kind: "location",
-    title: "Virtual Assistant St. Petersburg FL & Tampa: Real Estate and Small Business Support",
-    metaTitle: "Virtual Assistant St. Petersburg FL & Tampa | Alpha Ahead",
-    metaDescription: "Virtual assistant support in St. Petersburg FL and Tampa: transaction coordination, cold calling and admin for Tampa Bay realtors, investors and owners.",
-    excerpt: "Eastern Time virtual assistants for Tampa Bay realtors, investors, property managers and small businesses, from a company based in St. Petersburg.",
-    primaryKeyword: "virtual assistant St. Petersburg FL",
-    datePublished: "2026-11-17",
-    image: "/aheadteam.jpg",
-    imageAlt: "Alpha Ahead team supporting Tampa Bay clients",
-    readMinutes: 6,
-    officeId: "us",
-    areaServed: "Tampa Bay, Florida",
-    intro: [
-      "Looking for a virtual assistant in St. Petersburg, FL or Tampa? Alpha Ahead LLC is a US company based in St. Petersburg that provides trained remote assistants for Tampa Bay realtors, investors, property managers and small businesses, working Eastern Time so they are online when your clients are.",
-      "Most of our Florida work centers on real estate: transaction coordination, prospecting calls, property management admin and day-to-day support. This page explains what that looks like in Tampa Bay and how to decide which kind of help fits your business.",
-    ],
-    sections: [
-      {
-        heading: "A Tampa Bay company, not an anonymous overseas vendor",
-        paragraphs: [
-          "Our US entity is based at 7901 4th St N Ste 23684, St. Petersburg, FL 33702. That gives Tampa Bay clients a US contracting party and a local point of contact, while the assistant work itself is delivered remotely by our trained team.",
-          "Being in the region also means we know the shape of the market: a mix of owner-occupiers, relocating buyers, investors, seasonal residents and rental owners spread across Hillsborough, Pinellas and Pasco counties. Each group generates different admin, and a good assistant setup reflects that.",
-        ],
-      },
-      {
-        heading: "Real estate virtual assistant support in Florida",
-        paragraphs: [
-          "Florida agents often describe the same problem: the business is growing, but every new deal adds more emails, documents and follow-ups. A real estate virtual assistant in Florida takes on the parts that do not need a license, so you can focus on clients, showings and negotiation.",
-        ],
-        bullets: [
-          "Updating your CRM and logging every lead touchpoint",
-          "Preparing listing drafts, photos and MLS data for your review",
-          "Scheduling showings, inspections and appointments",
-          "Managing your inbox and sending templated client updates",
-          "Building market reports and comparable-sales spreadsheets from data you provide",
-        ],
-      },
-      {
-        heading: "Florida transaction coordinator support",
-        paragraphs: [
-          "Most residential deals in Florida run on standard contract forms, including the widely used Florida Realtors/Florida Bar (FAR/BAR) contracts. Each one carries a chain of deadlines: deposit timing, inspection periods, financing and appraisal contingencies, and the closing date. Missing one can put a deal or a deposit at risk.",
-          "A Florida transaction coordinator from our [transaction coordinator service](/transaction-coordinator) builds a timeline from the executed contract, tracks every date, collects documents, and keeps the lender, title company, inspector and the other agent informed. The coordinator works as admin support for you: interpreting contract terms, advising clients and making decisions remain with the licensed agent and, where needed, an attorney.",
-          "This is general information, not legal advice. Always confirm deadlines and obligations against the actual contract and with your broker.",
-        ],
-      },
-      {
-        heading: "Prospecting and investor outreach",
-        paragraphs: [
-          "Investors and wholesalers in Tampa Bay rely on consistent outreach to owners, and agents rely on staying in touch with past clients and sphere. Our [cold calling service](/cold-calling) provides callers who work from your scripts and lists, log every outcome and hand off interested leads quickly.",
-          "Any calling program must follow federal and Florida telemarketing rules, including do-not-call requirements and limits on calling hours. Your callers should only dial lists that have been checked, and you should confirm your approach with your broker or a qualified advisor.",
-        ],
-      },
-      {
-        heading: "Property managers and small businesses",
-        paragraphs: [
-          "Tampa Bay's rental market keeps property managers busy with tenant messages, maintenance requests, renewals and owner reports. Our [property management support](/property-management) covers the admin side: logging work orders, coordinating vendors, sending reminders and keeping records current.",
-          "Outside real estate, the same model works for local service companies, clinics, contractors and professional firms. A general [virtual assistant](/virtual-assistant) can manage inboxes, calendars, customer inquiries, data entry and simple bookkeeping preparation.",
-        ],
-      },
-      {
-        heading: "Eastern Time coverage and getting started",
-        paragraphs: [
-          "Our teams work US business hours, including Eastern Time, so your assistant is available when Tampa Bay clients, lenders and title offices are. Coverage during busy closing weeks or for weekend showings can be planned in advance.",
-          "Getting started is simple: a call about your workflow, a written task list, access to your tools with permissions you control, and a trial period to agree on standards. [Contact us](/contact) for a quote based on your hours and tasks.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        q: "Is Alpha Ahead based in St. Petersburg, FL?",
-        a: "Yes. Alpha Ahead LLC is a US company with an address in St. Petersburg, Florida. Assistant work is delivered remotely by our trained team.",
-      },
-      {
-        q: "Will my virtual assistant work Eastern Time?",
-        a: "Yes. Our teams cover US business hours, including Eastern Time. Extended or weekend coverage can be discussed when you request a quote.",
-      },
-      {
-        q: "Can a transaction coordinator manage FAR/BAR contract deadlines?",
-        a: "A coordinator can track deadlines, collect documents and keep everyone informed as admin support. Interpreting the contract and advising clients remain with the licensed agent or an attorney.",
-      },
-      {
-        q: "Do you work with real estate investors in Tampa?",
-        a: "Yes. We support investors with cold calling, lead tracking and admin, using scripts and lists you approve and following applicable telemarketing rules.",
-      },
-      {
-        q: "Can small businesses outside real estate use your assistants?",
-        a: "Yes. Our virtual assistants handle inbox, calendar, customer inquiries and data entry for many kinds of small businesses.",
-      },
-    ],
-    relatedServices: ["/transaction-coordinator", "/cold-calling", "/property-management", "/virtual-assistant"],
   },
 ];

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { initialWidth } from '../utils/hydration';
 import ServiceSummary from '../components/seo/ServiceSummary';
+import CrmSection from '../components/seo/CrmSection';
 import { useNavigate } from 'react-router-dom';
 
 const VirtualAssistantDetails: React.FC = () => {
@@ -103,6 +104,7 @@ const VirtualAssistantDetails: React.FC = () => {
       </section>
 
       <ServiceSummary />
+      <CrmSection />
 
       {/* Main Content */}
       <section style={{ background: '#f8fafc', padding: paddingSection }}>

@@ -9,7 +9,7 @@ export interface ResultStat {
 
 export const RESULTS: ResultStat[] = [
   { value: 11, suffix: '+', label: 'Brands & clients built and supported' },
-  { value: 13, label: 'Outsourcing & digital services under one roof' },
+  { value: 14, label: 'Outsourcing & digital services under one roof' },
   { value: 3, label: 'Offices: St. Petersburg, Dubai & Islamabad' },
   { value: 2, label: 'Regions covered in business hours: US & UAE' },
 ];

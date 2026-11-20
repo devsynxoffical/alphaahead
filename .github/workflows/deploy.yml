@@ -95,7 +95,7 @@ jobs:
             code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$1")
             if [ "$code" = "$2" ]; then echo "OK   $code $1"; else echo "FAIL $code (want $2) $1"; FAIL=1; fi
           }
-          for p in / /services /seo /cold-calling /transaction-coordinator /blog /blog/transaction-coordinator-cost /case-studies /case-studies/zingo-assist /virtual-assistant-dubai /sitemap.xml /robots.txt /llms.txt; do
+          for p in / /services /seo /cold-calling /appointment-setting /bookkeeping-virtual-assistant /blog /blog/appointment-setter-vs-sdr /case-studies /case-studies/zingo-assist /virtual-assistant-dubai /sitemap.xml /robots.txt /llms.txt; do
             check "https://alphaaheadllc.com$p" 200
           done
           check "https://alphaaheadllc.com/this-page-does-not-exist-$GITHUB_RUN_ID" 404
@@ -105,11 +105,16 @@ jobs:
           curl -s https://alphaaheadllc.com/seo | grep -o '<title[^>]*>[^<]*' | head -1
           # Crawlers (Google + AI answer engines) must be able to load the site
           for UA in "Googlebot/2.1 (+http://www.google.com/bot.html)" "Mozilla/5.0 (compatible; bingbot/2.0)" "GPTBot/1.1 (+https://openai.com/gptbot)" "OAI-SearchBot/1.0" "ClaudeBot/1.0 (+claudebot@anthropic.com)" "PerplexityBot/1.0"; do
-            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 -A "$UA" https://alphaaheadllc.com/real-estate-virtual-assistant)
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 -A "$UA" https://alphaaheadllc.com/appointment-setting)
             if [ "$code" = "200" ]; then echo "OK   $code UA: $UA"; else echo "FAIL $code UA: $UA"; FAIL=1; fi
           done
           # Legacy URLs: redirects and 410 for removed spam/WordPress pages
           check "https://alphaaheadllc.com/contactUs" 301
+          # US real estate pages moved to Zingo Assist
+          for p in /transaction-coordinator /real-estate-isa /blog/is-real-estate-cold-calling-legal; do
+            loc=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' --max-time 30 "https://alphaaheadllc.com$p")
+            if [ "$loc" = "301 https://zingoassist.us/" ]; then echo "OK   $loc $p"; else echo "FAIL $loc (want 301 to Zingo) $p"; FAIL=1; fi
+          done
           check "https://alphaaheadllc.com/items/071045066.html" 410
           check "https://alphaaheadllc.com/hello-world/" 410
           check "https://alphaaheadllc.com/about" 200

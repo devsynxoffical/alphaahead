@@ -23,7 +23,7 @@ const FACTS: [string, string][] = [
   ['Offices', 'St. Petersburg FL · Dubai UAE · Islamabad Pakistan'],
   ['Founder', 'Shehreyar Khan, Director'],
   ['Working hours', 'US (EST/PST) and UAE business hours'],
-  ['Services', '13 outsourcing & digital services'],
+  ['Services', '14 outsourcing & digital services'],
   ['Contact', 'info@alphaaheadllc.com · +1 424-542-7170'],
 ];
 
@@ -33,10 +33,10 @@ const AboutPage: React.FC = () => {
       <section className="about-hero">
         <div className="aa-container about-hero__inner">
           <p className="aa-eyebrow" style={{ color: '#ffb48c' }}>About Alpha Ahead LLC</p>
-          <h1>A US-registered outsourcing &amp; digital agency built for real estate and growing businesses</h1>
+          <h1>A US-registered outsourcing &amp; digital agency for growing US and UAE businesses</h1>
           <p className="about-hero__lead">
-            Alpha Ahead LLC provides dedicated remote teams (virtual assistants, transaction coordinators, cold callers and lead
-            generation specialists) plus SEO, web development and digital marketing. The company is registered in St. Petersburg,
+            Alpha Ahead LLC provides dedicated remote teams (virtual assistants, appointment setters, cold callers, bookkeeping
+            assistants and lead generation specialists) plus SEO, web development and digital marketing. The company is registered in St. Petersburg,
             Florida, has an office in Dubai, and runs its delivery team from Islamabad, Pakistan.
           </p>
         </div>
@@ -52,11 +52,12 @@ const AboutPage: React.FC = () => {
               dedicated remote staff who work their business hours, managed by a company they can contract with locally.
             </p>
             <p className="aa-lead" style={{ marginTop: '1rem' }}>
-              Most of our work is for real estate: <Link to="/transaction-coordinator">transaction coordinators</Link>,{' '}
-              <Link to="/cold-calling">cold callers</Link>, <Link to="/property-management">property management assistants</Link> and{' '}
+              We staff businesses in any industry with <Link to="/virtual-assistant">virtual assistants</Link>,{' '}
+              <Link to="/appointment-setting">appointment setters</Link>, <Link to="/cold-calling">cold callers</Link>,{' '}
+              <Link to="/bookkeeping-virtual-assistant">bookkeeping assistants</Link> and{' '}
               <Link to="/lead-generation">lead generation</Link> teams. Alongside staffing, we run SEO, web development and digital
-              marketing, and we have built our own brands, including Zingo Assist, Alpha Medi Assist and Learn with Alpha, which
-              are documented in our <Link to="/case-studies">case studies</Link>.
+              marketing. Our real estate division, <a href="https://zingoassist.us/">Zingo Assist</a>, serves US agents and
+              investors; it is documented with Alpha Medi Assist and Learn with Alpha in our <Link to="/case-studies">case studies</Link>.
             </p>
             <h3 className="about-h3">How we work</h3>
             <ul className="about-list">
@@ -140,7 +141,6 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="about-services">
             {SERVICES.map(s => <Link key={s.path} to={s.path}>{s.name}</Link>)}
-            <Link to="/real-estate-virtual-assistant">Real Estate Virtual Assistants</Link>
           </div>
         </div>
       </section>

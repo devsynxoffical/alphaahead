@@ -5,7 +5,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
   "/": [
     {
       q: "Who is Alpha Ahead LLC?",
-      a: "Alpha Ahead LLC is a US-registered outsourcing and digital agency that provides remote staff and digital services to businesses. We supply virtual assistants, cold callers, transaction coordinators and property management support, alongside SEO, web development, digital marketing, design, video editing and IT support. Most of our team works from our office in Islamabad, Pakistan, with offices in Florida and Dubai.",
+      a: "Alpha Ahead LLC is a US-registered outsourcing and digital agency that provides remote staff and digital services to businesses. We supply virtual assistants, appointment setters, cold callers, bookkeeping assistants and property management support, alongside SEO, web development, digital marketing, design, video editing and IT support. Most of our team works from our office in Islamabad, Pakistan, with offices in Florida and Dubai.",
     },
     {
       q: "Where are Alpha Ahead's offices located?",
@@ -13,7 +13,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "What services does Alpha Ahead offer?",
-      a: "We offer two broad groups of services: outsourced staff and digital services. Outsourced staff includes virtual assistants, personal and business assistants, cold calling, lead generation, real estate transaction coordination and virtual property management. Digital services include SEO, web development, digital marketing, graphic design, video editing and IT support; you can see everything on our [services page](/services).",
+      a: "We offer two broad groups of services: outsourced staff and digital services. Outsourced staff includes virtual assistants, executive and personal assistants, appointment setting, cold calling, bookkeeping assistants, lead generation and virtual property management. US real estate staffing is handled by our real estate division, [Zingo Assist](https://zingoassist.us/). Digital services include SEO, web development, digital marketing, graphic design, video editing and IT support; you can see everything on our [services page](/services).",
     },
     {
       q: "Do your teams work in US or UAE business hours?",
@@ -40,7 +40,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "What tasks can a real estate virtual assistant handle?",
-      a: "A real estate virtual assistant typically handles admin work such as calendar and inbox management, CRM updates, listing input, follow-ups, document organization and client communication. For specialized needs we also offer [transaction coordination](/transaction-coordinator), [cold calling](/cold-calling) and [virtual property management](/property-management). We tailor the task list to how your business operates.",
+      a: "A real estate virtual assistant typically handles admin work such as calendar and inbox management, CRM updates, listing input, follow-ups, document organization and client communication. For specialized needs we also offer [CRM management](/virtual-assistant), [cold calling](/cold-calling) and [virtual property management](/property-management). We tailor the task list to how your business operates.",
     },
     {
       q: "How fast can I start with a virtual assistant?",
@@ -51,6 +51,10 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       a: "You direct the day-to-day work, and Alpha Ahead stays involved as your point of contact for the arrangement. If priorities change, a task needs extra support, or you want to adjust the role, you can raise it with us directly. We handle matching you with the right assistant, so you are not running the hiring process yourself.",
     },
     {
+      q: "Do you offer CRM management services?",
+      a: "Yes. A virtual assistant can manage your CRM day to day: entering new leads and notes, merging duplicates, updating deal stages and preparing pipeline reports. They work inside your HubSpot, Salesforce, Zoho, GoHighLevel or similar account with their own login.",
+    },
+    {
       q: "How much does a virtual assistant cost?",
       a: "The cost depends on the hours you need, the type of work and the level of experience required. Part-time, full-time and project-based arrangements are all possible. [Contact us](/contact) with your requirements for a free quote.",
     },
@@ -58,12 +62,12 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
 
   "/cold-calling": [
     {
-      q: "Is real estate cold calling legal?",
-      a: "Cold calling is generally legal in the US when it follows the rules, including scrubbing numbers against the National Do Not Call Registry and applicable state lists and respecting calling-hour restrictions. Rules differ by state and by how calls are placed, so you should confirm your own obligations with a qualified advisor. We explain the basics in our guide on [whether real estate cold calling is legal](/blog/is-real-estate-cold-calling-legal); this is not legal advice.",
+      q: "Is cold calling legal?",
+      a: "Cold calling is generally legal in the US when it follows the rules, including scrubbing numbers against the National Do Not Call Registry and applicable state lists and respecting calling-hour restrictions. Rules differ by state and by how calls are placed, so you should confirm your own obligations with a qualified advisor. This is not legal advice.",
     },
     {
       q: "How much do cold calling services cost?",
-      a: "Cost depends on the number of callers, hours per week, and the type of campaign you run. Short-term pushes and ongoing programs are priced differently. For an overview of what drives cost, see our [real estate cold calling cost guide](/blog/real-estate-cold-calling-cost), or [contact us](/contact) for a free quote.",
+      a: "Cost depends on the number of callers, hours per week, and the type of campaign you run. Short-term pushes and ongoing programs are priced differently. [Contact us](/contact) with your target market and volume for a free quote.",
     },
     {
       q: "Who provides the calling lists and the dialer?",
@@ -78,8 +82,8 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       a: "Yes, we develop and refine scripts with you to match your brand voice, target audience and qualification criteria. Whether calls are recorded depends on your dialer and on the consent laws that apply to the states you call. Leads and call notes are logged in your CRM so you can review results.",
     },
     {
-      q: "Do you cold call for wholesalers, FSBOs and expired listings?",
-      a: "Yes. Our real estate cold calling supports agents, investors and wholesalers reaching motivated sellers and buyers, including FSBO and expired listing campaigns. Scripts and qualification questions are adapted to each list type. We also provide B2B cold calling for companies outside real estate.",
+      q: "Do you cold call for real estate agents and investors?",
+      a: "US real estate calling (FSBO, expired listings, motivated sellers) is handled by our real estate division, [Zingo Assist](https://zingoassist.us/). Alpha Ahead's callers focus on B2B and service-business outreach, and on [appointment setting](/appointment-setting) for sales teams.",
     },
   ],
 
@@ -188,33 +192,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     {
       q: "Which businesses do you generate leads for?",
       a: "We work with real estate agencies and investors, SaaS companies and service-based businesses, among others. Our [cold calling](/cold-calling) team often supports lead generation campaigns that need phone outreach.",
-    },
-  ],
-
-  "/transaction-coordinator": [
-    {
-      q: "What does a remote transaction coordinator do?",
-      a: "A remote transaction coordinator manages the administrative side of a deal from contract to close. That includes reviewing documents for completeness, tracking deadlines, and keeping clients, lenders, inspectors and title companies informed. The agent stays responsible for advising clients and negotiating.",
-    },
-    {
-      q: "How much does a transaction coordinator cost per file?",
-      a: "Cost depends on your transaction volume, whether you represent buyers, sellers or both, and the level of support you need. Our [transaction coordinator cost guide](/blog/transaction-coordinator-cost) explains what typically drives pricing. [Contact us](/contact) for a free quote based on your volume.",
-    },
-    {
-      q: "Can you handle contracts in my state?",
-      a: "Our coordinators work with the forms, timelines and processes you use in your state. During onboarding we review your checklists and your brokerage's requirements so the file process matches your local practice. Share your state and forms with us so we can confirm the setup.",
-    },
-    {
-      q: "Does a transaction coordinator need a real estate license?",
-      a: "Requirements vary by state, and some states restrict certain activities to licensed individuals. The tasks our coordinators handle are administrative, such as document tracking, scheduling and communication, while licensed activities stay with the agent. Check your state's rules and your broker's policy; this is not legal advice.",
-    },
-    {
-      q: "Which transaction management software do you use?",
-      a: "We work in your brokerage's existing systems. We can work in tools such as Dotloop, SkySlope and DocuSign, along with email and your CRM. You give your coordinator their own access so files stay in your platform.",
-    },
-    {
-      q: "Should I hire an in-house or outsourced transaction coordinator?",
-      a: "An outsourced coordinator lets you scale support with your deal volume without adding payroll, while an in-house hire may suit very high or highly specialized volume. We compare both options in our guide on [in-house vs outsourced transaction coordinators](/blog/in-house-vs-outsourced-transaction-coordinator).",
     },
   ],
 

@@ -77,7 +77,7 @@ const VirtualPropertyManagementDetails: React.FC = () => {
             marginBottom: '1.5rem',
             textShadow: '0 2px 4px rgba(0,0,0,0.3)'
           }}>
-            Virtual Property Management Services
+            Property Management Virtual Assistant Services
           </h1>
           <h2 style={{ 
             fontSize: 'clamp(1.2rem, 0.95rem + 1vw, 1.8rem)', 
