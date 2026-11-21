@@ -14,6 +14,7 @@
 }
 .ftr-social a:hover { background: var(--aa-orange); transform: translateY(-3px); }
 .ftr-cta { padding: .75rem 1.3rem; }
+.ftr-prefsrc { margin-top: 1rem; }
 .ftr-title { color: #fff; font-size: 1rem; margin: 0 0 1rem; letter-spacing: .02em; position: relative; padding-bottom: .6rem; }
 .ftr-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 28px; height: 3px; border-radius: 3px; background: var(--aa-orange); }
 .ftr-col { display: flex; flex-direction: column; gap: .15rem; }

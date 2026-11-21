@@ -9,6 +9,7 @@ import { OFFICES } from '../seo/site';
 import { LOCATION_PAGES } from '../content/locations';
 import { RICH_LANDINGS } from '../content/richLandings';
 import { articlePath } from '../content/types';
+import PreferredSourceButton from './PreferredSourceButton';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -33,6 +34,7 @@ const Footer: React.FC = () => {
             <a href="https://www.linkedin.com/company/105228080/" target="_blank" rel="noopener noreferrer" aria-label="Alpha Ahead on LinkedIn"><FontAwesomeIcon icon={faLinkedin} /></a>
           </div>
           <Link to="/contact" className="aa-btn aa-btn--primary ftr-cta">{t('footer.button')} <span className="aa-arrow" aria-hidden="true">→</span></Link>
+          <div className="ftr-prefsrc"><PreferredSourceButton /></div>
         </div>
 
         <nav aria-label="Company" className="ftr-col">

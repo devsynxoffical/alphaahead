@@ -11,6 +11,7 @@ import RelatedServices from '../components/seo/RelatedServices';
 import CtaBanner from '../components/seo/CtaBanner';
 import NotFound from './NotFound';
 import LeadSection from '../components/lead/LeadSection';
+import PreferredSourceButton from '../components/PreferredSourceButton';
 import './ArticlePage.css';
 
 const formatDate = (iso: string) =>
@@ -176,6 +177,13 @@ const ArticlePage: React.FC = () => {
                 <a href="mailto:info@alphaaheadllc.com">info@alphaaheadllc.com</a><br />
                 <a href={office.mapUrl} target="_blank" rel="noopener noreferrer">Get directions on Google Maps</a>
               </address>
+            </aside>
+          )}
+
+          {article.kind === 'blog' && (
+            <aside className="art-prefsrc" aria-label="Follow us on Google">
+              <p><strong>Found this useful?</strong> Add Alpha Ahead as a preferred source on Google to see more of our guides in your search results.</p>
+              <PreferredSourceButton />
             </aside>
           )}
 
