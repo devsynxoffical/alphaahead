@@ -1,0 +1,20 @@
+{
+  "taken": "2026-11-21T12:50Z",
+  "fresh_2026-11-10..21": { "clicks": 4, "impressions": 73, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 2, 32.0] } },
+  "pages_with_impressions": 21,
+  "pages": {
+    "/": [3, 15, 12.5], "/team": [1, 17, 8.2], "/contact": [0, 9, 2.6], "/home": [0, 6, 4.7], "/services": [0, 5, 1],
+    "/case-studies/alpha-medi-assist": [0, 4, 5.0], "/blog/pakistan-vs-philippines-virtual-assistant": [0, 4, 6.0],
+    "/business-assistant": [0, 3, 23.3], "/virtual-assistant-dubai": [0, 2, 65], "/case-studies/learn-with-alpha": [0, 1, 17],
+    "/clients": [0, 1, 1], "/it-support": [0, 1, 1], "/cold-calling": [0, 1, 3], "/blog/property-management-virtual-assistant-tasks": [0, 1, 44],
+    "/blog/is-real-estate-cold-calling-legal (301 to Zingo)": [0, 19, 20.9], "/blog/in-house-vs-outsourced-transaction-coordinator (301 to Zingo)": [0, 7, 66.3]
+  },
+  "new_queries": { "virtual assistant agency": "1 impr, pos 63 (/virtual-assistant-dubai)", "virtual assistant for property managers": "1 impr, pos 44 (PM tasks post)", "ahead agency": "pos 20 (/team), 33 (/)" },
+  "index_status_checked_this_run": {
+    "/appointment-setting": "URL is unknown to Google", "/bookkeeping-virtual-assistant": "URL is unknown to Google",
+    "/blog/appointment-setter-vs-sdr": "URL is unknown to Google", "/blog/hiring-virtual-assistant-dubai": "URL is unknown to Google",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov)"
+  },
+  "changes_this_run": [],
+  "deploy": "run #25 success"
+}
