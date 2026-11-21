@@ -1,0 +1,20 @@
+{
+  "taken": "2026-11-21T00:50Z",
+  "fresh_2026-11-10..21": { "clicks": 3, "impressions": 56, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 12, 27.1] } },
+  "pages": {
+    "/team": [1, 15, 7.9], "/": [2, 11, 10.7], "/contact": [0, 8, 2.8], "/home": [0, 6, 4.7], "/services": [0, 4, 1],
+    "/blog/is-real-estate-cold-calling-legal (301 to Zingo)": [0, 14, 24.2], "/blog/in-house-vs-outsourced-transaction-coordinator (301 to Zingo)": [0, 7, 66.3],
+    "/cold-calling-for-real-estate-investors (301 to Zingo)": [0, 1, 10], "/blog/pakistan-vs-philippines-virtual-assistant": [0, 3, 6],
+    "/business-assistant": [0, 2, 1], "/personal-assistant": [0, 2, 1], "/case-studies/alpha-medi-assist": [0, 2, 7.5], "/blog": [0, 2, 69],
+    "/cold-calling": [0, 1, 3], "/virtual-assistant-dubai": [0, 1, 67], "/digital-marketing": [0, 1, 99], "/seo": [0, 1, 116]
+  },
+  "new_queries": { "ahead agency": [1, 33], "is cold calling illegal": [2, 34] },
+  "index_status_checked_this_run": {
+    "/appointment-setting": "URL is unknown to Google (published 20 Nov)",
+    "/bookkeeping-virtual-assistant": "URL is unknown to Google (published 20 Nov)",
+    "/blog/virtual-assistant-cost": "URL is unknown to Google (published 20 Nov)",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov)"
+  },
+  "changes_this_run": [],
+  "deploy": "run #25 success"
+}
