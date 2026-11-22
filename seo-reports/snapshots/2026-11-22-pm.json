@@ -1,0 +1,20 @@
+{
+  "taken": "2026-11-22T12:50Z",
+  "fresh_2026-11-10..22": { "clicks": 4, "impressions": 82, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 11, 8.3] } },
+  "pages_with_impressions": 22,
+  "notable": {
+    "/appointment-setting": "first impression, position 7 (indexed 21 Nov 19:00)",
+    "/contact": [0, 10, 2.4], "/": [3, 16, 11.8],
+    "/blog/is-real-estate-cold-calling-legal (301 to Zingo)": [0, 24, 17.2]
+  },
+  "index_status_checked_this_run": {
+    "/blog/appointment-setter-vs-sdr": "Submitted and indexed (crawled 21 Nov 22:52, via /appointment-setting)",
+    "/blog/virtual-assistant-cost": "Submitted and indexed (crawled 21 Nov 19:31)",
+    "/blog/hiring-virtual-assistant-dubai": "Submitted and indexed (crawled 21 Nov 19:47)",
+    "/": "Indexed, recrawled 22 Nov 00:14 (new H1/title now seen by Google); referring pages include bebee.com and alphamediassist.com",
+    "/transaction-coordinator": "Still indexed; last crawl 20 Nov 02:39, before the 301 to Zingo went live; will drop on recrawl",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov)"
+  },
+  "changes_this_run": [],
+  "deploy": "run #26 success"
+}
