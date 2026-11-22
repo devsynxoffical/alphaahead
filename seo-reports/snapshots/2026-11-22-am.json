@@ -1,0 +1,15 @@
+{
+  "taken": "2026-11-22T00:50Z",
+  "fresh_2026-11-10..22": { "clicks": 4, "impressions": 75, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 4, 17.5] } },
+  "pages_with_impressions": 21,
+  "pages_changed_vs_last_run": { "/team": [1, 18, 7.9], "/blog/is-real-estate-cold-calling-legal (301 to Zingo)": [0, 20, 20.0] },
+  "index_status_checked_this_run": {
+    "/appointment-setting": "Submitted and indexed (crawled 2026-11-21 19:00, breadcrumbs PASS)",
+    "/bookkeeping-virtual-assistant": "Submitted and indexed (crawled 2026-11-21 19:15, breadcrumbs PASS)",
+    "/blog/onboard-virtual-assistant-7-days": "URL is unknown to Google",
+    "/blog/bookkeeping-virtual-assistant-checklist": "URL is unknown to Google",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov)"
+  },
+  "changes_this_run": [],
+  "deploy": "run #26 success"
+}
