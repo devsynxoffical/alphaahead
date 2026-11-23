@@ -45,7 +45,7 @@ export const CASE_STUDIES: Article[] = [
       {
         heading: "Services involved",
         paragraphs: [
-          "Building Zingo Assist drew on the same capabilities we offer to clients. Brand and visual design came from our [graphic design team](/graphic-design). The website was produced through our [web development service](/web-development). The service itself is built on the operating model behind our [virtual assistant services](/virtual-assistant), including how assistants are trained, supervised and matched to work.",
+          "Building Zingo Assist drew on the same capabilities we offer to clients. Brand and visual design came from our [graphic design team](/other-services#graphic-design). The website was produced through our [web development service](/other-services#web-development). The service itself is built on the operating model behind our [virtual assistant services](/virtual-assistant), including how assistants are trained, supervised and matched to work.",
           "Today Zingo Assist operates as Alpha Ahead's real estate division at [zingoassist.us](https://zingoassist.us/), serving US agents, teams and investors with real estate virtual assistants and transaction coordination. Alpha Ahead focuses on general business outsourcing such as [appointment setting](/appointment-setting), [cold calling](/cold-calling) and [bookkeeping support](/bookkeeping-virtual-assistant). Both share the same discipline: clear checklists, shared tools, and regular reporting back to the client.",
         ],
       },
@@ -142,7 +142,7 @@ export const CASE_STUDIES: Article[] = [
       {
         heading: "Services involved",
         paragraphs: [
-          "The operating side of Alpha Medi Assist draws on the model behind our [business assistant service](/business-assistant): trained remote staff who handle structured back-office work with clear processes and supervision. The public face of the brand came from our [web development team](/web-development), and getting the brand in front of healthcare decision-makers relies on the channels we manage through [digital marketing](/digital-marketing).",
+          "The operating side of Alpha Medi Assist draws on the model behind our [business assistant service](/business-assistant): trained remote staff who handle structured back-office work with clear processes and supervision. The public face of the brand came from our [web development team](/other-services#web-development), and getting the brand in front of healthcare decision-makers relies on the channels we manage through [digital marketing](/other-services#digital-marketing).",
           "Brand design, content and ongoing site updates all sit within the same team, which keeps the message consistent between what the website promises and how the service is actually delivered.",
         ],
       },
@@ -193,7 +193,7 @@ export const CASE_STUDIES: Article[] = [
         a: "The provider generally remains responsible for how patient data is handled, so agreements and access controls matter. Speak with a qualified advisor about the rules that apply to your practice.",
       },
     ],
-    relatedServices: ["/business-assistant", "/web-development", "/digital-marketing"],
+    relatedServices: ["/business-assistant", "/other-services"],
   },
   {
     slug: "learn-with-alpha",
@@ -239,8 +239,8 @@ export const CASE_STUDIES: Article[] = [
       {
         heading: "Services involved",
         paragraphs: [
-          "The platform itself was built by our [web development team](/web-development), which handled the site structure and the learner-facing experience. Lesson content in e-learning is heavily video-based, so our [video editing service](/video-editing) supports the production side, turning raw recordings into clear, watchable lessons.",
-          "Reaching learners is its own discipline. Our [digital marketing team](/digital-marketing) handles the channels that introduce the platform to new audiences, and design work keeps the brand consistent across the site, course materials and promotional content.",
+          "The platform itself was built by our [web development team](/other-services#web-development), which handled the site structure and the learner-facing experience. Lesson content in e-learning is heavily video-based, so our [video editing service](/other-services#video-editing) supports the production side, turning raw recordings into clear, watchable lessons.",
+          "Reaching learners is its own discipline. Our [digital marketing team](/other-services#digital-marketing) handles the channels that introduce the platform to new audiences, and design work keeps the brand consistent across the site, course materials and promotional content.",
         ],
       },
       {
@@ -290,6 +290,6 @@ export const CASE_STUDIES: Article[] = [
         a: "We can discuss it. Our web development, video editing and design teams work on learning projects, so contact us with your goals and we will outline an approach.",
       },
     ],
-    relatedServices: ["/web-development", "/digital-marketing", "/video-editing"],
+    relatedServices: ["/other-services"],
   },
 ];

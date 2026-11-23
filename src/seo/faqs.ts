@@ -20,8 +20,16 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       a: "Yes, our team works US business hours (Eastern and Pacific) as well as UAE business hours. We agree on the working schedule during onboarding so your assistant or team is online when you and your clients are. If you need a split or extended schedule, tell us and we will plan coverage around it.",
     },
     {
-      q: "How does onboarding work?",
-      a: "Onboarding starts with a call to understand your tasks, tools, hours and goals. We then match you with team members who fit the role, share access and processes, and begin with a defined set of tasks that grows as things settle in. You keep a direct line to your team and to us throughout.",
+      q: "How does hiring a virtual assistant with Alpha Ahead work?",
+      a: "It takes four steps: 1) a free call to list your tasks, tools and hours; 2) we match you with an assistant from our team; 3) onboarding, where we document your processes and set up access; 4) go-live with a short task list that grows as things settle in. You keep a direct line to your assistant and to us throughout.",
+    },
+    {
+      q: "How do you keep my data secure?",
+      a: "Your assistant gets individual logins with only the access each task needs, ideally with two-factor authentication, so you can see their activity and remove access at any time. Confidentiality is part of our agreement, and if you need your own NDA signed we handle that before access is shared.",
+    },
+    {
+      q: "Do you work with real estate teams or medical practices?",
+      a: "Our sister brands specialize in those fields. US real estate teams are served by [Zingo Assist](https://zingoassist.us/), and medical practices by [Alpha Medi Assist](https://alphamediassist.com/). Alpha Ahead focuses on founders, executives and small businesses in other industries.",
     },
     {
       q: "How do I get started with Alpha Ahead?",
@@ -39,8 +47,8 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       a: "Yes. Our team works US (EST and PST) and UAE business hours, so your assistant can be online at the same time as you. We confirm the schedule during onboarding and plan around time zone differences for calls and deadlines.",
     },
     {
-      q: "What tasks can a real estate virtual assistant handle?",
-      a: "A real estate virtual assistant typically handles admin work such as calendar and inbox management, CRM updates, listing input, follow-ups, document organization and client communication. For specialized needs we also offer [CRM management](/virtual-assistant), [cold calling](/cold-calling) and [virtual property management](/property-management). We tailor the task list to how your business operates.",
+      q: "What tasks can a virtual assistant handle?",
+      a: "A virtual assistant typically handles inbox and calendar management, CRM updates, data entry, research, document preparation, follow-ups and customer emails. For specialized needs we also provide [bookkeeping assistants](/bookkeeping-virtual-assistant), [executive assistants](/business-assistant) and [B2B cold calling](/cold-calling). We tailor the task list to how your business operates.",
     },
     {
       q: "How fast can I start with a virtual assistant?",
@@ -63,7 +71,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
   "/cold-calling": [
     {
       q: "Is cold calling legal?",
-      a: "Cold calling is generally legal in the US when it follows the rules, including scrubbing numbers against the National Do Not Call Registry and applicable state lists and respecting calling-hour restrictions. Rules differ by state and by how calls are placed, so you should confirm your own obligations with a qualified advisor. This is not legal advice.",
+      a: "Yes, cold calling is legal in the US when it follows the rules: calling hours, Do Not Call requirements for consumer numbers, consent rules for autodialed or prerecorded calls to cell phones, honest disclosures and state laws. Our guide [Is cold calling illegal? US rules in 2026](/blog/is-cold-calling-illegal) explains each one. This is not legal advice.",
     },
     {
       q: "How much do cold calling services cost?",
@@ -80,6 +88,10 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     {
       q: "Do you write the scripts, and are calls recorded?",
       a: "Yes, we develop and refine scripts with you to match your brand voice, target audience and qualification criteria. Whether calls are recorded depends on your dialer and on the consent laws that apply to the states you call. Leads and call notes are logged in your CRM so you can review results.",
+    },
+    {
+      q: "Which industries do your B2B callers work with?",
+      a: "Our callers work with B2B and service businesses such as SaaS companies, marketing agencies, insurance agencies, solar installers and home service companies. Scripts and qualification questions are built around your offer and your ideal customer.",
     },
     {
       q: "Do you cold call for real estate agents and investors?",
@@ -109,6 +121,10 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       a: "Our team works US (EST and PST) and UAE business hours. We agree on your assistant's schedule at the start so they are available when you need them most.",
     },
     {
+      q: "What can't a remote personal assistant do?",
+      a: "A remote assistant cannot do anything that needs someone physically present, such as running errands in person, picking up packages or meeting a contractor at your home. They also should not sign documents for you or make payments without your approval. What they can do is book, order, schedule and coordinate the people who do those things.",
+    },
+    {
       q: "How much does a personal assistant cost?",
       a: "Pricing depends on the hours you need and the tasks involved. [Contact us](/contact) with a short description of your needs and we will send a free quote.",
     },
@@ -116,11 +132,15 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
 
   "/business-assistant": [
     {
-      q: "What does a virtual business assistant do?",
-      a: "A virtual business assistant handles routine tasks such as scheduling, inbox management, customer support and data entry. Our business assistants can also support bookkeeping tasks, lead generation and CRM management. The role is shaped around your business processes.",
+      q: "What does an executive virtual assistant do?",
+      a: "An executive virtual assistant manages a founder's or executive's inbox and calendar, books travel, takes meeting notes and follows up on action items, and prepares documents for investor updates and board meetings. They can also support bookkeeping tasks and CRM upkeep. The role is shaped around how you work.",
     },
     {
-      q: "How is a business assistant different from a general virtual assistant?",
+      q: "Can an executive assistant help with investor and board meetings?",
+      a: "Yes. Your assistant can schedule meetings, collect numbers and documents from your team, prepare decks and agendas from your templates, take notes and track follow-ups. You decide what is shared, and confidential material stays in your own accounts.",
+    },
+    {
+      q: "How is an executive assistant different from a general virtual assistant?",
       a: "A business assistant is focused on business operations rather than mainly personal or admin tasks. That often means more work in your CRM, sales pipeline, customer support queue or bookkeeping records. If your needs are broader or more personal, our [virtual assistant](/virtual-assistant) or [personal assistant](/personal-assistant) services may fit better.",
     },
     {
@@ -144,7 +164,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
   "/property-management": [
     {
       q: "What does a property management virtual assistant do?",
-      a: "A property management virtual assistant handles the admin side of rentals: tenant communication, lease and document organization, rent reminders and payment tracking, maintenance request coordination with vendors, and listing and marketing support for vacancies. They support the owner or manager rather than replacing them. See our list of [property management virtual assistant tasks](/blog/property-management-virtual-assistant-tasks) for more detail.",
+      a: "A property management virtual assistant handles the admin side of rentals: tenant communication, lease and document organization, rent reminders and payment tracking, maintenance request coordination with vendors, and listing and marketing support for vacancies. They support the owner or manager rather than replacing them.",
     },
     {
       q: "Can your VA work in AppFolio, Buildium or Rent Manager?",
@@ -214,7 +234,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "Can you fix SEO issues on my website?",
-      a: "Yes, technical SEO is part of our service, and our [web development](/web-development) team can implement fixes that require code changes. We start by auditing your site to identify the most important issues.",
+      a: "Yes, technical SEO is part of our service, and our [web development](/other-services#web-development) team can implement fixes that require code changes. We start by auditing your site to identify the most important issues.",
     },
     {
       q: "How much do your SEO services cost?",
@@ -241,7 +261,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "Is the website optimized for speed, security and SEO?",
-      a: "Yes. We build for fast loading, follow secure coding practices and include SEO-friendly structures from the start. For ongoing growth in search, you can pair your new site with our [SEO services](/seo).",
+      a: "Yes. We build for fast loading, follow secure coding practices and include SEO-friendly structures from the start. For ongoing growth in search, you can pair your new site with our [SEO services](/other-services#seo).",
     },
     {
       q: "How much does a website cost?",
@@ -357,3 +377,8 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
   ],
 };
+
+// The six digital/IT pages were merged into /other-services (23 Nov 2026): keep one FAQ per service there.
+const MERGED = ['/seo', '/web-development', '/digital-marketing', '/graphic-design', '/video-editing', '/it-support'];
+SERVICE_FAQS['/other-services'] = MERGED.map(p => SERVICE_FAQS[p][0]);
+MERGED.forEach(p => delete SERVICE_FAQS[p]);

@@ -64,7 +64,7 @@ const AboutPage: React.FC = () => {
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Dedicated people, not a ticket queue.</strong> Each client works with named team members who learn their tools and processes.</span></li>
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Your hours.</strong> Teams are scheduled on US (EST/PST) or UAE business hours.</span></li>
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Documented processes.</strong> Onboarding starts with SOPs and a defined task list that grows over time.</span></li>
-              <li><FaCheckCircle aria-hidden="true" /> <span><strong>One partner for operations and growth.</strong> Staffing and <Link to="/digital-marketing">marketing</Link>, <Link to="/seo">SEO</Link> and <Link to="/web-development">web</Link> under one roof.</span></li>
+              <li><FaCheckCircle aria-hidden="true" /> <span><strong>One partner for operations and growth.</strong> Staffing and <Link to="/other-services#digital-marketing">marketing</Link>, <Link to="/other-services#seo">SEO</Link> and <Link to="/other-services#web-development">web</Link> under one roof.</span></li>
             </ul>
           </div>
           <aside className="about-facts reveal reveal-d1" aria-label="Company facts">

@@ -38,7 +38,7 @@ export const LOCATION_PAGES: Article[] = [
           "Organizing and uploading photos, floor plans and key details",
           "Updating prices and availability, and flagging listings that look stale",
           "Keeping listing information consistent between the portals and your CRM",
-          "Coordinating with our [graphic design team](/graphic-design) for social posts, brochures and banners",
+          "Coordinating with our [graphic design team](/other-services#graphic-design) for social posts, brochures and banners",
         ],
       },
       {
@@ -95,13 +95,13 @@ export const LOCATION_PAGES: Article[] = [
         a: "Give the assistant user-level access with permissions you control, rather than sharing owner logins. You can review activity and remove access at any time.",
       },
     ],
-    relatedServices: ["/virtual-assistant", "/lead-generation", "/cold-calling", "/graphic-design"],
+    relatedServices: ["/virtual-assistant", "/lead-generation", "/cold-calling", "/other-services"],
   },
   {
     slug: "virtual-assistant-dubai",
     kind: "location",
     title: "Virtual Assistant Services Dubai: Remote Staffing for UAE SMEs and Startups",
-    metaTitle: "Virtual Assistant Services Dubai & UAE | Alpha Ahead",
+    metaTitle: "Virtual Assistant in Dubai and UAE: Remote Admin Support",
     metaDescription: "Virtual assistant services in Dubai for UAE SMEs: admin, appointment setting, bookkeeping support and customer service on UAE hours, with a Dubai office.",
     excerpt: "Remote staffing for UAE free zone and mainland companies: admin, customer support, bookkeeping support, social media and IT help, with a Dubai office.",
     primaryKeyword: "virtual assistant services Dubai",
@@ -143,7 +143,7 @@ export const LOCATION_PAGES: Article[] = [
         heading: "Outsourced admin support for Dubai businesses: where to start",
         paragraphs: [
           "Outsourced admin support in Dubai works best when the first handover is specific. Rather than asking for general help, list the five or ten tasks that steal the most time each week, then write down how each one is done today. That list becomes the assistant's first checklist.",
-          "For broader operations, such as coordinating suppliers, preparing reports and keeping projects on track, our [business assistant service](/business-assistant) is a better fit than a task-only VA. If you need growth rather than admin, our [digital marketing team](/digital-marketing) can run campaigns and content directly. For technical issues, [IT support](/it-support) covers day-to-day help for your staff.",
+          "For broader operations, such as coordinating suppliers, preparing reports and keeping projects on track, our [business assistant service](/business-assistant) is a better fit than a task-only VA. If you need growth rather than admin, our [digital marketing team](/other-services#digital-marketing) can run campaigns and content directly. For technical issues, [IT support](/other-services#it-support) covers day-to-day help for your staff.",
           "A note on bookkeeping: an assistant can prepare and organize records, but VAT filings, corporate tax matters and financial statements should be reviewed by a qualified accountant or tax agent. That is general guidance, not tax advice.",
         ],
       },
@@ -215,10 +215,18 @@ export const LOCATION_PAGES: Article[] = [
         a: "Yes. Our appointment setters follow up leads and book meetings during UAE business hours. See our [appointment setting services](/appointment-setting) for details.",
       },
       {
+        q: "Can a virtual assistant track PRO, visa and license paperwork?",
+        a: "Yes. Your assistant can keep a calendar of visa, Emirates ID and trade license renewal dates, collect documents from staff and remind you before deadlines. Submissions and decisions stay with your company, PRO or business setup consultant.",
+      },
+      {
+        q: "Can my assistant handle WhatsApp Business messages?",
+        a: "Yes. Many UAE customers prefer WhatsApp, so assistants commonly reply to WhatsApp Business inquiries during UAE hours, log them in your CRM and pass sales or complaints to the right person.",
+      },
+      {
         q: "Is this suitable for a free zone company?",
         a: "Yes. The same admin, support and marketing tasks apply to free zone and mainland companies alike. Regulatory submissions remain with your company and its advisors.",
       },
     ],
-    relatedServices: ["/virtual-assistant", "/business-assistant", "/digital-marketing", "/it-support"],
+    relatedServices: ["/virtual-assistant", "/business-assistant", "/other-services"],
   },
 ];

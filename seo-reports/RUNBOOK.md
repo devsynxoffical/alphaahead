@@ -21,6 +21,29 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
   profiles, UAE directories, Dubai GBP (only if staff work at the Dubai office), exact Zingo URLs for the redirects,
   real pricing (pages are quote-only until then).
 
+## 0b. Plan v2 (DEVSYNX detailed plan, 23 Nov 2026): rules and schedule
+- Style: no em dashes anywhere; American English; titles <= 60 chars, descriptions <= 155; one H1; FAQ schema = visible FAQs.
+- **7-day rule:** a page edited in the last 7 days gets only title/meta/FAQ changes; schedule the rest.
+- Indexing: IndexNow (deploy step) and Bing only; do **not** use the Google Indexing API.
+- Lanes: Alpha Ahead = general business VAs (US small business + executives), bookkeeping VA, executive/personal VA,
+  offshore VA (Pakistan), B2B cold calling, CRM management, Dubai/UAE VAs. Real estate + property management = Zingo Assist;
+  medical = Alpha Medi Assist. Appointment setting stays on Alpha Ahead (owner decision 23 Nov).
+- Done 23 Nov: C25-C30 (other-services merge, PM guide to Zingo, titles/FAQs, cold calling legality guide, em dashes, disavow tool).
+- **30 Nov (week 2):** homepage H1 "Virtual Assistants for Busy Founders, Executives and Small Teams" + sections (what assistants do,
+  how hiring works in 4 steps, time zones, security/NDAs, sister brands; pricing and results only from the owner);
+  bookkeeping page H1 "Bookkeeping Virtual Assistants Who Know QuickBooks and Xero" + VA vs CPA + security (read-only, 2FA) sections;
+  /cold-calling full B2B rewrite (who it is for, scripts and lists, calls/reporting, compliance, FAQ; no real estate);
+  /property-management rewrite as "Virtual Assistant for Operations Teams" (title/H1/body/FAQs).
+- **14 Dec (weeks 4-5):** executive VA H1 "Executive Virtual Assistant for Founders and Executives" + body; personal VA body with limits;
+  Pakistan page sections (why Pakistan, roles, hiring process, contracts and payments).
+- **21 Dec (week 6):** check UAE volume for "virtual assistant dubai"; Arabic and AED pricing only if the owner confirms them.
+- **From 4 Jan (weeks 7-12), one post per week:** bookkeeping VA vs accountant; 30 tasks to delegate to an executive assistant;
+  how to hire a VA from Pakistan safely; B2B cold calling scripts that book meetings; how to give a VA secure access to your tools.
+- Owner: disavow upload (run scripts/build-disavow.py on the Semrush export), own phone number (separate from Zingo) then
+  update Organization schema, office address + GBP, Clutch/GoodFirms/Upwork/Crunchbase/LinkedIn, Dubai Chamber, real rates (USD/AED),
+  2-3 client results with permission.
+- 90-day goals (from 23 Nov): monthly impressions 1,000+, 100+ search terms with impressions, 3+ P1 keywords in the top 20.
+
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).
 - GSC performance, last 7 and last 28 days: totals by `date`, top `query`, top `page`, `query`+`page` (cannibalization), `country`, `device`.

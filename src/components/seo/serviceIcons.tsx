@@ -17,4 +17,5 @@ export const SERVICE_ICONS: Record<string, React.ReactNode> = {
   '/graphic-design': <FaPaintBrush />,
   '/video-editing': <FaVideo />,
   '/it-support': <FaServer />,
+  '/other-services': <FaCode />,
 };

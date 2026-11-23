@@ -480,7 +480,7 @@ const LeadGenerationDetails: React.FC = () => {
               gap: '2rem'
             }}>
               {[
-                { title: "Save Time and Resources", desc: "Outsourcing lead gen services to our team of professionals frees up your valuable time. Focus on what you do best—closing deals—while we handle the prospecting." },
+                { title: "Save Time and Resources", desc: "Outsourcing lead gen services to our team of professionals frees up your valuable time. Focus on what you do best: closing deals: while we handle the prospecting." },
                 { title: "Increase Conversion Rates", desc: "With our highly qualified B2B leads, you're much more likely to turn a prospect into a customer. Our focus is on quality, so your sales team is set up for success from the start." },
                 { title: "Expand Your Sales Pipeline Quickly", desc: "Need results fast? We equip you with a surge in your sales pipeline without the need to expand your in-house team." },
                 { title: "Consistent Results with Proven Strategies", desc: "Our expert team uses tested and optimized scripts to deliver consistent results, ensuring that your business always has a steady stream of new prospects." }
@@ -627,7 +627,7 @@ const LeadGenerationDetails: React.FC = () => {
               marginBottom: '2rem',
               textAlign: 'justify'
             }}>
-              Partnering with Alpha Ahead LLC means more than just access to leads—it's about transforming the way your business engages, connects, and grows. Our team takes pride in delivering lead generation services that not only meet but exceed expectations.
+              Partnering with Alpha Ahead LLC means more than just access to leads: it's about transforming the way your business engages, connects, and grows. Our team takes pride in delivering lead generation services that not only meet but exceed expectations.
             </p>
             <p style={{
               fontSize: '1.1rem',
@@ -636,7 +636,7 @@ const LeadGenerationDetails: React.FC = () => {
               marginBottom: '2rem',
               textAlign: 'justify'
             }}>
-              With Alpha Ahead's B2B lead generation services, you are never in the dark. Our transparent processes and real-time reporting keep you informed every step of the way, giving you the confidence to focus on what truly matters—closing deals.
+              With Alpha Ahead's B2B lead generation services, you are never in the dark. Our transparent processes and real-time reporting keep you informed every step of the way, giving you the confidence to focus on what truly matters: closing deals.
             </p>
           </div>
 
@@ -673,7 +673,7 @@ const LeadGenerationDetails: React.FC = () => {
               marginBottom: '2rem',
               textAlign: 'justify'
             }}>
-              In the fast-paced world of business, time is of the essence. Let Alpha Ahead LLC help you take the lead—in more ways than one. Explore our flexible lead generation packages today, and see the difference that expert services can make in achieving your growth goals.
+              In the fast-paced world of business, time is of the essence. Let Alpha Ahead LLC help you take the lead, in more ways than one. Explore our flexible lead generation packages today, and see the difference that expert services can make in achieving your growth goals.
             </p>
           </div>
 

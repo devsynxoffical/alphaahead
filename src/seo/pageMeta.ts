@@ -14,10 +14,17 @@ export interface PageMeta {
 
 export const PAGE_META: Record<string, PageMeta> = {
   '/': {
-    title: 'Alpha Ahead | Virtual Assistant Agency & Outsourcing Company',
+    title: 'Alpha Ahead | Virtual Assistant Agency for US & UAE',
     description:
       'Virtual assistant agency for US & UAE businesses: dedicated virtual assistants, appointment setters, cold callers, bookkeeping VAs and lead generation.',
     type: 'home',
+  },
+  '/other-services': {
+    title: 'Digital, Design & IT Support Services | Alpha Ahead',
+    description:
+      'SEO, web development, digital marketing, graphic design, video editing and remote IT support from the Alpha Ahead team, on US or UAE business hours.',
+    type: 'listing',
+    breadcrumb: 'Other Services',
   },
   '/about': {
     title: 'About Alpha Ahead LLC | Founders, Offices & Approach',
@@ -101,9 +108,9 @@ export const PAGE_META: Record<string, PageMeta> = {
     serviceType: 'Virtual assistant',
   },
   '/cold-calling': {
-    title: 'B2B Cold Calling Services | Outsourced Callers',
+    title: 'B2B Cold Calling Services With Trained US-Hours Callers',
     description:
-      'Outsourced cold calling services for B2B and service businesses: trained callers who prospect, qualify leads, book meetings and log every call in your CRM.',
+      'B2B cold calling services for SaaS, agencies, insurance, solar and home services: trained callers on US hours who qualify leads and book meetings.',
     type: 'service',
     breadcrumb: 'Cold Calling Services',
     serviceName: 'Cold Calling Services',
@@ -119,9 +126,9 @@ export const PAGE_META: Record<string, PageMeta> = {
     serviceType: 'Personal assistant',
   },
   '/business-assistant': {
-    title: 'Executive Virtual Assistant & Business Assistant Services',
+    title: 'Executive Virtual Assistant for Founders and Executives',
     description:
-      'Executive virtual assistants for founders and leaders: inbox, calendar, meeting prep, reporting and back-office support, part-time or full-time plans.',
+      'An executive virtual assistant for founders: inbox, calendar, travel, meeting notes, investor and board prep, handled confidentially on your hours.',
     type: 'service',
     breadcrumb: 'Executive Virtual Assistant',
     serviceName: 'Executive Virtual Assistant Services',
@@ -144,59 +151,5 @@ export const PAGE_META: Record<string, PageMeta> = {
     breadcrumb: 'Lead Generation Services',
     serviceName: 'Lead Generation Services',
     serviceType: 'Lead generation',
-  },
-  '/seo': {
-    title: 'SEO Services for Real Estate & Local Businesses',
-    description:
-      'Local SEO, Google Business Profile, technical SEO, content and link building for realtors, property managers and small businesses. Monthly reporting.',
-    type: 'service',
-    breadcrumb: 'SEO Services',
-    serviceName: 'SEO Services',
-    serviceType: 'Search engine optimization',
-  },
-  '/web-development': {
-    title: 'Real Estate & Business Website Development',
-    description:
-      'Fast, mobile-first, SEO-ready websites for realtors, brokerages and small businesses, with property listings, lead forms and custom web apps.',
-    type: 'service',
-    breadcrumb: 'Web Development',
-    serviceName: 'Web Development Services',
-    serviceType: 'Web development',
-  },
-  '/digital-marketing': {
-    title: 'Digital Marketing for Real Estate & Small Business',
-    description:
-      'Social media, Facebook and Google ads, email nurture and content that turn attention into leads, for realtors and small businesses in the US and UAE.',
-    type: 'service',
-    breadcrumb: 'Digital Marketing',
-    serviceName: 'Digital Marketing Services',
-    serviceType: 'Digital marketing',
-  },
-  '/graphic-design': {
-    title: 'Real Estate Graphic Design: Flyers, Posts & Branding',
-    description:
-      'Just-listed flyers, social media posts, brochures, logos and brand identity for agents, brokerages and small businesses. Fast turnaround.',
-    type: 'service',
-    breadcrumb: 'Graphic Design',
-    serviceName: 'Graphic Design Services',
-    serviceType: 'Graphic design',
-  },
-  '/video-editing': {
-    title: 'Real Estate Video Editing Services | Reels & YouTube',
-    description:
-      'Listing videos, Reels, YouTube and ad edits with branded intros, music and captions. Dedicated video editors with fast turnaround for agents and brands.',
-    type: 'service',
-    breadcrumb: 'Video Editing',
-    serviceName: 'Video Editing Services',
-    serviceType: 'Video editing',
-  },
-  '/it-support': {
-    title: 'Remote IT Support & Help Desk for Small Businesses',
-    description:
-      'Remote help desk, Microsoft 365 and Google Workspace admin, device setup, cloud and security support for small offices in the US and UAE.',
-    type: 'service',
-    breadcrumb: 'IT Support',
-    serviceName: 'IT Support Services',
-    serviceType: 'IT support',
   },
 };

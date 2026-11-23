@@ -1,9 +1,9 @@
 Keyword,Volume (US),KD %,Priority,Target page,Status
-appointment setting services,"1,000",5,P1,/appointment-setting,New page
+appointment setting services,"1,000",5,P1,/appointment-setting,Live (owner kept it 23 Nov despite plan v2)
 bookkeeping virtual assistant,"1,000",19,P1,/bookkeeping-virtual-assistant,New page
-property management virtual assistant,720,7,P1,/property-management,Improve
-cold calling services,590,19,P1,/cold-calling,Improve
-virtual property management,320,10,P1,/property-management,Improve
+property management virtual assistant,720,7,Zingo,zingoassist.us,Given to Zingo (plan v2); /property-management becomes operations VA
+cold calling services,590,19,P1,/cold-calling,B2B focus; full rewrite 30 Nov
+virtual property management,320,10,Zingo,zingoassist.us,Given to Zingo (plan v2)
 executive virtual assistant,590,21,P2,/business-assistant,Improve
 personal virtual assistant,590,29,P2,/personal-assistant,Improve
 offshore virtual assistant,320,25,P2,/hire-virtual-assistant-pakistan,Improve
@@ -13,3 +13,5 @@ virtual assistant agency,"1,600",49,P3,Homepage,Long term
 lead generation services,"6,600",49,P3,/lead-generation,Long term
 outsourcing company,"1,000",48,P3,Homepage,Long term
 hire a virtual assistant,"2,400",63,P3,Long term,Long term
+virtual assistant dubai,GSC only,,P1,/virtual-assistant-dubai,Live; check UAE volume (week 6)
+is cold calling illegal,GSC only,,P1,/blog/is-cold-calling-illegal,New guide 23 Nov

@@ -2,6 +2,101 @@ import { Article } from './types';
 
 export const BLOG_PART_2: Article[] = [
   {
+    slug: "is-cold-calling-illegal",
+    kind: "blog",
+    title: "Is Cold Calling Illegal? US Rules in 2026",
+    metaTitle: "Is Cold Calling Illegal? US Rules in 2026",
+    metaDescription: "Is cold calling illegal in the US? No, but calling hours, Do Not Call lists, consent for autodialed calls to cell phones and state laws apply. A plain guide.",
+    excerpt: "Cold calling is legal in the US when you follow the rules on calling hours, Do Not Call lists, autodialers, honest disclosures and state law. Here is a plain-English checklist for B2B teams.",
+    primaryKeyword: "is cold calling illegal",
+    datePublished: "2026-11-23",
+    image: "/Coldcalling.png",
+    imageAlt: "Sales caller with a headset reviewing a calling checklist",
+    readMinutes: 7,
+    intro: [
+      "No, cold calling is not illegal in the United States. A live person calling a prospect to start a sales conversation is allowed, but the call has to follow federal and state rules: calling hours, Do Not Call requirements for consumer numbers, consent rules for autodialed or prerecorded calls to cell phones, and honest disclosures. Most problems come from calling the wrong numbers, at the wrong time, with the wrong technology.",
+      "This guide explains the main US rules in plain English for B2B and service businesses. It is general information, not legal advice; rules change and differ by state, so check your own campaign with a qualified attorney.",
+    ],
+    sections: [
+      {
+        heading: "The two federal laws behind the rules",
+        paragraphs: [
+          "Two sets of federal rules cover most telemarketing. The Telemarketing Sales Rule (TSR) is enforced by the Federal Trade Commission and covers how sales calls are made and what callers may say. The Telephone Consumer Protection Act (TCPA) is enforced by the Federal Communications Commission and covers calling times, the Do Not Call list and the use of autodialers and prerecorded messages.",
+          "On top of these, many states have their own telemarketing laws, some stricter than the federal rules, and some require telemarketers to register before calling residents.",
+        ],
+      },
+      {
+        heading: "Calling hours",
+        paragraphs: [
+          "Federal rules limit telemarketing calls to consumers to between 8 a.m. and 9 p.m. in the called person's local time ([47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200)). Some states set narrower windows or limit calls on weekends and holidays. Schedule calls by the prospect's time zone, not yours.",
+        ],
+      },
+      {
+        heading: "The Do Not Call Registry and business numbers",
+        paragraphs: [
+          "The [National Do Not Call Registry](https://www.donotcall.gov/) is for personal phone numbers. Sales calls to consumers on the registry are not allowed without an exception such as an existing business relationship or written permission. Calls to businesses are largely outside the registry rules, which is why B2B calling has more room.",
+          "The catch is that many business contacts are reached on personal cell phones. If your list mixes company lines with personal numbers, scrub it against the registry and keep your own internal do-not-call list of anyone who asks not to be called again.",
+        ],
+      },
+      {
+        heading: "Autodialers, prerecorded messages and cell phones",
+        paragraphs: [
+          "A person dialing and talking live is the safest form of cold calling. Autodialed or prerecorded telemarketing calls to cell phones, and prerecorded telemarketing calls to home lines, require the person's prior express written consent under the FCC's TCPA rules ([FCC 2012 rule, Federal Register](https://www.govinfo.gov/content/pkg/FR-2012-06-11/html/2012-13862.htm)). That is why most compliant B2B teams use live callers and manual or click-to-call dialing for cold outreach.",
+        ],
+      },
+      {
+        heading: "What B2B callers may and may not say",
+        paragraphs: [
+          "Since 2024, the TSR's bans on misrepresentations and false or misleading statements also apply to business-to-business telemarketing ([FTC final rule, Federal Register](https://www.federalregister.gov/documents/2024/04/16/2024-07180/telemarketing-sales-rule)). In practice:",
+        ],
+        bullets: [
+          "Say who you are and which company you are calling for",
+          "Be clear that it is a sales call",
+          "Do not misstate prices, results, terms or who you represent",
+          "Honor requests to stop calling right away",
+          "Keep scripts and records so you can show what was said",
+        ],
+      },
+      {
+        heading: "A simple compliance checklist for B2B cold calling",
+        bullets: [
+          "Call only within 8 a.m. to 9 p.m. in the prospect's time zone, or your state's narrower window",
+          "Scrub lists that may include personal or cell numbers against the National Do Not Call Registry and relevant state lists",
+          "Keep an internal do-not-call list and update it after every call",
+          "Use live callers; avoid autodialed or prerecorded calls to cell phones without written consent",
+          "Use an honest, approved script and keep call notes",
+          "Check whether the states you call require telemarketer registration",
+          "Have an attorney review your process once before scaling",
+        ],
+      },
+      {
+        heading: "Outsourcing your cold calling",
+        paragraphs: [
+          "If you outsource calling, the rules still apply to your campaign, so choose a team that builds them into the process. Our [B2B cold calling services](/cold-calling) use live callers on US hours, your approved scripts and your CRM, and our [appointment setting](/appointment-setting) team follows the same rules when booking meetings.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is cold calling illegal in the US?",
+        a: "No. Cold calling is legal when it follows federal and state rules on calling hours, Do Not Call lists, autodialer consent, honest disclosures and registration where required.",
+      },
+      {
+        q: "Can I cold call a business number on the Do Not Call list?",
+        a: "The National Do Not Call Registry is for personal numbers, and calls to businesses are largely outside its rules. Many business contacts use personal cell phones, though, so scrub mixed lists and honor every request to stop calling.",
+      },
+      {
+        q: "What time can you legally cold call?",
+        a: "Federal rules allow telemarketing calls to consumers between 8 a.m. and 9 p.m. in the called person's local time. Some states set narrower hours.",
+      },
+      {
+        q: "Can I use an autodialer for cold calls?",
+        a: "Autodialed or prerecorded telemarketing calls to cell phones require prior express written consent. For cold outreach, most teams use live callers with manual or click-to-call dialing.",
+      },
+    ],
+    relatedServices: ["/cold-calling", "/lead-generation"]
+  },
+  {
     slug: "virtual-assistant-cost",
     kind: "blog",
     title: "Virtual Assistant Cost in 2026: US vs Philippines vs Pakistan",
@@ -195,7 +290,7 @@ export const BLOG_PART_2: Article[] = [
         a: "No. Dubai's virtual working programme is for people working remotely for employers outside the UAE, not for working for UAE-based companies.",
       },
     ],
-    relatedServices: ["/virtual-assistant", "/business-assistant", "/digital-marketing"]
+    relatedServices: ["/virtual-assistant", "/business-assistant", "/other-services"]
   },
   {
     slug: "bookkeeping-virtual-assistant-checklist",

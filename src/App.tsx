@@ -19,12 +19,6 @@ import PersonalAssistantDetails from './pages/PersonalAssistantDetails';
 import VirtualBusinessAssistantDetails from './pages/VirtualBusinessAssistantDetails';
 import VirtualPropertyManagementDetails from './pages/VirtualPropertyManagementDetails';
 import LeadGenerationDetails from './pages/LeadGenerationDetails';
-import SEODetails from './pages/SEODetails';
-import WebDevelopmentDetails from './pages/WebDevelopmentDetails';
-import DigitalMarketingDetails from './pages/DigitalMarketingDetails';
-import GraphicDesignDetails from './pages/GraphicDesignDetails';
-import VideoEditingDetails from './pages/VideoEditingDetails';
-import ITSupportDetails from './pages/ITSupportDetails';
 import Footer from './components/Footer';
 import ChatWidgetEmbed from './components/ChatWidgetEmbed';
 import Seo from './seo/Seo';
@@ -34,6 +28,7 @@ import ArticlePage from './pages/ArticlePage';
 import ArticleListing from './pages/ArticleListing';
 import NotFound from './pages/NotFound';
 import AboutPage from './pages/AboutPage';
+import OtherServicesPage from './pages/OtherServicesPage';
 import RichLandingPage from './pages/RichLandingPage';
 import MobileCtaBar from './components/lead/MobileCtaBar';
 import { RICH_LANDINGS } from './content/richLandings';
@@ -57,12 +52,6 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
   ['/business-assistant', <VirtualBusinessAssistantDetails />],
   ['/property-management', <VirtualPropertyManagementDetails />],
   ['/lead-generation', <LeadGenerationDetails />],
-  ['/seo', <SEODetails />],
-  ['/web-development', <WebDevelopmentDetails />],
-  ['/digital-marketing', <DigitalMarketingDetails />],
-  ['/graphic-design', <GraphicDesignDetails />],
-  ['/video-editing', <VideoEditingDetails />],
-  ['/it-support', <ITSupportDetails />],
 ];
 
 const RevealManager: React.FC = () => {
@@ -86,6 +75,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/other-services" element={<OtherServicesPage />} />
           <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/clients" element={<Clients />} />

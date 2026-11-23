@@ -145,10 +145,10 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/seo": {
     definition:
-      "SEO services for real estate and local businesses improve how a website and Google Business Profile appear in search results for the terms local customers use. Alpha Ahead provides keyword research, on-page and technical SEO, content, white-hat link building and local SEO, with monthly reports on rankings, traffic and conversions.",
+      "SEO services for local and small businesses improve how a website and Google Business Profile appear in search results for the terms local customers use. Alpha Ahead provides keyword research, on-page and technical SEO, content, white-hat link building and local SEO, with monthly reports on rankings, traffic and conversions.",
     bestFor: [
-      "Realtors and brokerages",
-      "Property managers",
+      "Professional service firms",
+      "Ecommerce stores",
       "Local service businesses",
       "Small and medium businesses",
     ],
@@ -167,9 +167,9 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/web-development": {
     definition:
-      "Real estate and business website development is the design and build of a custom, mobile-friendly site that presents your services, listings and contact options and captures leads. Alpha Ahead builds responsive, SEO-ready websites, eCommerce and CMS sites on platforms like WordPress and Shopify, and custom web applications, with ongoing maintenance after launch.",
+      "Business website development is the design and build of a custom, mobile-friendly site that presents your services, products and contact options and captures leads. Alpha Ahead builds responsive, SEO-ready websites, eCommerce and CMS sites on platforms like WordPress and Shopify, and custom web applications, with ongoing maintenance after launch.",
     bestFor: [
-      "Realtors and brokerages",
+      "Professional service firms",
       "Small and medium businesses",
       "Startups launching online",
       "Companies needing custom web apps",
@@ -178,7 +178,7 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
       "Design and build custom websites",
       "Create responsive, mobile-friendly layouts",
       "Set up WordPress or Shopify sites",
-      "Add listings, lead forms and integrations",
+      "Add product pages, lead forms and integrations",
       "Structure pages for search engines",
       "Provide updates and maintenance after launch",
     ],
@@ -189,9 +189,9 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/digital-marketing": {
     definition:
-      "Digital marketing for real estate and small businesses is the use of online channels, including search, social media, paid ads, content and email, to attract and convert customers. Alpha Ahead plans and runs these channels for you, from PPC and social media management to email campaigns, with analytics tracking to refine results.",
+      "Digital marketing for small businesses is the use of online channels, including search, social media, paid ads, content and email, to attract and convert customers. Alpha Ahead plans and runs these channels for you, from PPC and social media management to email campaigns, with analytics tracking to refine results.",
     bestFor: [
-      "Real estate agents and brokerages",
+      "Service businesses",
       "Small and medium businesses",
       "eCommerce companies",
       "Agencies needing white-label support",
@@ -211,15 +211,15 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/graphic-design": {
     definition:
-      "Real estate graphic design is the creation of marketing visuals such as listing flyers, social media posts, brochures and brand identity for agents and property businesses. Alpha Ahead designs print and digital graphics, logos and branding kits for real estate and small businesses, with revision rounds and print-ready files.",
+      "Graphic design is the creation of marketing visuals such as flyers, social media posts, brochures, presentations and brand identity for businesses. Alpha Ahead designs print and digital graphics, logos and branding kits for small businesses, with revision rounds and print-ready files.",
     bestFor: [
-      "Real estate agents and brokerages",
+      "Service businesses",
       "Small and medium businesses",
       "Marketing teams and agencies",
       "eCommerce brands",
     ],
     tasks: [
-      "Design just-listed and open house flyers",
+      "Design flyers and event materials",
       "Create social media post graphics",
       "Lay out brochures and print materials",
       "Design logos and brand identity kits",
@@ -233,15 +233,15 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
   },
   "/video-editing": {
     definition:
-      "Real estate video editing is turning raw property, agent or brand footage into polished listing videos, Reels, YouTube videos and ads. Alpha Ahead provides dedicated editors who cut footage, add music, captions, branded intros and graphics, and deliver files in the formats each platform needs, with review rounds before final delivery.",
+      "Video editing is turning raw product, founder or brand footage into polished explainer videos, Reels, YouTube videos and ads. Alpha Ahead provides dedicated editors who cut footage, add music, captions, branded intros and graphics, and deliver files in the formats each platform needs, with review rounds before final delivery.",
     bestFor: [
-      "Real estate agents and brokerages",
+      "Coaches and personal brands",
       "Content creators and influencers",
       "Small businesses and startups",
       "Agencies and eCommerce brands",
     ],
     tasks: [
-      "Edit property listing and tour videos",
+      "Edit product and explainer videos",
       "Cut short Reels and social clips",
       "Edit YouTube videos",
       "Add captions, music and branded intros",

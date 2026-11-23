@@ -1,0 +1,9 @@
+.os-jump { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.6rem; }
+.os-jump a { color: #fff; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: .5rem 1rem; text-decoration: none; font-weight: 600; font-size: .92rem; transition: background-color .2s, border-color .2s; }
+.os-jump a:hover { background: rgba(255,255,255,.12); border-color: #ffb48c; }
+.os-svc { scroll-margin-top: 90px; }
+.os-svc__grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.os-svc__best { margin-top: 1rem; color: #2a3140; line-height: 1.6; }
+.os-svc__card { padding: 1.6rem; }
+.os-svc__cta { margin-top: 1.3rem; }
+@media (max-width: 860px) { .os-svc__grid { grid-template-columns: 1fr; } }

@@ -12,12 +12,6 @@ const QUESTIONS: Record<string, string> = {
   '/business-assistant': 'What is an executive virtual assistant?',
   '/property-management': 'What is a property management virtual assistant?',
   '/lead-generation': 'What is outsourced lead generation?',
-  '/seo': 'What do SEO services include?',
-  '/web-development': 'What do web development services include?',
-  '/digital-marketing': 'What does a digital marketing agency do?',
-  '/graphic-design': 'What do graphic design services include?',
-  '/video-editing': 'What are video editing services?',
-  '/it-support': 'What is remote IT support?',
 };
 
 /** Answer-first "at a glance" box shown right after a service page hero (AEO). */

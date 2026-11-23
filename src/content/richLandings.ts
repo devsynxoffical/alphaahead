@@ -177,9 +177,9 @@ export const RICH_LANDINGS: RichLanding[] = [
     servicePath: "/business-assistant",
     serviceName: "Bookkeeping Virtual Assistant",
     primaryKeyword: "bookkeeping virtual assistant",
-    metaTitle: "Bookkeeping Virtual Assistant | QuickBooks & Xero Support",
+    metaTitle: "Bookkeeping Virtual Assistant for Small Businesses",
     metaDescription:
-      "Hire a bookkeeping virtual assistant for transaction entry, reconciliations, invoicing and bills in QuickBooks Online or Xero, reviewed by your accountant.",
+      "Bookkeeping virtual assistants for small businesses: transactions, reconciliations, invoices and payables in QuickBooks Online or Xero, with secure access.",
     datePublished: "2026-11-20",
 
     hero: {
@@ -304,27 +304,23 @@ export const RICH_LANDINGS: RichLanding[] = [
     faqs: [
       {
         q: "What does a bookkeeping virtual assistant do?",
-        a: "A bookkeeping virtual assistant handles day-to-day bookkeeping remotely: categorizing transactions, reconciling accounts, entering bills, sending invoices and preparing the books for your accountant's month-end review.",
+        a: "A bookkeeping virtual assistant categorizes transactions, reconciles bank and card accounts, creates and sends invoices, enters bills, tracks accounts payable and receivable, and prepares the books for your accountant's month-end review.",
       },
       {
-        q: "Which accounting software do you work in?",
-        a: "Our bookkeeping assistants work in QuickBooks Online and Xero, along with the receipt, payment and spreadsheet tools you already use. Tell us your setup during the discovery call.",
+        q: "How much does a virtual bookkeeper cost?",
+        a: "It depends on your transaction volume, hours and how far behind the books are. [Contact us](/contact) or use the form on this page for a quote based on your workload.",
       },
       {
-        q: "Is a bookkeeping VA the same as an accountant or CPA?",
-        a: "No. A bookkeeping VA does the recurring data work. Tax filing, tax advice and financial statements you sign off stay with your accountant or CPA.",
+        q: "Is it safe to give a VA access to QuickBooks?",
+        a: "Yes, when access is set up properly. Give your VA their own user in QuickBooks Online or Xero with only the permissions the tasks need, turn on two-factor authentication, keep payment approval with you, and remove access the same day the engagement ends.",
       },
       {
-        q: "How is my financial data kept secure?",
-        a: "Your VA uses their own user login in your software, with only the permissions you grant, so you can see their activity and remove access at any time. We agree confidentiality terms in our contract.",
+        q: "Can a VA do payroll?",
+        a: "A VA can collect hours, check timesheets and prepare payroll data for your payroll provider. Approving and running payroll, and payroll tax filings, should stay with you, your accountant or your payroll provider.",
       },
       {
-        q: "Can you catch up on books that are months behind?",
-        a: "Yes. Most engagements start with a catch-up period to bring the books current, followed by the routine checklist.",
-      },
-      {
-        q: "How much does a bookkeeping virtual assistant cost?",
-        a: "It depends on transaction volume, hours and how far behind the books are. [Contact us](/contact) or use the form on this page for a quote.",
+        q: "Do I still need an accountant?",
+        a: "Yes. A bookkeeping VA does the recurring data work, which makes your accountant's job faster. Tax filing, tax advice and signing off financial statements stay with your accountant or CPA. Our [bookkeeping VA checklist](/blog/bookkeeping-virtual-assistant-checklist) shows how the work is split.",
       },
     ],
 
@@ -489,6 +485,10 @@ export const RICH_LANDINGS: RichLanding[] = [
       {
         q: "How much does it cost?",
         a: "It depends on hours, role and scope. Book a free discovery call and we will send a quote.",
+      },
+      {
+        q: "How do contracts and payments work?",
+        a: "You sign a service agreement with Alpha Ahead LLC, a US-registered company, and are invoiced by us, not by an individual overseas. Hours, tasks, confidentiality and notice terms are set out in the agreement before work starts.",
       },
       {
         q: "Do I manage the VA directly?",
