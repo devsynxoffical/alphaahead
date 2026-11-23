@@ -331,7 +331,7 @@ export const RICH_LANDINGS: RichLanding[] = [
     related: [
       ["Virtual business assistant", "/business-assistant"],
       ["Virtual assistant services", "/virtual-assistant"],
-      ["Executive virtual assistant", "/business-assistant"],
+      ["Bookkeeping VA checklist", "/blog/bookkeeping-virtual-assistant-checklist"],
       ["Offshore virtual assistant", "/hire-virtual-assistant-pakistan"],
       ["Contact us", "/contact"],
     ],
@@ -500,6 +500,7 @@ export const RICH_LANDINGS: RichLanding[] = [
       ["Virtual assistant services", "/virtual-assistant"],
       ["Business assistant", "/business-assistant"],
       ["Pakistan vs Philippines VAs", "/blog/pakistan-vs-philippines-virtual-assistant"],
+      ["Onboard a VA in 7 days", "/blog/onboard-virtual-assistant-7-days"],
       ["About Alpha Ahead", "/about"],
       ["Contact us", "/contact"],
     ],

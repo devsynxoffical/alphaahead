@@ -44,7 +44,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "How fast can I start with a virtual assistant?",
-      a: "Start time depends on the role and the skills required. After an initial call to understand your tasks, we match you with a suitable assistant and agree on a start date. We can begin with a smaller scope so you can see how the working relationship fits before expanding.",
+      a: "Start time depends on the role and the skills required. After an initial call to understand your tasks, we match you with a suitable assistant and agree on a start date. We can begin with a smaller scope so you can see how the working relationship fits before expanding. Our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days) shows how the first week works.",
     },
     {
       q: "Who manages my virtual assistant?",
