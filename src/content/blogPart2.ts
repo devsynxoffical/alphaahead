@@ -10,6 +10,7 @@ export const BLOG_PART_2: Article[] = [
     excerpt: "A sourced look at what a virtual assistant costs in 2026, from a US in-house hire to freelance marketplaces and managed offshore teams in the Philippines and Pakistan.",
     primaryKeyword: "virtual assistant cost",
     datePublished: "2026-11-20",
+    dateModified: "2026-11-23",
     image: "/Services/Virtual Assistant.jpg",
     imageAlt: "Business owner comparing the cost of hiring a virtual assistant",
     readMinutes: 7,
@@ -44,6 +45,18 @@ export const BLOG_PART_2: Article[] = [
           "Hours: working US night shifts or fixed overlapping hours can carry a premium",
           "Hiring model: freelancer, managed agency or your own offshore employee",
           "Commitment: full-time dedicated assistants are usually priced lower per hour than ad hoc work",
+        ],
+      },
+      {
+        heading: "How much does a virtual assistant cost in the Philippines and Pakistan?",
+        paragraphs: [
+          "There is no official published rate for virtual assistants in either country, and anyone quoting a single number is generalizing. What can be sourced is the legal minimum wage for local employment, which is the floor, not the price of a VA working for foreign clients:",
+        ],
+        bullets: [
+          "Philippines: the Metro Manila (NCR) minimum wage for non-agricultural workers is PHP 755 per day from 26 September 2026 under Wage Order NCR-28 ([GMA News, DOLE announcement](https://www.gmanetwork.com/news/money/economy/1003769/dole-p60-wage-hike-in-ncr-takes-effect-sept-26/story/)). Other regions set their own, mostly lower, rates.",
+          "Pakistan: the Islamabad Capital Territory minimum wage is PKR 40,700 per month from 1 July 2026 ([WageIndicator](https://wageindicator.org/ai/work/minimum-wage/updates/2026/minimum-wage-increased-in-islamabad-pakistan-from-01-july-2026-august-20-2026/)).",
+          "What you pay a VA is usually well above these floors: experienced, English-fluent assistants serving US or UAE clients command more, and agencies add vetting, supervision and cover on top.",
+          "For a like-for-like number, compare a freelance marketplace rate (Upwork's median for VAs is $10 to $20 per hour) against quotes from agencies for the same task list and hours.",
         ],
       },
       {
@@ -89,6 +102,10 @@ export const BLOG_PART_2: Article[] = [
       {
         q: "Is a virtual assistant from Pakistan cheaper than one from the Philippines?",
         a: "There is no reliable published benchmark comparing the two, and rates within each country vary widely by role, experience and hiring model. Compare quotes for the same task list and hours rather than relying on country averages.",
+      },
+      {
+        q: "How much does a virtual assistant cost in the Philippines?",
+        a: "There is no official VA rate. The legal floor in Metro Manila is PHP 755 per day for non-agricultural workers (from 26 September 2026); VAs serving foreign clients usually earn more, and agency pricing includes vetting and supervision. Compare quotes for the same tasks and hours.",
       },
       {
         q: "Is a cheap virtual assistant worth it?",
