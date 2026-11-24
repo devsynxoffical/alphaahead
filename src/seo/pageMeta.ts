@@ -10,6 +10,8 @@ export interface PageMeta {
   serviceType?: string;
   image?: string;
   noindex?: boolean;
+  /** Breadcrumb parent (defaults to Services for service pages) */
+  parent?: { name: string; path: string };
 }
 
 export const PAGE_META: Record<string, PageMeta> = {
@@ -27,6 +29,12 @@ export const PAGE_META: Record<string, PageMeta> = {
     breadcrumb: 'Other Services',
     noindex: true,
   },
+  '/industries': {
+    title: 'Virtual Assistants by Industry | Alpha Ahead',
+    description: 'Virtual assistants for insurance agents, startups, coaches, lawyers and accountants, plus sister brands for real estate and medical practices.',
+    type: 'listing',
+    breadcrumb: 'Industries',
+  },
   '/sitemap': {
     title: 'Sitemap | Alpha Ahead LLC',
     description: 'All pages on the Alpha Ahead website: virtual assistant and cold calling services, Dubai pages, guides, case studies and company pages.',
@@ -43,7 +51,7 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/services': {
     title: 'Outsourcing & Digital Services | Alpha Ahead LLC',
     description:
-      'Outsourced services for US & UAE businesses: virtual assistants, appointment setting, cold calling, bookkeeping VAs, lead generation, SEO and web development.',
+      'Outsourced services for US & UAE businesses: virtual assistants, appointment setting, cold calling, bookkeeping VAs, lead generation and more.',
     type: 'listing',
     breadcrumb: 'Services',
   },

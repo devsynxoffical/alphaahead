@@ -31,6 +31,7 @@ const Header: React.FC = () => {
     { label: t('nav.home'), link: '/' },
     { label: 'About', link: '/about' },
     { label: t('nav.services'), link: '/services' },
+    { label: 'Industries', link: '/industries' },
     { label: t('nav.products'), link: '/projects' },
     { label: t('nav.clients'), link: '/clients' },
     { label: 'Blog', link: '/blog' },

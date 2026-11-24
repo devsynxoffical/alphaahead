@@ -37,6 +37,7 @@ export function resolveMeta(rawPath: string): ResolvedMeta {
       description: rich.metaDescription,
       type: 'service',
       breadcrumb: rich.serviceName,
+      parent: rich.industry ? { name: 'Industries', path: '/industries' } : undefined,
       serviceName: rich.serviceName,
       serviceType: rich.primaryKeyword,
       image: rich.hero.image,

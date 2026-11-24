@@ -76,6 +76,8 @@ const breadcrumb = (meta: ResolvedMeta) => {
   if (a) {
     if (a.kind === 'blog') items.push({ name: 'Blog', path: '/blog' });
     if (a.kind === 'case-study') items.push({ name: 'Case Studies', path: '/case-studies' });
+  } else if (meta.parent) {
+    items.push(meta.parent);
   } else if (meta.type === 'service') {
     items.push({ name: 'Services', path: '/services' });
   }

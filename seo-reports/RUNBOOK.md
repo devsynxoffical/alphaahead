@@ -57,8 +57,8 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
   quote or bind insurance), pricing (owner), results (owner), FAQ; links to /virtual-assistant, /bookkeeping-virtual-assistant or
   /cold-calling, 2 other industries, and /blog/virtual-assistant-cost.
 - Schedule: 30 Nov week 2 (retarget /virtual-assistant to "virtual assistant for small business", /business-assistant to executive VA,
-  plus v2 homepage/bookkeeping/cold calling items); 7 Dec insurance agents, startups, coaches pages; 4 Jan lawyers, accountants,
-  data entry VA, industries hub, then blog support posts.
+  plus v2 homepage/bookkeeping/cold calling items); 24 Nov (owner asked not to wait): all 5 industry pages + /industries hub LIVE (C34-C35);
+  7 Dec personal VA + Pakistan page sections; 4 Jan data entry VA page, location pages if confirmed, blog support posts.
 
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).

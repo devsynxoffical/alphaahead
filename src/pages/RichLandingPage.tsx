@@ -11,6 +11,7 @@ import { BRAND_LOGOS } from '../content/logos';
 import LeadForm from '../components/lead/LeadForm';
 import LeadSection from '../components/lead/LeadSection';
 import FaqSection from '../components/seo/FaqSection';
+import RichText from '../components/seo/RichText';
 import NotFound from './NotFound';
 import './RichLandingPage.css';
 
@@ -36,7 +37,8 @@ const RichLandingPage: React.FC = () => {
         <div className="aa-container rl-hero__inner">
           <div className="rl-hero__copy">
             <nav aria-label="Breadcrumb" className="rl-crumbs">
-              <Link to="/">Home</Link> <span aria-hidden="true">/</span> <Link to="/services">Services</Link> <span aria-hidden="true">/</span>{' '}
+              <Link to="/">Home</Link> <span aria-hidden="true">/</span>{' '}
+              {page.industry ? <Link to="/industries">Industries</Link> : <Link to="/services">Services</Link>} <span aria-hidden="true">/</span>{' '}
               <span aria-current="page">{page.serviceName}</span>
             </nav>
             <p className="rl-badge">{hero.eyebrow}</p>
@@ -81,7 +83,7 @@ const RichLandingPage: React.FC = () => {
             </ul>
             <p className="aa-eyebrow" style={{ marginTop: '2rem' }}>The fix</p>
             <h3 className="rl-h3">{page.solution.title}</h3>
-            {page.solution.paragraphs.map((p, i) => <p key={i} className="rl-p">{p}</p>)}
+            {page.solution.paragraphs.map((p, i) => <p key={i} className="rl-p"><RichText text={p} /></p>)}
           </div>
           <figure className="rl-figure reveal reveal-d1">
             <img src={page.solution.image} alt={page.solution.imageAlt} width={560} height={420} loading="lazy" />
@@ -158,7 +160,7 @@ const RichLandingPage: React.FC = () => {
               <li key={s.title} className={`aa-step reveal reveal-d${i}`}>
                 <div className="aa-step__num">{i + 1}</div>
                 <h3>{s.title}</h3>
-                <p>{s.text}</p>
+                <p><RichText text={s.text} /></p>
               </li>
             ))}
           </ol>

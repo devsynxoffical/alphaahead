@@ -24,9 +24,10 @@ const SitemapPage: React.FC = () => {
       title: 'Services',
       links: [
         ...SERVICES.filter(s => indexable(s.path)).map(s => [s.name, s.path] as [string, string]),
-        ...RICH_LANDINGS.map(r => [r.serviceName, `/${r.slug}`] as [string, string]),
+        ...RICH_LANDINGS.filter(r => !r.industry).map(r => [r.serviceName, `/${r.slug}`] as [string, string]),
       ],
     },
+    { title: 'Industries', links: [['All industries', '/industries'] as [string, string], ...RICH_LANDINGS.filter(r => r.industry).map(r => [r.serviceName, `/${r.slug}`] as [string, string])] },
     { title: 'Locations', links: LOCATION_PAGES.map(l => [l.title.split(':')[0], articlePath(l)] as [string, string]) },
     { title: 'Guides', links: BLOG_POSTS.map(b => [b.title, articlePath(b)] as [string, string]) },
     { title: 'Case Studies', links: CASE_STUDIES.map(c => [c.title.split(':')[0], articlePath(c)] as [string, string]) },

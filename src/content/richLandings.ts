@@ -1,3 +1,4 @@
+import { INDUSTRY_PAGES } from './industries';
 import { RichLanding } from './richLandingTypes';
 
 export const RICH_LANDINGS: RichLanding[] = [
@@ -11,7 +12,7 @@ export const RICH_LANDINGS: RichLanding[] = [
     primaryKeyword: "appointment setting services",
     metaTitle: "Appointment Setting Services | Dedicated B2B Setters",
     metaDescription:
-      "Outsourced appointment setting services: dedicated setters who call, email and follow up with your leads, qualify them and book meetings into your calendar.",
+      "Outsourced appointment setting services: dedicated setters who call, email and follow up with your leads, qualify them and book meetings for you.",
     datePublished: "2026-11-20",
 
     hero: {
@@ -509,4 +510,5 @@ export const RICH_LANDINGS: RichLanding[] = [
   // ---------------------------------------------------------------------------
   // 3. Virtual real estate ISA
   // ---------------------------------------------------------------------------
+  ...INDUSTRY_PAGES,
 ];

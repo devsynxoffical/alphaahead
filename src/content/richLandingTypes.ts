@@ -7,6 +7,8 @@ export type IconKey =
 
 export interface RichLanding {
   slug: string; // URL is "/" + slug
+  /** Industry page (listed on /industries, breadcrumb via Industries) */
+  industry?: boolean;
   /** Service path this page sells (pre-selects the lead form, Service schema, related links) */
   servicePath: string;
   serviceName: string;

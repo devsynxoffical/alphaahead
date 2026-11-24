@@ -29,6 +29,7 @@ import NotFound from './pages/NotFound';
 import AboutPage from './pages/AboutPage';
 import OtherServicesPage from './pages/OtherServicesPage';
 import SitemapPage from './pages/SitemapPage';
+import IndustriesPage from './pages/IndustriesPage';
 import RichLandingPage from './pages/RichLandingPage';
 import MobileCtaBar from './components/lead/MobileCtaBar';
 import { RICH_LANDINGS } from './content/richLandings';
@@ -76,6 +77,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/other-services" element={<OtherServicesPage />} />
           <Route path="/sitemap" element={<SitemapPage />} />
+          <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/clients" element={<Clients />} />

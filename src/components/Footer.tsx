@@ -44,6 +44,7 @@ const Footer: React.FC = () => {
           <Link to="/services">{t('nav.services')}</Link>
           <Link to="/projects">{t('nav.products')}</Link>
           <Link to="/case-studies">Case Studies</Link>
+          <Link to="/industries">Industries</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/clients">{t('nav.clients')}</Link>
           <Link to="/team">{t('nav.team')}</Link>
@@ -56,7 +57,7 @@ const Footer: React.FC = () => {
           {SERVICES.map(s => (
             <Link key={s.path} to={s.path}>{s.name}</Link>
           ))}
-          {RICH_LANDINGS.map(r => (
+          {RICH_LANDINGS.filter(r => !r.industry).map(r => (
             <Link key={r.slug} to={`/${r.slug}`}>{r.serviceName.replace(/ \(.*\)$/, '')}</Link>
           ))}
         </nav>
