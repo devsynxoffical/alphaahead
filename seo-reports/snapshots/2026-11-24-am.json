@@ -1,0 +1,17 @@
+{
+  "taken": "2026-11-24T00:50Z",
+  "fresh_2026-11-10..24": { "clicks": 7, "impressions": 130, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 21, 19.6], "2026-11-22": [2, 31, 10.4], "2026-11-23": [1, 7, 17.0] } },
+  "pages_with_impressions": 27,
+  "notable": { "/": [6, 25, 9.5], "/team": [1, 25, 10.6], "/contact": [0, 15, 2.9], "/business-assistant": [0, 6, 12.3], "/appointment-setting": [0, 5, 5.8], "/blog/hiring-virtual-assistant-dubai": [0, 3, 4.3], "/virtual-assistant-dubai": [0, 5, 49.6] },
+  "new_queries": { "virtual business assistant": "1 impr, pos 2 (/business-assistant)" },
+  "index_status_checked_this_run": {
+    "/other-services": "URL is unknown to Google (published 23 Nov)",
+    "/blog/is-cold-calling-illegal": "URL is unknown to Google (published 23 Nov)",
+    "/blog/onboard-virtual-assistant-7-days": "Discovered - currently not indexed",
+    "/blog/bookkeeping-virtual-assistant-checklist": "Discovered - currently not indexed",
+    "/about": "Crawled - currently not indexed (last crawl 18 Nov)",
+    "/cold-calling": "Indexed; last crawl 18 Nov (before C18/C27)"
+  },
+  "changes_this_run": [],
+  "deploy": "run #29 success"
+}
