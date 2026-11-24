@@ -1,0 +1,13 @@
+{
+  "taken": "2026-11-24T12:50Z",
+  "fresh_2026-11-10..24": { "clicks": 10, "impressions": 174, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 21, 19.6], "2026-11-22": [2, 31, 10.4], "2026-11-23": [4, 51, 16.0] } },
+  "pages_with_impressions": 35,
+  "notable": { "/": [7, 35, 9.9], "/team": [2, 29, 9.4], "/blog/hiring-virtual-assistant-dubai": [1, 7, 4.4], "/cold-calling": [1, 2, 2.0], "/business-assistant": [0, 9, 8.6], "/appointment-setting": [0, 6, 6.2], "/blog/appointment-setter-vs-sdr": [0, 5, 15.4], "/blog/virtual-assistant-cost": [0, 8, 18.1], "/contact": [0, 17, 2.7] },
+  "new_queries": { "virtual assistant": "1 click, 2 impr, pos 6 (/blog/hiring-virtual-assistant-dubai)", "sdr appointment setting company": "pos 64", "are cold calls illegal / do not call list rules for realtors": "old real estate URL (301 to Zingo)" },
+  "index_status_checked_this_run": {
+    "/blog/is-cold-calling-illegal": "URL is unknown to Google", "/industries": "URL is unknown to Google", "/virtual-assistant-for-insurance-agents": "URL is unknown to Google",
+    "/blog/onboard-virtual-assistant-7-days": "Discovered - currently not indexed", "/business-assistant": "Indexed; last crawl 18 Nov", "/about": "Crawled - currently not indexed"
+  },
+  "changes_this_run": [],
+  "deploy": "run #31 success"
+}
