@@ -17,7 +17,6 @@ import VirtualAssistantDetails from './pages/VirtualAssistantDetails';
 import ColdCallingDetails from './pages/ColdCallingDetails';
 import PersonalAssistantDetails from './pages/PersonalAssistantDetails';
 import VirtualBusinessAssistantDetails from './pages/VirtualBusinessAssistantDetails';
-import VirtualPropertyManagementDetails from './pages/VirtualPropertyManagementDetails';
 import LeadGenerationDetails from './pages/LeadGenerationDetails';
 import Footer from './components/Footer';
 import ChatWidgetEmbed from './components/ChatWidgetEmbed';
@@ -29,6 +28,7 @@ import ArticleListing from './pages/ArticleListing';
 import NotFound from './pages/NotFound';
 import AboutPage from './pages/AboutPage';
 import OtherServicesPage from './pages/OtherServicesPage';
+import SitemapPage from './pages/SitemapPage';
 import RichLandingPage from './pages/RichLandingPage';
 import MobileCtaBar from './components/lead/MobileCtaBar';
 import { RICH_LANDINGS } from './content/richLandings';
@@ -50,7 +50,6 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
   ['/cold-calling', <ColdCallingDetails />],
   ['/personal-assistant', <PersonalAssistantDetails />],
   ['/business-assistant', <VirtualBusinessAssistantDetails />],
-  ['/property-management', <VirtualPropertyManagementDetails />],
   ['/lead-generation', <LeadGenerationDetails />],
 ];
 
@@ -76,6 +75,7 @@ function App() {
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/other-services" element={<OtherServicesPage />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/services" element={<><ServicesPage /><CtaBanner /></>} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/clients" element={<Clients />} />

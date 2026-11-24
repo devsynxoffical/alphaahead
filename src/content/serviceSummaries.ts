@@ -99,28 +99,6 @@ export const SERVICE_SUMMARIES: Record<string, ServiceSummary> = {
     howToStart:
       "Book a free consultation call to map out the back-office tasks you want to hand off.",
   },
-  "/property-management": {
-    definition:
-      "A property management virtual assistant is a remote assistant who handles the administrative side of rental properties (often called virtual property management), including tenant communication, rent reminders, maintenance coordination and listing support. Alpha Ahead supplies property management assistants to landlords, investors and management companies on part-time, full-time or project-based terms.",
-    bestFor: [
-      "Independent landlords",
-      "Real estate investors",
-      "Property management companies",
-      "Short-term rental owners",
-    ],
-    tasks: [
-      "Respond to tenant inquiries and concerns",
-      "Send rent reminders and track payments",
-      "Log and follow up maintenance requests",
-      "Coordinate repairs with your vendors",
-      "Organize leases and renewal documents",
-      "Advertise vacant units and list rentals",
-    ],
-    hours:
-      "Assistants work US (EST or PST) or UAE business hours, and extended or round-the-clock tenant coverage is available on request.",
-    howToStart:
-      "Book a free consultation call to review your portfolio and the property tasks you want covered.",
-  },
   "/lead-generation": {
     definition:
       "Outsourced lead generation is hiring an external team to find, contact and qualify potential customers for your sales pipeline. Alpha Ahead runs real estate and B2B lead generation through targeted list building, cold calling, email and social outreach, then sets appointments or passes warm leads to your team with ongoing reporting.",

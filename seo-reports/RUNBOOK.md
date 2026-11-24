@@ -44,6 +44,22 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
   2-3 client results with permission.
 - 90-day goals (from 23 Nov): monthly impressions 1,000+, 100+ search terms with impressions, 3+ P1 keywords in the top 20.
 
+## 0c. Structure plan v3 (DEVSYNX, 24 Nov 2026): owner decisions and schedule (overrides 0b where different)
+- Page map: `seo-reports/page-map-2026-11-24.csv`.
+- Owner decisions 24 Nov: KEEP /appointment-setting (indexed, pos 5.8); /property-management 301 to Zingo (done, C31);
+  /other-services noindex (done, C32); industries confirmed: insurance agents, startups, coaches, lawyers, accountants.
+  NOT confirmed: Amazon, ecommerce (do not build those pages).
+- /home already 301s to / (.htaccess); real estate URLs 301 to zingoassist.us homepage until the owner confirms the exact Zingo URLs
+  (/blog/transaction-coordinator-vs-virtual-assistant and /wholesale-real-estate-cold-calling could not be verified on 24 Nov).
+- Location pages (UAE hub, Abu Dhabi, outsourcing Dubai, lead generation Dubai, Florida, locations hub): DO NOT publish until the owner
+  confirms the office (staffed, real address), clients in that area, and facts are verified from official sources.
+- Industry page template: in short, tasks, tools (only ones the owner confirms), compliance/licensing limits (e.g. unlicensed VA cannot
+  quote or bind insurance), pricing (owner), results (owner), FAQ; links to /virtual-assistant, /bookkeeping-virtual-assistant or
+  /cold-calling, 2 other industries, and /blog/virtual-assistant-cost.
+- Schedule: 30 Nov week 2 (retarget /virtual-assistant to "virtual assistant for small business", /business-assistant to executive VA,
+  plus v2 homepage/bookkeeping/cold calling items); 7 Dec insurance agents, startups, coaches pages; 4 Jan lawyers, accountants,
+  data entry VA, industries hub, then blog support posts.
+
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).
 - GSC performance, last 7 and last 28 days: totals by `date`, top `query`, top `page`, `query`+`page` (cannibalization), `country`, `device`.

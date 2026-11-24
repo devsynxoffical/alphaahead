@@ -80,6 +80,9 @@ const Footer: React.FC = () => {
       <div className="ftr-bottom">
         <div className="aa-container">
           <p>{t('footer.copyright').replace(/20\d\d/, year)}</p>
+          <p className="ftr-sister">
+            Sister brands: <a href="https://zingoassist.us/">Zingo Assist</a> (real estate) · <a href="https://alphamediassist.com/">Alpha Medi Assist</a> (medical practices) · <Link to="/sitemap">Sitemap</Link>
+          </p>
         </div>
       </div>
     </footer>

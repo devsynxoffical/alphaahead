@@ -10,7 +10,6 @@ const QUESTIONS: Record<string, string> = {
   '/cold-calling': 'What are B2B cold calling services?',
   '/personal-assistant': 'What does a personal virtual assistant do?',
   '/business-assistant': 'What is an executive virtual assistant?',
-  '/property-management': 'What is a property management virtual assistant?',
   '/lead-generation': 'What is outsourced lead generation?',
 };
 

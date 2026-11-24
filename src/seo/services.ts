@@ -13,7 +13,6 @@ export const SERVICES: ServiceLink[] = [
   { path: '/personal-assistant', name: 'Personal Virtual Assistant', short: 'Remote personal assistants for busy founders and executives.', category: 'staffing' },
   { path: '/business-assistant', name: 'Executive Virtual Assistant', short: 'Executive, back-office and operations assistants for leaders.', category: 'staffing' },
   { path: '/lead-generation', name: 'Lead Generation Services', short: 'B2B lead lists, outreach and qualification for your sales team.', category: 'staffing' },
-  { path: '/property-management', name: 'Property Management VA', short: 'Remote assistants for tenant communication, leasing and maintenance.', category: 'real-estate' },
   { path: '/other-services', name: 'Other Services', short: 'SEO, web development, digital marketing, design, video editing and IT support.', category: 'digital' },
 ];
 

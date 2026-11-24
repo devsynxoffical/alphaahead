@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
             <p className="aa-lead">{t('about.para1')}</p>
             <ul className="home-about__list">
               <li><FaCheckCircle aria-hidden="true" /> US-registered company with offices in Florida, Dubai and Islamabad</li>
-              <li><FaCheckCircle aria-hidden="true" /> Specialists for <Link to="/appointment-setting">appointment setting</Link>, <Link to="/bookkeeping-virtual-assistant">bookkeeping</Link>, <Link to="/property-management">property management</Link> and growing businesses</li>
+              <li><FaCheckCircle aria-hidden="true" /> Specialists for <Link to="/appointment-setting">appointment setting</Link>, <Link to="/bookkeeping-virtual-assistant">bookkeeping</Link>, <Link to="/cold-calling">B2B cold calling</Link> and growing businesses</li>
               <li><FaCheckCircle aria-hidden="true" /> Real estate agent or investor in the US? Our real estate division, <a href="https://zingoassist.us/">Zingo Assist</a>, provides real estate VAs and transaction coordinators</li>
               <li><FaCheckCircle aria-hidden="true" /> One partner for staffing <em>and</em> <Link to="/other-services#digital-marketing">digital marketing</Link>, <Link to="/other-services#seo">SEO</Link> and <Link to="/other-services#web-development">web</Link></li>
             </ul>

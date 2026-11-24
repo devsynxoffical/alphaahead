@@ -25,6 +25,13 @@ export const PAGE_META: Record<string, PageMeta> = {
       'SEO, web development, digital marketing, graphic design, video editing and remote IT support from the Alpha Ahead team, on US or UAE business hours.',
     type: 'listing',
     breadcrumb: 'Other Services',
+    noindex: true,
+  },
+  '/sitemap': {
+    title: 'Sitemap | Alpha Ahead LLC',
+    description: 'All pages on the Alpha Ahead website: virtual assistant and cold calling services, Dubai pages, guides, case studies and company pages.',
+    type: 'page',
+    breadcrumb: 'Sitemap',
   },
   '/about': {
     title: 'About Alpha Ahead LLC | Founders, Offices & Approach',
@@ -133,15 +140,6 @@ export const PAGE_META: Record<string, PageMeta> = {
     breadcrumb: 'Executive Virtual Assistant',
     serviceName: 'Executive Virtual Assistant Services',
     serviceType: 'Back-office support',
-  },
-  '/property-management': {
-    title: 'Property Management Virtual Assistant Services',
-    description:
-      'Virtual property management support: a property management virtual assistant for tenant calls, rent reminders, maintenance, renewals and listings.',
-    type: 'service',
-    breadcrumb: 'Property Management Virtual Assistant',
-    serviceName: 'Property Management Virtual Assistant Services',
-    serviceType: 'Property management support',
   },
   '/lead-generation': {
     title: 'Lead Generation Services | B2B Outsourced Lead Gen',

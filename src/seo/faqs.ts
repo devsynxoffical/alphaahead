@@ -161,33 +161,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
   ],
 
-  "/property-management": [
-    {
-      q: "What does a property management virtual assistant do?",
-      a: "A property management virtual assistant handles the admin side of rentals: tenant communication, lease and document organization, rent reminders and payment tracking, maintenance request coordination with vendors, and listing and marketing support for vacancies. They support the owner or manager rather than replacing them.",
-    },
-    {
-      q: "Can your VA work in AppFolio, Buildium or Rent Manager?",
-      a: "Yes, our assistants work inside your existing systems. We can work in tools such as AppFolio, Buildium and Rent Manager, as well as email, phone and messaging platforms. You give your assistant their own user account so you control their access.",
-    },
-    {
-      q: "Can a virtual assistant handle after-hours tenant calls?",
-      a: "We can plan coverage that includes tenant communication by phone, email and messaging outside normal hours, depending on the schedule you choose. Emergencies are logged and escalated following the instructions and vendor contacts you set. The exact hours covered are agreed during onboarding and affect pricing.",
-    },
-    {
-      q: "Can a property management VA collect rent or screen tenants?",
-      a: "A VA can assist with these tasks but does not make the decisions. They can send rent reminders, track payments and gather applicant information and documents, while approvals, screening decisions and handling funds stay with the owner or licensed property manager. This keeps responsibility where your local rules require it.",
-    },
-    {
-      q: "Should I hire a part-time or full-time property management VA?",
-      a: "It depends on your portfolio size and how much tenant and vendor contact you have. Smaller portfolios often start part-time or with occasional project help, while managers with larger portfolios may need full-time coverage. We offer flexible options, so you can start with fewer hours and increase later.",
-    },
-    {
-      q: "Who uses virtual property management services?",
-      a: "Our clients include independent landlords, real estate investors, property management companies, realtors and brokers offering rental management, and short-term rental owners. Each setup is tailored to the type of property and workload. [Contact us](/contact) for a free quote based on your portfolio.",
-    },
-  ],
-
   "/lead-generation": [
     {
       q: "How do you generate leads?",
