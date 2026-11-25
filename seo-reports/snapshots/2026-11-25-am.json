@@ -1,0 +1,15 @@
+{
+  "taken": "2026-11-25T00:50Z",
+  "fresh_2026-11-10..25": { "clicks": 10, "impressions": 202, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 21, 19.6], "2026-11-22": [2, 31, 10.4], "2026-11-23": [4, 51, 16.0], "2026-11-24": [0, 28, 21.0] } },
+  "new_queries": { "virtual assistant per hour rate": "pos 8 (/blog/virtual-assistant-cost)", "zingo assist": "pos 6 (/case-studies/zingo-assist)", "virtual assistant": "3 impr pos 53 on /virtual-assistant-dubai; 1 click pos 28 on Dubai blog" },
+  "index_status_checked_this_run": {
+    "/industries": "Indexed (crawled 24 Nov 16:09)",
+    "/virtual-assistant-for-startups": "Indexed (crawled 24 Nov 15:05)",
+    "/virtual-assistant-for-lawyers": "Indexed (crawled 24 Nov 14:43)",
+    "/blog/is-cold-calling-illegal": "Indexed (crawled 24 Nov 16:15)",
+    "/blog/bookkeeping-virtual-assistant-checklist": "Discovered - currently not indexed",
+    "/cold-calling": "Indexed; last crawl 18 Nov"
+  },
+  "changes_this_run": [],
+  "deploy": "run #31 success"
+}
