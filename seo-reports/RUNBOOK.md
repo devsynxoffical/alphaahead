@@ -60,6 +60,28 @@ and the live site. Never invent metrics, rankings, indexing or AI-citation resul
   plus v2 homepage/bookkeeping/cold calling items); 24 Nov (owner asked not to wait): all 5 industry pages + /industries hub LIVE (C34-C35);
   7 Dec personal VA + Pakistan page sections; 4 Jan data entry VA page, location pages if confirmed, blog support posts.
 
+## 0d. Weekly content run (owner approved 25 Nov 2026: 1 new page or post per week)
+Every Thursday the weekly scheduled task publishes ONE new page or post:
+1. Pick the best unused topic: first any real GSC query (non-brand, 2+ impressions) with no dedicated page; else the next item
+   in the queue below. Never duplicate an existing page's primary keyword; never target Zingo (real estate) or Alpha Medi Assist
+   (medical) lanes; location pages only after the owner confirms the office/clients.
+2. Sourced facts only (official sources for laws, wages, rules); no invented prices, results, tools or testimonials.
+3. Link it from 1-2 related indexed pages and link out to 1-2 service pages. No em dashes. Build + audit (title <= 60,
+   description <= 155, one H1, no raw markdown, no mobile overflow). Log a C-row, commit + push as devsynx, confirm deploy green.
+4. Mark the topic done in the queue and report to the owner.
+
+Queue (update as items ship):
+- [ ] Virtual assistant per hour rate (post; GSC pos 8) - only if not better served by updating /blog/virtual-assistant-cost
+- [ ] Insurance agency VA tasks: 25 tasks to delegate (post, supports /virtual-assistant-for-insurance-agents)
+- [ ] 30 tasks to delegate to an executive assistant (post, supports /business-assistant)
+- [ ] Bookkeeping virtual assistant vs accountant: who does what (post)
+- [ ] How to hire a virtual assistant from Pakistan safely (post)
+- [ ] B2B cold calling scripts that book meetings (post, supports /cold-calling)
+- [ ] How to give a VA secure access to your tools (post)
+- [ ] Virtual assistant cost in Dubai (post, sourced; supports /virtual-assistant-dubai)
+- [ ] /data-entry-virtual-assistant (service page, 590/mo KD 28; also scheduled 4 Jan)
+- [ ] Startup VA tasks for founders (post, supports /virtual-assistant-for-startups)
+
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).
 - GSC performance, last 7 and last 28 days: totals by `date`, top `query`, top `page`, `query`+`page` (cannibalization), `country`, `device`.
