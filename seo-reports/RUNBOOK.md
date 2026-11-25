@@ -71,8 +71,8 @@ Every Thursday the weekly scheduled task publishes ONE new page or post:
 4. Mark the topic done in the queue and report to the owner.
 
 Queue (update as items ship):
-- [ ] Virtual assistant per hour rate (post; GSC pos 8) - only if not better served by updating /blog/virtual-assistant-cost
-- [ ] Insurance agency VA tasks: 25 tasks to delegate (post, supports /virtual-assistant-for-insurance-agents)
+- [skipped 25 Nov] Virtual assistant per hour rate: better served by /blog/virtual-assistant-cost (would cannibalize); revisit its title if impressions grow
+- [x] 25 Nov: /blog/insurance-virtual-assistant-tasks (C37)
 - [ ] 30 tasks to delegate to an executive assistant (post, supports /business-assistant)
 - [ ] Bookkeeping virtual assistant vs accountant: who does what (post)
 - [ ] How to hire a virtual assistant from Pakistan safely (post)

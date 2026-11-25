@@ -100,7 +100,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
       { title: 'Commercial lines teams', text: 'Keep certificate requests and renewals on schedule.', image: '/finicialservice.jpeg', imageAlt: 'Commercial insurance documents on a desk' },
     ],
     faqs: [
-      { q: 'What can a virtual assistant do for an insurance agent?', a: 'A virtual assistant handles non-licensed admin: renewal reminders, certificate of insurance requests, data entry in your CRM or agency system, carrier portal paperwork, document collection and appointment booking.' },
+      { q: 'What can a virtual assistant do for an insurance agent?', a: 'A virtual assistant handles non-licensed admin: renewal reminders, certificate of insurance requests, data entry in your CRM or agency system, carrier portal paperwork, document collection and appointment booking. See our list of [25 tasks to delegate to an insurance virtual assistant](/blog/insurance-virtual-assistant-tasks).' },
       { q: 'Can a virtual assistant quote or bind insurance?', a: 'No. In most states only licensed producers may quote, advise on coverage or bind. Your assistant prepares information and paperwork; your licensed team makes those decisions. Check your state rules; this is not legal advice.' },
       { q: 'Which systems can the assistant work in?', a: 'Your assistant works in the CRM, agency management system, email and carrier portals you already use, with their own login. Tell us your systems on the discovery call so we can match the right person.' },
       { q: 'Is client data safe?', a: 'Your assistant uses individual logins with only the access the tasks need, ideally with two-factor authentication, and confidentiality is part of our agreement. You can remove access at any time.' },
@@ -108,6 +108,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     ],
     related: [
       ['Virtual assistant services', '/virtual-assistant'],
+      ['25 insurance VA tasks', '/blog/insurance-virtual-assistant-tasks'],
       ...RELATED_INDUSTRIES('/virtual-assistant-for-insurance-agents'),
       ['Virtual assistant cost', '/blog/virtual-assistant-cost'],
       ['All industries', '/industries'],

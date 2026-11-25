@@ -2,6 +2,112 @@ import { Article } from './types';
 
 export const BLOG_PART_2: Article[] = [
   {
+    slug: "insurance-virtual-assistant-tasks",
+    kind: "blog",
+    title: "25 Tasks to Delegate to an Insurance Virtual Assistant",
+    metaTitle: "25 Tasks to Delegate to an Insurance Virtual Assistant",
+    metaDescription: "25 admin tasks an insurance agency can hand to a virtual assistant, from renewals and certificates to CRM updates, plus what must stay with licensed staff.",
+    excerpt: "A practical list of 25 non-licensed tasks insurance agents and agencies can delegate to a virtual assistant, grouped by service, renewals, data, sales support and admin.",
+    primaryKeyword: "insurance virtual assistant tasks",
+    datePublished: "2026-11-25",
+    image: "/finicialservice.jpeg",
+    imageAlt: "Insurance agency assistant working through a task list",
+    readMinutes: 6,
+    intro: [
+      "An insurance virtual assistant can take over most of the service and admin work in an agency: certificate requests, renewal preparation, data entry in your CRM or agency management system, document collection, appointment booking and follow-up. What a VA should not do is sell, solicit or negotiate insurance, which requires a producer license.",
+      "Below are 25 tasks agencies commonly delegate, grouped by area, followed by the tasks that must stay with your licensed team. Use it as a starting checklist and adjust it to your book and your state.",
+    ],
+    sections: [
+      {
+        heading: "First, the licensing line",
+        paragraphs: [
+          "Under the producer licensing laws states have built on the NAIC model, a license is required to sell, solicit or negotiate insurance, while clerical and administrative work does not require one ([NAIC: producer licensing](https://content.naic.org/insurance-topics/producer-licensing)). Each state defines these terms and its exemptions, so check with your state insurance department. This is general information, not legal advice.",
+          "In practice, that means your VA prepares, organizes, schedules and follows up; your licensed producers quote, recommend coverage and bind.",
+        ],
+      },
+      {
+        heading: "Client service (tasks 1 to 6)",
+        bullets: [
+          "1. Log and prepare certificate of insurance requests from your templates for review",
+          "2. Send ID cards and policy documents clients ask for",
+          "3. Triage the service inbox and route requests to the right person",
+          "4. Prepare policy change paperwork (address, vehicle, driver details) for producer review",
+          "5. Answer routine questions from an approved FAQ (office hours, document status, how to pay)",
+          "6. Collect signatures on forms your producer has prepared",
+        ],
+      },
+      {
+        heading: "Renewals (tasks 7 to 11)",
+        bullets: [
+          "7. Pull upcoming renewals 60 to 90 days ahead and build the renewal list",
+          "8. Send renewal reminder emails and make reminder calls",
+          "9. Collect updated client information and documents for remarketing",
+          "10. Prepare renewal files so the producer can review in one place",
+          "11. Track renewal status and flag anything stuck",
+        ],
+      },
+      {
+        heading: "Data and systems (tasks 12 to 16)",
+        bullets: [
+          "12. Enter new clients, policies and activities in your CRM or agency management system",
+          "13. Attach and name documents consistently",
+          "14. Download documents and check statuses in carrier portals you grant access to",
+          "15. Clean up duplicate and outdated records",
+          "16. Prepare weekly activity and pipeline reports",
+        ],
+      },
+      {
+        heading: "Sales support (tasks 17 to 21)",
+        bullets: [
+          "17. Follow up new web and referral leads and book appointments with producers",
+          "18. Build cross-sell lists from your book for producers to work",
+          "19. Send review requests to happy clients",
+          "20. Send referral thank-you emails",
+          "21. Schedule social posts and newsletters you approve",
+        ],
+      },
+      {
+        heading: "Agency admin (tasks 22 to 25)",
+        bullets: [
+          "22. Manage producers' calendars and meeting reminders",
+          "23. Send payment reminders for overdue invoices or premiums your system flags",
+          "24. Track license and continuing education renewal dates for your team",
+          "25. Keep SOPs and checklists up to date as processes change",
+        ],
+      },
+      {
+        heading: "What stays with your licensed team",
+        bullets: [
+          "Quoting and comparing coverage options for a client",
+          "Recommending coverage or answering \"which policy should I buy?\"",
+          "Binding coverage or making changes that alter coverage",
+          "Anything your state or carriers define as selling, soliciting or negotiating",
+        ],
+      },
+      {
+        heading: "Getting started",
+        paragraphs: [
+          "Start with five tasks from the service and data lists, document them, then add renewals and sales support once the routine is working. Our [virtual assistant for insurance agents](/virtual-assistant-for-insurance-agents) page explains how we set the role up, and our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days) covers the first week.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What tasks can an insurance virtual assistant do?",
+        a: "Non-licensed service and admin work: certificate requests, renewal preparation and reminders, CRM and agency system data entry, carrier portal paperwork, document collection, appointment booking and reporting.",
+      },
+      {
+        q: "Does an insurance virtual assistant need a license?",
+        a: "Not for clerical and administrative work. A producer license is required to sell, solicit or negotiate insurance, and each state defines those terms, so keep quoting, advice and binding with licensed staff and check your state rules.",
+      },
+      {
+        q: "Which tasks should I delegate first?",
+        a: "Start with frequent, low-risk tasks such as certificate requests, ID card requests, inbox triage and data entry, then add renewals and sales support.",
+      },
+    ],
+    relatedServices: ["/virtual-assistant", "/business-assistant"]
+  },
+  {
     slug: "is-cold-calling-illegal",
     kind: "blog",
     title: "Is Cold Calling Illegal? US Rules in 2026",
