@@ -1,0 +1,18 @@
+{
+  "taken": "2026-11-26T00:50Z",
+  "fresh_2026-11-10..26": { "clicks": 12, "impressions": 269, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 21, 19.6], "2026-11-22": [2, 31, 10.4], "2026-11-23": [4, 51, 16.0], "2026-11-24": [0, 44, 17.9], "2026-11-25": [2, 51, 18.8] } },
+  "new_queries": {
+    "is cold calling illegal in us": "pos 6 (/blog/is-cold-calling-illegal)",
+    "sdr appointment setter": "pos 4 (/blog/appointment-setter-vs-sdr)",
+    "virtual assistant for coaches": "pos 54", "virtual assistants for startups": "pos 68", "virtual assistant accounting": "2 impr pos 78.5",
+    "best proactive virtual assistants for founders": "pos 33 (startups page)", "hire virtual fo services": "pos 10 (Dubai blog)"
+  },
+  "index_status_checked_this_run": {
+    "/blog/insurance-virtual-assistant-tasks": "Indexed (25 Nov 18:16, ~6 h after publish)",
+    "/blog/bookkeeping-virtual-assistant-checklist": "Discovered - currently not indexed",
+    "/blog/onboard-virtual-assistant-7-days": "Discovered - currently not indexed",
+    "/cold-calling": "Indexed; last crawl 18 Nov", "/sitemap": "Indexed", "/about": "Crawled - currently not indexed"
+  },
+  "changes_this_run": [],
+  "deploy": "run #32 success"
+}
