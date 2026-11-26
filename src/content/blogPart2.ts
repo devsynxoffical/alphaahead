@@ -2,6 +2,112 @@ import { Article } from './types';
 
 export const BLOG_PART_2: Article[] = [
   {
+    slug: "executive-assistant-tasks",
+    kind: "blog",
+    title: "30 Tasks to Delegate to an Executive Assistant",
+    metaTitle: "30 Tasks to Delegate to an Executive Assistant",
+    metaDescription: "30 tasks founders and executives can delegate to an executive assistant, from inbox and calendar to travel, meeting prep, board materials and follow-ups.",
+    excerpt: "A practical list of 30 tasks a founder or executive can hand to an executive assistant, in-house or virtual, grouped by inbox, calendar, meetings, travel, projects and personal admin.",
+    primaryKeyword: "executive assistant tasks",
+    datePublished: "2026-11-26",
+    image: "/Services/Virtual Assistant.jpg",
+    imageAlt: "Executive reviewing a delegated task list with an assistant",
+    readMinutes: 6,
+    intro: [
+      "An executive assistant can take over most of the coordination work around a founder or executive: inbox and calendar, meeting preparation and follow-up, travel, documents, project tracking and parts of personal admin. The goal is simple: you spend your hours on decisions, people and customers, and your assistant handles everything that can be done from a clear instruction or checklist.",
+      "Below are 30 tasks executives commonly delegate, grouped by area. They apply to in-house and remote assistants alike; a virtual executive assistant can do all of them except anything that needs someone physically present.",
+    ],
+    sections: [
+      {
+        heading: "Inbox and communication (tasks 1 to 6)",
+        bullets: [
+          "1. Triage the inbox daily into act, read, delegate and archive",
+          "2. Draft routine replies for your approval, then send",
+          "3. Unsubscribe from and filter newsletters and notifications",
+          "4. Chase replies you are waiting on and keep a follow-up list",
+          "5. Manage a shared or team inbox and route requests",
+          "6. Write and send thank-you and introduction emails from templates",
+        ],
+      },
+      {
+        heading: "Calendar and scheduling (tasks 7 to 12)",
+        bullets: [
+          "7. Schedule internal and external meetings across time zones",
+          "8. Protect focus blocks and personal time in the calendar",
+          "9. Send confirmations and reminders for important meetings",
+          "10. Reschedule conflicts and tell attendees",
+          "11. Plan your week every Friday: priorities, prep and gaps",
+          "12. Book recurring one-to-ones and team rituals",
+        ],
+      },
+      {
+        heading: "Meetings (tasks 13 to 18)",
+        bullets: [
+          "13. Prepare agendas and send them in advance",
+          "14. Research attendees and companies before external meetings",
+          "15. Take meeting notes and list decisions and owners",
+          "16. Send follow-up emails with action items",
+          "17. Track action items until they are done",
+          "18. Assemble board and investor meeting packs from your templates and your team's numbers",
+        ],
+      },
+      {
+        heading: "Travel and events (tasks 19 to 22)",
+        bullets: [
+          "19. Book flights, hotels and ground transport to your preferences",
+          "20. Build day-by-day itineraries with addresses and contacts",
+          "21. Handle visa and travel document reminders",
+          "22. Organize offsites, dinners and event registrations",
+        ],
+      },
+      {
+        heading: "Documents and projects (tasks 23 to 27)",
+        bullets: [
+          "23. Format presentations and documents to your brand",
+          "24. Keep shared drives organized and named consistently",
+          "25. Update the CRM after calls and meetings",
+          "26. Track project deadlines and send status summaries",
+          "27. Collect expense receipts and prepare expense reports",
+        ],
+      },
+      {
+        heading: "Personal admin (tasks 28 to 30)",
+        bullets: [
+          "28. Manage personal appointments and family calendar items you share",
+          "29. Order gifts and handle online purchases you approve",
+          "30. Research and book service providers",
+        ],
+      },
+      {
+        heading: "What to keep for yourself",
+        paragraphs: [
+          "Keep decisions, approvals and anything only you can say: hiring and firing, strategy, sensitive conversations and signing contracts or payments. Your assistant can prepare all of it; you decide.",
+        ],
+      },
+      {
+        heading: "How to start",
+        paragraphs: [
+          "Pick five tasks from the inbox and calendar lists, document how you want them done and review daily for the first week. Then add meetings and travel. Our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days) walks through the first week, and our [executive virtual assistant](/business-assistant) service and [virtual assistant for startups](/virtual-assistant-for-startups) explain how we set the role up.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What does an executive assistant do?",
+        a: "An executive assistant manages an executive's inbox and calendar, prepares and follows up meetings, books travel, keeps documents and projects organized and handles parts of personal admin, so the executive can focus on decisions and people.",
+      },
+      {
+        q: "Can a virtual executive assistant do the same tasks?",
+        a: "Yes, except tasks that need physical presence. Inbox, calendar, meeting prep, travel booking, documents and project tracking can all be done remotely with the right access.",
+      },
+      {
+        q: "Which tasks should I delegate first?",
+        a: "Start with inbox triage and scheduling: they are frequent, easy to check and save the most time. Add meeting prep, travel and projects once the routine is working.",
+      },
+    ],
+    relatedServices: ["/business-assistant", "/personal-assistant", "/virtual-assistant"]
+  },
+  {
     slug: "insurance-virtual-assistant-tasks",
     kind: "blog",
     title: "25 Tasks to Delegate to an Insurance Virtual Assistant",

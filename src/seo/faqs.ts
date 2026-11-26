@@ -137,7 +137,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "Can an executive assistant help with investor and board meetings?",
-      a: "Yes. Your assistant can schedule meetings, collect numbers and documents from your team, prepare decks and agendas from your templates, take notes and track follow-ups. You decide what is shared, and confidential material stays in your own accounts.",
+      a: "Yes. Your assistant can schedule meetings, collect numbers and documents from your team, prepare decks and agendas from your templates, take notes and track follow-ups. You decide what is shared, and confidential material stays in your own accounts. See our list of [30 tasks to delegate to an executive assistant](/blog/executive-assistant-tasks).",
     },
     {
       q: "How is an executive assistant different from a general virtual assistant?",

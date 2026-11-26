@@ -211,6 +211,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     related: [
       ['Virtual assistant services', '/virtual-assistant'],
       ['Executive virtual assistant', '/business-assistant'],
+      ['30 executive assistant tasks', '/blog/executive-assistant-tasks'],
       ...RELATED_INDUSTRIES('/virtual-assistant-for-startups'),
       ['Virtual assistant cost', '/blog/virtual-assistant-cost'],
       ['All industries', '/industries'],

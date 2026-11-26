@@ -73,7 +73,7 @@ Every Thursday the weekly scheduled task publishes ONE new page or post:
 Queue (update as items ship):
 - [skipped 25 Nov] Virtual assistant per hour rate: better served by /blog/virtual-assistant-cost (would cannibalize); revisit its title if impressions grow
 - [x] 25 Nov: /blog/insurance-virtual-assistant-tasks (C37)
-- [ ] 30 tasks to delegate to an executive assistant (post, supports /business-assistant)
+- [x] 26 Nov: /blog/executive-assistant-tasks (C38)
 - [ ] Bookkeeping virtual assistant vs accountant: who does what (post)
 - [ ] How to hire a virtual assistant from Pakistan safely (post)
 - [ ] B2B cold calling scripts that book meetings (post, supports /cold-calling)
