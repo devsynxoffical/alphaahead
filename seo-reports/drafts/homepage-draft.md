@@ -13,6 +13,8 @@ Items marked **[CONFIRM]** depend on management answers. Unconfirmed items are d
 - **Description (152 chars):** Virtual assistant agency for founders, executives and small teams: executive VAs, bookkeeping, appointment setting and B2B cold calling on US or UAE hours.
 
 ## 1. Hero
+- **Eyebrow badge** (currently "US-Based Outsourcing, Virtual Assistant & Digital Marketing Agency"): change to "US-Registered Virtual Assistant Agency · Offices in St. Petersburg, Dubai & Islamabad" (digital marketing is no longer a core lane; it moved to /other-services, noindexed).
+- **Top bar** (currently "US-based outsourcing & digital agency"): "Virtual assistant agency · St. Petersburg · Dubai · Islamabad".
 - **H1:** Virtual Assistant Agency for Founders, Executives and Small Teams
 - **Sub:** Dedicated, managed virtual assistants who work your US (EST/PST) or UAE hours. Hand off inbox, calendar, bookkeeping, appointment setting and outbound calls, and get your week back.
 - **CTAs:** Book a free consultation · See how it works
