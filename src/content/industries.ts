@@ -432,9 +432,9 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     servicePath: '/bookkeeping-virtual-assistant',
     serviceName: 'Virtual Assistant for Accountants',
     primaryKeyword: 'virtual assistant for accountants',
-    metaTitle: 'Virtual Assistant for Accountants and CPA Firms',
+    metaTitle: 'Virtual Assistant for Accountants and CPAs | Alpha Ahead',
     metaDescription:
-      'Virtual assistants for accountants and CPA firms: client document collection, bookkeeping data entry, scheduling, engagement admin and tax season support.',
+      'Virtual assistants for accountants, CPAs and CPA firms: client document collection, bookkeeping data entry, scheduling and tax season support.',
     datePublished: '2026-11-24',
     hero: {
       eyebrow: 'Support for accounting firms',
@@ -513,6 +513,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
       { q: 'What can a virtual assistant do for an accounting firm?', a: 'Client document collection and reminders, bookkeeping data entry and reconciliation prep for review, scheduling, engagement letters, portal organization and tax season status updates.' },
       { q: 'Can a virtual assistant prepare tax returns?', a: 'Return preparation and sign-off stay with your credentialed team. Anyone who prepares or assists in preparing federal returns for pay needs an IRS PTIN, so we agree with you exactly which tasks the assistant handles.' },
       { q: 'Which software can the assistant use?', a: 'QuickBooks Online and Xero for bookkeeping, plus the practice management, portal and email tools you already use, each with their own login.' },
+      { q: 'Do you provide virtual assistants for solo CPAs?', a: 'Yes. A solo CPA or small practice can start with a part-time assistant for client reminders, document collection, scheduling and bookkeeping data entry, then add hours in busy season. For bookkeeping-only support, see our [bookkeeping virtual assistant](/bookkeeping-virtual-assistant) service.' },
       { q: 'Can we add hours for tax season?', a: 'Yes. Many firms keep a steady base of hours and add more during busy season.' },
       { q: 'How much does a virtual assistant for accountants cost?', a: 'It depends on hours and tasks. [Contact us](/contact) or use the form on this page for a quote, and see our [virtual assistant cost guide](/blog/virtual-assistant-cost).' },
     ],
