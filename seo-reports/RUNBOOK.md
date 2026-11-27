@@ -76,7 +76,7 @@ Queue (update as items ship):
 - [x] 26 Nov: /blog/executive-assistant-tasks (C38)
 - [ ] Bookkeeping virtual assistant vs accountant: who does what (post)
 - [ ] How to hire a virtual assistant from Pakistan safely (post)
-- [ ] B2B cold calling scripts that book meetings (post, supports /cold-calling)
+- [x] 27 Nov: /blog/b2b-cold-calling-scripts (C46)
 - [ ] How to give a VA secure access to your tools (post)
 - [ ] Virtual assistant cost in Dubai (post, sourced; supports /virtual-assistant-dubai)
 - [x] 27 Nov: /data-entry-virtual-assistant (C44)

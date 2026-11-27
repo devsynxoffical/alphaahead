@@ -2,6 +2,134 @@ import { Article } from './types';
 
 export const BLOG_PART_2: Article[] = [
   {
+    slug: "b2b-cold-calling-scripts",
+    kind: "blog",
+    title: "B2B Cold Calling Scripts That Book Meetings (Free Templates)",
+    metaTitle: "B2B Cold Calling Scripts That Book Meetings (Templates)",
+    metaDescription: "Free B2B cold calling scripts for the opener, gatekeepers, voicemail, objections and booking the meeting, plus how to adapt them for your offer.",
+    excerpt: "Copy-and-adapt B2B cold calling scripts for every stage of the call: opener, gatekeeper, discovery questions, objections, voicemail, booking the meeting and the follow-up email.",
+    primaryKeyword: "b2b cold calling scripts",
+    datePublished: "2026-11-27",
+    image: "/Services/Lead Gen.jpg",
+    imageAlt: "Sales caller on a headset following a B2B call script",
+    readMinutes: 7,
+    intro: [
+      "A good B2B cold calling script is not a speech. It is a short structure that gets you permission to talk, finds out whether there is a real problem and ends with a clear next step: a meeting on the calendar. The scripts below follow that structure. Replace the parts in [brackets] with your own offer, and keep each line short enough to say naturally.",
+      "Before you call, make sure your list and calling practices follow US rules. B2B calls have fewer restrictions than calls to consumers, but some rules still apply. Our guide [Is Cold Calling Illegal? US Rules in 2026](/blog/is-cold-calling-illegal) covers them with sources.",
+    ],
+    sections: [
+      {
+        heading: "The structure every script should follow",
+        bullets: [
+          "Opener (10 seconds): who you are and why you are calling them specifically",
+          "Permission: ask for a moment instead of launching into a pitch",
+          "Problem statement: one sentence about a problem similar companies have",
+          "Discovery: two or three questions to see if the problem applies",
+          "Next step: offer a short meeting with a specific day and time",
+          "Confirm: repeat the time, confirm the email and send the invite while on the call",
+        ],
+      },
+      {
+        heading: "Script 1: the permission-based opener",
+        paragraphs: [
+          "\"Hi [first name], this is [your name] from [company]. I know I'm calling out of the blue. Do you have 30 seconds for me to tell you why I called, and then you can decide if it's worth continuing?\"",
+          "If they say yes: \"Thanks. We work with [type of company, e.g. 20 to 100 person accounting firms] that are dealing with [problem, e.g. slow client onboarding during tax season]. I'm calling to see if that's something you're running into as well.\"",
+          "Why it works: it is honest about being a cold call, gives the prospect control and gets a small yes before you ask for anything bigger.",
+        ],
+      },
+      {
+        heading: "Script 2: getting past the gatekeeper",
+        paragraphs: [
+          "\"Hi, this is [your name] from [company]. I'm trying to reach whoever looks after [area, e.g. sales operations]. Is that [name], or would that be someone else?\"",
+          "If asked what it's about: \"We help [type of company] with [outcome]. I'd like to ask [name] two quick questions to see if it's relevant. When is the best time to catch them?\"",
+          "Be polite, be brief and ask for help rather than trying to trick your way through. Gatekeepers remember callers, and they often decide whether your next call gets through.",
+        ],
+      },
+      {
+        heading: "Script 3: discovery questions",
+        bullets: [
+          "\"How are you handling [process] today?\"",
+          "\"What happens when [common problem] comes up?\"",
+          "\"If you could fix one thing about [process], what would it be?\"",
+          "\"Who else is involved when you look at changing this?\"",
+        ],
+        paragraphs: [
+          "Ask, then listen. Write down their exact words: you will use them when you book the meeting and in the follow-up email.",
+        ],
+      },
+      {
+        heading: "Script 4: booking the meeting",
+        paragraphs: [
+          "\"Based on what you said about [their words], it's worth a 20-minute call with [colleague or specialist] to show you how [similar companies] handle it. Would Tuesday at 10 or Thursday at 2 work better?\"",
+          "Once they pick a time: \"Great. I'll send the invite to [email] now. Can you check it has arrived while we're on the phone?\"",
+          "Offering two specific times is easier to answer than \"when are you free?\", and confirming the invite on the call reduces no-shows.",
+        ],
+      },
+      {
+        heading: "Script 5: handling common objections",
+        bullets: [
+          "\"Just send me an email.\" Reply: \"Happy to. So I send something useful, can I ask one question about how you handle [process] today?\"",
+          "\"We already have a provider.\" Reply: \"Makes sense. Most of the teams we work with did too. What would you change about the current setup if you could?\"",
+          "\"Not interested.\" Reply: \"Understood. Is that because [problem] isn't a priority right now, or because you've already solved it?\"",
+          "\"No budget.\" Reply: \"Fair enough. Would it still be useful to see how others handle it, so you have options when budget opens up?\"",
+          "\"Call me next quarter.\" Reply: \"Will do. What will have changed by then, so I know what to ask about?\"",
+        ],
+        paragraphs: [
+          "The goal is not to argue. Acknowledge the objection, ask one question and accept a no gracefully. If they ask not to be called again, add them to your internal do-not-call list straight away.",
+        ],
+      },
+      {
+        heading: "Script 6: voicemail",
+        paragraphs: [
+          "\"Hi [first name], [your name] from [company]. I'm calling about [specific trigger, e.g. your new office in Dallas]. We help [type of company] with [outcome]. I'll send you a short email today. My number is [number], that's [number] again.\"",
+          "Keep it under 30 seconds, say your number twice and mention the email so the voicemail and email support each other.",
+        ],
+      },
+      {
+        heading: "The follow-up email after the call",
+        paragraphs: [
+          "Subject: \"Our call about [their words]\"",
+          "\"Hi [first name], thanks for your time today. As promised, here is [one useful resource or summary]. You mentioned [their problem in their words]. Our call on [day, time] will cover [two points]. Talk then, [your name].\"",
+        ],
+      },
+      {
+        heading: "How to adapt these scripts",
+        bullets: [
+          "Write one version per buyer type: an owner, a sales leader and an operations manager care about different outcomes",
+          "Read the script aloud and cut any line you would not say to a colleague",
+          "Track the outcome of every call (no answer, voicemail, conversation, meeting) so you can see which opener works",
+          "Review recordings weekly, if your calling setup records calls and you follow the consent rules for the states you call",
+          "Update the scripts with the objections you actually hear, not only the ones on this list",
+        ],
+      },
+      {
+        heading: "When to outsource the calling",
+        paragraphs: [
+          "Scripts work when someone makes the calls consistently, every day. If your team cannot protect that time, an outsourced caller can run the list, follow your scripts and book meetings straight into your calendar. See our [B2B cold calling services](/cold-calling) and [appointment setting services](/appointment-setting), or read [appointment setter vs SDR](/blog/appointment-setter-vs-sdr) to decide which role you need.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the best opening line for a B2B cold call?",
+        a: "A short, honest opener that asks for permission works well: say who you are, admit it is a cold call and ask for 30 seconds to explain why you called. It gives the prospect control and earns a small yes before you pitch.",
+      },
+      {
+        q: "How long should a cold calling script be?",
+        a: "Short. The opener and problem statement should take under 30 seconds. The rest of the script is a set of questions and responses, not a monologue, so the call stays a conversation.",
+      },
+      {
+        q: "Should cold callers read the script word for word?",
+        a: "No. Use the script as a structure and practice it until it sounds natural. Keep the key lines (opener, meeting ask, objection replies) consistent so you can measure what works.",
+      },
+      {
+        q: "Are B2B cold calls legal in the US?",
+        a: "Generally yes, but some rules still apply, such as restrictions on autodialed calls to mobile numbers and honoring requests not to be called. Our guide [Is Cold Calling Illegal?](/blog/is-cold-calling-illegal) explains the rules with official sources.",
+      },
+    ],
+    relatedServices: ["/cold-calling", "/appointment-setting", "/lead-generation"]
+  },
+  {
     slug: "executive-assistant-tasks",
     kind: "blog",
     title: "30 Tasks to Delegate to an Executive Assistant",

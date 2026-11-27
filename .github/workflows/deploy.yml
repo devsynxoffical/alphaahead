@@ -69,22 +69,23 @@ jobs:
         run: |
           JS=$(grep -o 'static/js/main\.[a-z0-9]*\.js' build/index.html | head -1)
           echo "Expected bundle: $JS"
-          # Server cache can take a moment to refresh - retry for up to ~3 minutes
-          for i in $(seq 1 12); do
+          # Server cache can take a moment to refresh, and the host's bot protection sometimes shows
+          # GitHub's servers a "One moment, please..." JS challenge for a few minutes: retry for up to ~6 minutes
+          for i in $(seq 1 24); do
             LIVE=$(curl -sL --max-time 30 -H 'Cache-Control: no-cache' "https://alphaaheadllc.com/?v=$GITHUB_RUN_ID-$i")
             if echo "$LIVE" | grep -q "$JS"; then
               echo "Live site is serving the new build."
               echo "$LIVE" | grep -q 'google-site-verification' && echo "Google verification tag: FOUND"
               break
             fi
-            if [ "$i" = 12 ]; then
+            if [ "$i" = 24 ]; then
               echo "::error::Live site is NOT serving the new build"
               echo "--- live response headers ---"; curl -sI "https://alphaaheadllc.com/?v=$GITHUB_RUN_ID-dbg"
               echo "--- live bundle referenced ---"; echo "$LIVE" | grep -o 'static/js/main\.[a-z0-9]*\.js' | head -1
               echo "--- first 400 chars ---"; echo "$LIVE" | head -c 400; echo
               exit 1
             fi
-            echo "Attempt $i: live site not updated yet, waiting 15s..."
+            if echo "$LIVE" | grep -q "One moment, please"; then echo "Attempt $i: host bot challenge (One moment, please...), waiting 15s..."; else echo "Attempt $i: live site not updated yet, waiting 15s..."; fi
             sleep 15
           done
 

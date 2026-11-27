@@ -87,7 +87,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "Do you write the scripts, and are calls recorded?",
-      a: "Yes, we develop and refine scripts with you to match your brand voice, target audience and qualification criteria. Whether calls are recorded depends on your dialer and on the consent laws that apply to the states you call. Leads and call notes are logged in your CRM so you can review results.",
+      a: "Yes, we develop and refine scripts with you to match your brand voice, target audience and qualification criteria (see our free [B2B cold calling script templates](/blog/b2b-cold-calling-scripts) for the structure we start from). Whether calls are recorded depends on your dialer and on the consent laws that apply to the states you call. Leads and call notes are logged in your CRM so you can review results.",
     },
     {
       q: "Which industries do your B2B callers work with?",
