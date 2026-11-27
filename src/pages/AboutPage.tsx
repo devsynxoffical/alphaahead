@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt, FaPhoneAlt, FaCheckCircle } from 'react-icons/fa';
 import { OFFICES } from '../seo/site';
-import { SERVICES } from '../seo/services';
 import { BRAND_LOGOS } from '../content/logos';
 import CtaBanner from '../components/seo/CtaBanner';
+import FaqSection from '../components/seo/FaqSection';
+import { SERVICE_FAQS } from '../seo/faqs';
 import './AboutPage.css';
 
 const LEADERSHIP = [
@@ -17,13 +18,27 @@ const LEADERSHIP = [
   { name: 'Habib Faqeri', role: 'Growth / Client Acquisition Manager' },
 ];
 
+const CORE_SERVICES: [string, string][] = [
+  ['Executive virtual assistant', '/business-assistant'],
+  ['Virtual assistant for small business', '/virtual-assistant'],
+  ['Personal virtual assistant', '/personal-assistant'],
+  ['Bookkeeping virtual assistant', '/bookkeeping-virtual-assistant'],
+  ['Data entry virtual assistant', '/data-entry-virtual-assistant'],
+  ['Appointment setting', '/appointment-setting'],
+  ['B2B cold calling', '/cold-calling'],
+  ['Lead generation', '/lead-generation'],
+  ['Offshore VA from Pakistan', '/hire-virtual-assistant-pakistan'],
+];
+
 const FACTS: [string, string][] = [
   ['Legal name', 'Alpha Ahead LLC'],
   ['Registered in', 'United States (St. Petersburg, Florida)'],
   ['Offices', 'St. Petersburg FL · Dubai UAE · Islamabad Pakistan'],
   ['Founder', 'Shehreyar Khan, Director'],
   ['Working hours', 'US (EST/PST) and UAE business hours'],
-  ['Services', '14 outsourcing & digital services'],
+  ['What we do', 'Managed virtual assistants, bookkeeping and data entry, appointment setting and B2B cold calling'],
+  ['Industries', 'Insurance, startups, coaching, legal and accounting'],
+  ['Sister brands', 'Zingo Assist (US real estate) · Alpha Medi Assist (medical)'],
   ['Contact', 'info@alphaaheadllc.com · +1 424-542-7170'],
 ];
 
@@ -33,11 +48,10 @@ const AboutPage: React.FC = () => {
       <section className="about-hero">
         <div className="aa-container about-hero__inner">
           <p className="aa-eyebrow" style={{ color: '#ffb48c' }}>About Alpha Ahead LLC</p>
-          <h1>A US-registered outsourcing &amp; digital agency for growing US and UAE businesses</h1>
+          <h1>A US-Registered Virtual Assistant Agency With Offices in Florida, Dubai and Islamabad</h1>
           <p className="about-hero__lead">
-            Alpha Ahead LLC provides dedicated remote teams (virtual assistants, appointment setters, cold callers, bookkeeping
-            assistants and lead generation specialists) plus SEO, web development and digital marketing. The company is registered in St. Petersburg,
-            Florida, has an office in Dubai, and runs its delivery team from Islamabad, Pakistan.
+            Alpha Ahead LLC is registered in St. Petersburg, Florida, has an office in Dubai and runs its assistant team from
+            Islamabad, Pakistan. Clients contract with a US company and get a dedicated assistant who works their US or UAE hours.
           </p>
         </div>
       </section>
@@ -52,19 +66,22 @@ const AboutPage: React.FC = () => {
               dedicated remote staff who work their business hours, managed by a company they can contract with locally.
             </p>
             <p className="aa-lead" style={{ marginTop: '1rem' }}>
-              We staff businesses in any industry with <Link to="/virtual-assistant">virtual assistants</Link>,{' '}
-              <Link to="/appointment-setting">appointment setters</Link>, <Link to="/cold-calling">cold callers</Link>,{' '}
-              <Link to="/bookkeeping-virtual-assistant">bookkeeping assistants</Link> and{' '}
-              <Link to="/lead-generation">lead generation</Link> teams. Alongside staffing, we run SEO, web development and digital
-              marketing. Our real estate division, <a href="https://zingoassist.us/">Zingo Assist</a>, serves US agents and
-              investors; it is documented with Alpha Medi Assist and Learn with Alpha in our <Link to="/case-studies">case studies</Link>.
+              Our work centres on the people who run small companies: founders and executives who need an{' '}
+              <Link to="/business-assistant">executive virtual assistant</Link>, teams that need{' '}
+              <Link to="/bookkeeping-virtual-assistant">bookkeeping</Link> or <Link to="/data-entry-virtual-assistant">data entry</Link>{' '}
+              support, and sales teams that need <Link to="/appointment-setting">appointment setters</Link> or{' '}
+              <Link to="/cold-calling">B2B cold callers</Link>. Specialist markets have their own brands:{' '}
+              <a href="https://zingoassist.us/">Zingo Assist</a> for US real estate and{' '}
+              <a href="https://alphamediassist.com/">Alpha Medi Assist</a> for medical practices. How we built them is in our{' '}
+              <Link to="/case-studies">case studies</Link>.
             </p>
             <h3 className="about-h3">How we work</h3>
             <ul className="about-list">
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Dedicated people, not a ticket queue.</strong> Each client works with named team members who learn their tools and processes.</span></li>
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Your hours.</strong> Teams are scheduled on US (EST/PST) or UAE business hours.</span></li>
               <li><FaCheckCircle aria-hidden="true" /> <span><strong>Documented processes.</strong> Onboarding starts with SOPs and a defined task list that grows over time.</span></li>
-              <li><FaCheckCircle aria-hidden="true" /> <span><strong>One partner for operations and growth.</strong> Staffing and <Link to="/other-services#digital-marketing">marketing</Link>, <Link to="/other-services#seo">SEO</Link> and <Link to="/other-services#web-development">web</Link> under one roof.</span></li>
+              <li><FaCheckCircle aria-hidden="true" /> <span><strong>Secure access.</strong> Assistants use their own logins with only the permissions each task needs, so you stay in control.</span></li>
+              <li><FaCheckCircle aria-hidden="true" /> <span><strong>A US contract.</strong> You sign with Alpha Ahead LLC and are invoiced by us, not by an individual overseas.</span></li>
             </ul>
           </div>
           <aside className="about-facts reveal reveal-d1" aria-label="Company facts">
@@ -140,11 +157,12 @@ const AboutPage: React.FC = () => {
             <h2 className="aa-h2">Our services</h2>
           </div>
           <div className="about-services">
-            {SERVICES.map(s => <Link key={s.path} to={s.path}>{s.name}</Link>)}
+            {CORE_SERVICES.map(([name, path]) => <Link key={path} to={path}>{name}</Link>)}
           </div>
         </div>
       </section>
 
+      {SERVICE_FAQS['/about'] && <FaqSection faqs={SERVICE_FAQS['/about']} title="About Alpha Ahead: Quick Answers" />}
       <CtaBanner />
     </>
   );

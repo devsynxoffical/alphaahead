@@ -2,6 +2,25 @@ import { Faq } from '../content/types';
 
 // Visible FAQ blocks + FAQPage schema per page path. Filled from keyword research.
 export const SERVICE_FAQS: Record<string, Faq[]> = {
+  "/about": [
+    {
+      q: "Who founded Alpha Ahead LLC?",
+      a: "Alpha Ahead LLC was founded by Shehreyar Khan, who is the company's Director. Ehtisham Shoukat is Co-Founder and Enterprise Portfolio Manager.",
+    },
+    {
+      q: "Is Alpha Ahead a US company?",
+      a: "Yes. Alpha Ahead LLC is registered in the United States, in St. Petersburg, Florida. Clients sign a service agreement with the US company, which also has an office in Dubai and its assistant team in Islamabad, Pakistan.",
+    },
+    {
+      q: "What kind of businesses does Alpha Ahead work with?",
+      a: "Founders, executives and small teams in the US and UAE, with industry pages for [insurance agents](/virtual-assistant-for-insurance-agents), [startups](/virtual-assistant-for-startups), [coaches](/virtual-assistant-for-coaches), [lawyers](/virtual-assistant-for-lawyers) and [accountants](/virtual-assistant-for-accountants).",
+    },
+    {
+      q: "How are Zingo Assist and Alpha Medi Assist related to Alpha Ahead?",
+      a: "They are Alpha Ahead's sister brands. [Zingo Assist](https://zingoassist.us/) provides virtual assistants for US real estate teams and [Alpha Medi Assist](https://alphamediassist.com/) supports medical practices with billing and admin.",
+    },
+  ],
+
   "/": [
     {
       q: "Who is Alpha Ahead LLC?",
