@@ -74,10 +74,10 @@ Queue (update as items ship):
 - [skipped 25 Nov] Virtual assistant per hour rate: better served by /blog/virtual-assistant-cost (would cannibalize); revisit its title if impressions grow
 - [x] 25 Nov: /blog/insurance-virtual-assistant-tasks (C37)
 - [x] 26 Nov: /blog/executive-assistant-tasks (C38)
-- [ ] Bookkeeping virtual assistant vs accountant: who does what (post)
-- [ ] How to hire a virtual assistant from Pakistan safely (post)
+- [x] 27 Nov: /blog/bookkeeping-virtual-assistant-vs-accountant (C50)
+- [x] 27 Nov: /blog/hire-virtual-assistant-from-pakistan-safely (C50)
 - [x] 27 Nov: /blog/b2b-cold-calling-scripts (C46)
-- [ ] How to give a VA secure access to your tools (post)
+- [x] 27 Nov: /blog/give-virtual-assistant-secure-access (C50)
 - [ ] Virtual assistant cost in Dubai (post, sourced; supports /virtual-assistant-dubai)
 - [x] 27 Nov: /data-entry-virtual-assistant (C44)
 - [ ] Startup VA tasks for founders (post, supports /virtual-assistant-for-startups)

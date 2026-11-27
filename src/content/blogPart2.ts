@@ -2,6 +2,326 @@ import { Article } from './types';
 
 export const BLOG_PART_2: Article[] = [
   {
+    slug: "bookkeeping-virtual-assistant-vs-accountant",
+    kind: "blog",
+    title: "Bookkeeping Virtual Assistant vs Accountant: Who Does What?",
+    metaTitle: "Bookkeeping Virtual Assistant vs Accountant: Who Does What",
+    metaDescription: "A bookkeeping virtual assistant handles daily data work; an accountant or CPA handles tax, advice and sign-off. See the task split and when you need each.",
+    excerpt: "A clear split of tasks between a bookkeeping virtual assistant and your accountant or CPA, with a comparison table and a simple way to decide what you need.",
+    primaryKeyword: "bookkeeping virtual assistant vs accountant",
+    datePublished: "2026-11-27",
+    image: "/finicialservice.jpeg",
+    imageAlt: "Bookkeeping assistant and accountant reviewing financial reports",
+    readMinutes: 6,
+    intro: [
+      "A bookkeeping virtual assistant does the daily and weekly data work that keeps your books current: entering transactions, matching receipts, reconciling accounts and sending invoices. An accountant or CPA reviews that work, prepares tax returns, gives tax and financial advice and signs off financial statements. Most small businesses need both, but not in equal amounts: lots of bookkeeping hours and a smaller amount of accountant time.",
+      "Below is the task split, a comparison table and a simple way to decide what your business needs right now.",
+    ],
+    sections: [
+      {
+        heading: "What a bookkeeping virtual assistant does",
+        bullets: [
+          "Categorizes bank and card transactions in QuickBooks Online or Xero",
+          "Matches receipts and attaches documents to transactions",
+          "Creates and sends invoices and follows up overdue ones",
+          "Enters vendor bills and prepares the payment list for your approval",
+          "Reconciles bank, card and payment accounts on a schedule",
+          "Prepares the books and open questions for your accountant at month-end",
+        ],
+      },
+      {
+        heading: "What an accountant or CPA does",
+        bullets: [
+          "Reviews the books and adjusts entries where needed",
+          "Prepares and files tax returns",
+          "Gives tax planning and financial advice",
+          "Prepares or reviews financial statements for lenders and investors",
+          "Advises on entity structure, payroll tax and compliance",
+          "Represents you with tax authorities where their credentials allow",
+        ],
+        paragraphs: [
+          "In the US, anyone who prepares or assists in preparing federal tax returns for pay needs a Preparer Tax Identification Number (PTIN) from the IRS ([IRS: PTIN requirements](https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers)). A bookkeeping VA should not prepare returns unless that requirement is met and your accountant has agreed the scope.",
+        ],
+      },
+      {
+        heading: "Side-by-side comparison",
+        bullets: [
+          "Main job: bookkeeping VA keeps records current; accountant interprets, advises and files",
+          "Frequency: bookkeeping VA works daily or weekly; accountant monthly, quarterly and at year-end",
+          "Tax returns: bookkeeping VA prepares the data; accountant prepares and files",
+          "Advice: bookkeeping VA flags questions; accountant gives the answer",
+          "Cost per hour: bookkeeping VA is usually the lower rate; accountant time is usually the higher rate",
+          "Best use of their time: bookkeeping VA on volume work; accountant on review and decisions",
+        ],
+      },
+      {
+        heading: "Why using both usually costs less",
+        paragraphs: [
+          "When an accountant spends hours categorizing transactions or chasing receipts, you pay a higher rate for data entry. When a bookkeeping assistant keeps the books clean every week, your accountant's month-end and year-end work is faster, so you buy fewer of their hours. The split also lowers risk: the person entering data and the person reviewing it are different people.",
+        ],
+      },
+      {
+        heading: "Which one do you need first?",
+        bullets: [
+          "Books more than a month behind: start with a bookkeeping VA to catch up, then have your accountant review",
+          "Books current but tax season is close: your accountant first, with a VA to collect documents",
+          "Raising money or applying for a loan: your accountant for statements, a VA to keep records ready",
+          "Fewer than a few dozen transactions a month: you may only need a few hours of bookkeeping help",
+        ],
+      },
+      {
+        heading: "How to set up the split",
+        paragraphs: [
+          "Agree a written checklist with your accountant: what the VA does daily, weekly and at month-end, and what is always left for the accountant. Give the VA their own user login with limited permissions, keep payment approval with you, and send open questions to your accountant in one list each month. Our [bookkeeping virtual assistant checklist](/blog/bookkeeping-virtual-assistant-checklist) gives a ready-made task list.",
+          "If you want a managed assistant for the daily work, see our [bookkeeping virtual assistant](/bookkeeping-virtual-assistant) service. Accounting firms that want volume work taken off their team can see our page for [accountants and CPAs](/virtual-assistant-for-accountants).",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a bookkeeping virtual assistant replace an accountant?",
+        a: "No. A bookkeeping VA handles recurring data work such as transactions, reconciliations and invoices. Tax returns, tax advice and signing off financial statements stay with your accountant or CPA.",
+      },
+      {
+        q: "Is a bookkeeper the same as an accountant?",
+        a: "No. A bookkeeper records and organizes financial transactions. An accountant analyzes those records, prepares tax filings and gives financial advice. A CPA is an accountant licensed by a state board of accountancy.",
+      },
+      {
+        q: "Can a bookkeeping VA prepare my tax return?",
+        a: "Only if they meet the IRS requirement to hold a PTIN and your accountant agrees the scope. In most setups the VA prepares the data and your accountant prepares and files the return.",
+      },
+      {
+        q: "What should my accountant review each month?",
+        a: "Reconciliations, unusual or uncategorized transactions, accounts receivable and payable aging, and the profit and loss and balance sheet. The VA prepares these and lists open questions.",
+      },
+    ],
+    relatedServices: ["/bookkeeping-virtual-assistant", "/virtual-assistant-for-accountants", "/data-entry-virtual-assistant"]
+  },
+  {
+    slug: "give-virtual-assistant-secure-access",
+    kind: "blog",
+    title: "How to Give a Virtual Assistant Secure Access to Your Tools",
+    metaTitle: "How to Give a Virtual Assistant Secure Access to Your Tools",
+    metaDescription: "Give your virtual assistant access without sharing passwords: own logins, email and calendar delegation, password manager sharing, 2FA and offboarding.",
+    excerpt: "A step-by-step checklist for giving a virtual assistant access to email, calendar, files, CRM and finance tools without sharing your passwords, and for removing it cleanly.",
+    primaryKeyword: "give virtual assistant access",
+    datePublished: "2026-11-27",
+    image: "/teamwork.webp",
+    imageAlt: "Business owner setting up secure tool access for a virtual assistant",
+    readMinutes: 6,
+    intro: [
+      "The safest way to give a virtual assistant access is to never share your own password. Give them their own account in each tool, use delegation for email and calendar, share remaining logins through a password manager, require two-factor authentication and keep a list of everything they can access so you can remove it in one step.",
+      "Here is how to do that for each type of tool, plus a checklist for the first day and the last day.",
+    ],
+    sections: [
+      {
+        heading: "The five rules",
+        bullets: [
+          "Own login, not yours: every tool that supports users gets a separate account for your assistant",
+          "Least privilege: give only the permissions the current tasks need, and add more later",
+          "Two-factor authentication on every account your assistant uses",
+          "Approval stays with you: payments, contracts and deletions need your sign-off",
+          "An access list: one document listing every tool, account and permission you granted",
+        ],
+      },
+      {
+        heading: "Email and calendar",
+        paragraphs: [
+          "Gmail and Outlook both let you delegate access to your mailbox and calendar so your assistant can read, draft and send on your behalf from their own account, without your password. Use delegation instead of sharing your login. For sensitive threads, create a label or folder rule that keeps them out of the shared view, or keep a separate private address.",
+          "Give calendar access at the level the work needs: \"make changes to events\" for scheduling, \"see all event details\" only if your assistant prepares meetings.",
+        ],
+      },
+      {
+        heading: "Files and documents",
+        bullets: [
+          "Share folders, not your whole drive",
+          "Create a shared team folder for work your assistant owns",
+          "Use view-only access for reference documents",
+          "Keep contracts, HR and financial statements in folders your assistant cannot see unless needed",
+        ],
+      },
+      {
+        heading: "CRM, project and support tools",
+        paragraphs: [
+          "Add your assistant as a user with a role that matches the work: for example, able to edit contacts and deals but not export the database or change settings. Most CRMs and project tools let you restrict exports, deletion and billing pages by role.",
+        ],
+      },
+      {
+        heading: "Finance tools",
+        bullets: [
+          "QuickBooks Online and Xero: create a separate user with limited permissions, never share the owner login",
+          "Bank accounts: view-only access or none; your assistant prepares payments, you approve them",
+          "Payment cards: use a separate card with a low limit for approved purchases",
+          "Payroll: your assistant prepares data, you or your provider run payroll",
+        ],
+      },
+      {
+        heading: "Tools that do not support extra users",
+        paragraphs: [
+          "Share the login through a password manager's sharing feature so your assistant can use it without seeing or copying the password where the tool allows. Turn on two-factor authentication with a method you control, and change the password when the engagement ends.",
+        ],
+      },
+      {
+        heading: "Day-one checklist",
+        bullets: [
+          "Create accounts and add them to your access list",
+          "Turn on two-factor authentication for each account",
+          "Share folders and set calendar and email delegation",
+          "Agree what your assistant must never do without approval",
+          "Have the confidentiality agreement signed before access is shared",
+        ],
+      },
+      {
+        heading: "Offboarding checklist",
+        bullets: [
+          "Remove email and calendar delegation",
+          "Deactivate tool accounts (do not delete until data is transferred)",
+          "Revoke password manager shares and change any shared passwords",
+          "Remove access to shared folders and transfer file ownership",
+          "Cancel or lower limits on any card they used",
+        ],
+        paragraphs: [
+          "With an access list, offboarding takes minutes. Without one, you will find forgotten logins months later.",
+        ],
+      },
+      {
+        heading: "How we set this up for clients",
+        paragraphs: [
+          "Our assistants work with their own logins and the permissions each task needs, and onboarding covers access setup in the first week ([7-day onboarding plan](/blog/onboard-virtual-assistant-7-days)). See our [executive virtual assistant](/business-assistant), [bookkeeping virtual assistant](/bookkeeping-virtual-assistant) and [data entry virtual assistant](/data-entry-virtual-assistant) services.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Should I share my password with my virtual assistant?",
+        a: "No. Give your assistant their own login in each tool, use email and calendar delegation, and share any remaining logins through a password manager. That way you can see their activity and remove access without changing your own password.",
+      },
+      {
+        q: "Can a virtual assistant manage my email without my password?",
+        a: "Yes. Gmail and Outlook both support delegated access, which lets an assistant read, draft and send on your behalf from their own account.",
+      },
+      {
+        q: "How do I stop a VA from seeing sensitive emails?",
+        a: "Use filters to move sensitive threads to a label or folder outside the delegated view, or keep a separate private address for those topics.",
+      },
+      {
+        q: "What should I do when a virtual assistant leaves?",
+        a: "Work through your access list: remove delegation, deactivate tool accounts, revoke password manager shares, change shared passwords and transfer file ownership.",
+      },
+    ],
+    relatedServices: ["/business-assistant", "/virtual-assistant", "/bookkeeping-virtual-assistant"]
+  },
+  {
+    slug: "hire-virtual-assistant-from-pakistan-safely",
+    kind: "blog",
+    title: "How to Hire a Virtual Assistant From Pakistan Safely",
+    metaTitle: "How to Hire a Virtual Assistant From Pakistan Safely",
+    metaDescription: "A step-by-step guide to hiring a virtual assistant from Pakistan safely: where to hire, how to test skills, contracts, payments, time zones and access.",
+    excerpt: "Where to hire, how to test, what to put in the contract, how to pay and how to protect your accounts when you hire a virtual assistant from Pakistan.",
+    primaryKeyword: "hire virtual assistant from pakistan",
+    datePublished: "2026-11-27",
+    image: "/aheadteam.jpg",
+    imageAlt: "Remote virtual assistant team in Pakistan working on client tasks",
+    readMinutes: 7,
+    intro: [
+      "Hiring a virtual assistant from Pakistan safely comes down to five things: choosing how you hire (freelancer or managed agency), testing real skills with a paid trial task, signing a written agreement, paying through a traceable method and giving access without sharing passwords. Get those right and a Pakistan-based assistant can cover your US or UAE hours reliably.",
+      "This guide walks through each step. For a comparison of Pakistan and the Philippines as hiring locations, see [Pakistan vs Philippines virtual assistant](/blog/pakistan-vs-philippines-virtual-assistant).",
+    ],
+    sections: [
+      {
+        heading: "Step 1: choose how you hire",
+        bullets: [
+          "Freelance marketplace: fast to start, you screen, manage and replace the person yourself",
+          "Direct hire: you recruit and contract an individual, and you handle payments and cover",
+          "Managed agency: the agency recruits, screens and supports the assistant; you contract with the company",
+        ],
+        paragraphs: [
+          "If you have time to screen and manage, a freelancer can work well. If you want one contract, one invoice and support when something goes wrong, a managed agency is usually safer.",
+        ],
+      },
+      {
+        heading: "Step 2: write a clear role description",
+        bullets: [
+          "The 5 to 10 tasks the assistant will do in the first month",
+          "Tools they must know (for example Google Workspace, HubSpot, QuickBooks Online)",
+          "Working hours in your time zone and the overlap you need",
+          "How you will measure good work after 30 days",
+        ],
+      },
+      {
+        heading: "Step 3: test real skills",
+        bullets: [
+          "Short video call to check spoken English and communication",
+          "A paid trial task that matches the real work, such as drafting replies to three sample emails or cleaning a sample spreadsheet",
+          "A written test of attention to detail: follow a short set of instructions exactly",
+          "References from previous clients, checked by email or call",
+        ],
+      },
+      {
+        heading: "Step 4: put it in writing",
+        bullets: [
+          "Scope of work and working hours",
+          "Rate, payment schedule and currency",
+          "Confidentiality and data protection terms",
+          "Ownership of work created for you",
+          "Notice period and how access is removed at the end",
+        ],
+        paragraphs: [
+          "With an agency, you sign one service agreement with the company. With a freelancer, use the marketplace contract or your own written agreement.",
+        ],
+      },
+      {
+        heading: "Step 5: pay safely",
+        paragraphs: [
+          "Use a traceable payment method: the marketplace's payment system, a bank transfer, or an established payments provider that supports Pakistan. Pay against invoices on a fixed schedule, never upfront for long periods, and keep records of every payment. With an agency, you pay the agency's invoice in your own currency.",
+        ],
+      },
+      {
+        heading: "Step 6: plan the time zone",
+        paragraphs: [
+          "Pakistan Standard Time is UTC+5 all year. That is 10 hours ahead of US Eastern Standard Time and one hour ahead of the UAE. Many Pakistan-based assistants work evening and night shifts to cover US business hours, and UAE hours overlap almost completely with the normal Pakistani working day. Agree the exact schedule and overlap before the start date.",
+        ],
+      },
+      {
+        heading: "Step 7: protect your accounts",
+        paragraphs: [
+          "Give your assistant their own logins, use email and calendar delegation, require two-factor authentication and keep payments behind your approval. Our guide [how to give a virtual assistant secure access](/blog/give-virtual-assistant-secure-access) covers every type of tool.",
+        ],
+      },
+      {
+        heading: "Step 8: onboard for the first week",
+        paragraphs: [
+          "Start with a short task list, written instructions and a daily check-in for the first week, then add tasks as quality is proven. Our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days) gives a day-by-day plan.",
+        ],
+      },
+      {
+        heading: "Hiring through Alpha Ahead",
+        paragraphs: [
+          "Alpha Ahead LLC is a US-registered company with its assistant team in Islamabad. You sign a service agreement with us, are invoiced by us, and your assistant works your US or UAE hours. See [hire a virtual assistant from Pakistan](/hire-virtual-assistant-pakistan) or our [executive virtual assistant](/business-assistant) service.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is it safe to hire a virtual assistant from Pakistan?",
+        a: "Yes, when you test skills with a paid trial, sign a written agreement, pay through a traceable method and give access through individual logins rather than shared passwords. A managed agency adds screening and a single company contract.",
+      },
+      {
+        q: "What time zone are Pakistani virtual assistants in?",
+        a: "Pakistan Standard Time is UTC+5 all year, 10 hours ahead of US Eastern Standard Time and one hour ahead of the UAE. Many assistants work evening or night shifts to cover US hours.",
+      },
+      {
+        q: "How do I pay a virtual assistant in Pakistan?",
+        a: "Through a marketplace payment system, a bank transfer or an established payments provider that supports Pakistan. With an agency, you pay the agency's invoice instead of paying the individual.",
+      },
+      {
+        q: "Should I hire a freelancer or use an agency?",
+        a: "A freelancer suits you if you have time to screen, manage and replace people yourself. An agency suits you if you want one contract, screening done for you and support when issues come up.",
+      },
+    ],
+    relatedServices: ["/hire-virtual-assistant-pakistan", "/business-assistant", "/virtual-assistant"]
+  },
+  {
     slug: "b2b-cold-calling-scripts",
     kind: "blog",
     title: "B2B Cold Calling Scripts That Book Meetings (Free Templates)",

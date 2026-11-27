@@ -321,7 +321,7 @@ export const RICH_LANDINGS: RichLanding[] = [
       },
       {
         q: "Do I still need an accountant?",
-        a: "Yes. A bookkeeping VA does the recurring data work, which makes your accountant's job faster. Tax filing, tax advice and signing off financial statements stay with your accountant or CPA. Our [bookkeeping VA checklist](/blog/bookkeeping-virtual-assistant-checklist) shows how the work is split.",
+        a: "Yes. A bookkeeping VA does the recurring data work, which makes your accountant's job faster. Tax filing, tax advice and signing off financial statements stay with your accountant or CPA. Our [bookkeeping VA checklist](/blog/bookkeeping-virtual-assistant-checklist) shows how the work is split, and [bookkeeping virtual assistant vs accountant](/blog/bookkeeping-virtual-assistant-vs-accountant) explains who does what.",
       },
     ],
 
@@ -489,7 +489,7 @@ export const RICH_LANDINGS: RichLanding[] = [
       },
       {
         q: "How do contracts and payments work?",
-        a: "You sign a service agreement with Alpha Ahead LLC, a US-registered company, and are invoiced by us, not by an individual overseas. Hours, tasks, confidentiality and notice terms are set out in the agreement before work starts.",
+        a: "You sign a service agreement with Alpha Ahead LLC, a US-registered company, and are invoiced by us, not by an individual overseas. Hours, tasks, confidentiality and notice terms are set out in the agreement before work starts. Our guide on [how to hire a virtual assistant from Pakistan safely](/blog/hire-virtual-assistant-from-pakistan-safely) covers the checks to make with any provider.",
       },
       {
         q: "Do I manage the VA directly?",
@@ -652,7 +652,7 @@ export const RICH_LANDINGS: RichLanding[] = [
       },
       {
         q: "Is my data safe with a remote assistant?",
-        a: "Give your assistant their own login with only the permissions the work needs, turn on two-factor authentication and keep files in your own systems. Access can be removed in one step when the work ends. See how to set this up in our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days).",
+        a: "Give your assistant their own login with only the permissions the work needs, turn on two-factor authentication and keep files in your own systems. Access can be removed in one step when the work ends. Our guide on [how to give a virtual assistant secure access](/blog/give-virtual-assistant-secure-access) covers every type of tool.",
       },
       {
         q: "Which tools can a data entry VA work in?",
@@ -829,7 +829,7 @@ export const RICH_LANDINGS: RichLanding[] = [
       },
       {
         q: "How is my information kept confidential?",
-        a: "Your assistant uses their own logins with delegated access rather than your password, two-factor authentication is switched on, and files stay in your own Google Workspace or Microsoft 365. Access can be removed in one step when the work ends. Confidentiality terms are set out in your service agreement.",
+        a: "Your assistant uses their own logins with delegated access rather than your password, two-factor authentication is switched on, and files stay in your own Google Workspace or Microsoft 365. Access can be removed in one step when the work ends. Confidentiality terms are set out in your service agreement. See [how to give a virtual assistant secure access](/blog/give-virtual-assistant-secure-access).",
       },
       {
         q: "Can I start with a few hours and scale up later?",
