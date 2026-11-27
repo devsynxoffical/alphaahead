@@ -130,6 +130,9 @@ jobs:
           python3 scripts/check-live-images.py build/index.html build/clients.html build/case-studies.html build/projects.html || FAIL=1
           exit $FAIL
 
+      - name: Verify key page content on the live site (browser + Googlebot)
+        run: python3 scripts/check-live-content.py build
+
       - name: Check outbound links (warning only)
         continue-on-error: true
         run: python3 scripts/check-external-links.py build

@@ -44,7 +44,7 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/about': {
     title: 'About Alpha Ahead LLC | Founders, Offices & Approach',
     description:
-      'Alpha Ahead LLC is a US-registered outsourcing and digital agency founded by Shehreyar Khan, with offices in St. Petersburg FL, Dubai and Islamabad.',
+      'Alpha Ahead LLC is a US-registered virtual assistant agency founded by Shehreyar Khan, with offices in St. Petersburg FL, Dubai and Islamabad.',
     type: 'about',
     breadcrumb: 'About Us',
   },
