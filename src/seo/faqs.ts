@@ -48,7 +48,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "What tasks can a virtual assistant handle?",
-      a: "A virtual assistant typically handles inbox and calendar management, CRM updates, data entry, research, document preparation, follow-ups and customer emails. For specialized needs we also provide [bookkeeping assistants](/bookkeeping-virtual-assistant), [executive assistants](/business-assistant) and [B2B cold calling](/cold-calling). We tailor the task list to how your business operates.",
+      a: "A virtual assistant typically handles inbox and calendar management, CRM updates, data entry, research, document preparation, follow-ups and customer emails. For specialized needs we also provide [data entry assistants](/data-entry-virtual-assistant), [bookkeeping assistants](/bookkeeping-virtual-assistant), [executive assistants](/business-assistant) and [B2B cold calling](/cold-calling). We tailor the task list to how your business operates.",
     },
     {
       q: "How fast can I start with a virtual assistant?",

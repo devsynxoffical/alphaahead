@@ -79,8 +79,11 @@ Queue (update as items ship):
 - [ ] B2B cold calling scripts that book meetings (post, supports /cold-calling)
 - [ ] How to give a VA secure access to your tools (post)
 - [ ] Virtual assistant cost in Dubai (post, sourced; supports /virtual-assistant-dubai)
-- [ ] /data-entry-virtual-assistant (service page, 590/mo KD 28; also scheduled 4 Jan)
+- [x] 27 Nov: /data-entry-virtual-assistant (C44)
 - [ ] Startup VA tasks for founders (post, supports /virtual-assistant-for-startups)
+
+## 0e. Owner facts (27 Nov 2026)
+The owner has no access to management facts (pricing, contracts, vetting, backup cover, founding year, team size) and only has website + Search Console access. Skip every item that needs those facts; never ask again unless the owner offers them. Owner actions are limited to Search Console (request indexing, live URL test, manual actions) and Bing Webmaster Tools.
 
 ## 1. Collect
 - Index status for all sitemap URLs is printed by the "Submit sitemap to Google Search Console" step of each deploy run (service account, Search Console API).

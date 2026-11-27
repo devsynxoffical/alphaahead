@@ -449,7 +449,7 @@ export const BLOG_PART_2: Article[] = [
         heading: "Option 2: a remote virtual assistant outside the UAE",
         paragraphs: [
           "A remote virtual assistant works from their own country and is employed or contracted by a provider such as Alpha Ahead. Your company buys a service; you do not sponsor a UAE visa, provide a desk or add to your visa quota. The assistant works UAE business hours inside your email, CRM and other tools.",
-          "Note the difference from the Dubai virtual working programme: that programme lets people live in Dubai while working remotely for an employer outside the UAE, and it is not a route to work for UAE-based companies ([u.ae, Dubai's virtual working programme](https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae/dubai-virtual-working-programme)).",
+          "Note the difference from the UAE virtual work visa: it lets people live in the UAE while working remotely for an employer outside the UAE, and it is not a route to work for UAE-based companies ([u.ae, residence visa for working outside the UAE](https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa/residence-visa-for-working-outside-the-uae)).",
         ],
       },
       {
@@ -499,7 +499,7 @@ export const BLOG_PART_2: Article[] = [
       },
       {
         q: "Can I use the Dubai remote work visa to hire someone for my company?",
-        a: "No. Dubai's virtual working programme is for people working remotely for employers outside the UAE, not for working for UAE-based companies.",
+        a: "No. The UAE virtual work visa is for people working remotely for employers outside the UAE, not for working for UAE-based companies.",
       },
     ],
     relatedServices: ["/virtual-assistant", "/business-assistant", "/other-services"]

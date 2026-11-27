@@ -13,7 +13,7 @@ SITE = "https://alphaaheadllc.com"
 DEFAULT_PAGES = [
     "/", "/business-assistant", "/virtual-assistant", "/appointment-setting", "/bookkeeping-virtual-assistant",
     "/cold-calling", "/industries", "/virtual-assistant-for-accountants", "/virtual-assistant-for-startups",
-    "/blog/executive-assistant-tasks", "/about",
+    "/blog/executive-assistant-tasks", "/about", "/data-entry-virtual-assistant",
 ]
 UAS = {
     "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",

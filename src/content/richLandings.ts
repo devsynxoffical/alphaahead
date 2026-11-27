@@ -510,5 +510,173 @@ export const RICH_LANDINGS: RichLanding[] = [
   // ---------------------------------------------------------------------------
   // 3. Virtual real estate ISA
   // ---------------------------------------------------------------------------
+  // ---------------------------------------------------------------------------
+  // Data entry virtual assistant (keyword map P2: 590/mo US, KD 28)
+  // ---------------------------------------------------------------------------
+  {
+    slug: "data-entry-virtual-assistant",
+    servicePath: "/virtual-assistant",
+    serviceName: "Data Entry Virtual Assistant",
+    primaryKeyword: "data entry virtual assistant",
+    metaTitle: "Data Entry Virtual Assistant | Accurate, Secure, Remote",
+    metaDescription:
+      "A dedicated data entry virtual assistant for CRM updates, spreadsheets, order and invoice entry, data cleanup and research, on your US or UAE hours.",
+    datePublished: "2026-11-27",
+
+    hero: {
+      eyebrow: "Remote data entry support",
+      title: "Data Entry Virtual Assistant for Small Businesses",
+      subtitle:
+        "A data entry virtual assistant keeps your records complete and accurate: CRM updates, spreadsheets, orders, invoices, product listings and data cleanup, done inside your own tools. You define the rules; your assistant follows them every day and flags anything unclear instead of guessing.",
+      bullets: [
+        "CRM, spreadsheet and database entry",
+        "Works to your written rules and checklists",
+        "US (EST/PST) or UAE business hours",
+        "Managed by a US-registered company",
+      ],
+      image: "/Services/Virtual Assistant.jpg",
+      imageAlt: "Data entry virtual assistant updating records on a laptop",
+    },
+
+    problem: {
+      title: "Signs you need data entry help",
+      points: [
+        "Leads and contacts sit in inboxes instead of your CRM.",
+        "Spreadsheets have duplicates, gaps and different formats.",
+        "Orders, invoices or timesheets are typed in late, in batches.",
+        "Reports are wrong because the source data is out of date.",
+        "Skilled staff spend hours copying data between systems.",
+      ],
+    },
+
+    solution: {
+      title: "Clean data, entered every day",
+      paragraphs: [
+        "A data entry VA works inside your own systems with their own login: your CRM, Google Sheets or Excel, accounting software, ecommerce platform or project tools. They enter new records, update existing ones and keep fields consistent with the format you set.",
+        "The work runs from a written guide: which fields are required, how names and dates are formatted, what counts as a duplicate and what to do with incomplete records. Questions are logged and sent to you rather than guessed, so accuracy stays high.",
+        "Data entry often grows into wider admin. The same assistant can add [CRM management](/virtual-assistant), [bookkeeping data entry](/bookkeeping-virtual-assistant) or research as your needs change.",
+      ],
+      image: "/about-team.webp",
+      imageAlt: "Remote team reviewing a spreadsheet",
+    },
+
+    features: [
+      { icon: "users", title: "CRM updates", text: "New leads, contacts, deals and notes entered and kept current." },
+      { icon: "list", title: "Spreadsheets and databases", text: "Records entered, formatted and checked against your rules." },
+      { icon: "file", title: "Orders and invoices", text: "Orders, invoices, bills and timesheets typed in from source documents." },
+      { icon: "search", title: "Web research", text: "Company, contact and product details gathered and recorded." },
+      { icon: "check", title: "Data cleanup", text: "Duplicates merged, gaps filled and formats made consistent." },
+      { icon: "shield", title: "Controlled access", text: "Own login, limited permissions and two-factor authentication." },
+    ],
+
+    tabs: {
+      title: "Data entry tasks by system",
+      intro: "Common work, adjusted to your tools and rules.",
+      items: [
+        {
+          label: "CRM",
+          heading: "CRM data entry",
+          points: [
+            "Add new leads and contacts from forms, emails and events",
+            "Log calls, emails and meeting notes against records",
+            "Update deal stages and next steps",
+            "Merge duplicates and fix missing fields",
+          ],
+        },
+        {
+          label: "Spreadsheets",
+          heading: "Spreadsheets and databases",
+          points: [
+            "Enter data from PDFs, forms and scanned documents",
+            "Standardize names, addresses, dates and phone numbers",
+            "Build and update lists and trackers",
+            "Check entries against source documents",
+          ],
+        },
+        {
+          label: "Finance",
+          heading: "Finance and operations",
+          points: [
+            "Enter invoices, bills and receipts for review",
+            "Record orders, refunds and stock movements",
+            "Collect and enter timesheets",
+            "Prepare data for reports",
+          ],
+        },
+        {
+          label: "Ecommerce",
+          heading: "Ecommerce and listings",
+          points: [
+            "Create and update product listings",
+            "Update prices, stock levels and product attributes",
+            "Enter order and customer details",
+            "Check listings for missing images or fields",
+          ],
+        },
+      ],
+    },
+
+    steps: [
+      { title: "Discovery call", text: "Tell us your systems, data sources, volumes and deadlines." },
+      { title: "Rules and access", text: "We write a data entry guide with you and set up a login with the right permissions." },
+      { title: "Pilot batch", text: "Your assistant completes a first batch that you check before full volume starts." },
+      { title: "Daily routine", text: "Work runs to the guide every day, with questions logged and sent to you." },
+    ],
+
+    comparison: {
+      title: "Data entry VA vs freelancer vs doing it in-house",
+      columns: ["", "Doing it in-house", "Freelance marketplace", "Data entry VA (Alpha Ahead)"],
+      rows: [
+        ["Who does the work", "Your staff", "A different person per job", "One dedicated assistant"],
+        ["Knows your rules and systems", "Yes", "Learns each time", "Yes, from a written guide"],
+        ["Hiring and training", "On you", "On you", "Handled by us"],
+        ["Hours", "Your hours", "Varies", "Your US or UAE hours"],
+        ["Cost level", "Staff time", "Per task, varies", "Quoted per assistant"],
+      ],
+    },
+
+    audiences: [
+      { title: "Sales teams", text: "Keep the CRM complete so pipeline reports are accurate.", image: "/teamwork.webp", imageAlt: "Sales team reviewing a CRM dashboard" },
+      { title: "Ecommerce sellers", text: "Listings, prices, stock and orders kept up to date.", image: "/e-comerce.jpeg", imageAlt: "Ecommerce business owner updating products" },
+      { title: "Professional firms", text: "Client records, documents and timesheets entered on time.", image: "/finicialservice.jpeg", imageAlt: "Professional services documents on a desk" },
+    ],
+
+    faqs: [
+      {
+        q: "What does a data entry virtual assistant do?",
+        a: "A data entry virtual assistant enters and updates information in your systems: CRM records, spreadsheets, databases, orders, invoices, product listings and timesheets. They also clean existing data by removing duplicates, filling gaps and making formats consistent.",
+      },
+      {
+        q: "How do you keep data entry accurate?",
+        a: "Accuracy comes from clear rules and checks. We agree a written guide for required fields and formats, start with a pilot batch you review, and the assistant flags anything unclear instead of guessing. Spot checks continue once the routine is running.",
+      },
+      {
+        q: "Is my data safe with a remote assistant?",
+        a: "Give your assistant their own login with only the permissions the work needs, turn on two-factor authentication and keep files in your own systems. Access can be removed in one step when the work ends. See how to set this up in our [7-day onboarding plan](/blog/onboard-virtual-assistant-7-days).",
+      },
+      {
+        q: "Which tools can a data entry VA work in?",
+        a: "Most common tools: Google Sheets and Excel, CRMs such as HubSpot, Salesforce and Zoho, QuickBooks Online and Xero, ecommerce platforms and project tools. Tell us your stack during the discovery call.",
+      },
+      {
+        q: "Can I hire a data entry VA part-time?",
+        a: "Yes. Many clients start with a few hours a day for a backlog or daily updates, then add hours or other admin tasks later.",
+      },
+      {
+        q: "How much does a data entry virtual assistant cost?",
+        a: "It depends on hours, volume and the systems involved. [Contact us](/contact) or use the form on this page for a quote, and see our [virtual assistant cost guide](/blog/virtual-assistant-cost) for market benchmarks.",
+      },
+    ],
+
+    related: [
+      ["Virtual assistant for small business", "/virtual-assistant"],
+      ["Bookkeeping virtual assistant", "/bookkeeping-virtual-assistant"],
+      ["Executive virtual assistant", "/business-assistant"],
+      ["Onboard a VA in 7 days", "/blog/onboard-virtual-assistant-7-days"],
+      ["Virtual assistant cost", "/blog/virtual-assistant-cost"],
+      ["Contact us", "/contact"],
+    ],
+  },
+
   ...INDUSTRY_PAGES,
 ];
