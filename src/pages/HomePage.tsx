@@ -112,7 +112,7 @@ const HomePage: React.FC = () => {
       <section className="aa-section">
         <div className="aa-container home-about">
           <div className="home-about__media reveal">
-            <img src="/about-team.png" alt="Alpha Ahead team planning a client project" width={560} height={373} loading="lazy" />
+            <img src="/about-team.webp" alt="Alpha Ahead team planning a client project" width={560} height={373} loading="lazy" />
           </div>
           <div className="reveal reveal-d1">
             <p className="aa-eyebrow">{t('about.sectionLabel')}</p>

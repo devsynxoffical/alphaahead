@@ -131,7 +131,7 @@ export const RICH_LANDINGS: RichLanding[] = [
     audiences: [
       { title: "B2B services and agencies", text: "Book discovery calls with decision-makers so your team can focus on closing.", image: "/Services/Lead Gen.jpg", imageAlt: "B2B sales team reviewing booked meetings" },
       { title: "Small businesses", text: "Follow up every inbound enquiry quickly without hiring a full-time salesperson.", image: "/Services/Virtual Assistant.jpg", imageAlt: "Small business owner working with a remote assistant" },
-      { title: "UAE companies", text: "Setters working UAE business hours, backed by our Dubai office.", image: "/teamwork.png", imageAlt: "UAE business team collaborating" },
+      { title: "UAE companies", text: "Setters working UAE business hours, backed by our Dubai office.", image: "/teamwork.webp", imageAlt: "UAE business team collaborating" },
     ],
 
     faqs: [
@@ -216,7 +216,7 @@ export const RICH_LANDINGS: RichLanding[] = [
         "The work is done to a written checklist: what gets done daily, weekly and at month-end. Anything unclear is flagged for you or your accountant instead of guessed, so the books stay accurate.",
         "A bookkeeping virtual assistant is not a CPA and does not file taxes or give tax advice. The best setup pairs your VA for the day-to-day work with your accountant for review, tax and year-end.",
       ],
-      image: "/about-team.png",
+      image: "/about-team.webp",
       imageAlt: "Remote bookkeeping team collaborating",
     },
 
@@ -380,7 +380,7 @@ export const RICH_LANDINGS: RichLanding[] = [
         "We match you with a VA for your role, document your processes as SOPs and keep a supervisor involved. Pakistan is not the right fit for every business, so we explain the trade-offs honestly before you commit.",
         "Typical offshore virtual assistant roles from Pakistan include admin support, [appointment setters](/appointment-setting), cold callers, [bookkeeping assistants](/bookkeeping-virtual-assistant), CRM management and marketing tasks. Start with one role and add hours or assistants once the processes are working.",
       ],
-      image: "/about-team.png",
+      image: "/about-team.webp",
       imageAlt: "Managed virtual assistant team collaborating",
     },
 
@@ -463,7 +463,7 @@ export const RICH_LANDINGS: RichLanding[] = [
     audiences: [
       { title: "Sales teams", text: "Appointment setters and cold callers who keep your calendar full.", image: "/Services/Lead Gen.jpg", imageAlt: "Sales team working with a remote appointment setter" },
       { title: "Small businesses", text: "Admin, customer support and bookkeeping support without a full-time local hire.", image: "/Services/Virtual Assistant.jpg", imageAlt: "Small business owner working with a remote assistant" },
-      { title: "UAE SMEs", text: "Support during UAE business hours, backed by our Dubai office.", image: "/teamwork.png", imageAlt: "UAE business team collaborating" },
+      { title: "UAE SMEs", text: "Support during UAE business hours, backed by our Dubai office.", image: "/teamwork.webp", imageAlt: "UAE business team collaborating" },
     ],
 
     faqs: [

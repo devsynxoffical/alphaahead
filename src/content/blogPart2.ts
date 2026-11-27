@@ -430,7 +430,7 @@ export const BLOG_PART_2: Article[] = [
     excerpt: "UAE companies can hire a local assistant on a sponsored visa or use a remote virtual assistant based outside the country. Here is how the two options compare.",
     primaryKeyword: "hiring a virtual assistant in Dubai",
     datePublished: "2026-11-20",
-    image: "/teamwork.png",
+    image: "/teamwork.webp",
     imageAlt: "Dubai business team working with a remote virtual assistant",
     readMinutes: 6,
     intro: [
@@ -694,7 +694,7 @@ export const BLOG_PART_2: Article[] = [
     excerpt: "A practical, day-by-day plan to get a new virtual assistant productive in their first week, without losing control of your tools or your time.",
     primaryKeyword: "how to onboard a virtual assistant",
     datePublished: "2026-11-20",
-    image: "/about-team.png",
+    image: "/about-team.webp",
     imageAlt: "Business owner onboarding a remote assistant over a video call",
     readMinutes: 7,
     intro: [

@@ -56,7 +56,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
         'An insurance virtual assistant handles the service and admin tasks that do not require a license. They work from your checklists inside the systems you already use, log every action and hand anything that needs a licensed person straight to your team.',
         'Licensing rules matter here. In most states, only licensed producers may solicit, quote, advise on coverage or bind policies. We set each role up so the assistant stays on the admin side of that line; check the rules in your state and with your carriers. This is not legal advice.',
       ],
-      image: '/about-team.png',
+      image: '/about-team.webp',
       imageAlt: 'Remote assistant team supporting an insurance agency',
     },
     features: [
@@ -96,7 +96,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     },
     audiences: [
       { title: 'Independent agents', text: 'Get admin hours back for selling and client meetings.', image: '/Services/Virtual Assistant.jpg', imageAlt: 'Independent insurance agent working with a remote assistant' },
-      { title: 'Growing agencies', text: 'Add service capacity without hiring another in-house CSR.', image: '/teamwork.png', imageAlt: 'Insurance agency team meeting' },
+      { title: 'Growing agencies', text: 'Add service capacity without hiring another in-house CSR.', image: '/teamwork.webp', imageAlt: 'Insurance agency team meeting' },
       { title: 'Commercial lines teams', text: 'Keep certificate requests and renewals on schedule.', image: '/finicialservice.jpeg', imageAlt: 'Commercial insurance documents on a desk' },
     ],
     faqs: [
@@ -199,7 +199,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     audiences: [
       { title: 'Pre-seed and seed founders', text: 'Get admin off your plate before your first ops hire.', image: '/Services/Virtual Assistant.jpg', imageAlt: 'Founder working on a laptop' },
       { title: 'SaaS teams', text: 'Keep CRM, demos and onboarding admin moving.', image: '/Services/Software Development.jpg', imageAlt: 'SaaS team at work' },
-      { title: 'Remote-first teams', text: 'An assistant who works async across time zones.', image: '/teamwork.png', imageAlt: 'Remote team collaborating' },
+      { title: 'Remote-first teams', text: 'An assistant who works async across time zones.', image: '/teamwork.webp', imageAlt: 'Remote team collaborating' },
     ],
     faqs: [
       { q: 'What does a virtual assistant do for a startup?', a: 'A startup VA manages founder inbox and calendar, prepares investor updates from your template, keeps the CRM current, coordinates recruiting and handles back-office admin such as invoices and expense reports.' },
@@ -262,7 +262,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
         'Your assistant manages your calendar and client communication from your templates, keeps the client journey running from enquiry to follow-up, and keeps your programs and community organized.',
         'It works for one-to-one coaches, group programs and course creators. Start with scheduling and onboarding, then add marketing support such as social scheduling and newsletter preparation.',
       ],
-      image: '/about-team.png',
+      image: '/about-team.webp',
       imageAlt: 'Remote assistant supporting a coaching business',
     },
     features: [
@@ -303,7 +303,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     audiences: [
       { title: 'One-to-one coaches', text: 'Life, career, business and executive coaches.', image: '/Services/Virtual Assistant.jpg', imageAlt: 'Coach on a video call' },
       { title: 'Group programs and courses', text: 'Member admin, community and launches.', image: '/Services/Online Education (E-Learning).jpg', imageAlt: 'Online course on a laptop' },
-      { title: 'Consultants', text: 'Proposals, scheduling and client follow-up.', image: '/teamwork.png', imageAlt: 'Consultant meeting with a client' },
+      { title: 'Consultants', text: 'Proposals, scheduling and client follow-up.', image: '/teamwork.webp', imageAlt: 'Consultant meeting with a client' },
     ],
     faqs: [
       { q: 'What does a virtual assistant do for a coach?', a: 'A coaching VA books and reschedules sessions, onboards new clients, answers routine questions from your FAQ, manages course and community admin, sends invoices and reminders, and schedules social posts and newsletters.' },
@@ -345,7 +345,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
         'Supervised by your attorneys, with confidentiality terms',
         'Managed by a US-registered company',
       ],
-      image: '/about-team.png',
+      image: '/about-team.webp',
       imageAlt: 'Remote assistant supporting a law office',
     },
     problem: {
@@ -404,8 +404,8 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     },
     audiences: [
       { title: 'Solo attorneys', text: 'Get intake, calendar and billing admin off your desk.', image: '/Services/Virtual Assistant.jpg', imageAlt: 'Solo attorney working at a desk' },
-      { title: 'Small law firms', text: 'Add admin capacity without another in-house hire.', image: '/teamwork.png', imageAlt: 'Small law firm team meeting' },
-      { title: 'Busy practice areas', text: 'High-volume intake and scheduling, handled consistently.', image: '/about-team.png', imageAlt: 'Legal support team at work' },
+      { title: 'Small law firms', text: 'Add admin capacity without another in-house hire.', image: '/teamwork.webp', imageAlt: 'Small law firm team meeting' },
+      { title: 'Busy practice areas', text: 'High-volume intake and scheduling, handled consistently.', image: '/about-team.webp', imageAlt: 'Legal support team at work' },
     ],
     faqs: [
       { q: 'What can a virtual assistant do for a lawyer?', a: 'Administrative work: intake follow-up and scheduling, entering court dates and deadlines your attorneys set, document formatting and filing, billing support and client status emails.' },
@@ -466,7 +466,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
         'Your assistant handles document collection, organization and data entry so your team spends its time on review and advice. For day-to-day client bookkeeping, our [bookkeeping virtual assistants](/bookkeeping-virtual-assistant) work in QuickBooks Online or Xero under your review.',
         'Roles are kept clear: the assistant does not sign returns, give tax advice or take responsibility for filings. Anyone who prepares or assists in preparing federal tax returns for pay needs an IRS PTIN ([IRS PTIN requirements](https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers)); we agree with you which tasks each assistant may do. This is not tax or legal advice.',
       ],
-      image: '/about-team.png',
+      image: '/about-team.webp',
       imageAlt: 'Remote team supporting an accounting practice',
     },
     features: [
@@ -506,7 +506,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     },
     audiences: [
       { title: 'Solo CPAs and EAs', text: 'Get document chasing and admin off your desk.', image: '/Services/Virtual Assistant.jpg', imageAlt: 'Accountant working at a laptop' },
-      { title: 'Small accounting firms', text: 'Add capacity without another full-time hire.', image: '/teamwork.png', imageAlt: 'Accounting firm team meeting' },
+      { title: 'Small accounting firms', text: 'Add capacity without another full-time hire.', image: '/teamwork.webp', imageAlt: 'Accounting firm team meeting' },
       { title: 'Bookkeeping practices', text: 'Data entry and month-end prep for review.', image: '/finicialservice.jpeg', imageAlt: 'Financial reports on a desk' },
     ],
     faqs: [
