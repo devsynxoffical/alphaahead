@@ -326,7 +326,7 @@ export const RICH_LANDINGS: RichLanding[] = [
     ],
 
     related: [
-      ["Virtual business assistant", "/business-assistant"],
+      ["Executive virtual assistant", "/business-assistant"],
       ["Virtual assistant services", "/virtual-assistant"],
       ["Bookkeeping VA checklist", "/blog/bookkeeping-virtual-assistant-checklist"],
       ["Offshore virtual assistant", "/hire-virtual-assistant-pakistan"],
@@ -499,7 +499,7 @@ export const RICH_LANDINGS: RichLanding[] = [
 
     related: [
       ["Virtual assistant services", "/virtual-assistant"],
-      ["Business assistant", "/business-assistant"],
+      ["Executive virtual assistant", "/business-assistant"],
       ["Pakistan vs Philippines VAs", "/blog/pakistan-vs-philippines-virtual-assistant"],
       ["Onboard a VA in 7 days", "/blog/onboard-virtual-assistant-7-days"],
       ["About Alpha Ahead", "/about"],
@@ -672,6 +672,179 @@ export const RICH_LANDINGS: RichLanding[] = [
       ["Virtual assistant for small business", "/virtual-assistant"],
       ["Bookkeeping virtual assistant", "/bookkeeping-virtual-assistant"],
       ["Executive virtual assistant", "/business-assistant"],
+      ["Onboard a VA in 7 days", "/blog/onboard-virtual-assistant-7-days"],
+      ["Virtual assistant cost", "/blog/virtual-assistant-cost"],
+      ["Contact us", "/contact"],
+    ],
+  },
+
+  // ---------------------------------------------------------------------------
+  // Executive virtual assistant (keyword map P1: "executive virtual assistant" 590/mo KD 21;
+  // also ranks for "virtual business assistant", so that phrase stays in title, intro and an H2)
+  // ---------------------------------------------------------------------------
+  {
+    slug: "business-assistant",
+    servicePath: "/business-assistant",
+    serviceName: "Executive Virtual Assistant",
+    primaryKeyword: "executive virtual assistant",
+    metaTitle: "Executive & Virtual Business Assistant | Alpha Ahead",
+    metaDescription:
+      "A dedicated executive virtual assistant for founders and executives: inbox, calendar, travel, meeting prep and follow-ups, on US or UAE hours.",
+    datePublished: "2026-11-27",
+
+    hero: {
+      eyebrow: "Executive and virtual business assistants",
+      title: "Executive Virtual Assistant for Founders and Executives",
+      subtitle:
+        "An executive virtual assistant takes your inbox, calendar, travel, meeting prep and follow-ups off your plate, so you spend your day on decisions instead of admin. Alpha Ahead provides dedicated executive and virtual business assistants who work your US (EST/PST) or UAE hours, managed by our team.",
+      bullets: [
+        "Inbox, calendar, travel and meeting follow-ups",
+        "Investor, board and client meeting prep",
+        "US (EST/PST) or UAE business hours",
+        "Service agreement with a US-registered company",
+      ],
+      image: "/aheadteam.jpg",
+      imageAlt: "Executive working with a dedicated virtual assistant",
+    },
+
+    problem: {
+      title: "Signs you need an executive assistant",
+      points: [
+        "Your inbox decides your day instead of your priorities.",
+        "Scheduling one meeting takes five emails across time zones.",
+        "Follow-ups from meetings slip because nobody owns them.",
+        "Travel, expenses and documents eat your evenings.",
+        "Investor or board prep always happens the night before.",
+      ],
+    },
+
+    solution: {
+      title: "Executive assistant or virtual business assistant?",
+      paragraphs: [
+        "An executive virtual assistant works inside your own Google Workspace or Microsoft 365 with delegated access. They triage your inbox, run your calendar, prepare meetings, chase action items and handle travel and documents, following the rules you set in the first week.",
+        "Executive assistant or virtual business assistant? An executive assistant supports one leader's time: inbox, calendar, travel and meetings. A virtual business assistant supports business operations: CRM updates, reports, customer emails and back-office tasks. For a small team, one assistant often covers both.",
+        "For general admin across a team, see our [virtual assistant for small business](/virtual-assistant). For finance, see our [bookkeeping virtual assistant](/bookkeeping-virtual-assistant). For a full list of what to hand off, read [30 tasks to delegate to an executive assistant](/blog/executive-assistant-tasks).",
+      ],
+      image: "/about-team.webp",
+      imageAlt: "Executive assistant planning a founder's week",
+    },
+
+    features: [
+      { icon: "chat", title: "Inbox management", text: "Daily triage, drafts in your voice, follow-up flags and a clean inbox routine." },
+      { icon: "calendar", title: "Calendar and scheduling", text: "Meetings across time zones, buffers protected, prep notes in every invite." },
+      { icon: "globe", title: "Travel and logistics", text: "Flights, hotels, itineraries and travel documents checklist." },
+      { icon: "check", title: "Meetings and follow-ups", text: "Agendas, notes, action items and chasing owners until done." },
+      { icon: "chart", title: "Investor and board prep", text: "Numbers collected and decks and updates prepared from your templates." },
+      { icon: "users", title: "CRM and business admin", text: "Pipeline updates, reports, document filing and vendor coordination." },
+    ],
+
+    tabs: {
+      title: "What an executive virtual assistant handles",
+      intro: "A typical split of work, shaped around how you operate.",
+      items: [
+        {
+          label: "Inbox",
+          heading: "Inbox and communication",
+          points: [
+            "Sort the inbox daily into act, read, delegate and archive",
+            "Draft routine replies for your approval",
+            "Chase replies you are waiting on",
+            "Send introductions and thank-you emails from templates",
+          ],
+        },
+        {
+          label: "Calendar",
+          heading: "Calendar and meetings",
+          points: [
+            "Schedule meetings across time zones",
+            "Protect focus time and travel buffers",
+            "Prepare agendas and briefing notes",
+            "Take notes and send action items after meetings",
+          ],
+        },
+        {
+          label: "Travel",
+          heading: "Travel and expenses",
+          points: [
+            "Research and book flights and hotels you approve",
+            "Build itineraries with confirmations in one place",
+            "Track travel documents and renewal dates",
+            "Collect receipts and prepare expense reports",
+          ],
+        },
+        {
+          label: "Business",
+          heading: "Business support",
+          points: [
+            "Update the CRM after calls and meetings",
+            "Prepare investor updates and board materials from your templates",
+            "Track project deadlines and send status summaries",
+            "Coordinate vendors, contractors and recruiting interviews",
+          ],
+        },
+      ],
+    },
+
+    steps: [
+      { title: "Discovery call", text: "We map your week, your tools and the tasks you want off your plate." },
+      { title: "Matched assistant", text: "We choose an assistant for your tools, time zone and communication style." },
+      { title: "First-week onboarding", text: "Rules written down, access set up safely and daily check-ins for the first week." },
+      { title: "Weekly review", text: "Priorities adjusted and new tasks added as trust builds." },
+    ],
+
+    comparison: {
+      title: "Managed executive assistant vs freelancer vs in-house EA",
+      columns: ["", "Freelance marketplace", "In-house EA", "Executive VA (Alpha Ahead)"],
+      rows: [
+        ["Who you contract with", "An individual", "Your employee", "Alpha Ahead LLC, a US-registered company"],
+        ["Hiring and screening", "You do it", "You do it", "Handled by us"],
+        ["Day-to-day oversight", "You manage", "You manage", "You direct the work; our team supports quality"],
+        ["Hours", "Varies", "Local office hours", "Your US or UAE business hours"],
+        ["Cost level", "Hourly, varies widely", "Salary, benefits and office", "Quoted per assistant"],
+      ],
+    },
+
+    audiences: [
+      { title: "Founders and CEOs", text: "Get your inbox, calendar and follow-ups handled so you can lead.", image: "/Services/Virtual Assistant.jpg", imageAlt: "Founder working on a laptop" },
+      { title: "Partners at professional firms", text: "Client scheduling, documents and billing admin, handled consistently.", image: "/finicialservice.jpeg", imageAlt: "Professional reviewing client documents" },
+      { title: "Busy executives", text: "Meetings, travel and board prep organized ahead of time.", image: "/teamwork.webp", imageAlt: "Executive team meeting" },
+    ],
+
+    faqs: [
+      {
+        q: "What does an executive virtual assistant do?",
+        a: "An executive virtual assistant manages a founder's or executive's inbox and calendar, books travel, prepares meetings, takes notes and follows up on action items, and prepares documents for investor updates and board meetings. The role is shaped around how you work.",
+      },
+      {
+        q: "What is the difference between an executive assistant and a virtual business assistant?",
+        a: "An executive assistant supports one leader's time: inbox, calendar, travel and meetings. A virtual business assistant supports business operations: CRM updates, reports, customer emails and back-office tasks. We provide both, and one assistant can cover both for a small team.",
+      },
+      {
+        q: "Can an executive assistant help with investor and board meetings?",
+        a: "Yes. Your assistant can schedule meetings, collect numbers and documents from your team, prepare decks and agendas from your templates, take notes and track follow-ups. You decide what is shared, and confidential material stays in your own accounts. See our list of [30 tasks to delegate to an executive assistant](/blog/executive-assistant-tasks).",
+      },
+      {
+        q: "What can't an executive virtual assistant do?",
+        a: "They do not sign contracts, approve payments or make decisions on your behalf, and they do not do licensed work such as legal or tax advice. They prepare, schedule and follow up; you decide.",
+      },
+      {
+        q: "How is my information kept confidential?",
+        a: "Your assistant uses their own logins with delegated access rather than your password, two-factor authentication is switched on, and files stay in your own Google Workspace or Microsoft 365. Access can be removed in one step when the work ends. Confidentiality terms are set out in your service agreement.",
+      },
+      {
+        q: "Can I start with a few hours and scale up later?",
+        a: "Yes. You can start with part of the day on inbox and calendar, then add hours or tasks such as travel, CRM or board prep as the routine settles.",
+      },
+      {
+        q: "How much does an executive virtual assistant cost?",
+        a: "It depends on hours and the type of work. [Contact us](/contact) or use the form on this page for a quote, and see our [virtual assistant cost guide](/blog/virtual-assistant-cost) for market benchmarks.",
+      },
+    ],
+
+    related: [
+      ["30 executive assistant tasks", "/blog/executive-assistant-tasks"],
+      ["Personal virtual assistant", "/personal-assistant"],
+      ["Virtual assistant for startups", "/virtual-assistant-for-startups"],
       ["Onboard a VA in 7 days", "/blog/onboard-virtual-assistant-7-days"],
       ["Virtual assistant cost", "/blog/virtual-assistant-cost"],
       ["Contact us", "/contact"],

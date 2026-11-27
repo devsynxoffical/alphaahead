@@ -143,7 +143,7 @@ export const LOCATION_PAGES: Article[] = [
         heading: "Outsourced admin support for Dubai businesses: where to start",
         paragraphs: [
           "Outsourced admin support in Dubai works best when the first handover is specific. Rather than asking for general help, list the five or ten tasks that steal the most time each week, then write down how each one is done today. That list becomes the assistant's first checklist.",
-          "For broader operations, such as coordinating suppliers, preparing reports and keeping projects on track, our [business assistant service](/business-assistant) is a better fit than a task-only VA. If you need growth rather than admin, our [digital marketing team](/other-services#digital-marketing) can run campaigns and content directly. For technical issues, [IT support](/other-services#it-support) covers day-to-day help for your staff.",
+          "For broader operations, such as coordinating suppliers, preparing reports and keeping projects on track, our [executive and virtual business assistant service](/business-assistant) is a better fit than a task-only VA. If you need growth rather than admin, our [digital marketing team](/other-services#digital-marketing) can run campaigns and content directly. For technical issues, [IT support](/other-services#it-support) covers day-to-day help for your staff.",
           "A note on bookkeeping: an assistant can prepare and organize records, but VAT filings, corporate tax matters and financial statements should be reviewed by a qualified accountant or tax agent. That is general guidance, not tax advice.",
         ],
       },

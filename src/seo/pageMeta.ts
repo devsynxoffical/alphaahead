@@ -140,15 +140,6 @@ export const PAGE_META: Record<string, PageMeta> = {
     serviceName: 'Personal Assistant Services',
     serviceType: 'Personal assistant',
   },
-  '/business-assistant': {
-    title: 'Executive Virtual Assistant for Founders and Executives',
-    description:
-      'An executive virtual assistant for founders: inbox, calendar, travel, meeting notes, investor and board prep, handled confidentially on your hours.',
-    type: 'service',
-    breadcrumb: 'Executive Virtual Assistant',
-    serviceName: 'Executive Virtual Assistant Services',
-    serviceType: 'Back-office support',
-  },
   '/lead-generation': {
     title: 'Lead Generation Services | B2B Outsourced Lead Gen',
     description:

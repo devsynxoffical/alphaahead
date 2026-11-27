@@ -995,7 +995,7 @@ export const BLOG_PART_2: Article[] = [
       {
         heading: "Working with Alpha Ahead",
         paragraphs: [
-          "Alpha Ahead runs managed [virtual assistant services](/virtual-assistant) from our Islamabad team, working US (EST/PST) and UAE business hours. We place assistants for real estate, admin and specialist work, and our [business assistant](/business-assistant) service covers broader operations support. If the Philippines is a better fit for a voice-heavy role, we will tell you. Otherwise, [contact us](/contact) to discuss the role and get a quote."
+          "Alpha Ahead runs managed [virtual assistant services](/virtual-assistant) from our Islamabad team, working US (EST/PST) and UAE business hours. We place assistants for real estate, admin and specialist work, and our [executive virtual assistant](/business-assistant) service covers founder and operations support. If the Philippines is a better fit for a voice-heavy role, we will tell you. Otherwise, [contact us](/contact) to discuss the role and get a quote."
         ]
       }
     ],

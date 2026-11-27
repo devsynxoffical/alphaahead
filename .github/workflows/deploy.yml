@@ -51,6 +51,9 @@ jobs:
       - name: Prerender pages + generate sitemap.xml
         run: node scripts/prerender.js
 
+      - name: Build llms-full.txt for AI answer engines
+        run: python3 scripts/build-llms-full.py build
+
       - name: Upload build/ via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -96,7 +99,7 @@ jobs:
             code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$1")
             if [ "$code" = "$2" ]; then echo "OK   $code $1"; else echo "FAIL $code (want $2) $1"; FAIL=1; fi
           }
-          for p in / /services /other-services /sitemap /cold-calling /appointment-setting /bookkeeping-virtual-assistant /blog /blog/appointment-setter-vs-sdr /case-studies /case-studies/zingo-assist /virtual-assistant-dubai /sitemap.xml /robots.txt /llms.txt; do
+          for p in / /services /other-services /sitemap /cold-calling /appointment-setting /bookkeeping-virtual-assistant /blog /blog/appointment-setter-vs-sdr /case-studies /case-studies/zingo-assist /virtual-assistant-dubai /sitemap.xml /robots.txt /llms.txt /llms-full.txt /data-entry-virtual-assistant /blog/b2b-cold-calling-scripts; do
             check "https://alphaaheadllc.com$p" 200
           done
           check "https://alphaaheadllc.com/this-page-does-not-exist-$GITHUB_RUN_ID" 404

@@ -130,36 +130,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
   ],
 
-  "/business-assistant": [
-    {
-      q: "What does an executive virtual assistant do?",
-      a: "An executive virtual assistant manages a founder's or executive's inbox and calendar, books travel, takes meeting notes and follows up on action items, and prepares documents for investor updates and board meetings. They can also support bookkeeping tasks and CRM upkeep. The role is shaped around how you work.",
-    },
-    {
-      q: "Can an executive assistant help with investor and board meetings?",
-      a: "Yes. Your assistant can schedule meetings, collect numbers and documents from your team, prepare decks and agendas from your templates, take notes and track follow-ups. You decide what is shared, and confidential material stays in your own accounts. See our list of [30 tasks to delegate to an executive assistant](/blog/executive-assistant-tasks).",
-    },
-    {
-      q: "How is an executive assistant different from a general virtual assistant?",
-      a: "A business assistant is focused on business operations rather than mainly personal or admin tasks. That often means more work in your CRM, sales pipeline, customer support queue or bookkeeping records. If your needs are broader or more personal, our [virtual assistant](/virtual-assistant) or [personal assistant](/personal-assistant) services may fit better.",
-    },
-    {
-      q: "Can I start with a few hours and scale up later?",
-      a: "Yes. Our packages are flexible, so you can start small and add hours or services as your business grows. You can also adjust the task list as priorities change.",
-    },
-    {
-      q: "Which tools can a business assistant work in?",
-      a: "Your assistant works in the tools your business already uses. We can work in tools such as Google Workspace, Microsoft 365, Slack and common CRMs. Let us know your stack during onboarding so we can plan access.",
-    },
-    {
-      q: "How is my business data protected?",
-      a: "Your data is handled confidentially and access is limited to what each task requires. We recommend giving your assistant individual logins rather than shared credentials so you stay in control. If you need an NDA or have internal policies to follow, we can discuss them during onboarding.",
-    },
-    {
-      q: "How much does a virtual business assistant cost?",
-      a: "Cost depends on the number of hours and the type of work involved. [Contact us](/contact) to describe your needs and get a free quote.",
-    },
-  ],
 
   "/lead-generation": [
     {

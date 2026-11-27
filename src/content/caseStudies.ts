@@ -142,7 +142,7 @@ export const CASE_STUDIES: Article[] = [
       {
         heading: "Services involved",
         paragraphs: [
-          "The operating side of Alpha Medi Assist draws on the model behind our [business assistant service](/business-assistant): trained remote staff who handle structured back-office work with clear processes and supervision. The public face of the brand came from our [web development team](/other-services#web-development), and getting the brand in front of healthcare decision-makers relies on the channels we manage through [digital marketing](/other-services#digital-marketing).",
+          "The operating side of Alpha Medi Assist draws on the model behind our [executive virtual assistant service](/business-assistant): trained remote staff who handle structured back-office work with clear processes and supervision. The public face of the brand came from our [web development team](/other-services#web-development), and getting the brand in front of healthcare decision-makers relies on the channels we manage through [digital marketing](/other-services#digital-marketing).",
           "Brand design, content and ongoing site updates all sit within the same team, which keeps the message consistent between what the website promises and how the service is actually delivered.",
         ],
       },

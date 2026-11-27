@@ -2,10 +2,22 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { resolveMeta, ResolvedMeta } from './registry';
 import { absUrl, DEFAULT_IMAGE, EMAIL, LOGO_URL, OFFICES, PHONE_US, SITE_NAME, SITE_URL, SOCIAL_PROFILES } from './site';
-import { SERVICES } from './services';
 import { articlePath } from '../content/types';
 
 const ORG_ID = `${SITE_URL}/#organization`;
+
+/** Core services listed in the Organization offer catalog (what AI answer engines read as "what this company does"). */
+const CATALOG: [string, string][] = [
+  ['Executive Virtual Assistant', '/business-assistant'],
+  ['Virtual Assistant Services for Small Business', '/virtual-assistant'],
+  ['Personal Virtual Assistant', '/personal-assistant'],
+  ['Bookkeeping Virtual Assistant', '/bookkeeping-virtual-assistant'],
+  ['Data Entry Virtual Assistant', '/data-entry-virtual-assistant'],
+  ['Appointment Setting Services', '/appointment-setting'],
+  ['B2B Cold Calling Services', '/cold-calling'],
+  ['Lead Generation Services', '/lead-generation'],
+  ['Offshore Virtual Assistant from Pakistan', '/hire-virtual-assistant-pakistan'],
+];
 
 const postalAddress = (o: (typeof OFFICES)[number]) => ({
   '@type': 'PostalAddress',
@@ -27,9 +39,9 @@ const organization = () => ({
   email: EMAIL,
   telephone: PHONE_US,
   description:
-    'US-registered outsourcing and digital agency providing virtual assistants, appointment setting, cold calling, bookkeeping assistants, lead generation, SEO, web development and digital marketing for US and UAE businesses.',
+    'US-registered virtual assistant agency providing dedicated executive assistants, virtual assistants, bookkeeping and data entry assistants, appointment setters and B2B cold callers to founders, executives and small teams in the US and UAE.',
   address: postalAddress(OFFICES[0]),
-  areaServed: ['United States', 'United Arab Emirates', 'Canada', 'United Kingdom'],
+  areaServed: ['United States', 'United Arab Emirates'],
   sameAs: SOCIAL_PROFILES,
   founder: { '@type': 'Person', name: 'Shehreyar Khan', jobTitle: 'Director and Founder' },
   employee: [
@@ -42,8 +54,8 @@ const organization = () => ({
     { '@type': 'ContactPoint', contactType: 'sales', telephone: OFFICES[1].phone, email: EMAIL, areaServed: 'AE', availableLanguage: ['English', 'Urdu'] },
   ],
   knowsAbout: [
-    'Virtual assistant services', 'Appointment setting', 'Cold calling', 'Bookkeeping virtual assistants', 'Executive virtual assistants',
-    'Lead generation', 'CRM management', 'Virtual property management', 'Search engine optimization', 'Web development', 'Digital marketing',
+    'Executive virtual assistants', 'Virtual business assistants', 'Virtual assistant services', 'Bookkeeping virtual assistants',
+    'Data entry', 'Appointment setting', 'B2B cold calling', 'Lead generation', 'CRM management', 'Remote staffing from Pakistan',
   ],
   department: OFFICES.map(o => ({
     '@type': 'ProfessionalService',
@@ -53,10 +65,10 @@ const organization = () => ({
   })),
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Outsourcing & Digital Services',
-    itemListElement: SERVICES.map(s => ({
+    name: 'Virtual Assistant and Sales Support Services',
+    itemListElement: CATALOG.map(([name, path]) => ({
       '@type': 'Offer',
-      itemOffered: { '@type': 'Service', name: s.name, url: absUrl(s.path) },
+      itemOffered: { '@type': 'Service', name, url: absUrl(path) },
     })),
   },
 });
@@ -118,6 +130,7 @@ function buildGraph(meta: ResolvedMeta): object[] {
       url,
       provider: { '@type': 'ProfessionalService', '@id': ORG_ID, name: SITE_NAME, url: `${SITE_URL}/` },
       areaServed: ['United States', 'United Arab Emirates'],
+      audience: { '@type': 'BusinessAudience', audienceType: 'Founders, executives and small businesses' },
     });
   }
   const a = meta.article;
@@ -134,6 +147,8 @@ function buildGraph(meta: ResolvedMeta): object[] {
       publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: LOGO_URL } },
       mainEntityOfPage: url,
       keywords: a.primaryKeyword,
+      inLanguage: 'en',
+      about: a.relatedServices.filter(p => p.startsWith('/')).map(p => ({ '@type': 'Service', url: absUrl(p) })),
     });
   }
   if (a && a.kind === 'location') {

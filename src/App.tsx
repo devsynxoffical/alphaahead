@@ -16,7 +16,6 @@ import Careers from './pages/Careers';
 import VirtualAssistantDetails from './pages/VirtualAssistantDetails';
 import ColdCallingDetails from './pages/ColdCallingDetails';
 import PersonalAssistantDetails from './pages/PersonalAssistantDetails';
-import VirtualBusinessAssistantDetails from './pages/VirtualBusinessAssistantDetails';
 import LeadGenerationDetails from './pages/LeadGenerationDetails';
 import Footer from './components/Footer';
 import ChatWidgetEmbed from './components/ChatWidgetEmbed';
@@ -50,7 +49,6 @@ const SERVICE_ROUTES: [string, React.ReactElement][] = [
   ['/virtual-assistant', <VirtualAssistantDetails />],
   ['/cold-calling', <ColdCallingDetails />],
   ['/personal-assistant', <PersonalAssistantDetails />],
-  ['/business-assistant', <VirtualBusinessAssistantDetails />],
   ['/lead-generation', <LeadGenerationDetails />],
 ];
 
