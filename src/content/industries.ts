@@ -124,9 +124,9 @@ export const INDUSTRY_PAGES: RichLanding[] = [
     servicePath: '/virtual-assistant',
     serviceName: 'Virtual Assistant for Startups',
     primaryKeyword: 'virtual assistant for startups',
-    metaTitle: 'Virtual Assistant for Startups and Founders | Alpha Ahead',
+    metaTitle: 'Virtual Assistant for Startups and Entrepreneurs',
     metaDescription:
-      'Virtual assistants for startups: founder inbox and calendar, investor update prep, CRM and pipeline, recruiting coordination and back-office tasks.',
+      'Virtual assistants for startups, founders and entrepreneurs: inbox and calendar, investor update prep, CRM and pipeline, recruiting and back-office tasks.',
     datePublished: '2026-11-24',
     hero: {
       eyebrow: 'Support for early-stage teams',
@@ -206,6 +206,7 @@ export const INDUSTRY_PAGES: RichLanding[] = [
       { q: 'When should a startup hire a virtual assistant?', a: 'When founders spend several hours a week on recurring admin that someone else could do from a checklist. Starting part-time is common.' },
       { q: 'Can a VA handle confidential investor information?', a: 'Yes, with the right setup: individual logins, limited permissions, two-factor authentication and confidentiality terms in our agreement. You decide what is shared.' },
       { q: 'Can I start part-time?', a: 'Yes. Many startups begin with a few hours a day and add hours or a second assistant as the team grows.' },
+      { q: 'Do you work with solo entrepreneurs?', a: 'Yes. Solo entrepreneurs and one-person businesses use a virtual assistant the same way founders do: inbox, calendar, customer emails, CRM and admin, starting with a few hours a day. See our [30 executive assistant tasks](/blog/executive-assistant-tasks) for ideas on what to hand over first.' },
       { q: 'How much does a startup virtual assistant cost?', a: 'It depends on hours and tasks. [Contact us](/contact) or use the form on this page for a quote, and see our [virtual assistant cost guide](/blog/virtual-assistant-cost).' },
     ],
     related: [
