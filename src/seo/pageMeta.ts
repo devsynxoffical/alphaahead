@@ -18,7 +18,7 @@ export const PAGE_META: Record<string, PageMeta> = {
   '/': {
     title: 'Alpha Ahead | Virtual Assistant Agency for US & UAE',
     description:
-      'Virtual assistant agency for US & UAE businesses: dedicated virtual assistants, appointment setters, cold callers, bookkeeping VAs and lead generation.',
+      'Virtual assistant agency for founders, executives and small teams: executive VAs, bookkeeping, appointment setting and B2B cold calling on US or UAE hours.',
     type: 'home',
   },
   '/other-services': {

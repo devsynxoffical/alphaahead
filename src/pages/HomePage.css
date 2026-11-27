@@ -52,7 +52,7 @@
 .home-about__list { list-style: none; padding: 0; margin: 1.5rem 0 2rem; display: grid; gap: .75rem; }
 .home-about__list li { position: relative; padding-left: 1.75rem; line-height: 1.6; color: var(--aa-ink); }
 .home-about__list svg { position: absolute; left: 0; top: .3rem; color: var(--aa-orange); }
-.home-about__list a, .home-locations a, .home-links a { color: var(--aa-orange); font-weight: 700; }
+.home-about__list a, .home-locations a, .home-links a, .home-note a { color: var(--aa-orange); font-weight: 700; }
 
 /* ---------- Industries & work ---------- */
 .home-industry { padding: 0; overflow: hidden; }

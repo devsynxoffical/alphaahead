@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaCheckCircle, FaPhoneAlt, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
-import RelatedServices from '../components/seo/RelatedServices';
+import {
+  FaCheckCircle, FaPhoneAlt, FaMapMarkerAlt, FaClock, FaUserTie, FaLaptop, FaCalculator, FaCalendarCheck, FaHeadset, FaBullseye, FaShieldAlt, FaTools,
+} from 'react-icons/fa';
 import FaqSection from '../components/seo/FaqSection';
 import CtaBanner from '../components/seo/CtaBanner';
 import CountUp from '../components/home/CountUp';
@@ -16,13 +17,22 @@ import { articlePath } from '../content/types';
 import './HomePage.css';
 
 interface WorkItem { name: string; category: string; image: string }
-interface Industry { title: string; desc: string; image: string }
+interface Industry { title: string; desc: string; image: string; path?: string }
+
+const HOME_SERVICES = [
+  { path: '/business-assistant', name: 'Executive virtual assistant', text: 'Inbox, calendar, travel and meeting prep for founders and executives.', icon: <FaUserTie /> },
+  { path: '/virtual-assistant', name: 'Virtual assistant for small business', text: 'Admin, customer emails, CRM updates and research for small teams.', icon: <FaLaptop /> },
+  { path: '/bookkeeping-virtual-assistant', name: 'Bookkeeping virtual assistant', text: 'QuickBooks Online and Xero data entry and reconciliations, reviewed by your accountant.', icon: <FaCalculator /> },
+  { path: '/appointment-setting', name: 'Appointment setting services', text: 'Leads followed up, qualified and booked as meetings on your calendar.', icon: <FaCalendarCheck /> },
+  { path: '/cold-calling', name: 'B2B cold calling', text: 'Trained callers working your scripts and lists during US business hours.', icon: <FaHeadset /> },
+  { path: '/lead-generation', name: 'Lead generation', text: 'Targeted list building and outreach that feeds your sales pipeline.', icon: <FaBullseye /> },
+];
 
 const STEPS = [
-  { title: 'Free discovery call', text: 'Tell us about your tasks, tools, hours and goals. We map out the role and the outcomes you expect.' },
-  { title: 'Matched to your role', text: 'We select team members whose skills fit the work, from admin and calling to marketing and development.' },
-  { title: 'Onboarding & SOPs', text: 'We set up access, document your processes and start with a clear, defined task list.' },
-  { title: 'Scale with confidence', text: 'Your team works your US or UAE hours, and you can add people or services as you grow.' },
+  { title: 'Free discovery call', text: 'We list the tasks, tools and hours you need and agree what a good week looks like.' },
+  { title: 'Matched assistant', text: 'We choose an assistant whose skills fit your tools, time zone and role.' },
+  { title: 'Onboarding & SOPs', text: 'Your first week is planned, processes are written down and access is set up safely.' },
+  { title: 'Scale when ready', text: 'Add hours, tasks or a second assistant once you see the value.' },
 ];
 
 const HomePage: React.FC = () => {
@@ -50,14 +60,14 @@ const HomePage: React.FC = () => {
             <p className="home-hero__badge">{t('hero.tagline')}</p>
             <h1 className="home-hero__title">{headline}</h1>
             <p className="home-hero__sub">
-              Dedicated virtual assistants, appointment setters, cold callers, bookkeeping assistants and digital teams, trained, managed and
-              working your US or UAE business hours.
+              Dedicated, managed virtual assistants who work your US (EST/PST) or UAE hours. Hand off inbox, calendar, bookkeeping,
+              appointment setting and outbound calls, and get your week back.
             </p>
             <div className="home-hero__ctas">
               <Link to="/contact" className="aa-btn aa-btn--primary">
-                Get a Free Consultation <span className="aa-arrow" aria-hidden="true">→</span>
+                Book a Free Consultation <span className="aa-arrow" aria-hidden="true">→</span>
               </Link>
-              <Link to="/services" className="aa-btn aa-btn--ghost">Explore Services</Link>
+              <a href="#how-it-works" className="aa-btn aa-btn--ghost">See How It Works</a>
             </div>
             <ul className="home-hero__trust">
               <li><FaMapMarkerAlt aria-hidden="true" /> St. Petersburg · Dubai · Islamabad</li>
@@ -116,13 +126,13 @@ const HomePage: React.FC = () => {
           </div>
           <div className="reveal reveal-d1">
             <p className="aa-eyebrow">{t('about.sectionLabel')}</p>
-            <h2 className="aa-h2">Virtual Assistants, Cold Callers &amp; Digital Teams That Work Your Hours</h2>
+            <h2 className="aa-h2">A Managed Virtual Assistant Agency That Works Your Hours</h2>
             <p className="aa-lead">{t('about.para1')}</p>
             <ul className="home-about__list">
               <li><FaCheckCircle aria-hidden="true" /> US-registered company with offices in Florida, Dubai and Islamabad</li>
-              <li><FaCheckCircle aria-hidden="true" /> Specialists for <Link to="/appointment-setting">appointment setting</Link>, <Link to="/bookkeeping-virtual-assistant">bookkeeping</Link>, <Link to="/cold-calling">B2B cold calling</Link> and growing businesses</li>
-              <li><FaCheckCircle aria-hidden="true" /> Real estate agent or investor in the US? Our real estate division, <a href="https://zingoassist.us/">Zingo Assist</a>, provides real estate VAs and transaction coordinators</li>
-              <li><FaCheckCircle aria-hidden="true" /> One partner for staffing <em>and</em> <Link to="/other-services#digital-marketing">digital marketing</Link>, <Link to="/other-services#seo">SEO</Link> and <Link to="/other-services#web-development">web</Link></li>
+              <li><FaCheckCircle aria-hidden="true" /> Dedicated <Link to="/business-assistant">executive assistants</Link>, <Link to="/bookkeeping-virtual-assistant">bookkeeping assistants</Link>, <Link to="/appointment-setting">appointment setters</Link> and <Link to="/cold-calling">B2B cold callers</Link></li>
+              <li><FaCheckCircle aria-hidden="true" /> Real estate team in the US? Our real estate division, <a href="https://zingoassist.us/">Zingo Assist</a>, provides real estate VAs. Medical practice? See <a href="https://alphamediassist.com/">Alpha Medi Assist</a></li>
+              <li><FaCheckCircle aria-hidden="true" /> Need web, design or IT help as well? See our <Link to="/other-services">other services</Link></li>
             </ul>
             <Link to="/case-studies" className="aa-btn aa-btn--outline">
               See our case studies <span className="aa-arrow" aria-hidden="true">→</span>
@@ -132,18 +142,67 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* SERVICES */}
-      <RelatedServices
-        eyebrow="What we do"
-        title="Outsourcing & Digital Services We Provide"
-        intro="Pick one role or build a full remote team. Every service is delivered by trained people working inside your tools and hours."
-      />
+      <section className="aa-section aa-section--soft">
+        <div className="aa-container">
+          <div className="aa-head aa-center reveal">
+            <p className="aa-eyebrow">What we do</p>
+            <h2 className="aa-h2">What Our Assistants Do</h2>
+            <p className="aa-lead">Start with one assistant or build a small remote team. Every assistant works inside your tools and your hours.</p>
+          </div>
+          <div className="aa-grid">
+            {HOME_SERVICES.map((s, i) => (
+              <Link key={s.path} to={s.path} className={`aa-card reveal reveal-d${i % 4}`}>
+                <span className="aa-icon" aria-hidden="true">{s.icon}</span>
+                <span className="aa-card__title">{s.name}</span>
+                <span className="aa-card__text">{s.text}</span>
+                <span className="aa-card__link">
+                  Learn more <span className="aa-arrow" aria-hidden="true">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+          <p className="aa-center home-links">
+            <Link to="/services">All services →</Link>
+            <Link to="/other-services">Web, design &amp; IT →</Link>
+          </p>
+        </div>
+      </section>
+
+      {/* IS A VA RIGHT FOR YOU */}
+      <section className="aa-section">
+        <div className="aa-container home-about">
+          <div className="reveal">
+            <p className="aa-eyebrow">Getting started</p>
+            <h2 className="aa-h2">Is a Virtual Assistant Right for You?</h2>
+            <p className="aa-lead">A virtual assistant usually pays off when three things are true:</p>
+            <ul className="home-about__list">
+              <li><FaCheckCircle aria-hidden="true" /> You spend 10 or more hours a week on email, scheduling, data entry or follow-ups.</li>
+              <li><FaCheckCircle aria-hidden="true" /> The tasks repeat and can be written down as steps.</li>
+              <li><FaCheckCircle aria-hidden="true" /> You want help in your own time zone without hiring locally.</li>
+            </ul>
+            <p className="home-note">
+              Start with five tasks and review them daily for the first week. Our{' '}
+              <Link to="/blog/onboard-virtual-assistant-7-days">7-day onboarding plan</Link> shows how, and our list of{' '}
+              <Link to="/blog/executive-assistant-tasks">30 tasks to delegate to an executive assistant</Link> helps you choose what to hand off first.
+            </p>
+          </div>
+          <div className="reveal reveal-d1">
+            <h3 className="aa-card__title">Your hours, your tools</h3>
+            <ul className="home-about__list">
+              <li><FaClock aria-hidden="true" /> US (EST/PST) and UAE business hours, with a team in Islamabad and offices in St. Petersburg and Dubai</li>
+              <li><FaTools aria-hidden="true" /> Works in Google Workspace, Microsoft 365, Slack, QuickBooks Online, Xero and common CRMs</li>
+              <li><FaShieldAlt aria-hidden="true" /> Individual logins, two-factor authentication and access limited to what each task needs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       {/* HOW IT WORKS */}
-      <section className="aa-section aa-section--navy">
+      <section id="how-it-works" className="aa-section aa-section--navy">
         <div className="aa-container">
           <div className="aa-head aa-center reveal">
             <p className="aa-eyebrow">How it works</p>
-            <h2 className="aa-h2">From first call to a working team in four steps</h2>
+            <h2 className="aa-h2">How Hiring Works: From First Call to a Working Assistant in 4 Steps</h2>
             <p className="aa-lead">A simple, low-risk process designed so you can start small and scale once you see the value.</p>
           </div>
           <ol className="aa-steps" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -172,15 +231,22 @@ const HomePage: React.FC = () => {
           </div>
           <div className="aa-grid">
             {industries.map((ind, i) => (
-              <div key={ind.title} className={`aa-card aa-card--hover home-industry reveal reveal-d${i}`}>
+              <Link key={ind.title} to={ind.path || '/industries'} className={`aa-card aa-card--hover home-industry reveal reveal-d${i % 4}`}>
                 <div className="aa-zoom home-industry__img">
-                  <img src={ind.image} alt={`${ind.title} industry`} loading="lazy" width={400} height={220} />
+                  <img src={ind.image} alt={`Virtual assistant for ${ind.title.toLowerCase()}`} loading="lazy" width={400} height={220} />
                 </div>
                 <h3 className="aa-card__title">{ind.title}</h3>
                 <p className="aa-card__text">{ind.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
+          <p className="aa-center home-links">
+            <Link to="/industries">All industries →</Link>
+          </p>
+          <p className="aa-center home-note">
+            Real estate teams: see our real estate division <a href="https://zingoassist.us/">Zingo Assist</a>. Medical practices:{' '}
+            <a href="https://alphamediassist.com/">Alpha Medi Assist</a>.
+          </p>
         </div>
       </section>
 

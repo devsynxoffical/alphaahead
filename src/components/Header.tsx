@@ -58,7 +58,7 @@ const Header: React.FC = () => {
     <header className={`hdr${isScrolled ? ' hdr--scrolled' : ''}`}>
       <div className="hdr-top">
         <div className="aa-container hdr-top__inner">
-          <span className="hdr-top__note">US-based outsourcing & digital agency · St. Petersburg · Dubai · Islamabad</span>
+          <span className="hdr-top__note">Virtual assistant agency · St. Petersburg · Dubai · Islamabad</span>
           <div className="hdr-top__links">
             <a href={`mailto:${t('contactInfo.email')}`}><MdEmail aria-hidden="true" /> {t('contactInfo.email')}</a>
             <a href="tel:+14245427170"><MdCall aria-hidden="true" /> {t('contactInfo.phone')}</a>

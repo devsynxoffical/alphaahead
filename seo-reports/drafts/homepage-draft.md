@@ -1,6 +1,6 @@
 # DRAFT for approval: Homepage (/)
 
-Status: NOT PUBLISHED. Needs approval. Homepage copy exists in 5 languages (EN, ES, FR, UR, AR); after approval the English text is translated for the other 4.
+Status: PUBLISHED 27 Nov 2026 (C42) without the [CONFIRM] items; add them once management answers. Homepage copy exists in 5 languages (EN, ES, FR, UR, AR); after approval the English text is translated for the other 4.
 Items marked **[CONFIRM]** depend on management answers. Unconfirmed items are dropped, never guessed.
 
 ## Goals

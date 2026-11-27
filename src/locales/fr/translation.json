@@ -17,8 +17,8 @@
     "languageLabel": "Langue"
   },
   "hero": {
-  "tagline": "Une agence américaine de stratégie commerciale et de solutions numériques",
-  "headline": "Assistants virtuels et services d'externalisation pour les entreprises des États-Unis et des EAU",
+  "tagline": "Agence d'assistants virtuels enregistrée aux États-Unis · Bureaux à St. Petersburg, Dubaï et Islamabad",
+  "headline": "Agence d'assistants virtuels pour fondateurs, dirigeants et petites équipes",
   "subtext": "Expertise mondiale – De grandes entreprises nous font confiance à travers les secteurs.",
   "buttonWork": "Voir notre travail",
   "buttonTalk": "Discuter de votre projet avec nous"
@@ -60,7 +60,7 @@
 "about": {
   "sectionLabel": "À propos de Alpha Ahead LLC",
   "headline": "Là où l'innovation rencontre les résultats",
-  "para1": "Alpha Ahead LLC est une agence américaine de conseil et de solutions commerciales qui aide les entreprises à croître et à se développer à l'échelle mondiale, y compris aux Émirats arabes unis.",
+  "para1": "Alpha Ahead LLC est une agence d'assistants virtuels enregistrée aux États-Unis et fondée par Shehreyar Khan. Nous mettons à disposition des assistants de direction, des assistants virtuels, des assistants comptables, des chargés de prise de rendez-vous et des téléprospecteurs B2B dédiés pour les fondateurs, dirigeants et petites équipes aux États-Unis et aux EAU, et notre équipe forme et encadre chaque assistant.",
   "para2": "Nous croyons en des solutions honnêtes, pratiques et directes, en adaptant des stratégies pour répondre aux besoins uniques de chaque client. Nous ne nous contentons pas de fournir des services ; nous construisons des partenariats qui favorisent le succès à long terme. Que vous soyez une start-up à la recherche de votre première percée ou une entreprise établie visant à se développer, Alpha Ahead possède l'expertise nécessaire pour vous assurer de rester en tête de la concurrence.",
   "cta": "Voir nos travaux"
 },
@@ -80,13 +80,14 @@
   "learnMore": "En Savoir Plus →"
 },
   "industries": {
-    "label": "Des solutions adaptées à toutes les industries",
-    "headline": "Nous travaillons dans divers secteurs d'activité",
+    "label": "Secteurs accompagnés",
+    "headline": "Des assistants virtuels pour votre secteur",
     "list": [
-      { "title": "Santé", "desc": "Du marketing numérique aux applications personnalisées.", "image": "/healthcare (2).jpeg" },
-      { "title": "Vente au détail & E-commerce", "desc": "Créer des expériences numériques fluides.", "image": "/e-comerce.jpeg" },
-      { "title": "Tourisme & Hôtellerie", "desc": "Élaborer des stratégies numériques qui favorisent l'engagement et la fidélité des clients.", "image": "/tourisimandhospitality.jpeg" },
-      { "title": "Immobilier", "desc": "Solutions marketing pour la gestion immobilière et les ventes.", "image": "/realstate.jpeg" }
+      {"title": "Agents d'assurance", "desc": "Renouvellements, demandes d'attestations et mises à jour des systèmes, le travail soumis à licence restant à votre équipe.", "image": "/finicialservice.jpeg", "path": "/virtual-assistant-for-insurance-agents"},
+      {"title": "Startups et entrepreneurs", "desc": "Boîte mail et agenda du fondateur, préparation des rapports aux investisseurs, CRM et coordination du recrutement.", "image": "/Services/Software Development.jpg", "path": "/virtual-assistant-for-startups"},
+      {"title": "Coachs", "desc": "Planification des séances, accueil des clients et gestion des formations et des communautés.", "image": "/Services/Online Education (E-Learning).jpg", "path": "/virtual-assistant-for-coaches"},
+      {"title": "Avocats", "desc": "Prise de rendez-vous, agendas, mise en forme de documents et aide à la facturation. Tâches administratives uniquement.", "image": "/aheadteam.jpg", "path": "/virtual-assistant-for-lawyers"},
+      {"title": "Comptables et experts-comptables", "desc": "Collecte des documents clients, saisie comptable et soutien pendant la saison fiscale.", "image": "/Services/Virtual Assistant.jpg", "path": "/virtual-assistant-for-accountants"}
     ],
     "more": "En savoir plus sur nos services →"
   },

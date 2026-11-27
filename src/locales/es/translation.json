@@ -17,8 +17,8 @@
     "languageLabel": "Idioma"
   },
   "hero": {
-  "tagline": "Una agencia estadounidense de estrategia empresarial y soluciones digitales",
-  "headline": "Asistentes virtuales y servicios de outsourcing para empresas de EE. UU. y los EAU",
+  "tagline": "Agencia de asistentes virtuales registrada en EE. UU. · Oficinas en St. Petersburg, Dubái e Islamabad",
+  "headline": "Agencia de asistentes virtuales para fundadores, ejecutivos y equipos pequeños",
   "subtext": "Experiencia global: confiado por las principales empresas de diversas industrias.",
   "buttonWork": "Ver nuestro trabajo",
   "buttonTalk": "Habla de tu proyecto con nosotros"
@@ -60,7 +60,7 @@
 "about": {
   "sectionLabel": "Sobre Alpha Ahead LLC",
   "headline": "Donde la innovación se encuentra con los resultados",
-  "para1": "Alpha Ahead LLC es una agencia estadounidense de consultoría y soluciones empresariales que se enfoca en ayudar a las empresas a crecer, innovar y expandirse en mercados globales, incluidos los Emiratos Árabes Unidos. Nuestro enfoque prioriza los resultados sobre la tecnología, la satisfacción del cliente y el éxito sostenible.",
+  "para1": "Alpha Ahead LLC es una agencia de asistentes virtuales registrada en EE. UU. y fundada por Shehreyar Khan. Asignamos asistentes ejecutivos, asistentes virtuales, asistentes de contabilidad, agendadores de citas y teleoperadores B2B dedicados a fundadores, ejecutivos y equipos pequeños en EE. UU. y los EAU, y nuestro equipo capacita y supervisa a cada asistente.",
   "para2": "Creemos en soluciones honestas, prácticas y directas, adaptando estrategias para satisfacer las necesidades únicas de cada cliente. No solo ofrecemos servicios; construimos asociaciones que impulsan el éxito a largo plazo. Ya sea que seas una startup en busca de tu primer gran avance o una empresa establecida que busca expandirse, Alpha Ahead tiene la experiencia necesaria para asegurarse de que te mantengas por delante de la competencia.",
   "cta": "Ver nuestro trabajo"
 },
@@ -80,13 +80,14 @@
   "learnMore": "Saber Más →"
 },
   "industries": {
-    "label": "Soluciones adaptadas a cualquier industria",
-    "headline": "Trabajamos en una amplia gama de industrias",
+    "label": "Sectores que atendemos",
+    "headline": "Asistentes virtuales para su sector",
     "list": [
-      { "title": "Salud", "desc": "Desde estrategias digitales hasta aplicaciones personalizadas.", "image": "/healthcare (2).jpeg" },
-      { "title": "Retail y comercio electrónico", "desc": "Creamos experiencias digitales fluidas.", "image": "/e-comerce.jpeg" },
-      { "title": "Turismo y hospitalidad", "desc": "Creando estrategias digitales que fomentan la participación y lealtad del cliente.", "image": "/tourisimandhospitality.jpeg" },
-      { "title": "Bienes raíces", "desc": "Marketing para gestión y ventas de propiedades.", "image": "/realstate.jpeg" }
+      {"title": "Agentes de seguros", "desc": "Renovaciones, solicitudes de certificados y actualización de sistemas, con el trabajo que requiere licencia en manos de su equipo.", "image": "/finicialservice.jpeg", "path": "/virtual-assistant-for-insurance-agents"},
+      {"title": "Startups y emprendedores", "desc": "Bandeja de entrada y agenda del fundador, informes para inversores, CRM y coordinación de contrataciones.", "image": "/Services/Software Development.jpg", "path": "/virtual-assistant-for-startups"},
+      {"title": "Coaches", "desc": "Programación de sesiones, incorporación de clientes y gestión de cursos y comunidades.", "image": "/Services/Online Education (E-Learning).jpg", "path": "/virtual-assistant-for-coaches"},
+      {"title": "Abogados", "desc": "Agenda de consultas, calendarios, formato de documentos y apoyo en facturación. Solo tareas administrativas.", "image": "/aheadteam.jpg", "path": "/virtual-assistant-for-lawyers"},
+      {"title": "Contadores y CPA", "desc": "Recopilación de documentos de clientes, registro contable y apoyo en temporada de impuestos.", "image": "/Services/Virtual Assistant.jpg", "path": "/virtual-assistant-for-accountants"}
     ],
     "more": "Más sobre nuestros servicios →"
   },

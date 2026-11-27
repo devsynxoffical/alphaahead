@@ -5,7 +5,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
   "/": [
     {
       q: "Who is Alpha Ahead LLC?",
-      a: "Alpha Ahead LLC is a US-registered outsourcing and digital agency that provides remote staff and digital services to businesses. We supply virtual assistants, appointment setters, cold callers, bookkeeping assistants and property management support, alongside SEO, web development, digital marketing, design, video editing and IT support. Most of our team works from our office in Islamabad, Pakistan, with offices in Florida and Dubai.",
+      a: "Alpha Ahead LLC is a US-registered virtual assistant agency founded by Shehreyar Khan. We place dedicated executive assistants, virtual assistants, bookkeeping assistants, appointment setters and B2B cold callers with founders, executives and small teams in the US and UAE. Most of our team works from our office in Islamabad, Pakistan, with offices in St. Petersburg, Florida and Dubai.",
     },
     {
       q: "Where are Alpha Ahead's offices located?",
@@ -13,7 +13,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: "What services does Alpha Ahead offer?",
-      a: "We offer two broad groups of services: outsourced staff and digital services. Outsourced staff includes virtual assistants, executive and personal assistants, appointment setting, cold calling, bookkeeping assistants, lead generation and virtual property management. US real estate staffing is handled by our real estate division, [Zingo Assist](https://zingoassist.us/). Digital services include SEO, web development, digital marketing, graphic design, video editing and IT support; you can see everything on our [services page](/services).",
+      a: "Our core services are [executive virtual assistants](/business-assistant), [virtual assistants for small businesses](/virtual-assistant), personal assistants, [bookkeeping virtual assistants](/bookkeeping-virtual-assistant), [appointment setting](/appointment-setting), [B2B cold calling](/cold-calling) and lead generation. US real estate staffing is handled by our real estate division, [Zingo Assist](https://zingoassist.us/). Web, design and IT help is available on request; see our [other services](/other-services) and the full [services page](/services).",
     },
     {
       q: "Do your teams work in US or UAE business hours?",

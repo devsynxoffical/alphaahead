@@ -17,8 +17,8 @@
     "languageLabel": "Language"
   },
   "hero": {
-    "tagline": "US-Based Outsourcing, Virtual Assistant & Digital Marketing Agency",
-    "headline": "Virtual Assistants and Outsourcing Services for US and UAE Businesses",
+    "tagline": "US-Registered Virtual Assistant Agency · Offices in St. Petersburg, Dubai & Islamabad",
+    "headline": "Virtual Assistant Agency for Founders, Executives and Small Teams",
     "subtext": "Global Expertise - Trusted by Leading Companies Across Industries.",
     "buttonWork": "See our work",
     "buttonTalk": "Discuss your project with us"
@@ -95,7 +95,7 @@
   "about": {
   "sectionLabel": "About Alpha Ahead LLC",
   "headline": "Where Innovation Meets Results",
-  "para1": "Alpha Ahead LLC is a US-based consulting and business solutions agency that focuses on helping businesses grow, innovate, and expand across global markets, including the UAE. Our approach prioritizes results over technology, client satisfaction, and sustainable success.",
+  "para1": "Alpha Ahead LLC is a US-registered virtual assistant agency founded by Shehreyar Khan. We place dedicated executive assistants, virtual assistants, bookkeeping assistants, appointment setters and B2B cold callers with founders, executives and small teams in the US and UAE, and our team trains and manages every assistant.",
   "para2": "We believe in honest, practical, and direct solutions, tailoring strategies to meet each client's unique needs. We don't just provide services; we build partnerships that drive long-term success. Whether you're a startup seeking your first breakthrough or an established business aiming for expansion, Alpha Ahead has the expertise to ensure you stay ahead of the competition.",
   "cta": "See our work"
 },
@@ -115,13 +115,14 @@
   "learnMore": "Learn More →"
 },
   "industries": {
-    "label": "Industry-Agnostic Solutions, Tailored to Your Needs",
-    "headline": "We work across a diverse range of industries",
+    "label": "Industries we support",
+    "headline": "Virtual assistants for your industry",
     "list": [
-      { "title": "Healthcare", "desc": "From digital marketing strategies to custom applications.", "image": "/healthcare (2).jpeg" },
-      { "title": "Retail & E-commerce", "desc": "Helping businesses build seamless digital experiences.", "image": "/e-comerce.jpeg" },
-      { "title": "Tourism & Hospitality", "desc": "Crafting digital strategies that drive customer engagement and loyalty.", "image": "/tourisimandhospitality.jpeg" },
-      { "title": "Real Estate", "desc": "Offering marketing solutions for property management and sales.", "image": "/realstate.jpeg" }
+      {"title": "Insurance agents", "desc": "Renewals, certificate requests and agency system updates, with licensed work kept with your team.", "image": "/finicialservice.jpeg", "path": "/virtual-assistant-for-insurance-agents"},
+      {"title": "Startups and entrepreneurs", "desc": "Founder inbox and calendar, investor update prep, CRM and recruiting coordination.", "image": "/Services/Software Development.jpg", "path": "/virtual-assistant-for-startups"},
+      {"title": "Coaches", "desc": "Session scheduling, client onboarding and course and community admin.", "image": "/Services/Online Education (E-Learning).jpg", "path": "/virtual-assistant-for-coaches"},
+      {"title": "Lawyers", "desc": "Intake scheduling, calendars, document formatting and billing support. Administrative only.", "image": "/aheadteam.jpg", "path": "/virtual-assistant-for-lawyers"},
+      {"title": "Accountants and CPAs", "desc": "Client document collection, bookkeeping data entry and tax season support.", "image": "/Services/Virtual Assistant.jpg", "path": "/virtual-assistant-for-accountants"}
     ],
     "more": "More about our services →"
   },
