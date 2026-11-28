@@ -1,0 +1,14 @@
+{
+  "taken": "2026-11-28T12:50Z",
+  "fresh_2026-11-10..28": { "clicks": 13, "impressions": 502, "by_date": { "2026-11-16": [2, 4, 3.0], "2026-11-17": [1, 3, 12.0], "2026-11-18": [0, 8, 37.9], "2026-11-19": [0, 29, 28.7], "2026-11-20": [0, 27, 22.7], "2026-11-21": [1, 21, 19.6], "2026-11-22": [2, 31, 10.4], "2026-11-23": [4, 51, 16.0], "2026-11-24": [0, 44, 17.9], "2026-11-25": [2, 99, 22.4], "2026-11-26": [1, 93, 22.8], "2026-11-27": [0, 92, 18.4] } },
+  "cannibalization": { "is cold calling illegal": { "/blog/is-cold-calling-illegal": [5, 36.6], "/blog/is-real-estate-cold-calling-legal (301 to Zingo)": [3, 31] }, "note": "resolves when Google recrawls the 301" },
+  "index_status_checked_this_run": {
+    "/about": "Crawled - currently not indexed (no recrawl since 18 Nov)",
+    "/business-assistant": "Indexed, recrawled 27 Nov 09:33 (C47 rewrite seen)",
+    "/bookkeeping-virtual-assistant": "Indexed; last crawl 21 Nov",
+    "/blog/bookkeeping-virtual-assistant-vs-accountant": "Indexed (27 Nov 09:35)",
+    "/blog/give-virtual-assistant-secure-access": "Indexed (27 Nov 10:13)"
+  },
+  "deploy": "latest #43 (27 Nov) marked failed at live-verify only; builds confirmed live via Google crawls. No new code pushes since.",
+  "changes_this_run": []
+}
